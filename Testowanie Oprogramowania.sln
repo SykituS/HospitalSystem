@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moduł Administracyjny", "Moduł Administracyjny\Moduł Administracyjny.csproj", "{73056EBC-3A10-42D6-A47F-A02FCC0404AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73056EBC-3A10-42D6-A47F-A02FCC0404AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73056EBC-3A10-42D6-A47F-A02FCC0404AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73056EBC-3A10-42D6-A47F-A02FCC0404AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73056EBC-3A10-42D6-A47F-A02FCC0404AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {078725FB-4614-4582-B284-1C8787840A6D}
+	EndGlobalSection
+EndGlobal
