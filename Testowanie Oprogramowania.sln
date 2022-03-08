@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Moduł Administracyjny", "Moduł Administracyjny\Moduł Administracyjny.csproj", "{73056EBC-3A10-42D6-A47F-A02FCC0404AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{EBEAB6EA-3907-4C1B-9460-FF8A11924EB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemAdministrationModule", "SystemAdministrationModule\SystemAdministrationModule.csproj", "{CC9EF66E-2E74-45C6-A515-F910450A8148}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{73056EBC-3A10-42D6-A47F-A02FCC0404AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{73056EBC-3A10-42D6-A47F-A02FCC0404AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{73056EBC-3A10-42D6-A47F-A02FCC0404AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{73056EBC-3A10-42D6-A47F-A02FCC0404AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBEAB6EA-3907-4C1B-9460-FF8A11924EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBEAB6EA-3907-4C1B-9460-FF8A11924EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBEAB6EA-3907-4C1B-9460-FF8A11924EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBEAB6EA-3907-4C1B-9460-FF8A11924EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC9EF66E-2E74-45C6-A515-F910450A8148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC9EF66E-2E74-45C6-A515-F910450A8148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC9EF66E-2E74-45C6-A515-F910450A8148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC9EF66E-2E74-45C6-A515-F910450A8148}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
