@@ -24,6 +24,11 @@ namespace Administation
             return true;
         }
 
+        public static void Logout()
+        {
+            user.IsLogged = false;
+        }
+
         public static void LoginToSystem(string login, string password)
         {
 
