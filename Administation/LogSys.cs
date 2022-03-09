@@ -30,18 +30,19 @@ namespace Administation
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
 
-            DBSystem.DBSystem.SelectFromDB(ds, "Users", "query placeholder");
+            DBSystem.DBSystem.SelectFromDB(ds, "Users", "SELECT * FROM dbo.Users WHERE login = '" + login + "' AND Password ='" + password + "'");
 
-            if (ds.Tables["Users"].Rows.Count != 1)
+            dt = ds.Tables["Users"];
+            if (dt.Rows.Count != 1)
             {
                 System.Console.WriteLine("False");
             }
             System.Console.WriteLine("True");
 
-            dt = ds.Tables["Users"];
             foreach (DataRow dr in dt.Rows)
-                user.setData(login, password, dr["Email"].ToString(), dr["Position"].ToString());
+                user.setData(login, password, "test@", "test");
 
+            user.IsLogged = true;
         }
     }
 }
