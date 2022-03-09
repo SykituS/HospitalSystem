@@ -13,5 +13,10 @@ namespace GUI
         {
 
         }
+
+        protected void BtnLogin_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
