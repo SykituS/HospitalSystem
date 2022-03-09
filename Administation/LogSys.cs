@@ -30,7 +30,7 @@ namespace Administation
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
 
-            DBSystem.DBSystem.SelectFromDB(ds, "Users", "SELECT * FROM dbo.Users WHERE login = '" + login + "' AND Password ='" + password + "'");
+            DBSystem.DBSystem.SelectFromDB(ds, "Users", "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name FROM dbo.Employee INNER JOIN dbo.Users ON dbo.Users.US_Employee=dbo.Employee.EM_Id_Employee INNER JOIN dbo.Position ON dbo.Employee.EM_Position = dbo.Position.PO_Id_Position WHERE US_Login = '" + login + "' AND US_Password = '" + password + "'");
 
             dt = ds.Tables["Users"];
             if (dt.Rows.Count != 1)
