@@ -38,9 +38,10 @@ namespace Administation
             DBSystem.DBSystem.SelectFromDB(ds, "Users", "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name FROM dbo.Employee INNER JOIN dbo.Users ON dbo.Users.US_Employee=dbo.Employee.EM_Id_Employee INNER JOIN dbo.Position ON dbo.Employee.EM_Position = dbo.Position.PO_Id_Position WHERE US_Login = '" + login + "' AND US_Password = '" + password + "'");
 
             dt = ds.Tables["Users"];
-            if (dt.Rows.Count != 1)
+            if (dt.Rows.Count == 0)
             {
                 System.Console.WriteLine("False");
+                return;
             }
             System.Console.WriteLine("True");
 
