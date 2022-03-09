@@ -6,9 +6,11 @@
 
         Login<asp:TextBox ID="TBLogin" runat="server"></asp:TextBox>
         <br />
-        Password<asp:TextBox ID="TBPassword" runat="server"></asp:TextBox>
+        Password<asp:TextBox ID="TBPassword" runat="server" TextMode="Password"></asp:TextBox>
         <br />
         <asp:Button ID="BtnLogin" runat="server" OnClick="BtnLogin_Click" Text="Login" />
+
+        <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
 
     </div>
 

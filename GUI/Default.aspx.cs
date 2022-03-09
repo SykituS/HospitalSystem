@@ -27,5 +27,11 @@ namespace GUI
                 Response.Redirect("About.aspx");
             }
         }
+
+        protected void BtnCancel_Click(object sender, EventArgs e)
+        {
+            TBLogin.Text = "";
+            TBPassword.Text = "";
+        }
     }
 }

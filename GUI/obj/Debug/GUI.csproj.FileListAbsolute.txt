@@ -74,6 +74,5 @@ F:\Projekty\Testowanie Oprogramowania\GUI\bin\pl\System.Web.Optimization.resourc
 F:\Projekty\Testowanie Oprogramowania\GUI\bin\pl\Microsoft.AspNet.FriendlyUrls.resources.dll
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CopyComplete
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.dll
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.pdb
