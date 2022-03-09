@@ -40,7 +40,7 @@ namespace Administation
             System.Console.WriteLine("True");
 
             foreach (DataRow dr in dt.Rows)
-                user.setData(login, password, "test@", "test");
+                user.setData(login, password, dr["EM_Email"].ToString(), dr["PO_Name"].ToString());
 
             user.IsLogged = true;
         }
