@@ -12,7 +12,10 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!LogSys.CheckIfLogged())
+            {
+                Response.Redirect("Default.aspx");
+            }
         }
 
         protected void BtnLogOut_Click(object sender, EventArgs e)
