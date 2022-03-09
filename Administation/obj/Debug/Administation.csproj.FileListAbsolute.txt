@@ -4,3 +4,5 @@ F:\Projekty\Testowanie Oprogramowania\Administation\obj\Debug\Administation.cspr
 F:\Projekty\Testowanie Oprogramowania\Administation\obj\Debug\Administation.csproj.CoreCompileInputs.cache
 F:\Projekty\Testowanie Oprogramowania\Administation\obj\Debug\Administation.dll
 F:\Projekty\Testowanie Oprogramowania\Administation\obj\Debug\Administation.pdb
+F:\Projekty\Testowanie Oprogramowania\Administation\bin\Debug\DBSystem.dll
+F:\Projekty\Testowanie Oprogramowania\Administation\obj\Debug\Administation.csproj.CopyComplete
