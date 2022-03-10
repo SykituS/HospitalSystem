@@ -8,13 +8,15 @@ namespace Administation
 {
     class LoggedUser
     {
-        bool isLogged = false; //Zmienna która przetrzymuje informację o tym czy użytkonik jest zalogowany
+        bool isLogged = false; //Variable that stores information about whether the user is logged into the system or not
+        int attempt = 3;
         string login;
         string password;
         string email;
         string position;
 
         public bool IsLogged { get => isLogged; set => isLogged = value; }
+        public int Attempt { get => attempt; set => attempt = value; }
         public string Login { get => login; set => login = value; }
         public string Password { get => password; set => password = value; }
         public string Email { get => email; set => email = value; }

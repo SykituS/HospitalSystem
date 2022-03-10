@@ -4,6 +4,9 @@
 
     <div class="jumbotron">
 
+        <asp:Label ID="LabelWarnings" runat="server" ForeColor="Red" Text="LabelWarnings" Visible="False"></asp:Label>
+        <br />
+
         Login<asp:TextBox ID="TBLogin" runat="server"></asp:TextBox>
         <br />
         Password<asp:TextBox ID="TBPassword" runat="server" TextMode="Password"></asp:TextBox>
