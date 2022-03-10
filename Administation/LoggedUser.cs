@@ -14,7 +14,6 @@ namespace Administation
         string email;
         string position;
 
-
         public bool IsLogged { get => isLogged; set => isLogged = value; }
         public string Login { get => login; set => login = value; }
         public string Password { get => password; set => password = value; }

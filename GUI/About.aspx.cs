@@ -20,7 +20,7 @@ namespace GUI
 
         protected void BtnLogOut_Click(object sender, EventArgs e)
         {
-            LogSys.Logout();
+            LogSys.LogoutFromSystem();
             Response.Redirect("Default.aspx");
 
         }
