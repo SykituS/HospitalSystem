@@ -12,24 +12,24 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Sprawdzenie czy użytkownik jest już zalogowany w systemie
+            //Checking whether the user is already logged in
             if (LogSys.CheckIfLogged())
                 Response.Redirect("About.aspx");
         }
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
-            //Rozpoczęcie procesu logowania 
+            //Starting the login process 
             LogSys.LoginToSystem(TBLogin.Text, TBPassword.Text);
 
-            //Sprawdzenie czy użytkownik pomyślnie się zalogował
+            //Checking whether the user has successfully logged in
             if (LogSys.CheckIfLogged())
                 Response.Redirect("About.aspx");
         }
 
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
-            //Anulowanie procesu logowania
+            //Cancelling the process of logging in
             TBLogin.Text = "";
             TBPassword.Text = "";
         }

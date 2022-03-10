@@ -8,15 +8,15 @@ using System.Data.SqlClient;
 using DBSystem;
 
 
-//Klasa który trzyma funkcje dotyczące logowania się do systemu
+//Class that contains functions for logging into the system
 namespace Administation
 {
     public class LogSys
     {
-        //Utworzenie nowego użytkownika i trzymanie go w pamięci
+        //Creating a new user and storing it in the memory
         static LoggedUser user = new LoggedUser();
 
-        //Sprawdzenie czy użytkownik jest zalogowany
+        //Checking whether the user is logged in
         public static bool CheckIfLogged()
         {
             if (!user.IsLogged)
@@ -25,39 +25,38 @@ namespace Administation
             return true;
         }
 
-        //Wylogowanie użytkownika z systemu
+        //Logging the user out of the system
         public static void LogoutFromSystem()
         {
             user.IsLogged = false;
         }
 
-        //Zalogowanie użytkownika do systemu
+        //Logging the user into the system
         public static void LoginToSystem(string login, string password)
         {
-            //Zmienne które będą trzymać informacje otrzymane z bazy danych
+            //Variables that will store the information received from the database
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
 
-            //Funkcaj z pliku DBSystem.dll
-            //Wysłanie zmiennej DataSet, oraz jak ma się nazywać utworzona tabela która będzie trzymać informacje odnośnie:
-            //loginu, hasła, emailu i stanowiska użytkownia
-            //Funkcja także wysyła kwerendę SELECT która sprawdza czy podane dane przez użytkownika istnieją w bazie
+            /*Function 'SelectFromDB' from the DBSystem.dll file
+            It sends the DataSet variable to the database, determines what the newly created table, containing user's login, password, email and position, should be called
+            and sends a query to the database, which checks whether the given data exists in the database. */
             DBSystem.DBSystem.SelectFromDB(ds, "Users", "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name " +
                 "FROM dbo.Employee INNER JOIN dbo.Users ON dbo.Users.US_Employee=dbo.Employee.EM_Id_Employee INNER JOIN dbo.Position ON dbo.Employee.EM_Position = dbo.Position.PO_Id_Position " +
                 "WHERE US_Login = '" + login + "' AND US_Password = '" + password + "'");
 
-            //Przerzucenie danych z DataSet na DataTable
+            //Filling the DataTable dt with data from the table "Users"
             dt = ds.Tables["Users"];
 
-            //Sprawdzenie czy w DataTable są jakieś dane, jeśli nie to znaczy że w bazie nie istnieje takowy użytkownik
+            //Checking if DataTable dt contains any data, the lack of it means that the user being checked does not exist in the database
             if (dt.Rows.Count == 0)
                 return;
 
-            //Uzupełnienie informacji odnośnie użytkownika 
+            //Filling in user data
             foreach (DataRow dr in dt.Rows)
                 user.setData(login, password, dr["EM_Email"].ToString(), dr["PO_Name"].ToString());
 
-            //Zmienienie zmiennej która trzyma informację czy użytkownik jest zalogowany czy też nie
+            //Changing the value of the variable that stores information about whether the user is logged in
             user.IsLogged = true;
         }
     }
