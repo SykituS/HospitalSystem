@@ -8,7 +8,7 @@ namespace Administation
 {
     class LoggedUser
     {
-        bool isLogged = false; //varible to keep track if user should be logged to the system
+        bool isLogged = false; //Zmienna która przetrzymuje informację o tym czy użytkonik jest zalogowany
         string login;
         string password;
         string email;

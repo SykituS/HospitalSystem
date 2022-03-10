@@ -7,16 +7,16 @@ using System.Data;
 using System.Data.SqlClient;
 using DBSystem;
 
-//Class with function needed to login
 
+//Klasa który trzyma funkcje dotyczące logowania się do systemu
 namespace Administation
 {
     public class LogSys
     {
-        //storing information about logged user
+        //Utworzenie nowego użytkownika i trzymanie go w pamięci
         static LoggedUser user = new LoggedUser();
 
-        //Checking if user has logged successfully
+        //Sprawdzenie czy użytkownik jest zalogowany
         public static bool CheckIfLogged()
         {
             if (!user.IsLogged)
@@ -25,36 +25,39 @@ namespace Administation
             return true;
         }
 
-        //Logout user from the system
+        //Wylogowanie użytkownika z systemu
         public static void LogoutFromSystem()
         {
             user.IsLogged = false;
         }
 
-        //Login user to the system
+        //Zalogowanie użytkownika do systemu
         public static void LoginToSystem(string login, string password)
         {
-            //Create a new varible that will hold information from DataBase
+            //Zmienne które będą trzymać informacje otrzymane z bazy danych
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
 
-            //Function from the DBSytem.dll file that check if login and password is correct, and we are getting back a DataSet with information about user
+            //Funkcaj z pliku DBSystem.dll
+            //Wysłanie zmiennej DataSet, oraz jak ma się nazywać utworzona tabela która będzie trzymać informacje odnośnie:
+            //loginu, hasła, emailu i stanowiska użytkownia
+            //Funkcja także wysyła kwerendę SELECT która sprawdza czy podane dane przez użytkownika istnieją w bazie
             DBSystem.DBSystem.SelectFromDB(ds, "Users", "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name " +
                 "FROM dbo.Employee INNER JOIN dbo.Users ON dbo.Users.US_Employee=dbo.Employee.EM_Id_Employee INNER JOIN dbo.Position ON dbo.Employee.EM_Position = dbo.Position.PO_Id_Position " +
                 "WHERE US_Login = '" + login + "' AND US_Password = '" + password + "'");
 
-            //Transfering information about user from DataSet to DataTable
+            //Przerzucenie danych z DataSet na DataTable
             dt = ds.Tables["Users"];
 
-            //Checking if Select Function returned something from DataBase
+            //Sprawdzenie czy w DataTable są jakieś dane, jeśli nie to znaczy że w bazie nie istnieje takowy użytkownik
             if (dt.Rows.Count == 0)
                 return;
 
-            //Filling information about user 
+            //Uzupełnienie informacji odnośnie użytkownika 
             foreach (DataRow dr in dt.Rows)
                 user.setData(login, password, dr["EM_Email"].ToString(), dr["PO_Name"].ToString());
 
-            //Changing varible that hold information if user should be logged to the system
+            //Zmienienie zmiennej która trzyma informację czy użytkownik jest zalogowany czy też nie
             user.IsLogged = true;
         }
     }

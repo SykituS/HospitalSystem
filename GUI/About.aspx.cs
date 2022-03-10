@@ -12,14 +12,14 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Sprawdzenie czy użytkonik jest zalogowany w systemie
             if (!LogSys.CheckIfLogged())
-            {
                 Response.Redirect("Default.aspx");
-            }
         }
 
         protected void BtnLogOut_Click(object sender, EventArgs e)
         {
+            //Wylogowanie użytkownika z systemu
             LogSys.LogoutFromSystem();
             Response.Redirect("Default.aspx");
 
