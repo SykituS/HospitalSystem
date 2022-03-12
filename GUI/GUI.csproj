@@ -106,14 +106,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdministratorPage.aspx" />
-    <Content Include="CancelationPage.aspx" />
+    <Content Include="EmployeePage.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="EmployeePage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -161,6 +160,7 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="AdministratorPage.aspx.cs">
       <DependentUpon>AdministratorPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -168,14 +168,13 @@
     <Compile Include="AdministratorPage.aspx.designer.cs">
       <DependentUpon>AdministratorPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="CancelationPage.aspx.cs">
-      <DependentUpon>CancelationPage.aspx</DependentUpon>
+    <Compile Include="EmployeePage.aspx.cs">
+      <DependentUpon>EmployeePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CancelationPage.aspx.designer.cs">
-      <DependentUpon>CancelationPage.aspx</DependentUpon>
+    <Compile Include="EmployeePage.aspx.designer.cs">
+      <DependentUpon>EmployeePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -183,13 +182,6 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeePage.aspx.cs">
-      <DependentUpon>EmployeePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EmployeePage.aspx.designer.cs">
-      <DependentUpon>EmployeePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

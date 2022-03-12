@@ -9,7 +9,7 @@ using DBSystem;
 
 
 //Class that contains functions for logging into the system
-namespace Administration
+namespace Administation
 {
     public class LogSys
     {
@@ -71,14 +71,6 @@ namespace Administration
                 return "Too many incorrect attempts. Login has been blocked. Please try again in X minutes";
 
             return "Wrong login or password! You have "+user.Attempt+" more attempts";
-        }
-
-        public static bool CheckPosition()
-        {
-            if (user.Position == "administrator")
-                return true;
-
-            return false;
         }
     }
 }

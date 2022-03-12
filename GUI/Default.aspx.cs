@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Administration;
+using Administation;
 
 namespace GUI
 {
@@ -24,12 +24,7 @@ namespace GUI
 
             //Checking whether the user has successfully logged in
             if (LogSys.CheckIfLogged())
-            {
-                if (LogSys.CheckPosition())
-                    Response.Redirect("AdministratorPage.aspx");
-
-                Response.Redirect("EmployeePage.aspx");
-            }
+                Response.Redirect("AdministratorPage.aspx");
 
             LabelWarnings.Visible = true;
             LabelWarnings.Text = LogSys.WrongAttempt();

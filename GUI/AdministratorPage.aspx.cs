@@ -1,24 +1,28 @@
-﻿using Administration;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Administation;
 
 namespace GUI
 {
-    public partial class AdministratorPage : System.Web.UI.Page
+    public partial class About : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Checking whether the user is logged in
             if (!LogSys.CheckIfLogged())
-                Response.Redirect("AdministratorPage.aspx");
+                Response.Redirect("Default.aspx");
         }
 
-        protected void BtnLogout_Click(object sender, EventArgs e)
+        protected void BtnLogOut_Click(object sender, EventArgs e)
         {
-            Response.Redirect("CancelationPage.aspx");
+            //Logging the user out of the system
+            LogSys.LogoutFromSystem();
+            Response.Redirect("Default.aspx");
+
         }
     }
 }
