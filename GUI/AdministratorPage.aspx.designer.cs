@@ -11,16 +11,25 @@ namespace GUI
 {
 
 
-    public partial class About
+    public partial class AdministratorPage
     {
 
         /// <summary>
-        /// Kontrolka BtnLogOut.
+        /// Kontrolka BtnUserList.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnLogOut;
+        protected global::System.Web.UI.WebControls.Button BtnUserList;
+
+        /// <summary>
+        /// Kontrolka BtnLogout.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnLogout;
     }
 }

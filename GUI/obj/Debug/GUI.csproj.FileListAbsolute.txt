@@ -76,4 +76,3 @@ F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.AssemblyReference
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.dll
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.pdb
-F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CopyComplete
