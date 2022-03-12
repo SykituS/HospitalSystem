@@ -1,17 +1,16 @@
-﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EmployeePage.aspx.cs" Inherits="GUI.Contact" %>
+﻿<%@ Page Title="Employee Panel" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="EmployeePage.aspx.cs" Inherits="GUI.EmployeePage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
+    <div>
+
+        <h1>You are logged as Employee</h1>
+        <br />
+        <asp:Button ID="BtnUserList" runat="server" Text="View calendar" />
+        <br />
+        <br />
+        <asp:Button ID="BtnLogout" runat="server" Text="Logout" OnClick="BtnLogout_Click" />
+
+    </div>
+
 </asp:Content>

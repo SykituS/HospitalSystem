@@ -11,25 +11,34 @@ namespace GUI
 {
 
 
-    public partial class EmployeePage
+    public partial class CancelationPage
     {
 
         /// <summary>
-        /// Kontrolka BtnUserList.
+        /// Kontrolka LabelWarning.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnUserList;
+        protected global::System.Web.UI.WebControls.Label LabelWarning;
 
         /// <summary>
-        /// Kontrolka BtnLogout.
+        /// Kontrolka BtnOk.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnLogout;
+        protected global::System.Web.UI.WebControls.Button BtnOk;
+
+        /// <summary>
+        /// Kontrolka BtnCancel.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnCancel;
     }
 }

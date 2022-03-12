@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Administation
+namespace Administration
 {
     class LoggedUser
     {
@@ -23,12 +23,12 @@ namespace Administation
         public string Position { get => position; set => position = value; }
 
         //Constructor
-        public void setData(string login, string password, string email, string postion)
+        public void setData(string login, string password, string email, string po)
         {
             this.Login = login;
             this.Password = password;
             this.Email = email;
-            this.Position = position;
+            this.Position = po;
         }
     }
 }
