@@ -5,3 +5,11 @@ F:\Projekty\Testowanie Oprogramowania\Administation\obj\Debug\Administation.cspr
 F:\Projekty\Testowanie Oprogramowania\Administation\obj\Debug\Administation.dll
 F:\Projekty\Testowanie Oprogramowania\Administation\obj\Debug\Administation.pdb
 F:\Projekty\Testowanie Oprogramowania\Administation\bin\Debug\DBSystem.dll
+C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\bin\Debug\Administation.dll
+C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\bin\Debug\Administation.pdb
+C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\bin\Debug\DBSystem.dll
+C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\obj\Debug\Administation.csprojAssemblyReference.cache
+C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\obj\Debug\Administation.csproj.CoreCompileInputs.cache
+C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\obj\Debug\Administation.csproj.CopyComplete
+C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\obj\Debug\Administation.dll
+C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\obj\Debug\Administation.pdb
