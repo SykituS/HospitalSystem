@@ -67,7 +67,7 @@ namespace Administation
         {
             user.Attempt--;
             
-            if (user.Attempt == 0)
+            if (user.Attempt <= 0)
                 return "Too many incorrect attempts. Login has been blocked. Please try again in X minutes";
 
             return "Wrong login or password! You have "+user.Attempt+" more attempts";
