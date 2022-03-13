@@ -4,10 +4,10 @@
 
     <div>
 
-        <asp:Label ID="LabelWarning" runat="server" Text="Do you want to confirm logout?"></asp:Label>
+        <h3>Do you want to confirm logout?</h3>
         <br />
-        <asp:Button ID="BtnOk" runat="server" Text="Ok" OnClick="BtnOk_Click" />
-        <asp:Button ID="BtnCancel" runat="server" Text="Cancel" OnClick="BtnCancel_Click" />
+        <asp:Button ID="BtnOk" runat="server" Text="Ok" OnClick="BtnOk_Click" style="margin: 5px"/>
+        <asp:Button ID="BtnCancel" runat="server" Text="Cancel" OnClick="BtnCancel_Click" style="margin: 5px"/>
 
     </div>
 

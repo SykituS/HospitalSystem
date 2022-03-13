@@ -116,6 +116,7 @@
     <Content Include="EmployeePage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FormToResetPassPage.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -190,6 +191,13 @@
     </Compile>
     <Compile Include="EmployeePage.aspx.designer.cs">
       <DependentUpon>EmployeePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormToResetPassPage.aspx.cs">
+      <DependentUpon>FormToResetPassPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormToResetPassPage.aspx.designer.cs">
+      <DependentUpon>FormToResetPassPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

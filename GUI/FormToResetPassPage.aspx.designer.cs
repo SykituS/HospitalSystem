@@ -11,26 +11,17 @@ namespace GUI
 {
 
 
-    public partial class _Default
+    public partial class FormToResetPassPage
     {
 
         /// <summary>
-        /// Kontrolka _repostcheckcode.
+        /// Kontrolka Label1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField _repostcheckcode;
-
-        /// <summary>
-        /// Kontrolka LabelWarnings.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelWarnings;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
         /// Kontrolka TBLogin.
@@ -42,22 +33,31 @@ namespace GUI
         protected global::System.Web.UI.WebControls.TextBox TBLogin;
 
         /// <summary>
-        /// Kontrolka TBPassword.
+        /// Kontrolka Label2.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TBPassword;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Kontrolka BtnLogin.
+        /// Kontrolka TBEmail.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnLogin;
+        protected global::System.Web.UI.WebControls.TextBox TBEmail;
+
+        /// <summary>
+        /// Kontrolka BtnOk.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnOk;
 
         /// <summary>
         /// Kontrolka BtnCancel.
@@ -67,14 +67,5 @@ namespace GUI
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnCancel;
-
-        /// <summary>
-        /// Kontrolka BtnResetPassword.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnResetPassword;
     }
 }

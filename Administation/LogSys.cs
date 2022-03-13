@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Administation;
 using System.Data;
-using System.Data.SqlClient;
-using DBSystem;
-using Administation;
 
 //Class that contains functions for logging into the system
 namespace Administration
 {
     public class LogSys
     {
-        
+
         //Creating a new user and storing it in the memory
         static LoggedUser user = new LoggedUser();
 
@@ -63,14 +56,19 @@ namespace Administration
             user.Attempt = 3;
         }
 
-        public static string WrongAttempt()
+        public static string GetAttempText()
         {
-            user.Attempt--;
-            
             if (user.Attempt <= 0)
                 return "Too many incorrect attempts. Login has been blocked. Please try again in X minutes";
 
-            return "Wrong login or password! You have "+user.Attempt+" more attempts";
+            return "Wrong login or password! You have " + user.Attempt + " more attempts";
+        }
+
+        public static string WrongAttempt()
+        {
+            user.Attempt--;
+
+            return GetAttempText();
         }
 
         public static bool CheckPosition()
@@ -79,6 +77,11 @@ namespace Administration
                 return true;
 
             return false;
+        }
+
+        public static int GetAttempNumber()
+        {
+            return user.Attempt;
         }
     }
 }

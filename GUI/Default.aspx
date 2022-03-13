@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="GUI._Default" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
     <div class="jumptron">
+    <asp:HiddenField runat="server" ID="_repostcheckcode" />
         
       <h3>Sign in</h3> 
-        <asp:Label ID="LabelWarnings" runat="server" ForeColor="Red" Text="Sing in" Visible="False"></asp:Label>
         <br />
        <div id="login">
+        <asp:Label ID="LabelWarnings" runat="server" ForeColor="Red" Text="Waringin placeholder" Visible="False"></asp:Label><br />
         Login  <br />
         <asp:TextBox ID="TBLogin" runat="server"></asp:TextBox>
         <br />
@@ -21,7 +21,7 @@
        </div>
 
         <div id="Reset">
-            <asp:Button ID="BtnResetPassword" runat="server" Text="Reset Password" />
+            <asp:Button ID="BtnResetPassword" runat="server" Text="Forgot password" OnClick="BtnResetPassword_Click" />
         </div>
     </div>
 

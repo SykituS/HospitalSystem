@@ -31,7 +31,7 @@
             margin-left: 35%;
             margin-bottom: 25px;
         }
-        
+
         #Reset{
             margin-left: 35%;
         }
@@ -61,7 +61,7 @@
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
-                    <a class="navbar-brand" runat="server" href="~/">Medical Center</a>
+                    <a class="navbar-brand" runat="server" >Medical Clinic</a>
             </div>
         </div>
         <div class="container body-content">
@@ -69,7 +69,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Medical Center</p>
+                <p>&copy; <%: DateTime.Now.Year %> - Medical Clinic</p>
             </footer>
         </div>
 

@@ -12,6 +12,8 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            CancelUnexpectedRePost();
+
             //Checking whether the user is already logged in
             if (LogSys.CheckIfLogged())
                 Response.Redirect("AdministratorPage.aspx");
@@ -40,6 +42,35 @@ namespace GUI
             //Cancelling the process of logging in
             TBLogin.Text = "";
             TBPassword.Text = "";
+        }
+
+        private void CancelUnexpectedRePost()
+        {
+            if (LogSys.GetAttempNumber() < 3)
+            {
+                LabelWarnings.Visible = true;
+                LabelWarnings.Text = LogSys.GetAttempText();
+            }
+
+            string clientCode = _repostcheckcode.Value;
+
+            string serverCode = Session["_repostcheckcode"] as string;
+
+            if (!IsPostBack || clientCode.Equals(serverCode))
+            {
+                string code = Guid.NewGuid().ToString();
+                _repostcheckcode.Value = code;
+                Session["_repostcheckcode"] = code;
+            } else
+            {
+                Response.Redirect(Request.Url.AbsoluteUri);
+            }
+        }
+
+        protected void BtnResetPassword_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormToResetPassPage.aspx");
+
         }
     }
 }
