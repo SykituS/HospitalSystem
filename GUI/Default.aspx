@@ -19,6 +19,10 @@
         
         <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
        </div>
+
+        <div id="Reset">
+            <asp:Button ID="BtnResetPassword" runat="server" Text="Reset Password" />
+        </div>
     </div>
 
     </asp:Content>

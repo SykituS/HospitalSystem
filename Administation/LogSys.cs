@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using DBSystem;
-
+using Administation;
 
 //Class that contains functions for logging into the system
 namespace Administration
 {
     public class LogSys
     {
-
+        
         //Creating a new user and storing it in the memory
         static LoggedUser user = new LoggedUser();
 
@@ -44,7 +44,7 @@ namespace Administration
             and sends a query to the database, which checks whether the given data exists in the database. */
             DBSystem.DBSystem.SelectFromDB(ds, "Users", "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name " +
                 "FROM dbo.Employee INNER JOIN dbo.Users ON dbo.Users.US_Employee=dbo.Employee.EM_Id_Employee INNER JOIN dbo.Position ON dbo.Employee.EM_Position = dbo.Position.PO_Id_Position " +
-                "WHERE US_Login = '" + login + "' AND US_Password = '" + password + "'");
+                "WHERE US_Login = '" + login + "' AND US_Password = '" + PasswordHasing.hashPassword(password) + "'");
 
             //Filling the DataTable dt with data from the table "Users"
             dt = ds.Tables["Users"];

@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="LoggedUser.cs" />
     <Compile Include="LogSys.cs" />
+    <Compile Include="PasswordHasing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -19,17 +19,22 @@
         h3{
             margin-left: 10px;
         }
+
         .jumptron{
             margin-top: 5%;
             border: solid;
             border-width: 2px;
             border-color: lightgray;
         }
-       #login{
-           margin-left: 35%;
+
+        #login{
+            margin-left: 35%;
             margin-bottom: 25px;
-       }
+        }
         
+        #Reset{
+            margin-left: 35%;
+        }
     </style>
 </head>
 <body>
