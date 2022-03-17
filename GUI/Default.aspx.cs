@@ -12,6 +12,7 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             CancelUnexpectedRePost();
 
             //Checking whether the user is already logged in

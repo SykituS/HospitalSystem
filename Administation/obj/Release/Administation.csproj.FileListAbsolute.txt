@@ -1,0 +1,8 @@
+F:\Projekty\Testowanie Oprogramowania\Administation\bin\Release\Administation.dll
+F:\Projekty\Testowanie Oprogramowania\Administation\bin\Release\Administation.pdb
+F:\Projekty\Testowanie Oprogramowania\Administation\bin\Release\DBSystem.dll
+F:\Projekty\Testowanie Oprogramowania\Administation\obj\Release\Administation.csproj.AssemblyReference.cache
+F:\Projekty\Testowanie Oprogramowania\Administation\obj\Release\Administation.csproj.CoreCompileInputs.cache
+F:\Projekty\Testowanie Oprogramowania\Administation\obj\Release\Administation.csproj.CopyComplete
+F:\Projekty\Testowanie Oprogramowania\Administation\obj\Release\Administation.dll
+F:\Projekty\Testowanie Oprogramowania\Administation\obj\Release\Administation.pdb

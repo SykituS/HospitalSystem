@@ -48,6 +48,7 @@
     <Compile Include="LogSys.cs" />
     <Compile Include="PasswordHasing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResetPassSys.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
