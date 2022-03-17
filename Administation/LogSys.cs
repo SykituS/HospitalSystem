@@ -33,7 +33,7 @@ namespace Administration
             DataTable dt = new DataTable();
 
             /*Function 'SelectFromDB' from the DBSystem.dll file
-            It sends the DataSet variable to the database, determines what the newly created table, containing user's login, password, email and position, should be called
+            It sends the DataTable variable to the database, determines what the newly created table, containing user's login, password, email and position, should be called
             and sends a query to the database, which checks whether the given data exists in the database. */
 
             string query = "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name " +
@@ -44,11 +44,6 @@ namespace Administration
             command.Parameters.AddWithValue("@Login", login);
             command.Parameters.AddWithValue("@Password", PasswordHasing.hashPassword(password));
             DBSystem.DBSystem.SelectFromDB(dt, command);
-            /*DBSystem.DBSystem.SelectFromDB(ds, "Users", "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name " +
-                "FROM dbo.Employee INNER JOIN dbo.Users ON dbo.Users.US_Employee=dbo.Employee.EM_Id_Employee INNER JOIN dbo.Position ON dbo.Employee.EM_Position = dbo.Position.PO_Id_Position " +
-                "WHERE US_Login = '" + login + "' AND US_Password = '" + PasswordHasing.hashPassword(password) + "'");*/
-
-            //Filling the DataTable dt with data from the table "Users"
 
             //Checking if DataTable dt contains any data, the lack of it means that the user being checked does not exist in the database
             if (dt.Rows.Count == 0)
