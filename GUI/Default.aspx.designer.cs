@@ -15,6 +15,15 @@ namespace GUI
     {
 
         /// <summary>
+        /// Kontrolka _repostcheckcode.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField _repostcheckcode;
+
+        /// <summary>
         /// Kontrolka LabelWarnings.
         /// </summary>
         /// <remarks>
@@ -58,5 +67,14 @@ namespace GUI
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnCancel;
+
+        /// <summary>
+        /// Kontrolka BtnResetPassword.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnResetPassword;
     }
 }
