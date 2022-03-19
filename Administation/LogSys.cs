@@ -8,13 +8,10 @@ namespace Administration
     public class LogSys
     {
 
-        //Creating a new user and storing it in the memory
-        static LoggedUser user = new LoggedUser();
-
         //Checking whether the user is logged in
         public static bool CheckIfLogged()
         {
-            if (!user.IsLogged)
+            if (!MySession.Current.IsLogged)
                 return false;
 
             return true;
@@ -23,7 +20,7 @@ namespace Administration
         //Logging the user out of the system
         public static void LogoutFromSystem()
         {
-            user.IsLogged = false;
+            MySession.Current.IsLogged = false;
         }
 
         //Logging the user into the system
@@ -42,7 +39,7 @@ namespace Administration
 
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@Login", login);
-            command.Parameters.AddWithValue("@Password", PasswordHasing.hashPassword(password));
+            command.Parameters.AddWithValue("@Password", PasswordHashing.hashPassword(password));
             DBSystem.DBSystem.SelectFromDB(dt, command);
 
             //Checking if DataTable dt contains any data, the lack of it means that the user being checked does not exist in the database
@@ -51,32 +48,36 @@ namespace Administration
 
             //Filling in user data
             foreach (DataRow dr in dt.Rows)
-                user.setData(login, password, dr["EM_Email"].ToString(), dr["PO_Name"].ToString());
+            {
+
+                MySession.Current.Login = login;
+                MySession.Current.Email = dr["EM_Email"].ToString();
+                MySession.Current.Position = dr["PO_Name"].ToString();
+            }
 
             //Changing the value of the variable that stores information about whether the user is logged in
-            user.IsLogged = true;
-
-            user.Attempt = 3;
+            MySession.Current.IsLogged = true;
+            MySession.Current.Attempt = 3;
         }
 
         public static string GetAttempText()
         {
-            if (user.Attempt <= 0)
+            if (MySession.Current.Attempt <= 0)
                 return "Too many incorrect attempts. Login has been blocked. Please try again in X minutes";
 
-            return "Wrong login or password! You have " + user.Attempt + " more attempts";
+            return "Wrong login or password! You have " + MySession.Current.Attempt + " more attempts";
         }
 
         public static string WrongAttempt()
         {
-            user.Attempt--;
+            MySession.Current.Attempt--;
 
             return GetAttempText();
         }
 
         public static bool CheckPosition()
         {
-            if (user.Position == "administrator")
+            if (MySession.Current.Position == "administrator")
                 return true;
 
             return false;
@@ -84,7 +85,7 @@ namespace Administration
 
         public static int GetAttempNumber()
         {
-            return user.Attempt;
+            return MySession.Current.Attempt;
         }
     }
 }

@@ -12,12 +12,17 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
             CancelUnexpectedRePost();
 
             //Checking whether the user is already logged in
-            if (LogSys.CheckIfLogged())
-                Response.Redirect("AdministratorPage.aspx");
+            if (Administation.MySession.Current.IsLogged)
+            {
+                if (LogSys.CheckPosition())
+                    Response.Redirect("AdministratorPage.aspx");
+
+                Response.Redirect("EmployeePage.aspx");
+            }
+
         }
 
         protected void BtnLogin_Click(object sender, EventArgs e)

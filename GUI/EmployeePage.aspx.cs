@@ -13,7 +13,7 @@ namespace GUI
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!LogSys.CheckIfLogged())
-                Response.Redirect("AdministratorPage.aspx");
+                Response.Redirect("Default.aspx");
         }
 
         protected void BtnLogout_Click(object sender, EventArgs e)

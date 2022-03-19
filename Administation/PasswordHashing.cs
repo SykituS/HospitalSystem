@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 
 namespace Administation
 {
-    public class PasswordHasing
+    public class PasswordHashing
     {
         public static string hashPassword(string password)
         {
