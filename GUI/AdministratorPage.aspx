@@ -5,7 +5,10 @@
     <div>
         <h1>You are logged as Administrator</h1>
         <br />
-        <asp:Button ID="BtnUserList" runat="server" Text="User List" />
+        <asp:Button ID="BtnUserList" runat="server" Text="User List" OnClick="BtnUserList_Click" />
+        <br />
+        <br />
+        <asp:Button ID="BtnEmpManage" runat="server" OnClick="BtnEmpManage_Click" Text="Employees Management" />
         <br />
         <br />
         <asp:Button ID="BtnLogout" runat="server" Text="Logout" OnClick="BtnLogout_Click" />

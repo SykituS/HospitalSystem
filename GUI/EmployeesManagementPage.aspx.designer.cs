@@ -11,34 +11,43 @@ namespace GUI
 {
 
 
-    public partial class AdministratorPage
+    public partial class EmployeesManagementPage
     {
 
         /// <summary>
-        /// Kontrolka BtnUserList.
+        /// Kontrolka DdlRoles.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnUserList;
+        protected global::System.Web.UI.WebControls.DropDownList DdlRoles;
 
         /// <summary>
-        /// Kontrolka BtnEmpManage.
+        /// Kontrolka DdlStatus.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnEmpManage;
+        protected global::System.Web.UI.WebControls.DropDownList DdlStatus;
 
         /// <summary>
-        /// Kontrolka BtnLogout.
+        /// Kontrolka GvEmployees.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnLogout;
+        protected global::System.Web.UI.WebControls.GridView GvEmployees;
+
+        /// <summary>
+        /// Kontrolka BtnAddEmployee.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnAddEmployee;
     }
 }

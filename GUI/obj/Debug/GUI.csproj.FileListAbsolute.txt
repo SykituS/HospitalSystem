@@ -76,3 +76,247 @@ F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.AssemblyReference
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.dll
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.pdb
+F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.dll.config
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.pdb
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csc.exe
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csc.exe.config
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csc.rsp
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csi.exe
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csi.exe.config
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csi.rsp
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.AppContext.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Console.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.Compression.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Net.Http.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.ValueTuple.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\vbc.exe
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\vbc.exe.config
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\vbc.rsp
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Administation.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Antlr3.Runtime.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Newtonsoft.Json.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\System.Web.Optimization.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\WebGrease.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\DBSystem.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Administation.pdb
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\System.Web.Optimization.xml
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Newtonsoft.Json.xml
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Antlr3.Runtime.pdb
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\pl\System.Web.Optimization.resources.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\pl\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.pdb
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\BusinessAdministration.dll
+C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\BusinessAdministration.pdb
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.dll.config
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.pdb
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csc.exe
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csc.exe.config
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csc.rsp
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csi.exe
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csi.exe.config
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csi.rsp
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.AppContext.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Collections.Immutable.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Console.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Globalization.Calendars.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.Compression.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.FileSystem.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Net.Http.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Net.Sockets.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Reflection.Metadata.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.ValueTuple.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.XPath.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\vbc.exe
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\vbc.exe.config
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\vbc.rsp
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\VBCSCompiler.exe
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\VBCSCompiler.exe.config
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Administation.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Antlr3.Runtime.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\AspNet.ScriptManager.bootstrap.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\AspNet.ScriptManager.jQuery.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\BusinessAdministration.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.AspNet.FriendlyUrls.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.ScriptManager.MSAjax.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.ScriptManager.WebForms.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.Web.Infrastructure.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Newtonsoft.Json.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\System.Web.Optimization.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\WebGrease.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\DBSystem.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Administation.pdb
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\BusinessAdministration.pdb
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\System.Web.Optimization.xml
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Newtonsoft.Json.xml
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Antlr3.Runtime.pdb
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.AspNet.FriendlyUrls.xml
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\pl\System.Web.Optimization.resources.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\pl\Microsoft.AspNet.FriendlyUrls.resources.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.CopyComplete
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.pdb
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.dll.config
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.pdb
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csc.exe
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csc.exe.config
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csc.rsp
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csi.exe
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csi.exe.config
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\csi.rsp
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.AppContext.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Console.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.Compression.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Net.Http.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Net.Sockets.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.ValueTuple.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.XPath.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\vbc.exe
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\vbc.exe.config
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\vbc.rsp
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\VBCSCompiler.exe
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Administation.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Antlr3.Runtime.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\BusinessAdministration.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Newtonsoft.Json.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\System.Web.Optimization.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\WebGrease.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\DBSystem.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Administation.pdb
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\BusinessAdministration.pdb
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\System.Web.Optimization.xml
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Newtonsoft.Json.xml
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Antlr3.Runtime.pdb
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\pl\System.Web.Optimization.resources.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\pl\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.dll
+C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.pdb

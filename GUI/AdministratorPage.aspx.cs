@@ -13,12 +13,22 @@ namespace GUI
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!LogSys.CheckIfLogged())
-                Response.Redirect("Default.aspx");
+                Response.Redirect("AdministratorPage.aspx");
         }
 
         protected void BtnLogout_Click(object sender, EventArgs e)
         {
             Response.Redirect("CancelationPage.aspx");
+        }
+
+        protected void BtnUserList_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void BtnEmpManage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EmployeesManagementPage.aspx");
         }
     }
 }

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Administation;
 
 namespace GUI
 {
@@ -17,7 +16,7 @@ namespace GUI
 
         protected void BtnOk_Click(object sender, EventArgs e)
         {
-            ResetPassSys.SendMail(TBLogin.Text.Trim(), TBEmail.Text.Trim());
+
         }
 
         protected void BtnCancel_Click(object sender, EventArgs e)

@@ -114,6 +114,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="EmployeePage.aspx" />
+    <Content Include="EmployeesManagementPage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="FormToResetPassPage.aspx" />
@@ -127,7 +128,6 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="ResetPassPage.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -193,6 +193,13 @@
     <Compile Include="EmployeePage.aspx.designer.cs">
       <DependentUpon>EmployeePage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EmployeesManagementPage.aspx.cs">
+      <DependentUpon>EmployeesManagementPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeesManagementPage.aspx.designer.cs">
+      <DependentUpon>EmployeesManagementPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FormToResetPassPage.aspx.cs">
       <DependentUpon>FormToResetPassPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -204,13 +211,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResetPassPage.aspx.cs">
-      <DependentUpon>ResetPassPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ResetPassPage.aspx.designer.cs">
-      <DependentUpon>ResetPassPage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -251,6 +251,10 @@
     <ProjectReference Include="..\Administation\Administation.csproj">
       <Project>{de75dffc-8f90-452e-9cd7-f9399667f15c}</Project>
       <Name>Administation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessAdministration\BusinessAdministration.csproj">
+      <Project>{94b76d6e-7174-4668-83f1-bb394b50e91e}</Project>
+      <Name>BusinessAdministration</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

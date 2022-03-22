@@ -12,28 +12,15 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            BtnCancel.Attributes.Add("OnClick", "window.close();");
-            //CancelUnexpectedRePost();
-            if (!this.IsPostBack)
-            {
-                CancelUnexpectedRePost();
-            }
+            CancelUnexpectedRePost();
 
             //Checking whether the user is already logged in
-            if (Administation.MySession.Current.IsLogged)
-            {
-                if (LogSys.CheckPosition())
-                    Response.Redirect("AdministratorPage.aspx");
-
-                Response.Redirect("EmployeePage.aspx");
-            }
-
+            if (LogSys.CheckIfLogged())
+                Response.Redirect("AdministratorPage.aspx");
         }
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
-            CancelUnexpectedRePost();
-
             //Starting the login process 
             LogSys.LoginToSystem(TBLogin.Text, TBPassword.Text);
 
@@ -52,12 +39,9 @@ namespace GUI
 
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
-            
-        }
-        protected void BtnResetPassword_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("FormToResetPassPage.aspx");
-
+            //Cancelling the process of logging in
+            TBLogin.Text = "";
+            TBPassword.Text = "";
         }
 
         private void CancelUnexpectedRePost()
@@ -70,22 +54,23 @@ namespace GUI
 
             string clientCode = _repostcheckcode.Value;
 
-            //Get Server Code from session (Or Empty if null)
             string serverCode = Session["_repostcheckcode"] as string;
 
             if (!IsPostBack || clientCode.Equals(serverCode))
             {
-                //Codes are equals - The action was initiated by the user
-                //Save new code (Can use simple counter instead Guid)
                 string code = Guid.NewGuid().ToString();
                 _repostcheckcode.Value = code;
                 Session["_repostcheckcode"] = code;
             } else
             {
-                //Unexpected action - caused by F5 (Refresh) button
                 Response.Redirect(Request.Url.AbsoluteUri);
             }
         }
 
+        protected void BtnResetPassword_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FormToResetPassPage.aspx");
+
+        }
     }
 }
