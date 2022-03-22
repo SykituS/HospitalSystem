@@ -45,7 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LoggedUser.cs" />
     <Compile Include="LogSys.cs" />
     <Compile Include="MySession.cs" />
     <Compile Include="PasswordHashing.cs" />

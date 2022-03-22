@@ -49,7 +49,6 @@ namespace Administration
             //Filling in user data
             foreach (DataRow dr in dt.Rows)
             {
-
                 MySession.Current.Login = login;
                 MySession.Current.Email = dr["EM_Email"].ToString();
                 MySession.Current.Position = dr["PO_Name"].ToString();
