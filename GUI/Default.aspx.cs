@@ -55,6 +55,8 @@ namespace GUI
                 MySession.Current.Attempt = attempt;
                 LabelWarnings.Text = LogSys.GetAttempTextTry();
                 BtnLogin.Enabled = false;
+                TBPassword.Enabled = false;
+                TBLogin.Enabled = false;
                 Session["Timer"] = DateTime.Now.AddMinutes(1).ToString();
                 LabelWarnings.Visible = false;
             }
@@ -107,10 +109,10 @@ namespace GUI
                 int seconds = (Int32)(DateTime.Parse(Session["Timer"].ToString()).Subtract(DateTime.Now).TotalSeconds + 0.5);
                 if (seconds >= 0)
                 {
-                    string textTime = string.Format(" {0} Minute {1} Seconds", seconds / 60, seconds % 60);
+                    string textTime = string.Format(" {0}m {1}s", seconds / 60, seconds % 60);
                     LabelWarnings.Text = LogSys.GetAttempTextBlock(textTime);
                     litMsg.Text = LogSys.GetAttempTextBlock(textTime);
-                    
+
                 }
                 else
                 {
@@ -119,6 +121,8 @@ namespace GUI
                     MySession.Current.Attempt = 3;
 
                     BtnLogin.Enabled = true;
+                    TBPassword.Enabled = true;
+                    TBLogin.Enabled = true;
                     Response.Redirect(Request.Url.AbsoluteUri);
 
                 }
