@@ -22,9 +22,7 @@ C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\BusinessAdministratio
 C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.dll
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
-F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\Administation.dll
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\DBSystem.dll
-F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\Administation.pdb
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.AssemblyReference.cache
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete

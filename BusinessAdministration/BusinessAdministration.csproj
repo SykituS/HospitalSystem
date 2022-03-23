@@ -49,11 +49,5 @@
     <Compile Include="EmployeesManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Administation\Administration.csproj">
-      <Project>{DE75DFFC-8F90-452E-9CD7-F9399667F15C}</Project>
-      <Name>Administration</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
