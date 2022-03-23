@@ -1,7 +1,6 @@
 ﻿using Administation;
 using System.Data;
 using System.Data.SqlClient;
-
 //Class that contains functions for logging into the system
 namespace Administration
 {
@@ -59,19 +58,21 @@ namespace Administration
             MySession.Current.Attempt = 3;
         }
 
-        public static string GetAttempText()
+        public static string GetAttempTextTry()
         {
-            if (MySession.Current.Attempt <= 0)
-                return "Too many incorrect attempts. Login has been blocked. Please try again in X minutes";
-
             return "Wrong login or password! You have " + MySession.Current.Attempt + " more attempts";
+        }
+
+        public static string GetAttempTextBlock(string timeText)
+        {
+            return "Too many incorrect attempts. Login has been blocked. Please try again in " + timeText;
         }
 
         public static string WrongAttempt()
         {
             MySession.Current.Attempt--;
 
-            return GetAttempText();
+            return GetAttempTextTry();
         }
 
         public static bool CheckPosition()

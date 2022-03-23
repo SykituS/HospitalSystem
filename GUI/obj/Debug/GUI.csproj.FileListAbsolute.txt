@@ -76,7 +76,6 @@ F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.AssemblyReference
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.dll
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.pdb
-F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.dll.config
 C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.dll
 C:\Users\UL0253585\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.pdb
@@ -320,3 +319,5 @@ C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csp
 C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.dll
 C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.pdb
+F:\Projekty\Testowanie Oprogramowania\GUI\bin\BusinessAdministration.dll
+F:\Projekty\Testowanie Oprogramowania\GUI\bin\BusinessAdministration.pdb

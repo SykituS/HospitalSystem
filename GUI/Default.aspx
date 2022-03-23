@@ -5,7 +5,22 @@
         
       <h3>Sign in</h3> 
         <br />
+
        <div id="login">
+        <div>
+         <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick" ></asp:Timer>
+        
+           <asp:UpdatePanel ID="update" runat="server" Mode="Conditional">
+               <ContentTemplate>
+                 
+                   <asp:Literal ID="litMsg" runat="server"></asp:Literal>
+               </ContentTemplate>
+               <Triggers>
+                   <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="tick" />
+               </Triggers>
+           </asp:UpdatePanel> 
+        </div>
+
         <asp:Label ID="LabelWarnings" runat="server" ForeColor="Red" Text="Waringin placeholder" Visible="False"></asp:Label><br />
         Login  <br />
         <asp:TextBox ID="TBLogin" runat="server"></asp:TextBox>

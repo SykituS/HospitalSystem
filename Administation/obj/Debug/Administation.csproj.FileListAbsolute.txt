@@ -13,3 +13,4 @@ C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\obj\Debug\Ad
 C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\obj\Debug\Administation.csproj.CopyComplete
 C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\obj\Debug\Administation.dll
 C:\Users\Hubik\Source\Repos\Testowanie Oprogramowania\Administation\obj\Debug\Administation.pdb
+F:\Projekty\Testowanie Oprogramowania\Administation\obj\Debug\Administation.csproj.CopyComplete
