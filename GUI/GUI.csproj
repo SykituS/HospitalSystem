@@ -248,9 +248,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Administation\Administation.csproj">
+    <ProjectReference Include="..\Administation\Administration.csproj">
       <Project>{de75dffc-8f90-452e-9cd7-f9399667f15c}</Project>
-      <Name>Administation</Name>
+      <Name>Administration</Name>
     </ProjectReference>
     <ProjectReference Include="..\BusinessAdministration\BusinessAdministration.csproj">
       <Project>{94b76d6e-7174-4668-83f1-bb394b50e91e}</Project>

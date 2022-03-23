@@ -1,5 +1,4 @@
-﻿using Administation;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 //Class that contains functions for logging into the system
 namespace Administration

@@ -1,4 +1,4 @@
-﻿using Administation;
+﻿using Administration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Data;
 using System.Net;
 using System.Net.Mail;
 
-namespace Administation
+namespace Administration
 {
     public class ResetPassSys
     {
