@@ -63,14 +63,11 @@ namespace GUI
 
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
-            //Cancelling the process of logging in
-            TBLogin.Text = "";
-            TBPassword.Text = "";
+            this.ClientScript.RegisterClientScriptBlock(this.GetType(), "Close", "window.close()", true);
         }
         protected void BtnResetPassword_Click(object sender, EventArgs e)
         {
             Response.Redirect("FormToResetPassPage.aspx");
-
         }
 
         private void CancelUnexpectedRePost()

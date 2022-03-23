@@ -402,4 +402,3 @@ C:\Users\Rtoir\source\repos\Testowanie Oprogramowania2303\GUI\obj\Debug\GUI.cspr
 C:\Users\Rtoir\source\repos\Testowanie Oprogramowania2303\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\Rtoir\source\repos\Testowanie Oprogramowania2303\GUI\obj\Debug\GUI.dll
 C:\Users\Rtoir\source\repos\Testowanie Oprogramowania2303\GUI\obj\Debug\GUI.pdb
-F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CopyComplete
