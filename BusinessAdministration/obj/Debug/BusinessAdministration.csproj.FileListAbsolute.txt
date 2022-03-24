@@ -38,3 +38,11 @@ C:\Users\Rtoir\source\repos\Testowanie Oprogramowania2303\BusinessAdministration
 C:\Users\Rtoir\source\repos\Testowanie Oprogramowania2303\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
 C:\Users\Rtoir\source\repos\Testowanie Oprogramowania2303\BusinessAdministration\obj\Debug\BusinessAdministration.dll
 C:\Users\Rtoir\source\repos\Testowanie Oprogramowania2303\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
+C:\Users\Rtoir\Source\Repos\Testowanie Oprogramowania24032022\BusinessAdministration\bin\Debug\BusinessAdministration.dll
+C:\Users\Rtoir\Source\Repos\Testowanie Oprogramowania24032022\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
+C:\Users\Rtoir\Source\Repos\Testowanie Oprogramowania24032022\BusinessAdministration\bin\Debug\DBSystem.dll
+C:\Users\Rtoir\Source\Repos\Testowanie Oprogramowania24032022\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
+C:\Users\Rtoir\Source\Repos\Testowanie Oprogramowania24032022\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
+C:\Users\Rtoir\Source\Repos\Testowanie Oprogramowania24032022\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+C:\Users\Rtoir\Source\Repos\Testowanie Oprogramowania24032022\BusinessAdministration\obj\Debug\BusinessAdministration.dll
+C:\Users\Rtoir\Source\Repos\Testowanie Oprogramowania24032022\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
