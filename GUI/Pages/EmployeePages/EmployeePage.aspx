@@ -9,7 +9,7 @@
         <asp:Button ID="BtnUserList" runat="server" Text="View calendar" />
         <br />
         <br />
-        <asp:Button ID="BtnDoctorPage" runat="server" Text="Doctor Page (place holder)" OnClick="BtnDoctorPage_Click" />
+        <asp:Button ID="BtnDoctorPage" runat="server" Text="Doctor Page (Appoiment View)" OnClick="BtnDoctorPage_Click" />
         <br />
         <br />
         <asp:Button ID="BtnLogout" runat="server" Text="Logout" OnClick="BtnLogout_Click" />
