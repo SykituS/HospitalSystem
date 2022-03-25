@@ -12,7 +12,6 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            BtnCancel.Attributes.Add("OnClick", "window.close()");
 
             if (!this.IsPostBack)
             {
@@ -21,7 +20,12 @@ namespace GUI
 
             //Checking whether the user is already logged in
             if (LogSys.CheckIfLogged())
-                Response.Redirect("AdministratorPage.aspx");
+            {
+                if (LogSys.CheckPosition())
+                    Response.Redirect("~/Pages/AdministratorPages/AdministratorPage");
+
+                Response.Redirect("~/Pages/EmployeePages/EmployeePage");
+            }
         }
 
         protected void BtnLogin_Click(object sender, EventArgs e)
@@ -34,9 +38,9 @@ namespace GUI
             if (LogSys.CheckIfLogged())
             {
                 if (LogSys.CheckPosition())
-                    Response.Redirect("AdministratorPage.aspx");
+                    Response.Redirect("~/Pages/AdministratorPages/AdministratorPage");
 
-                Response.Redirect("EmployeePage.aspx");
+                Response.Redirect("~/Pages/EmployeePages/EmployeePage");
             }
 
             int attempt = MySession.Current.Attempt;
@@ -61,10 +65,6 @@ namespace GUI
             }
         }
 
-        protected void BtnCancel_Click(object sender, EventArgs e)
-        {
-            this.ClientScript.RegisterClientScriptBlock(this.GetType(), "Close", "window.close()", true);
-        }
         protected void BtnResetPassword_Click(object sender, EventArgs e)
         {
             Response.Redirect("FormToResetPassPage.aspx");

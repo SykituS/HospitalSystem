@@ -35,6 +35,18 @@ namespace BusinessAdministration
             return dt;
         }
 
+        public static DataTable LoadEmpDetails(string employeeId)
+        {
+            DataTable dt = new DataTable();
+            string cmd = "SELECT EM_Name, EM_Surname, EM_Email, EM_Pesel, EM_Date_of_birth, EM_Correspondence_address, EM_Phone_number, Sx_Sex FROM dbo.Employee INNER JOIN dbo.Sex ON EM_Id_Sex = Sx_Id_Status WHERE EM_Id_Employee = @Id";
+            SqlCommand query = new SqlCommand(cmd);
+            query.Parameters.AddWithValue("@Id", employeeId);
+
+            DBSystem.DBSystem.SelectFromDB(dt, query);
+
+            return dt;
+        }
+
         public static DataView FilterDataView(DropDownList ddlRole, DropDownList ddlStatus)
         {
             DataView dv = new DataView(LoadEmps());

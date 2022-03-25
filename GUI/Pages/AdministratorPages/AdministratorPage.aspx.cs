@@ -12,13 +12,14 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Preventing non logged user to get to this site
             if (!LogSys.CheckIfLogged())
-                Response.Redirect("AdministratorPage.aspx");
+                Response.Redirect("~/Pages/MainPages/Default");
         }
 
         protected void BtnLogout_Click(object sender, EventArgs e)
         {
-            Response.Redirect("CancelationPage.aspx");
+            Response.Redirect("~/Pages/MainPages/CancelationPage");
         }
 
         protected void BtnUserList_Click(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace GUI
 
         protected void BtnEmpManage_Click(object sender, EventArgs e)
         {
-            Response.Redirect("EmployeesManagementPage.aspx");
+            Response.Redirect("EmployeeManagement/EmployeesManagementPage");
         }
     }
 }

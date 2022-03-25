@@ -15,6 +15,15 @@ namespace GUI
     {
 
         /// <summary>
+        /// Kontrolka LabelPostion.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelPostion;
+
+        /// <summary>
         /// Kontrolka BtnUserList.
         /// </summary>
         /// <remarks>
@@ -22,6 +31,15 @@ namespace GUI
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnUserList;
+
+        /// <summary>
+        /// Kontrolka BtnDoctorPage.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnDoctorPage;
 
         /// <summary>
         /// Kontrolka BtnLogout.

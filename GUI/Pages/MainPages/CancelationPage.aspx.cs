@@ -18,15 +18,15 @@ namespace GUI
         protected void BtnOk_Click(object sender, EventArgs e)
         {
             LogSys.LogoutFromSystem();
-            Response.Redirect("Default.aspx");
+            Response.Redirect("Default");
         }
 
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
             if (LogSys.CheckPosition())
-                Response.Redirect("AdministratorPage.aspx");
+                Response.Redirect("~/Pages/AdministratorPages/AdministratorPage");
 
-            Response.Redirect("EmployeePage.aspx");
+            Response.Redirect("~/Pages/EmployeePages/EmployeePage");
 
         }
     }

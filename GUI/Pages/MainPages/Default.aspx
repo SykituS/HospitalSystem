@@ -32,7 +32,7 @@
 
         <asp:Button ID="BtnLogin" runat="server" OnClick="BtnLogin_Click" Text="Login" />
         
-        <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
+        <asp:Button ID="BtnCancel" runat="server" Text="Cancel" OnClientClick="window.close(); return false" />
        </div>
 
         <div id="Reset">

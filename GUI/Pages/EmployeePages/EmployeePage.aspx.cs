@@ -12,13 +12,21 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Preventing non logged user to get to this site
             if (!LogSys.CheckIfLogged())
-                Response.Redirect("AdministratorPage.aspx");
+                Response.Redirect("~/Pages/MainPages/Default");
+
+            LabelPostion.Text = "<h1>You are logged as " + MySession.Current.Position + " </h1>";
         }
 
         protected void BtnLogout_Click(object sender, EventArgs e)
         {
-            Response.Redirect("CancelationPage.aspx");
+            Response.Redirect("~/Pages/MainPages/CancelationPage");
+        }
+
+        protected void BtnDoctorPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DoctorsPages/DoctorPage");
         }
     }
 }

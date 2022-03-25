@@ -135,10 +135,10 @@ input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
     position: relative;
-    top: -5px;
+    top: 0px;
     left: 2px;
-    height: 36px;
-    width: 192px;
+    height: 31px;
+    width: 150px;
 }
 button[disabled],
 html input[disabled] {

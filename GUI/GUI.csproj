@@ -105,19 +105,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdministratorPage.aspx" />
-    <Content Include="CancelationPage.aspx" />
+    <Content Include="Pages\AdministratorPages\AdministratorPage.aspx" />
+    <Content Include="Pages\MainPages\CancelationPage.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Default.aspx" />
-    <Content Include="EmployeePage.aspx" />
-    <Content Include="EmployeesManagementPage.aspx" />
+    <Content Include="Pages\MainPages\Default.aspx" />
+    <Content Include="Pages\EmployeePages\DoctorsPages\DoctorPage.aspx" />
+    <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeAddPage.aspx" />
+    <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx" />
+    <Content Include="Pages\EmployeePages\EmployeePage.aspx" />
+    <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeesManagementPage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="FormToResetPassPage.aspx" />
+    <Content Include="Pages\MainPages\FormToResetPassPage.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -128,6 +131,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Pages\MainPages\ResetPassPage.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -157,58 +161,87 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="Style.css" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdministratorPage.aspx.cs">
+    <Compile Include="Pages\AdministratorPages\AdministratorPage.aspx.cs">
       <DependentUpon>AdministratorPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AdministratorPage.aspx.designer.cs">
+    <Compile Include="Pages\AdministratorPages\AdministratorPage.aspx.designer.cs">
       <DependentUpon>AdministratorPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="CancelationPage.aspx.cs">
+    <Compile Include="Pages\MainPages\CancelationPage.aspx.cs">
       <DependentUpon>CancelationPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CancelationPage.aspx.designer.cs">
+    <Compile Include="Pages\MainPages\CancelationPage.aspx.designer.cs">
       <DependentUpon>CancelationPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="Pages\MainPages\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="Pages\MainPages\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EmployeePage.aspx.cs">
+    <Compile Include="Pages\EmployeePages\DoctorsPages\DoctorPage.aspx.cs">
+      <DependentUpon>DoctorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\EmployeePages\DoctorsPages\DoctorPage.aspx.designer.cs">
+      <DependentUpon>DoctorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeAddPage.aspx.cs">
+      <DependentUpon>EmployeeAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeAddPage.aspx.designer.cs">
+      <DependentUpon>EmployeeAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx.cs">
+      <DependentUpon>EmployeeDetailsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx.designer.cs">
+      <DependentUpon>EmployeeDetailsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EmployeePages\EmployeePage.aspx.cs">
       <DependentUpon>EmployeePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EmployeePage.aspx.designer.cs">
+    <Compile Include="Pages\EmployeePages\EmployeePage.aspx.designer.cs">
       <DependentUpon>EmployeePage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EmployeesManagementPage.aspx.cs">
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeesManagementPage.aspx.cs">
       <DependentUpon>EmployeesManagementPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EmployeesManagementPage.aspx.designer.cs">
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeesManagementPage.aspx.designer.cs">
       <DependentUpon>EmployeesManagementPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FormToResetPassPage.aspx.cs">
+    <Compile Include="Pages\MainPages\FormToResetPassPage.aspx.cs">
       <DependentUpon>FormToResetPassPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="FormToResetPassPage.aspx.designer.cs">
+    <Compile Include="Pages\MainPages\FormToResetPassPage.aspx.designer.cs">
       <DependentUpon>FormToResetPassPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainPages\ResetPassPage.aspx.cs">
+      <DependentUpon>ResetPassPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MainPages\ResetPassPage.aspx.designer.cs">
+      <DependentUpon>ResetPassPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -250,11 +283,15 @@
   <ItemGroup>
     <ProjectReference Include="..\Administration\Administration.csproj">
       <Project>{de75dffc-8f90-452e-9cd7-f9399667f15c}</Project>
-      <Name>Administration</Name>
+      <Name>Administation</Name>
     </ProjectReference>
     <ProjectReference Include="..\BusinessAdministration\BusinessAdministration.csproj">
       <Project>{94b76d6e-7174-4668-83f1-bb394b50e91e}</Project>
       <Name>BusinessAdministration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Doctor\Doctor.csproj">
+      <Project>{7b6eaba8-ee07-4da3-aceb-5ef91b59ee2b}</Project>
+      <Name>Doctor</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
