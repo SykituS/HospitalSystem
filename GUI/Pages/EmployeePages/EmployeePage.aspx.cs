@@ -16,6 +16,7 @@ namespace GUI
             if (!LogSys.CheckIfLogged())
                 Response.Redirect("~/Pages/MainPages/Default");
 
+            //Dynamic label that show postion of logged employee
             LabelPostion.Text = "<h1>You are logged as " + MySession.Current.Position + " </h1>";
         }
 
