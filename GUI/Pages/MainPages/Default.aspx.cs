@@ -12,11 +12,9 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //Sprawdzenie czy strona nie została odświeżona
             if (!this.IsPostBack)
-            {
                 CancelUnexpectedRePost();
-            }
 
             //Checking whether the user is already logged in
             if (LogSys.CheckIfLogged())
@@ -30,7 +28,9 @@ namespace GUI
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
+            //Anuluj skutki uboczne odświeżenia strony
             CancelUnexpectedRePost();
+
             //Starting the login process 
             LogSys.LoginToSystem(TBLogin.Text, TBPassword.Text);
 
@@ -50,7 +50,6 @@ namespace GUI
                 MySession.Current.Attempt = attempt;
                 LabelWarnings.Visible = true;
                 LabelWarnings.Text = LogSys.GetAttempTextTry();
-
             }
             else
             {
@@ -67,6 +66,7 @@ namespace GUI
 
         protected void BtnResetPassword_Click(object sender, EventArgs e)
         {
+            //Przenieisienie do strony z prośbą o aplikowanie o zmianę hasła
             Response.Redirect("FormToResetPassPage.aspx");
         }
 
@@ -79,14 +79,23 @@ namespace GUI
                 LabelWarnings.Visible = true;
                 LabelWarnings.Text = LogSys.GetAttempTextTry();
             }
+            /*  Funkcja która zapobiega efektom ubocznym odświeżenia strony
+             *  Przy pierwszym uruchomieniu client code jak i server code przy tworzeniu są puste
+             *  Fukcja Guid tworzy nowy "rejestr" strony
+            */
+
 
             string clientCode = _repostcheckcode.Value;
 
             string serverCode = Session["_repostcheckcode"] as string;
 
+            //Sprawdż czy strona nie została odświeżona lub czy string clientCode jest równy stringowi serverCode
             if (!IsPostBack || clientCode.Equals(serverCode))
             {
-                string code = Guid.NewGuid().ToString();
+                //Utwórz stringa z aktualnym rejestrem strony
+                string code = Guid.NewGuid().ToString(); 
+
+                //Zapisz tego stringa w wartościach poniżej
                 _repostcheckcode.Value = code;
                 Session["_repostcheckcode"] = code;
             }
