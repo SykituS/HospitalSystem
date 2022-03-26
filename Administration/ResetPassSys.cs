@@ -13,10 +13,11 @@ namespace Administration
 {
     public class ResetPassSys
     {
-        public static void SendMail(string login, string email)
+        public static void SendMail(string login, string email, string result)
         {
-            /*DataTable dt = new DataTable();
+            DataTable dt = new DataTable();
 
+            //login, email, password change status, link active time
             string query = "";
 
             SqlCommand command = new SqlCommand(query);
@@ -25,7 +26,15 @@ namespace Administration
             DBSystem.DBSystem.SelectFromDB(dt, command);
 
             if (dt.Rows.Count == 0)
-                return;*/
+            {
+                result = "Wrong login or email";
+                return;
+            }
+
+            //if (CheckStatus(dt))
+            //{
+
+            //}
 
             EmailSending(login, email);
 
@@ -36,7 +45,7 @@ namespace Administration
             StringBuilder sb = new StringBuilder();
 
             sb.Append("Hi, <br /> Click on link to reset your password <br />");
-            sb.Append("<a href=http://localhost:44356/Pages/MainPage/ResetPassPage?username=" + login);
+            sb.Append("<a href=https://localhost:44356/Pages/MainPages/ResetPassPage?login=" + login);
             sb.Append("&email=" + email + "> Click here to change your password</a><br />");
 
             MailMessage message = new MailMessage("medicalcliniceksoc@gmail.com", email.Trim(), "Password reset", sb.ToString());
@@ -51,21 +60,23 @@ namespace Administration
             smtp.Send(message);
         }
 
-        private static string GetUserEmail(string email)
+        private static bool CheckStatus(DataTable dt, string result)
         {
-           // DataTable dt = new DataTable();
+            foreach (DataRow dr in dt.Rows)
+            {
+                if ((bool)dr["inVerivication"])
+                {
+                    result = "user is in change password state";
+                    return true;
+                }
 
-            //string query = "";
-            //SqlCommand command = new SqlCommand(query);
-            //command.Parameters.AddWithValue("@email", email);
-            //DBSystem.DBSystem.SelectFromDB(dt, command);
-
-            string username = "matxx29@gmail.com";
-
-            //foreach (DataRow dr in dt.Rows)
-                //username = dr["EM_Email"].ToString();
-
-            return username;
+                if (DateTime.Now < (DateTime)dr["urlDate"])
+                {
+                    result = "user is in change password state";
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

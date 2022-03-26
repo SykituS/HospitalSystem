@@ -17,7 +17,8 @@ namespace GUI
 
         protected void BtnOk_Click(object sender, EventArgs e)
         {
-            ResetPassSys.SendMail(TBLogin.Text, TBEmail.Text);
+            string result = "";
+            ResetPassSys.SendMail(TBLogin.Text, TBEmail.Text, result);
             LabelSendInfo.Text = "Email został wysłany";
         }
 

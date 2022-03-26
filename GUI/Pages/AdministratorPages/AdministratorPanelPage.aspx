@@ -3,6 +3,9 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div style="margin-top:15px">
+        <asp:Button ID="BtnSettings" runat="server" Text="Settings" OnClick="BtnSettings_Click" />
+        <br />
+        <br />
         <asp:Button ID="BtnUserList" runat="server" Text="User List" OnClick="BtnUserList_Click" />
         <br />
         <br />

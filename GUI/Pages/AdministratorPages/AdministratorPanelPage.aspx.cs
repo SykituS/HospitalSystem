@@ -32,5 +32,10 @@ namespace GUI
         {
             Response.Redirect("EmployeeManagement/EmployeesManagementPage");
         }
+
+        protected void BtnSettings_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("SettingPanelPage");
+        }
     }
 }
