@@ -325,3 +325,4 @@ F:\Projekty\Testowanie Oprogramowania\GUI\bin\BusinessAdministration.pdb
 F:\Projekty\Testowanie Oprogramowania\GUI\bin\Doctor.pdb
 F:\Projekty\Testowanie Oprogramowania\GUI\bin\Reception.dll
 F:\Projekty\Testowanie Oprogramowania\GUI\bin\Reception.pdb
+F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CopyComplete

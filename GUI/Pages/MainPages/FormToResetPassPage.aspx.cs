@@ -19,13 +19,12 @@ namespace GUI
         {
             string result = "";
             ResetPassSys.SendMail(TBLogin.Text, TBEmail.Text, result);
-            LabelSendInfo.Text = "Email został wysłany";
+            LabelSendInfo.Text = result;
         }
 
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
                 Response.Redirect("Default.aspx");
-
         }
     }
 }

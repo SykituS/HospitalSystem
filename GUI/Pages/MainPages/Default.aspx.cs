@@ -12,6 +12,7 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             //Checking whether the page has not been refreshed
             if (!this.IsPostBack)
                 CancelUnexpectedRePost();

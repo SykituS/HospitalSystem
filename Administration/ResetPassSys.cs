@@ -18,7 +18,9 @@ namespace Administration
             DataTable dt = new DataTable();
 
             //login, email, password change status, link active time
-            string query = "";
+            string query = "SELECT US_login, EM_Email, US_isDuringReset, US_PassResetActiveTime from dbo.users " +
+                "inner join dbo.Employee on Us_employee = EM_Id_Employee " +
+                "WHERE US_Login = @Login AND EM_Email = @Email";
 
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@Login", login);
@@ -31,13 +33,15 @@ namespace Administration
                 return;
             }
 
-            //if (CheckStatus(dt))
-            //{
-
-            //}
+            //if true stop process
+            if (CheckStatus(dt))
+            {
+                result = "User has alredy applyed for password change";
+                return;
+            }
 
             EmailSending(login, email);
-
+            result = "Email has been send!";
         }
 
         private static void EmailSending(string login, string email)
@@ -60,23 +64,23 @@ namespace Administration
             smtp.Send(message);
         }
 
-        private static bool CheckStatus(DataTable dt, string result)
+        private static bool CheckStatus(DataTable dt)
         {
             foreach (DataRow dr in dt.Rows)
             {
-                if ((bool)dr["inVerivication"])
-                {
-                    result = "user is in change password state";
-                    return true;
-                }
+                if (!(bool)dr["US_isDuringReset"])
+                    return false;
 
-                if (DateTime.Now < (DateTime)dr["urlDate"])
-                {
-                    result = "user is in change password state";
-                    return true;
-                }
+                if (DateTime.Now > (DateTime)dr["US_PassResetActiveTime"])
+                    return false;
             }
-            return false;
+            return true;
+        }
+
+        private static DateTime UrlActiveTime()
+        {
+            DateTime time = DateTime.Now.AddMinutes(15);
+            return time;
         }
     }
 }
