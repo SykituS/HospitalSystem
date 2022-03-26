@@ -6,9 +6,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GUI
+namespace GUI.Pages.PateintManagementStaffPages
 {
-    public partial class AdministratorPage : System.Web.UI.Page
+    public partial class PatientManagementPanelPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,16 +20,6 @@ namespace GUI
         protected void BtnLogout_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Pages/MainPages/CancelationPage");
-        }
-
-        protected void BtnUserList_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void BtnEmpManage_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("EmployeeManagement/EmployeesManagementPage");
         }
     }
 }

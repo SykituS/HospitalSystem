@@ -6,18 +6,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace GUI
+namespace GUI.Pages.MedicalStaffMemberPages
 {
-    public partial class EmployeePage : System.Web.UI.Page
+    public partial class MedicalStaffPanelPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             //Preventing non logged user to get to this site
             if (!LogSys.CheckIfLogged())
                 Response.Redirect("~/Pages/MainPages/Default");
-
-            //Dynamic label that show postion of logged employee
-            LabelPostion.Text = "<h1>You are logged as " + MySession.Current.Position + " </h1>";
         }
 
         protected void BtnLogout_Click(object sender, EventArgs e)
@@ -25,9 +22,9 @@ namespace GUI
             Response.Redirect("~/Pages/MainPages/CancelationPage");
         }
 
-        protected void BtnDoctorPage_Click(object sender, EventArgs e)
+        protected void BtnPatientList_Click(object sender, EventArgs e)
         {
-            Response.Redirect("DoctorsPages/DoctorPage");
+            Response.Redirect("PatientList");
         }
     }
 }

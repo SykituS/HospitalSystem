@@ -1,0 +1,16 @@
+C:\Users\marys\OneDrive\Pulpit\TestowanieOprogramowaniaGlowny (1)\Reception\bin\Debug\Reception.dll
+C:\Users\marys\OneDrive\Pulpit\TestowanieOprogramowaniaGlowny (1)\Reception\bin\Debug\Reception.pdb
+C:\Users\marys\OneDrive\Pulpit\TestowanieOprogramowaniaGlowny (1)\Reception\bin\Debug\DBSystem.dll
+C:\Users\marys\OneDrive\Pulpit\TestowanieOprogramowaniaGlowny (1)\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
+C:\Users\marys\OneDrive\Pulpit\TestowanieOprogramowaniaGlowny (1)\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+C:\Users\marys\OneDrive\Pulpit\TestowanieOprogramowaniaGlowny (1)\Reception\obj\Debug\Reception.csproj.CopyComplete
+C:\Users\marys\OneDrive\Pulpit\TestowanieOprogramowaniaGlowny (1)\Reception\obj\Debug\Reception.dll
+C:\Users\marys\OneDrive\Pulpit\TestowanieOprogramowaniaGlowny (1)\Reception\obj\Debug\Reception.pdb
+F:\Projekty\Testowanie Oprogramowania\Reception\bin\Debug\Reception.dll
+F:\Projekty\Testowanie Oprogramowania\Reception\bin\Debug\Reception.pdb
+F:\Projekty\Testowanie Oprogramowania\Reception\bin\Debug\DBSystem.dll
+F:\Projekty\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
+F:\Projekty\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+F:\Projekty\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.CopyComplete
+F:\Projekty\Testowanie Oprogramowania\Reception\obj\Debug\Reception.dll
+F:\Projekty\Testowanie Oprogramowania\Reception\obj\Debug\Reception.pdb

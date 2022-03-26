@@ -67,7 +67,7 @@ namespace GUI
         protected void BtnBackToMain_Click(object sender, EventArgs e)
         {
             //Button which returns to the main page
-            Response.Redirect("~/Pages/AdministratorPages/AdministratorPage");
+            Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
         }
     }
 }

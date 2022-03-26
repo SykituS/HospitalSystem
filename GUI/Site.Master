@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - Moja aplikacja platformy ASP.NET</title>
+    <title><%: Page.Title %>- Moja aplikacja platformy ASP.NET</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -62,6 +62,7 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                     <a class="navbar-brand" runat="server" >Medical Clinic</a>
+                    <asp:Label ID="LabelPositionMasterInfo" runat="server" Text="Label" style="float:right; margin-right:35px; margin-top:25px; color:aqua;"></asp:Label>
             </div>
         </div>
         <div class="container body-content">
@@ -69,7 +70,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Medical Clinic</p>
+                <p>&copy; <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>- Medical Clinic</p>
             </footer>
         </div>
 

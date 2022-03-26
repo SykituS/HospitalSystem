@@ -15,7 +15,7 @@ namespace Administration
     {
         public static void SendMail(string login, string email)
         {
-            DataTable dt = new DataTable();
+            /*DataTable dt = new DataTable();
 
             string query = "";
 
@@ -25,26 +25,26 @@ namespace Administration
             DBSystem.DBSystem.SelectFromDB(dt, command);
 
             if (dt.Rows.Count == 0)
-                return;
+                return;*/
 
-            EmailSending(email);
+            EmailSending(login, email);
 
         }
 
-        private static void EmailSending(string email)
+        private static void EmailSending(string login, string email)
         {
             StringBuilder sb = new StringBuilder();
 
             sb.Append("Hi, <br /> Click on link to reset your password <br />");
-            sb.Append("<a href=http://localhost:44356/ResetPassPage.aspx?username=" + GetUserEmail(email));
+            sb.Append("<a href=http://localhost:44356/Pages/MainPage/ResetPassPage?username=" + login);
             sb.Append("&email=" + email + "> Click here to change your password</a><br />");
 
-            MailMessage message = new MailMessage("sender", email.Trim(), "Password reset", sb.ToString());
+            MailMessage message = new MailMessage("medicalcliniceksoc@gmail.com", email.Trim(), "Password reset", sb.ToString());
 
             SmtpClient smtp = new SmtpClient();
             smtp.Host = "smtp.gmail.com";
             smtp.Port = 587;
-            smtp.Credentials = new NetworkCredential("sender", "senderpass");
+            smtp.Credentials = new NetworkCredential("medicalcliniceksoc@gmail.com", "MedicalEksoc");
             smtp.EnableSsl = true;
             message.IsBodyHtml = true;
 
@@ -53,17 +53,17 @@ namespace Administration
 
         private static string GetUserEmail(string email)
         {
-            DataTable dt = new DataTable();
+           // DataTable dt = new DataTable();
 
-            string query = "";
-            SqlCommand command = new SqlCommand(query);
-            command.Parameters.AddWithValue("@email", email);
-            DBSystem.DBSystem.SelectFromDB(dt, command);
+            //string query = "";
+            //SqlCommand command = new SqlCommand(query);
+            //command.Parameters.AddWithValue("@email", email);
+            //DBSystem.DBSystem.SelectFromDB(dt, command);
 
             string username = "matxx29@gmail.com";
 
-            foreach (DataRow dr in dt.Rows)
-                username = dr["EM_Email"].ToString();
+            //foreach (DataRow dr in dt.Rows)
+                //username = dr["EM_Email"].ToString();
 
             return username;
         }

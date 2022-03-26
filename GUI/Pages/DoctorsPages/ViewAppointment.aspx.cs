@@ -11,7 +11,7 @@ using Administration;
 
 namespace GUI
 {
-    public partial class DoctorPage : System.Web.UI.Page
+    public partial class ViewAppointment : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -64,7 +64,7 @@ namespace GUI
         protected void BtnBackToMainPage_Click(object sender, EventArgs e)
         {
             //Button which returns to the main page
-            Response.Redirect("~/Pages/EmployeePages/EmployeePage");
+            Response.Redirect("DoctorPanelPage");
         }
 
         //druga proba sortowania

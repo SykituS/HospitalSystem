@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Administration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,13 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            LabelPositionMasterInfo.Visible = false;
 
+            if (LogSys.CheckIfLogged())
+            {
+                LabelPositionMasterInfo.Visible = true;
+                LabelPositionMasterInfo.Text = "You are logged as: \n " + MySession.Current.Position;
+            }
         }
     }
 }

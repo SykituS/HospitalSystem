@@ -11,17 +11,8 @@ namespace GUI
 {
 
 
-    public partial class EmployeePage
+    public partial class AdministratorPanelPage
     {
-
-        /// <summary>
-        /// Kontrolka LabelPostion.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelPostion;
 
         /// <summary>
         /// Kontrolka BtnUserList.
@@ -33,13 +24,13 @@ namespace GUI
         protected global::System.Web.UI.WebControls.Button BtnUserList;
 
         /// <summary>
-        /// Kontrolka BtnDoctorPage.
+        /// Kontrolka BtnEmpManage.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnDoctorPage;
+        protected global::System.Web.UI.WebControls.Button BtnEmpManage;
 
         /// <summary>
         /// Kontrolka BtnLogout.

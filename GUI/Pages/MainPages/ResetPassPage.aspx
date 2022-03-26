@@ -10,7 +10,7 @@
         <br />
         <asp:TextBox ID="TBConfirmNewPass" runat="server"></asp:TextBox>
         <br />
-        <asp:Button ID="BtnOk" runat="server" Text="OK" />
+        <asp:Button ID="BtnOk" runat="server" Text="OK" OnClick="BtnOk_Click" />
         <asp:Button ID="BtnCancel" runat="server" Text="Cancel" />
 
     </div>

@@ -11,6 +11,13 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string email = Session["email"].ToString();
+            string login = Session["username"].ToString();
+            LabelInfo.Text = "Change password for " + login + " user";
+        }
+
+        protected void BtnOk_Click(object sender, EventArgs e)
+        {
 
         }
     }

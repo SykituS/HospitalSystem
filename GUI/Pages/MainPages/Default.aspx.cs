@@ -19,10 +19,24 @@ namespace GUI
             //Checking whether the user is already logged in
             if (LogSys.CheckIfLogged())
             {
-                if (LogSys.CheckPosition())
-                    Response.Redirect("~/Pages/AdministratorPages/AdministratorPage");
-
-                Response.Redirect("~/Pages/EmployeePages/EmployeePage");
+                switch (MySession.Current.Position)
+                {
+                    case "administrator":
+                        Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
+                        break;
+                    case "doctor":
+                        Response.Redirect("~/Pages/Doctorspages/DoctorPanelPage");
+                        break;
+                    case "medical clinic staff member":
+                        Response.Redirect("~/Pages/medicalStaffMemberPages/MedicalStaffPanelPage");
+                        break;
+                    case "patient management staff":
+                        Response.Redirect("~/Pages/PatientManagementStaffPages/PatientManagementPanelPage");
+                        break;
+                    case "manager":
+                        Response.Redirect("~/Pages/ManagerPages/ManagerPanelPage");
+                        break;
+                }
             }
         }
 
@@ -37,10 +51,24 @@ namespace GUI
             //Checking whether the user has successfully logged in
             if (LogSys.CheckIfLogged())
             {
-                if (LogSys.CheckPosition())
-                    Response.Redirect("~/Pages/AdministratorPages/AdministratorPage");
-
-                Response.Redirect("~/Pages/EmployeePages/EmployeePage");
+                switch (MySession.Current.Position)
+                {
+                    case "administrator":
+                        Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
+                        break;
+                    case "doctor":
+                        Response.Redirect("~/Pages/Doctorspages/DoctorPanelPage");
+                        break;
+                    case "medical clinic staff member":
+                        Response.Redirect("~/Pages/medicalStaffMemberPages/MedicalStaffPanelPage");
+                        break;
+                    case "patient management staff":
+                        Response.Redirect("~/Pages/PatientManagementStaffPages/PatientManagementPanelPage");
+                        break;
+                    case "manager":
+                        Response.Redirect("~/Pages/ManagerPages/ManagerPanelPage");
+                        break;
+                }
             }
 
             int attempt = MySession.Current.Attempt;

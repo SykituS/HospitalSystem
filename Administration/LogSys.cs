@@ -74,14 +74,6 @@ namespace Administration
             return GetAttempTextTry();
         }
 
-        public static bool CheckPosition()
-        {
-            if (MySession.Current.Position == "administrator")
-                return true;
-
-            return false;
-        }
-
         public static int GetAttempNumber()
         {
             return MySession.Current.Attempt;

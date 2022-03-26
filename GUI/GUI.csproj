@@ -105,7 +105,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pages\AdministratorPages\AdministratorPage.aspx" />
+    <Content Include="Pages\AdministratorPages\AdministratorPanelPage.aspx" />
+    <Content Include="Pages\DoctorsPages\DoctorPanelPage.aspx" />
     <Content Include="Pages\MainPages\CancelationPage.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -113,10 +114,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Pages\MainPages\Default.aspx" />
-    <Content Include="Pages\EmployeePages\DoctorsPages\DoctorPage.aspx" />
+    <Content Include="Pages\DoctorsPages\ViewAppointment.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeAddPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx" />
-    <Content Include="Pages\EmployeePages\EmployeePage.aspx" />
+    <Content Include="Pages\ManagerPages\ManagerPanelPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeesManagementPage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -132,6 +133,9 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Pages\MainPages\ResetPassPage.aspx" />
+    <Content Include="Pages\MedicalStaffMemberPages\MedicalStaffPanelPage.aspx" />
+    <Content Include="Pages\MedicalStaffMemberPages\PatientList.aspx" />
+    <Content Include="Pages\PatientManagementStaffPages\PatientManagementPanelPage.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -168,15 +172,22 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\AdministratorPages\AdministratorPage.aspx.cs">
-      <DependentUpon>AdministratorPage.aspx</DependentUpon>
+    <Compile Include="Pages\AdministratorPages\AdministratorPanelPage.aspx.cs">
+      <DependentUpon>AdministratorPanelPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\AdministratorPages\AdministratorPage.aspx.designer.cs">
-      <DependentUpon>AdministratorPage.aspx</DependentUpon>
+    <Compile Include="Pages\AdministratorPages\AdministratorPanelPage.aspx.designer.cs">
+      <DependentUpon>AdministratorPanelPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Pages\DoctorsPages\DoctorPanelPage.aspx.cs">
+      <DependentUpon>DoctorPanelPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DoctorsPages\DoctorPanelPage.aspx.designer.cs">
+      <DependentUpon>DoctorPanelPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainPages\CancelationPage.aspx.cs">
       <DependentUpon>CancelationPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -191,12 +202,12 @@
     <Compile Include="Pages\MainPages\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\EmployeePages\DoctorsPages\DoctorPage.aspx.cs">
-      <DependentUpon>DoctorPage.aspx</DependentUpon>
+    <Compile Include="Pages\DoctorsPages\ViewAppointment.aspx.cs">
+      <DependentUpon>ViewAppointment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\EmployeePages\DoctorsPages\DoctorPage.aspx.designer.cs">
-      <DependentUpon>DoctorPage.aspx</DependentUpon>
+    <Compile Include="Pages\DoctorsPages\ViewAppointment.aspx.designer.cs">
+      <DependentUpon>ViewAppointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeAddPage.aspx.cs">
       <DependentUpon>EmployeeAddPage.aspx</DependentUpon>
@@ -212,12 +223,12 @@
     <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx.designer.cs">
       <DependentUpon>EmployeeDetailsPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\EmployeePages\EmployeePage.aspx.cs">
-      <DependentUpon>EmployeePage.aspx</DependentUpon>
+    <Compile Include="Pages\ManagerPages\ManagerPanelPage.aspx.cs">
+      <DependentUpon>ManagerPanelPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\EmployeePages\EmployeePage.aspx.designer.cs">
-      <DependentUpon>EmployeePage.aspx</DependentUpon>
+    <Compile Include="Pages\ManagerPages\ManagerPanelPage.aspx.designer.cs">
+      <DependentUpon>ManagerPanelPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeesManagementPage.aspx.cs">
       <DependentUpon>EmployeesManagementPage.aspx</DependentUpon>
@@ -242,6 +253,27 @@
     </Compile>
     <Compile Include="Pages\MainPages\ResetPassPage.aspx.designer.cs">
       <DependentUpon>ResetPassPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\MedicalStaffPanelPage.aspx.cs">
+      <DependentUpon>MedicalStaffPanelPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\MedicalStaffPanelPage.aspx.designer.cs">
+      <DependentUpon>MedicalStaffPanelPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\PatientList.aspx.cs">
+      <DependentUpon>PatientList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\PatientList.aspx.designer.cs">
+      <DependentUpon>PatientList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PatientManagementStaffPages\PatientManagementPanelPage.aspx.cs">
+      <DependentUpon>PatientManagementPanelPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\PatientManagementStaffPages\PatientManagementPanelPage.aspx.designer.cs">
+      <DependentUpon>PatientManagementPanelPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -292,6 +324,10 @@
     <ProjectReference Include="..\Doctor\Doctor.csproj">
       <Project>{7b6eaba8-ee07-4da3-aceb-5ef91b59ee2b}</Project>
       <Name>Doctor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Reception\Reception.csproj">
+      <Project>{422c6138-48bd-4744-b6ae-73a48ba7183d}</Project>
+      <Name>Reception</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -2,13 +2,17 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div>
-
+    <div style="margin: 15px;">
+        
         <asp:Label ID="Label1" runat="server" Text="Login:"></asp:Label>
         <asp:TextBox ID="TBLogin" runat="server"></asp:TextBox>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Email:"></asp:Label>
         <asp:TextBox ID="TBEmail" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="LabelSendInfo" runat="server" Text="Label"></asp:Label>
+        <br />
         <br />
         <asp:Button ID="BtnOk" runat="server" OnClick="BtnOk_Click" Text="Ok" />
         <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />

@@ -11,7 +11,7 @@ namespace GUI
 {
 
 
-    public partial class DoctorPage
+    public partial class ViewAppointment
     {
 
         /// <summary>

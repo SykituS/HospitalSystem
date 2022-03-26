@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Administration", "Administr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctor", "Doctor\Doctor.csproj", "{7B6EABA8-EE07-4DA3-ACEB-5EF91B59EE2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reception", "Reception\Reception.csproj", "{422C6138-48BD-4744-B6AE-73A48BA7183D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{7B6EABA8-EE07-4DA3-ACEB-5EF91B59EE2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B6EABA8-EE07-4DA3-ACEB-5EF91B59EE2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B6EABA8-EE07-4DA3-ACEB-5EF91B59EE2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{422C6138-48BD-4744-B6AE-73A48BA7183D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{422C6138-48BD-4744-B6AE-73A48BA7183D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{422C6138-48BD-4744-B6AE-73A48BA7183D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{422C6138-48BD-4744-B6AE-73A48BA7183D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
