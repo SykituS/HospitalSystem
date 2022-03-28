@@ -20,7 +20,7 @@
         <br />
 
         <asp:Label ID="Label1" runat="server" Text="Login:" style="margin: 15px;"></asp:Label>
-        <asp:TextBox ID="TBlogin" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBlogin" runat="server" ReadOnly="True"></asp:TextBox>
         <br />
         <br />
         <asp:Label ID="Label2" runat="server" Text="Email:" style="margin: 15px;"></asp:Label>
@@ -30,7 +30,10 @@
         <asp:CheckBox ID="CheckBoxIsDuringReset" runat="server" style="margin: 15px;"/>
         <br />
         <br />
-        <asp:Button ID="BtnSendUpdate" runat="server" OnClick="BtnSendUpdate_Click" Text="Button" />
+        <asp:TextBox ID="TBDate" runat="server" TextMode="DateTime" Width="207px" style="margin: 15px;"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Button ID="BtnSendUpdate" runat="server" OnClick="BtnSendUpdate_Click" Text="Update" style="margin: 15px;"/>
         <br />
         <br />
         <asp:Label ID="LabelInfo" runat="server" Text="Label"></asp:Label>

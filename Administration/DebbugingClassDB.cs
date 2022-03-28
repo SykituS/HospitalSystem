@@ -45,7 +45,7 @@ namespace Administration
             return dt;
         }
 
-        public static string UpdatedEmail(string login, string email)
+        public static string UpdateEmail(string login, string email)
         {
             string query = "UPDATE dbo.Employee " +
                 "SET EM_Email = @Email FROM dbo.Employee INNER JOIN dbo.Users on Us_employee = EM_Id_Employee " +
@@ -53,7 +53,29 @@ namespace Administration
 
             SqlCommand cmd = new SqlCommand(query);
             cmd.Parameters.AddWithValue("@Login", login);
-            cmd.Parameters.AddWithValue("@email", email);
+            cmd.Parameters.AddWithValue("@Email", email);
+            try
+            {
+                DBSystem.DBSystem.UpdateDB(cmd);
+                return "Success!";
+            }
+            catch (Exception ex)
+            {
+                return "Error: " + ex;
+            }
+        }
+
+        public static string UpdateInformation(string login, DateTime date, bool inProcess)
+        {
+            string query = "UPDATE dbo.users " +
+                "SET US_PassResetActiveTime = @Date, US_isDuringReset = @Bool " +
+                "WHERE US_Login = @Login";
+
+            SqlCommand cmd = new SqlCommand(query);
+            cmd.Parameters.AddWithValue("@Login", login);
+            cmd.Parameters.AddWithValue("@Date", date);
+            cmd.Parameters.AddWithValue("@Bool", inProcess);
+
             try
             {
                 DBSystem.DBSystem.UpdateDB(cmd);

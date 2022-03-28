@@ -12,17 +12,28 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         protected void BtnOk_Click(object sender, EventArgs e)
         {
+            LabelSendInfo.Visible = true;
             LabelSendInfo.Text = ResetPassSys.SendMail(TBLogin.Text, TBEmail.Text);
         }
 
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
-                Response.Redirect("Default.aspx");
+            Response.Redirect("Default.aspx");
         }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            if (TBEmail.Text.Contains("@"))
+                BtnOk.Enabled = true;
+            else
+                BtnOk.Enabled = false;
+        }
+
+        
     }
 }

@@ -78,6 +78,15 @@ namespace GUI.Pages.MainPages
         protected global::System.Web.UI.WebControls.CheckBox CheckBoxIsDuringReset;
 
         /// <summary>
+        /// Kontrolka TBDate.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TBDate;
+
+        /// <summary>
         /// Kontrolka BtnSendUpdate.
         /// </summary>
         /// <remarks>
