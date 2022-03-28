@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DebbugingClassDB.cs" />
     <Compile Include="LogSys.cs" />
     <Compile Include="MySession.cs" />
     <Compile Include="PasswordHashing.cs" />

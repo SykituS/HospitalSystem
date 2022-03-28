@@ -11,7 +11,6 @@ namespace GUI.Pages.AdministratorPages.SettingsPages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void BtnBack_Click(object sender, EventArgs e)

@@ -114,6 +114,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Pages\MainPages\DebbugPage.aspx" />
     <Content Include="Pages\MainPages\Default.aspx" />
     <Content Include="Pages\DoctorsPages\ViewAppointment.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeAddPage.aspx" />
@@ -202,6 +203,13 @@
     </Compile>
     <Compile Include="Pages\MainPages\CancelationPage.aspx.designer.cs">
       <DependentUpon>CancelationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainPages\DebbugPage.aspx.cs">
+      <DependentUpon>DebbugPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MainPages\DebbugPage.aspx.designer.cs">
+      <DependentUpon>DebbugPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\MainPages\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
