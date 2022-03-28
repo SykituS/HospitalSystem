@@ -13,7 +13,7 @@ namespace Administration
 {
     public class ResetPassSys
     {
-        public static void SendMail(string login, string email, string result)
+        private static DataTable GetInforamtion(string login, string email)
         {
             DataTable dt = new DataTable();
 
@@ -27,21 +27,22 @@ namespace Administration
             command.Parameters.AddWithValue("@Email", email);
             DBSystem.DBSystem.SelectFromDB(dt, command);
 
+            return dt;
+        }
+
+        public static string SendMail(string login, string email)
+        {
+            DataTable dt = GetInforamtion(login, email);
+
             if (dt.Rows.Count == 0)
-            {
-                result = "Wrong login or email";
-                return;
-            }
+                return "Wrong login or email";
 
             //if true stop process
-            if (CheckStatus(dt))
-            {
-                result = "User has alredy applyed for password change";
-                return;
-            }
+            if (CheckStatus(login, email))
+                return "User has already applyed for password change";
 
             EmailSending(login, email);
-            result = "Email has been send!";
+            return "Email has been send!";
         }
 
         private static void EmailSending(string login, string email)
@@ -64,8 +65,10 @@ namespace Administration
             smtp.Send(message);
         }
 
-        private static bool CheckStatus(DataTable dt)
+        public static bool CheckStatus(string login, string email)
         {
+            DataTable dt = GetInforamtion(login, email);
+
             foreach (DataRow dr in dt.Rows)
             {
                 if (!(bool)dr["US_isDuringReset"])
@@ -75,12 +78,6 @@ namespace Administration
                     return false;
             }
             return true;
-        }
-
-        private static DateTime UrlActiveTime()
-        {
-            DateTime time = DateTime.Now.AddMinutes(15);
-            return time;
         }
     }
 }

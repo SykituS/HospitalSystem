@@ -119,6 +119,7 @@
     <Content Include="Pages\DoctorsPages\ViewAppointment.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeAddPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx" />
+    <Content Include="Pages\MainPages\InvalidPage.aspx" />
     <Content Include="Pages\ManagerPages\ManagerPanelPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeesManagementPage.aspx" />
     <Content Include="favicon.ico" />
@@ -238,6 +239,13 @@
     </Compile>
     <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx.designer.cs">
       <DependentUpon>EmployeeDetailsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainPages\InvalidPage.aspx.cs">
+      <DependentUpon>InvalidPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MainPages\InvalidPage.aspx.designer.cs">
+      <DependentUpon>InvalidPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\ManagerPages\ManagerPanelPage.aspx.cs">
       <DependentUpon>ManagerPanelPage.aspx</DependentUpon>

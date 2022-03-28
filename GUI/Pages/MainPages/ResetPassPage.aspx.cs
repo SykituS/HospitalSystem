@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Administration;
 
 namespace GUI
 {
@@ -11,8 +12,13 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string email = Request.QueryString["email"];
             string login = Request.QueryString["login"];
+            string email = Request.QueryString["email"];
+
+            if (ResetPassSys.CheckStatus(login, email))
+                Response.Redirect("~/Pages/MainPages/InvalidPage");
+
+
             LabelInfo.Text = "Change password for " + login + " " + email;
         }
 

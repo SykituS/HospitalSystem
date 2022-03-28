@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 using DBSystem;
 using System.Data;
 
-namespace Administation
+namespace Administration
 {
     public class DebbugingClassDB
     {
