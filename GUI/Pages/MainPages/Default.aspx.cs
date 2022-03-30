@@ -43,6 +43,7 @@ namespace GUI
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
+            MySession.Current.SetTime = SettingsPanel.ShowTime();
             //Cancel the side effects of refreshing the page
             CancelUnexpectedRePost();
 
@@ -72,23 +73,20 @@ namespace GUI
                 }
             }
 
-            int attempt = MySession.Current.Attempt;
-            if (attempt > 1)
+            if (MySession.Current.Attempt > 1)
             {
-                attempt--;
-                MySession.Current.Attempt = attempt;
+                MySession.Current.Attempt--;
                 LabelWarnings.Visible = true;
                 LabelWarnings.Text = LogSys.GetAttempTextTry();
             }
             else
             {
-                attempt--;
-                MySession.Current.Attempt = attempt;
+                MySession.Current.Attempt--;
                 LabelWarnings.Text = LogSys.GetAttempTextTry();
+
                 BtnLogin.Enabled = false;
                 TBPassword.Enabled = false;
                 TBLogin.Enabled = false;
-                Session["Timer"] = DateTime.Now.AddMinutes(1).ToString();
                 LabelWarnings.Visible = false;
             }
         }
@@ -101,12 +99,18 @@ namespace GUI
 
         private void CancelUnexpectedRePost()
         {
-            int attempt = 3;
-
-            if (attempt < 3)
+            if (MySession.Current.Attempt < 3)
             {
                 LabelWarnings.Visible = true;
                 LabelWarnings.Text = LogSys.GetAttempTextTry();
+            }
+
+            if (MySession.Current.Attempt <= 0)
+            {
+                LabelWarnings.Visible = false;
+                BtnLogin.Enabled = false;
+                TBPassword.Enabled = false;
+                TBLogin.Enabled = false;
             }
 
             /* Function that prevents side effect of page refreshing 
@@ -137,16 +141,14 @@ namespace GUI
 
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-            int attempt = (int)MySession.Current.Attempt;
-            if (attempt == 0)
+            if (MySession.Current.Attempt <= 0)
             {
-                int seconds = (Int32)(DateTime.Parse(Session["Timer"].ToString()).Subtract(DateTime.Now).TotalSeconds + 0.5);
-                if (seconds >= 0)
+                if (MySession.Current.SetTime >= 0)
                 {
-                    string textTime = string.Format(" {0}m {1}s", seconds / 60, seconds % 60);
+                    string textTime = string.Format(" {0}m {1}s", MySession.Current.SetTime / 60, MySession.Current.SetTime % 60);
                     LabelWarnings.Text = LogSys.GetAttempTextBlock(textTime);
                     litMsg.Text = LogSys.GetAttempTextBlock(textTime);
-
+                    MySession.Current.SetTime--;
                 }
                 else
                 {
@@ -158,7 +160,6 @@ namespace GUI
                     TBPassword.Enabled = true;
                     TBLogin.Enabled = true;
                     Response.Redirect(Request.Url.AbsoluteUri);
-
                 }
             }
         }

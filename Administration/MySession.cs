@@ -13,6 +13,8 @@ namespace Administration
         {
             Attempt = 3;
             IsLogged = false;
+
+            // SetTime = 30;
         }
 
         //gets the current session
@@ -36,5 +38,6 @@ namespace Administration
         public string Login { get; set; }
         public string Email { get; set; }
         public string Position { get; set; }
+        public int SetTime { get; set; }
     }
 }
