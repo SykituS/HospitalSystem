@@ -29,7 +29,7 @@ namespace GUI
 
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-            if (TBEmail.Text.Contains("@"))
+            if (ResetPassSys.IsValidEmail(TBEmail.Text))
                 BtnOk.Enabled = true;
             else
                 BtnOk.Enabled = false;

@@ -9,7 +9,7 @@
         </h5>
         <h5>Time to unlock page: 
             <asp:TextBox ID="TBTimeToUnlock" runat="server" TextMode="Number"></asp:TextBox>
-            <br /><br />
+            &nbsp;(in minutes)<br /><br />
             <asp:Button ID="BtnBack" runat="server" OnClick="BtnBack_Click" Text="Back to menu" />
             <br />
             <asp:Button ID="BtnConfirm" runat="server" OnClick="BtnConfirm_Click" Text="Confirm " />

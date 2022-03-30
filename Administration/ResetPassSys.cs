@@ -86,5 +86,23 @@ namespace Administration
             }
             return true;
         }
+
+        public static bool IsValidEmail(string email)
+        {
+            bool Result = false;
+
+            try
+            {
+                var emailValid = new System.Net.Mail.MailAddress(email);
+
+                Result = (email.LastIndexOf(".") > email.LastIndexOf("@"));
+            }
+            catch (Exception)
+            {
+                Result = false;
+            }
+
+            return Result;
+        }
     }
 }
