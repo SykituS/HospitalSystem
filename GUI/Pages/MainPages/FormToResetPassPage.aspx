@@ -6,7 +6,7 @@
         
         <asp:Label ID="Label1" runat="server" Text="Login:"></asp:Label>
         <asp:TextBox ID="TBLogin" runat="server"></asp:TextBox>
-        <br />
+        <br /><br />
         <asp:Label ID="Label2" runat="server" Text="Email:"></asp:Label>
         <asp:TextBox ID="TBEmail" runat="server"></asp:TextBox>
         <br />

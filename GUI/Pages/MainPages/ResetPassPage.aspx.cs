@@ -19,7 +19,7 @@ namespace GUI
                 Response.Redirect("~/Pages/MainPages/InvalidPage");
 
 
-            LabelInfo.Text = "Change password for " + login + " " + email;
+            LabelInfo.Text = "Change password for " + login;
         }
 
         protected void BtnOk_Click(object sender, EventArgs e)

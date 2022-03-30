@@ -34,7 +34,5 @@ namespace GUI
             else
                 BtnOk.Enabled = false;
         }
-
-        
     }
 }
