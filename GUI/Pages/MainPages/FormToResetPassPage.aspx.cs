@@ -18,7 +18,8 @@ namespace GUI
         protected void BtnOk_Click(object sender, EventArgs e)
         {
             LabelSendInfo.Visible = true;
-            LabelSendInfo.Text = ResetPassSys.SendMail(TBLogin.Text, TBEmail.Text);
+            string text = ResetPassSys.SendMail(TBLogin.Text, TBEmail.Text);
+            LabelSendInfo.Text = text;
         }
 
         protected void BtnCancel_Click(object sender, EventArgs e)

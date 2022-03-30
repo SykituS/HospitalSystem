@@ -26,7 +26,18 @@ namespace GUI.Pages.AdministratorPages.SettingsPages
         protected void BtnConfirm_Click(object sender, EventArgs e)
         {
             int time = int.Parse(TBTimeToUnlock.Text);
-            SettingsPanel.TimeSet(time);
+
+            if (time > 0)
+            {
+                SettingsPanel.TimeSet(time);
+                LabelWarning.Visible = true;
+                LabelWarning.Text = "The time to unlock page has been changed";
+            }
+            else
+            {
+                LabelWarning.Visible = true;
+                LabelWarning.Text = "Please select a correct value!";
+            }
         }
     }
 }

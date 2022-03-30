@@ -32,25 +32,24 @@ namespace Administration
 
         public static string SendMail(string login, string email)
         {
-            try
+            DataTable dt = GetInforamtion(login, email);
+            string text;
+            if (dt.Rows.Count == 0)
             {
-                DataTable dt = GetInforamtion(login, email);
-
-                if (dt.Rows.Count == 0)
-                    return "Wrong login or email";
-
-                //if true stop process
-                if (CheckStatus(login, email))
-                    return "User has already applyed for password change";
-
-                EmailSending(login, email);
-                return "Email has been send!";
+                text = "Wrong login or email";
+                return text;
             }
-            catch (Exception ex)
+
+            //if true stop process
+            if (CheckStatus(login, email))
             {
-                return "Something has gone wrong! Contact your administrator if this error still occurs!";
+                text = "User has already applyed for password change";
+                return text;
             }
-            
+
+            EmailSending(login, email);
+            text = "Email has been send!";
+            return text;
         }
 
         private static void EmailSending(string login, string email)

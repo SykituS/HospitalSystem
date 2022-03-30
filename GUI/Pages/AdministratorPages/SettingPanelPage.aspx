@@ -3,6 +3,10 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div style="margin-top: 15px;">
+        <h5>
+            <asp:Label ID="LabelWarning" runat="server" Text="InfoPlaceholder"></asp:Label>
+
+        </h5>
         <h5>Time to unlock page: 
             <asp:TextBox ID="TBTimeToUnlock" runat="server" TextMode="Number"></asp:TextBox>
             <br /><br />

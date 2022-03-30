@@ -11,7 +11,7 @@
         <asp:TextBox ID="TBEmail" runat="server"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="LabelSendInfo" runat="server" Text="PlaceHolder" Visible="False"></asp:Label>
+        <asp:Label ID="LabelSendInfo" runat="server" Text="PlaceHolder" Visible="True"></asp:Label>
         <br />
         <br />
 
