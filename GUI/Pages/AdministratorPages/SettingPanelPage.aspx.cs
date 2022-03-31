@@ -27,7 +27,7 @@ namespace GUI.Pages.AdministratorPages.SettingsPages
         {
             int time = int.Parse(TBTimeToUnlock.Text);
 
-            if (time > 0)
+            if (time >= 0)
             {
                 SettingsPanel.TimeSet(time);
                 LabelWarning.Visible = true;
