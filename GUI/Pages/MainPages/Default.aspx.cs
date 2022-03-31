@@ -18,7 +18,7 @@ namespace GUI
                 CancelUnexpectedRePost();
 
             //Checking whether the user is already logged in
-            if (LogSys.CheckIfLogged())
+           if (LogSys.CheckIfLogged())
             {
                 switch (MySession.Current.Position)
                 {
@@ -162,6 +162,12 @@ namespace GUI
                     Response.Redirect(Request.Url.AbsoluteUri);
                 }
             }
+        }
+
+        protected void BtnCancel_Click(object sender, EventArgs e)
+        {
+            string strScript = "window.close();";
+            ScriptManager.RegisterStartupScript(this, typeof(string), "key", strScript, true);
         }
     }
 }

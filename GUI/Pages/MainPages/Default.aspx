@@ -2,7 +2,8 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="jumptron">
     <asp:HiddenField runat="server" ID="_repostcheckcode" />
-        
+        <div class="top-side"><!-- <img src="../../img/img1.jpg" alt="picture" /> --></div>
+        <div class="bot-side">
       <h3>Sign in</h3> 
         <br />
 
@@ -23,20 +24,20 @@
 
         <asp:Label ID="LabelWarnings" runat="server" ForeColor="Red" Text="Waringin placeholder" Visible="False"></asp:Label><br />
         Login  <br />
-        <asp:TextBox ID="TBLogin" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBLogin" CssClass="field" runat="server"></asp:TextBox>
         <br />
         Password  <br />
-        <asp:TextBox ID="TBPassword" runat="server" TextMode="Password"></asp:TextBox>
+        <asp:TextBox ID="TBPassword" CssClass="field" runat="server" TextMode="Password"></asp:TextBox>
         <br />
           <br />
-
-        <asp:Button ID="BtnLogin" runat="server" OnClick="BtnLogin_Click" Text="Login" />
+           <div id="Reset">
+            <asp:Button ID="Button1" CssClass="psswrd" runat="server" Text="Forgot password" OnClick="BtnResetPassword_Click" />
+        </div>
+        <asp:Button ID="BtnLogin" CssClass="btn" runat="server" OnClick="BtnLogin_Click" Text="Login" />
         
-        <asp:Button ID="BtnCancel" runat="server" Text="Cancel" OnClientClick="window.close(); return false" />
+        <asp:Button ID="BtnCancel" CssClass="btn" runat="server" Text="Cancel" OnClick="BtnCancel_Click" />
        </div>
 
-        <div id="Reset">
-            <asp:Button ID="BtnResetPassword" runat="server" Text="Forgot password" OnClick="BtnResetPassword_Click" />
         </div>
     </div>
 

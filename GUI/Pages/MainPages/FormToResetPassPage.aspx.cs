@@ -12,14 +12,12 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void BtnOk_Click(object sender, EventArgs e)
         {
             LabelSendInfo.Visible = true;
-            string text = ResetPassSys.SendMail(TBLogin.Text, TBEmail.Text);
-            LabelSendInfo.Text = text;
+            ResetPassSys.SendMail(TBLogin.Text, TBEmail.Text);
         }
 
         protected void BtnCancel_Click(object sender, EventArgs e)

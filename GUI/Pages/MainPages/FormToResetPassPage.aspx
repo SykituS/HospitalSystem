@@ -11,15 +11,15 @@
         <asp:TextBox ID="TBEmail" runat="server"></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="LabelSendInfo" runat="server" Text="PlaceHolder" Visible="False"></asp:Label>
-        <br />
-        <br />
 
         <div>
          <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick" ></asp:Timer>
         
            <asp:UpdatePanel ID="update" runat="server" Mode="Conditional">
                <ContentTemplate>
+                <asp:Label ID="LabelSendInfo" runat="server" Text="The e-mail has been sent. Please check your mailbox." Visible="False"></asp:Label>
+                <br />
+                <br />
                  <asp:Button ID="BtnOk" runat="server" OnClick="BtnOk_Click" Text="Ok" Enabled="False" />
                  <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
                </ContentTemplate>

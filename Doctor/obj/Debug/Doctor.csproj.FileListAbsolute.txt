@@ -59,3 +59,15 @@ F:\Projekty\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CoreCompile
 F:\Projekty\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
 F:\Projekty\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.dll
 F:\Projekty\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.pdb
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\bin\Debug\Doctor.dll
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\bin\Debug\Doctor.pdb
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\bin\Debug\Administation.dll
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\bin\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\bin\Debug\DBSystem.dll
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\bin\Debug\Administation.pdb
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\bin\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\obj\Debug\Doctor.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\obj\Debug\Doctor.csproj.CopyComplete
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\obj\Debug\Doctor.dll
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\Doctor\obj\Debug\Doctor.pdb

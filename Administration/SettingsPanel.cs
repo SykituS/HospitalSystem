@@ -24,10 +24,8 @@ namespace Administration
             if (dt.Rows.Count == 0)
                 return MySession.Current.SetTime;
 
-            foreach (DataRow dr in dt.Rows)
-            {
-                MySession.Current.SetTime = (Int32)dr["SY_Time_to_unlock"];
-            }
+            MySession.Current.SetTime = (Int32)dt.Rows[0]["SY_Time_to_unlock"];
+
             return MySession.Current.SetTime;
         }
 

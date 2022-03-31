@@ -30,26 +30,21 @@ namespace Administration
             return dt;
         }
 
-        public static string SendMail(string login, string email)
+        public static void SendMail(string login, string email)
         {
             DataTable dt = GetInforamtion(login, email);
-            string text;
             if (dt.Rows.Count == 0)
             {
-                text = "Wrong login or email";
-                return text;
+                return;
             }
 
             //if true stop process
             if (CheckStatus(login, email))
             {
-                text = "User has already applyed for password change";
-                return text;
+                return;
             }
 
             EmailSending(login, email);
-            text = "Email has been send!";
-            return text;
         }
 
         private static void EmailSending(string login, string email)

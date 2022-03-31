@@ -28,3 +28,11 @@ F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessA
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.dll
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\BusinessAdministration\bin\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\BusinessAdministration\bin\Debug\DBSystem.dll
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\BusinessAdministration\obj\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\BusinessAdministration\obj\Debug\BusinessAdministration.pdb

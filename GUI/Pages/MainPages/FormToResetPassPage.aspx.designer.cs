@@ -51,15 +51,6 @@ namespace GUI
         protected global::System.Web.UI.WebControls.TextBox TBEmail;
 
         /// <summary>
-        /// Kontrolka LabelSendInfo.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelSendInfo;
-
-        /// <summary>
         /// Kontrolka Timer1.
         /// </summary>
         /// <remarks>
@@ -76,6 +67,15 @@ namespace GUI
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.UpdatePanel update;
+
+        /// <summary>
+        /// Kontrolka LabelSendInfo.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelSendInfo;
 
         /// <summary>
         /// Kontrolka BtnOk.

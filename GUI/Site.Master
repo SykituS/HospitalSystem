@@ -5,6 +5,7 @@
 <html lang="pl">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="Css/login.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %>- Moja aplikacja platformy ASP.NET</title>
@@ -16,25 +17,125 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <style>
+        body {
+            margin: 0;
+            padding: 50px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
         h3{
             margin-left: 10px;
         }
+  /* textboxy */
+  .field{
+    width: 80%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 2px solid rgba(0, 0,0,0);
+    background-color: rgba(230,230,230,0.6);
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+    margin-right: 20px;
+}
+.field:hover{
+    background-color: rgba(0, 0,0,0.1);
+}
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30,85,250, 0.47);
+}
+  /* textboxy */
+  /* Sign Buttons */
+.btn{
+  margin-top: 20px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #1b2750;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: 0.3s;
+  color: #fff;
+}
+.btn:hover{
+  background-color: #141d3a;
+}
+.btn:hover text{
+  color: #fff;
+}
+/* Login Cancel Buttons */
+.jumptron{
+  margin-top: 100px;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+  /* Login Cancel Buttons */
+  
+}
+  /* Top img 3guys */
+.top-side{
+  height: 100%;
+width: 100%;
+background-color: rgb(39, 23, 110);
 
-        .jumptron{
-            margin-top: 5%;
-            border: solid;
-            border-width: 2px;
-            border-color: lightgray;
-        }
+}
+.top-side img{
+    max-height: 100%;
+    max-width: 200px;
+}
+.bot-side{
+      justify-content: center;
+  align-items: center;
+  padding: 25px 40px;
+}
+.bot-side h3{
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.bot-side h3::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom:0;
+  transform:translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: #1b2750;
+}
+/* Navbar */
+.navbar-inverse{
+  background: linear-gradient(56deg, rgba(24,173,236,1) 0%, rgb(39, 23, 110) 84%);
+  border: none;
+
+}
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+         .psswrd{
+             border: none;
+             background-color: transparent;
+             width: 50px;
+         }
 
         #login{
-            margin-left: 35%;
+
             margin-bottom: 25px;
         }
 
         #Reset{
             margin-left: 35%;
         }
+
     </style>
 </head>
 <body>
