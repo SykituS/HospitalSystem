@@ -99,5 +99,23 @@ namespace Administration
 
             return Result;
         }
+
+        public static void ResetPassword(string NewPassword, string login)
+        {
+            string query = "UPDATE Users SET US_Password =@NewPassword WHERE US_Login= @login ";
+
+            SqlCommand command = new SqlCommand(query);
+            command.Parameters.AddWithValue("@login", login);
+            command.Parameters.AddWithValue("@NewPassword", PasswordHashing.hashPassword(NewPassword));
+            
+            try
+            {
+                DBSystem.DBSystem.UpdateDB(command);
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine("error:" + ex);
+            }
+        }
     }
 }

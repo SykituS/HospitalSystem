@@ -7,7 +7,7 @@
             <asp:Label ID="LabelWarning" runat="server" Text="InfoPlaceholder"></asp:Label>
 
         </h5>
-        <h5>Time to unlock page: 
+        <h5>Set the login form blocking time: 
             <asp:TextBox ID="TBTimeToUnlock" runat="server" TextMode="Number"></asp:TextBox>
             &nbsp;(in minutes)<br /><br />
             <asp:Button ID="BtnBack" runat="server" OnClick="BtnBack_Click" Text="Back to menu" />
