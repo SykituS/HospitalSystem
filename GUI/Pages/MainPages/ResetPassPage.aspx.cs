@@ -9,19 +9,17 @@ using Administration;
 namespace GUI
 {
     public partial class ResetPassPage : System.Web.UI.Page
-
     {
-        string login ;
         protected void Page_Load(object sender, EventArgs e)
         {
-             login = Request.QueryString["login"];
-            string email = Request.QueryString["email"];
+            MySession.Current.Login = Request.QueryString["login"];
+            MySession.Current.Email = Request.QueryString["email"];
 
-            if (ResetPassSys.CheckStatus(login, email))
+            if (!ResetPassSys.CheckStatus(MySession.Current.Login, MySession.Current.Email))
                 Response.Redirect("~/Pages/MainPages/InvalidPage");
 
 
-            LabelInfo.Text = "Change password for " + login;
+            LabelInfo.Text = "Change password for " + MySession.Current.Login;
         }
       
         protected void BtnOk_Click(object sender, EventArgs e)
@@ -33,18 +31,33 @@ namespace GUI
                 {
                     if (TBNewPass.Text.Any(char.IsUpper) && TBNewPass.Text.Any(char.IsDigit) && TBNewPass.Text.Any(char.IsPunctuation))
                     {
-                        LabelInfo.Text = "Passowrd changed";
-                        ResetPassSys.ResetPassword(NewPassword, login);
+                        LabelCriteria.Text = "Passowrd changed";
+                        ResetPassSys.ResetPassword(NewPassword, MySession.Current.Login);
 
                     }
                     else
-                        LabelInfo.Text = "Password must include at least one lowercase, uppercase, numbers and special characters";
+                        LabelCriteria.Text = "Password must include at least one lowercase, uppercase, numbers and special characters";
                 }
                 else
-                    LabelInfo.Text = "Incorrect password length";
+                    LabelCriteria.Text = "Incorrect password length";
             }
             else
-                LabelInfo.Text = "Passwords do not match";
+                LabelCriteria.Text = "Passwords do not match";
+        }
+
+        protected void BtnCancel_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CancelationPasswordPage.aspx");
+        }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            if (TBNewPass.Text.Length == TBConfirmNewPass.Text.Length)
+            {
+                BtnOk.Enabled = true;
+            }
+            else
+                BtnOk.Enabled = false;
         }
     }
 }

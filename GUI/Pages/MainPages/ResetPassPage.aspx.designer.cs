@@ -24,6 +24,15 @@ namespace GUI
         protected global::System.Web.UI.WebControls.Label LabelInfo;
 
         /// <summary>
+        /// Kontrolka LabelCriteria.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelCriteria;
+
+        /// <summary>
         /// Kontrolka TBNewPass.
         /// </summary>
         /// <remarks>
@@ -40,6 +49,24 @@ namespace GUI
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TBConfirmNewPass;
+
+        /// <summary>
+        /// Kontrolka Timer1.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.Timer Timer1;
+
+        /// <summary>
+        /// Kontrolka UpdatePanel1.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
         /// Kontrolka BtnOk.

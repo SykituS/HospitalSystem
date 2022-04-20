@@ -13,6 +13,7 @@ namespace Administration
 {
     public class ResetPassSys
     {
+        //Geting information about login, email, if user is during pass reset, link active time from DB
         private static DataTable GetInforamtion(string login, string email)
         {
             DataTable dt = new DataTable();
@@ -30,23 +31,24 @@ namespace Administration
             return dt;
         }
 
+        //Checking user status before sending email
         public static void SendMail(string login, string email)
         {
             DataTable dt = GetInforamtion(login, email);
             if (dt.Rows.Count == 0)
-            {
                 return;
-            }
 
             //if true stop process
             if (CheckStatus(login, email))
-            {
                 return;
-            }
+
+            //changing information about link life time and status "is during reset"
+            StatusUpdate(login, DateTime.Now.AddMinutes(15), true);
 
             EmailSending(login, email);
         }
 
+        //Sending email to user
         private static void EmailSending(string login, string email)
         {
             StringBuilder sb = new StringBuilder();
@@ -67,21 +69,41 @@ namespace Administration
             smtp.Send(message);
         }
 
+        //Checking if user can send new link to reset password
         public static bool CheckStatus(string login, string email)
         {
             DataTable dt = GetInforamtion(login, email);
 
-            foreach (DataRow dr in dt.Rows)
-            {
-                if (!(bool)dr["US_isDuringReset"])
-                    return false;
+            if ((bool)dt.Rows[0]["US_isDuringReset"])
+                return true;
 
-                if (DateTime.Now > (DateTime)dr["US_PassResetActiveTime"])
-                    return false;
+            if (DateTime.Now < (DateTime)dt.Rows[0]["US_PassResetActiveTime"])
+                return true;
+
+            return false;
+        }
+        public static void StatusUpdate(string login, DateTime date, bool status)
+        {
+            string query = "UPDATE dbo.users " +
+                "SET US_PassResetActiveTime = @Date, US_isDuringReset = @Bool " +
+                "WHERE US_Login = @Login";
+
+            SqlCommand cmd = new SqlCommand(query);
+            cmd.Parameters.AddWithValue("@Login", login);
+            cmd.Parameters.AddWithValue("@Date", date);
+            cmd.Parameters.AddWithValue("@Bool", status);
+
+            try
+            {
+                DBSystem.DBSystem.UpdateDB(cmd);
             }
-            return true;
+            catch (Exception ex)
+            {
+                System.Console.WriteLine("error:" + ex);
+            }
         }
 
+        //Email validation
         public static bool IsValidEmail(string email)
         {
             bool Result = false;
@@ -100,6 +122,7 @@ namespace Administration
             return Result;
         }
 
+        //Updating password in database
         public static void ResetPassword(string NewPassword, string login)
         {
             string query = "UPDATE Users SET US_Password =@NewPassword WHERE US_Login= @login ";
@@ -117,5 +140,6 @@ namespace Administration
                 System.Console.WriteLine("error:" + ex);
             }
         }
+
     }
 }

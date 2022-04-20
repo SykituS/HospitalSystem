@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="Confirm cancelation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DebbugPage.aspx.cs" Inherits="GUI.Pages.MainPages.DebbugPage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    
+    <asp:HiddenField runat="server" ID="_repostcheckcode" />
     <div style ="margin:15px;">
 
         <asp:GridView ID="GVUsers" runat="server" Width="200px" AutoGenerateColumns="False" OnSelectedIndexChanged="GVUsers_SelectedIndexChanged">
