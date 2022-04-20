@@ -25,24 +25,19 @@ namespace GUI
         protected void BtnOk_Click(object sender, EventArgs e)
         {
             string NewPassword = TBNewPass.Text;
-            if (TBNewPass.Text.Length == TBConfirmNewPass.Text.Length)
+            if (TBNewPass.Text.Length >= 8 && TBNewPass.Text.Length <= 15)
             {
-                if (TBNewPass.Text.Length >= 8 && TBNewPass.Text.Length <= 15)
+                if (TBNewPass.Text.Any(char.IsUpper) && TBNewPass.Text.Any(char.IsDigit) && TBNewPass.Text.Any(char.IsPunctuation))
                 {
-                    if (TBNewPass.Text.Any(char.IsUpper) && TBNewPass.Text.Any(char.IsDigit) && TBNewPass.Text.Any(char.IsPunctuation))
-                    {
-                        LabelCriteria.Text = "Passowrd changed";
-                        ResetPassSys.ResetPassword(NewPassword, MySession.Current.Login);
-
-                    }
-                    else
-                        LabelCriteria.Text = "Password must include at least one lowercase, uppercase, numbers and special characters";
+                    LabelCriteria.Text = "Passowrd changed";
+                    ResetPassSys.ResetPassword(NewPassword, MySession.Current.Login);
+                    Response.Redirect("Default.aspx");
                 }
                 else
-                    LabelCriteria.Text = "Incorrect password length";
+                    LabelCriteria.Text = "Password must include at least one lowercase, uppercase, numbers and special characters";
             }
             else
-                LabelCriteria.Text = "Passwords do not match";
+                LabelCriteria.Text = "Incorrect password length";
         }
 
         protected void BtnCancel_Click(object sender, EventArgs e)
@@ -52,12 +47,15 @@ namespace GUI
 
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-            if (TBNewPass.Text.Length == TBConfirmNewPass.Text.Length)
+            if (TBNewPass.Text.Count() >= 1)
             {
-                BtnOk.Enabled = true;
+                if (TBNewPass.Text.Length == TBConfirmNewPass.Text.Length)
+                {
+                    BtnOk.Enabled = true;
+                }
+                else
+                    BtnOk.Enabled = false;
             }
-            else
-                BtnOk.Enabled = false;
         }
     }
 }

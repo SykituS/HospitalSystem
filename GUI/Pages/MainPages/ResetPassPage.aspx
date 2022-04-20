@@ -3,8 +3,7 @@
 
     <div style="margin:25px; padding:10px;">
         <h3>Change password!</h3><br />
-        <asp:Label ID="LabelInfo" runat="server" Text="labelLoginInfo"></asp:Label> <br /><br />
-        <asp:Label ID="LabelCriteria" runat="server" Text="labelCriteria" Visible="false"></asp:Label>
+        <asp:Label ID="LabelInfo" runat="server" Text="labelLoginInfo"></asp:Label>
         <br /><br />
         <div>New password: </div><asp:TextBox ID="TBNewPass" runat="server"></asp:TextBox> 
         <br />
@@ -13,9 +12,11 @@
 
         <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick" ></asp:Timer>
     
-        <asp:UpdatePanel ID="UpdatePanel1" runat="server" Mode="Conditional"> 
-          
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server" Mode="Conditional">
             <ContentTemplate>
+                <br />
+                <asp:Label ID="LabelCriteria" runat="server" Text=""></asp:Label>
+                <br /> <br />
                 <asp:Button ID="BtnOk" runat="server" Text="OK" OnClick="BtnOk_Click" Enabled="False" />
                 <asp:Button ID="BtnCancel" runat="server" Text="Cancel" OnClick="BtnCancel_Click" />
                 <br />
