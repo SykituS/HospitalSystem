@@ -5,9 +5,9 @@
         <h3>Change password!</h3><br />
         <asp:Label ID="LabelInfo" runat="server" Text="labelLoginInfo"></asp:Label>
         <br /><br />
-        <div>New password: </div><asp:TextBox ID="TBNewPass" runat="server"></asp:TextBox> 
+        <div>New password: </div><asp:TextBox ID="TBNewPass" runat="server" TextMode="Password"></asp:TextBox> 
         <br />
-        <div>Confirm password: </div><asp:TextBox ID="TBConfirmNewPass" runat="server"></asp:TextBox>
+        <div>Confirm password: </div><asp:TextBox ID="TBConfirmNewPass" runat="server" TextMode="Password"></asp:TextBox>
         <br />
 
         <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick" ></asp:Timer>
