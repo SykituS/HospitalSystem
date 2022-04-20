@@ -34,7 +34,7 @@ namespace GUI
                     Response.Redirect("Default.aspx");
                 }
                 else
-                    LabelCriteria.Text = "Password must include at least one lowercase, uppercase, number and special character";
+                    LabelCriteria.Text = "Password must include at least one lowercase, uppercase, number and special character (-, _, !, #, $, *)";
             }
             else
                 LabelCriteria.Text = "Incorrect password length";
