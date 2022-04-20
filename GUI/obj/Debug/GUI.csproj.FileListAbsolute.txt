@@ -410,3 +410,4 @@ C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\GU
 C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\GUI\obj\Debug\GUI.dll
 C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\GUI\obj\Debug\GUI.pdb
+F:\Projekty\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CopyComplete

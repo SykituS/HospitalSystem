@@ -73,12 +73,14 @@ namespace Administration
         public static bool CheckStatus(string login, string email)
         {
             DataTable dt = GetInforamtion(login, email);
-
+            
+            //check if user is doing reset
             if ((bool)dt.Rows[0]["US_isDuringReset"])
-                return true;
-
-            if (DateTime.Now < (DateTime)dt.Rows[0]["US_PassResetActiveTime"])
-                return true;
+            {
+                //check if link should be active
+                if (DateTime.Now < (DateTime)dt.Rows[0]["US_PassResetActiveTime"])
+                    return true;
+            }
 
             return false;
         }
