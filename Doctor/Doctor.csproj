@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Appoitment.cs" />
+    <Compile Include="AppoitmentDetails.cs" />
     <Compile Include="GetAppoitments.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

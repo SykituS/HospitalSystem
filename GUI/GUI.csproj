@@ -106,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pages\AdministratorPages\AdministratorPanelPage.aspx" />
+    <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesConfirmDelete.aspx" />
+    <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesEditPage.aspx" />
+    <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\SettingPanelPage.aspx" />
     <Content Include="Pages\DoctorsPages\DoctorPanelPage.aspx" />
     <Content Include="Pages\MainPages\CancelationPage.aspx" />
@@ -185,6 +188,27 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesConfirmDelete.aspx.cs">
+      <DependentUpon>OfficesConfirmDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesConfirmDelete.aspx.designer.cs">
+      <DependentUpon>OfficesConfirmDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesEditPage.aspx.cs">
+      <DependentUpon>OfficesEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesEditPage.aspx.designer.cs">
+      <DependentUpon>OfficesEditPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesManagementPage.aspx.cs">
+      <DependentUpon>OfficesManagementPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesManagementPage.aspx.designer.cs">
+      <DependentUpon>OfficesManagementPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdministratorPages\SettingPanelPage.aspx.cs">
       <DependentUpon>SettingPanelPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using Doctor;
 using System.Data;
 using Administration;
-
+using System.Drawing;
 
 namespace GUI
 {
@@ -27,6 +27,7 @@ namespace GUI
                 Calendar1.SelectedDates.Add(data);
 
             Calendar1.Visible = true;
+
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
@@ -39,26 +40,23 @@ namespace GUI
 
         protected void GridView1_Sorting(object sender, GridViewSortEventArgs e)
         {
-            
+
             DateTime day = Calendar1.SelectedDate;
-
-            //pierwsza proba sortowania
-
-            //SortDirection ez = SortDirection.Ascending;
-            //string sortField = GridView1.Attributes["CurrentSortField"];
-
-            //if (ez == SortDirection.Ascending)
-            //{
-            //    ez = SortDirection.Descending;
-            //}
-            //else
-            //{
-            //    ez = SortDirection.Ascending;
-            //}
-            //GridView1.Sort(sortField, ez);
 
             GridView1.DataSource = GetAppoitments.Get_Info_Appointment(day);
             GridView1.DataBind();
+
+            DataTable m_DataTable = GridView1.DataSource as DataTable;
+
+            if (m_DataTable != null)
+            {
+                DataView m_DataView = new DataView(m_DataTable);
+                SortingExpression = e.SortExpression + " " + (SortingExpression.Contains("ASC") ? "DESC" : "ASC");
+                m_DataView.Sort = SortingExpression;
+
+                GridView1.DataSource = m_DataView;
+                GridView1.DataBind();
+            }
         }
 
         protected void BtnBackToMainPage_Click(object sender, EventArgs e)
@@ -66,34 +64,58 @@ namespace GUI
             //Button which returns to the main page
             Response.Redirect("DoctorPanelPage");
         }
+        public string SortingExpression
+        {
+            get
+            {
+                if (this.ViewState["SortExpression"] == null)
+                    return "";
+                else
+                    return (string)this.ViewState["SortExpression"];
+            }
 
-        //druga proba sortowania
+            set
+            {
+                this.ViewState["SortExpression"] = value;
+            }
+        }
 
-        //private void SortGridview(GridView gridView, GridViewSortEventArgs e, out SortDirection sortDirection, out string sortField)
-        //{
-        //    sortField = e.SortExpression;
-        //    sortDirection = e.SortDirection;
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (GridViewRow row in GridView1.Rows)
+            {
+                row.BackColor = ColorTranslator.FromHtml("White");
 
-        //    if (gridView.Attributes["CurrentSortField"] != null && gridView.Attributes["CurrentSortDirection"] != null)
-        //    {
-        //        if (sortField == gridView.Attributes["CurrentSortField"])
-        //        {
-        //            if (gridView.Attributes["CurrentSortDirection"] == "ASC")
-        //            {
-        //                sortDirection = SortDirection.Descending;
-        //            }
-        //            else
-        //            {
-        //                sortDirection = SortDirection.Ascending;
-        //            }
-        //        }
+                if (row.RowIndex == GridView1.SelectedIndex)
+                {
+                    row.BackColor = ColorTranslator.FromHtml("#A1DCF2");
+                    
+                    //row.ToolTip = string.Empty;
+                    //string dane;
+                    //dane = row.Cells[2].Text;
+                    //Label1.Text = dane;
 
-        //        gridView.Attributes["CurrentSortField"] = sortField;
-        //        gridView.Attributes["CurrentSortDirection"] = (sortDirection == SortDirection.Ascending ? "ASC" : "DESC");
-        //    }
-        //}
+                }
 
+                //Label1.Visible = true;
 
+            }
+            string cell = GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text;
+            TimeSpan time = TimeSpan.Parse(cell); 
 
+            DateTime day = Calendar1.SelectedDate;
+            GridView2.DataSource = AppoitmentDetails.Get_Details(day, time);
+            GridView2.DataBind();
+        }
+
+        protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(GridView1, "Select$" + e.Row.RowIndex);
+
+            }
+
+        }
     }
 }

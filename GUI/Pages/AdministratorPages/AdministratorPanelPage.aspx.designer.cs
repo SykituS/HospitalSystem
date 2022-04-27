@@ -42,6 +42,15 @@ namespace GUI
         protected global::System.Web.UI.WebControls.Button BtnEmpManage;
 
         /// <summary>
+        /// Kontrolka BtnOfficesManage.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnOfficesManage;
+
+        /// <summary>
         /// Kontrolka BtnLogout.
         /// </summary>
         /// <remarks>

@@ -16,7 +16,7 @@
             <asp:ListItem Text="Inactive" Value="2"></asp:ListItem>
         </asp:DropDownList>
     </p>
-<div style="overflow-y: scroll; height: 250px; width: 750px;">
+<div style="overflow-y: scroll; height: 250px; width: 700px;">
     <p>
         <asp:GridView ID="GvEmployees" runat="server" AllowSorting="True" OnSorting="GvEmployees_Sorting" AutoGenerateColumns="False" OnRowCommand="GvEmployees_RowCommand">
             <Columns>

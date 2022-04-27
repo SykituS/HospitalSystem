@@ -28,5 +28,10 @@ namespace GUI
         {
             Response.Redirect("EmployeesManagementPage.aspx");
         }
+
+        protected void BtnEditEmp_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EmployeeEditPage.aspx?Id=" + employeeId);
+        }
     }
 }

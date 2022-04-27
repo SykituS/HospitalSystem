@@ -12,6 +12,9 @@
         <asp:Button ID="BtnEmpManage" runat="server" OnClick="BtnEmpManage_Click" Text="Employees Management" />
         <br />
         <br />
+        <asp:Button ID="BtnOfficesManage" runat="server" OnClick="BtnOfficesManage_Click" Text="Offices" />
+        <br />
+        <br />
         <asp:Button ID="BtnLogout" runat="server" Text="Logout" OnClick="BtnLogout_Click" />
 
     </div>

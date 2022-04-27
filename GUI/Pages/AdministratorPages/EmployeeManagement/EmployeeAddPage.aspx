@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EmployeeAddPage.aspx.cs" Inherits="GUI.EmployeeAddPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p>
-        &nbsp;<br />
+        &nbsp;<asp:Label ID="LblAdded" runat="server" ForeColor="Lime"></asp:Label>
+        <br />
         Name:
         <asp:TextBox ID="TxbName" runat="server"></asp:TextBox>
         *<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Name cannot be blank" ControlToValidate="TxbName" ForeColor="Red" ValidationGroup="valGroup1">*</asp:RequiredFieldValidator>
@@ -18,6 +19,7 @@
         <asp:TextBox ID="TxbPesel" runat="server"></asp:TextBox>
         *<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="PESEL cannot be blank" ControlToValidate="TxbPesel" ForeColor="Red" ValidationGroup="valGroup1">*</asp:RequiredFieldValidator>
         <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ErrorMessage="PESEL must be 11 digit" ForeColor="Red" ControlToValidate="TxbPesel" ValidationExpression="^\d{11}$" ValidationGroup="valGroup1" >*</asp:RegularExpressionValidator>
+        <asp:CustomValidator ID="CustomValidator2" runat="server" ErrorMessage="PESEL must match your date of birth" OnServerValidate="PeselValidate" ControlToValidate="TxbPesel" ForeColor="Red" ValidationGroup="valGroup1">*</asp:CustomValidator>
     </p>
     <p>
         Date of birth:
@@ -42,6 +44,7 @@
         E-mail:
         <asp:TextBox ID="TxbEmail" runat="server"></asp:TextBox>
         <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ErrorMessage="Enter proper email format with eksocmed.com domain" ControlToValidate="TxbEmail" ForeColor="Red" ValidationExpression="(?:^|\s)[\w!#$%&'*+/=?^`{|}~-](\.?[\w!#$%&'*+/=?^`{|}~-]+)*@eksocmed.com" ValidationGroup="valGroup1">*</asp:RegularExpressionValidator>
+        <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Email must contain employee name" OnServerValidate="EmailValidate" ControlToValidate="TxbEmail" ForeColor="Red" ValidationGroup="valGroup1">*</asp:CustomValidator>
     </p>
     <p>
         Phone number:
@@ -60,7 +63,7 @@
         * Those fields are required</p>
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ValidationGroup="valGroup1"/>
     <p>
-        <asp:Button ID="BtnNext" runat="server" Text="Next" ValidationGroup="valGroup1"/>
+        <asp:Button ID="BtnNext" runat="server" Text="Next" ValidationGroup="valGroup1" OnClick="BtnNext_Click"/>
     </p>
     <p>
         <asp:Button ID="BtnCancel" runat="server" Text="Cancel" OnClick="BtnCancel_Click" />

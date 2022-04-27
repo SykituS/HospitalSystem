@@ -33,6 +33,11 @@ namespace GUI
             Response.Redirect("EmployeeManagement/EmployeesManagementPage");
         }
 
+        protected void BtnOfficesManage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("OfficesManagement/OfficesManagementPage");
+        }
+
         protected void BtnSettings_Click(object sender, EventArgs e)
         {
             Response.Redirect("SettingPanelPage");

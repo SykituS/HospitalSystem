@@ -235,7 +235,6 @@ F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlown
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\pl\Microsoft.AspNet.FriendlyUrls.resources.dll
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.csproj.CopyComplete
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.dll
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\obj\Debug\GUI.pdb
 C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\GUI\bin\GUI.dll.config
@@ -410,3 +409,7 @@ C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\GU
 C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\GUI\obj\Debug\GUI.dll
 C:\Users\User\Desktop\Testowanie Oprogarmowania\Testowanie Oprogramowania (3)\GUI\obj\Debug\GUI.pdb
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Doctor.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Reception.dll
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Doctor.pdb
+F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\GUI\bin\Reception.pdb

@@ -36,8 +36,6 @@ namespace Doctor
 
             return dt;
         }
-
-
         
         public static List<DateTime> Get_Dates()
         {   

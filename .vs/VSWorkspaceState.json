@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GUI",
+    "\\GUI\\Pages",
+    "\\GUI\\Pages\\DoctorsPages"
   ],
-  "SelectedNode": "\\Testowanie Oprogramowania.sln",
+  "SelectedNode": "\\GUI\\Pages\\DoctorsPages\\ViewAppointment.aspx.cs",
   "PreviewInSolutionExplorer": false
 }

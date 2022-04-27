@@ -14,7 +14,7 @@
         </Fields>
     </asp:DetailsView>
     <br />
-    <asp:Button ID="BtnEditEmp" runat="server" Text="Edit employee" />
+    <asp:Button ID="BtnEditEmp" runat="server" Text="Edit employee" OnClick="BtnEditEmp_Click" />
     <br />
     <br />
     <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
