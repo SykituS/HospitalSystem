@@ -100,12 +100,12 @@ namespace GUI
                 //Label1.Visible = true;
 
             }
-            string cell = GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text;
-            TimeSpan time = TimeSpan.Parse(cell); 
 
-            DateTime day = Calendar1.SelectedDate;
-            GridView2.DataSource = AppoitmentDetails.Get_Details(day, time);
+            int cell = Int32.Parse(GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text);
+
+            GridView2.DataSource = AppoitmentDetails.Get_Details(cell);
             GridView2.DataBind();
+
         }
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)

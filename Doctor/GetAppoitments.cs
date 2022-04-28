@@ -21,9 +21,15 @@ namespace Doctor
             //string login = "AMaldonado5939";
 
             //a querry that returns information about visits of a logged-in doctor from the database (day, time, patient's data, office number))
-            string querry = "SELECT Ap_appoitment_day, Ap_appoitment_time, Ap_appoitment_time_end, Name, Patients.Surname,Of_office_number " + "\n" +
-                "FROM Appoitment, Patients, Doctors, Office, Users, Employee" + "\n" + "WHERE Id_Patients = Ap_patient AND ID_Doctor = Ap_doctor AND Of_id_office = Ap_office " +
-                "AND EM_Id_Employee = US_Employee AND EM_Id_Employee = ID_Employee AND US_Login = @login";
+            string querry = "SELECT  Ap_id_appoitment ,Ap_appoitment_day, Ap_appoitment_time,  Name, Patients.Surname, Of_office_number"+
+                "\n FROM Term_Of_Visit, Patients, Doctors, Office, Users, Employee, Appointment_details"+
+                "\n WHERE Id_Patients = AD_id"+
+                "\n AND ID_Doctor = Ap_doctor"+
+                "\n AND Of_id_office = Ap_office"+
+                "\n AND EM_Id_Employee = US_Employee"+
+                "\n AND EM_Id_Employee = ID_Employee"+
+                "\n AND Ap_id_appoitment = AD_fk_appointments"+
+                "\n AND US_Login = @login";
 
             //hooking a query
             SqlCommand command = new SqlCommand(querry);
@@ -48,7 +54,7 @@ namespace Doctor
             //adding days to list
             foreach(DataRow row in dt.Rows)
             {
-                dates.Add((DateTime)row[0]);
+                dates.Add((DateTime)row[1]);
             }
 
             return dates;
@@ -77,12 +83,11 @@ namespace Doctor
 
             //editing the table from unnecessary data
             dt_for_day.Columns.Remove("Ap_appoitment_day");
-            dt_for_day.Columns.Remove("Ap_appoitment_time_end");
             dt_for_day.Columns["Ap_appoitment_time"].ColumnName = "Godzina wizyty";
+            dt_for_day.Columns["Ap_id_appoitment"].ColumnName = "ID Wizyty";
             dt_for_day.Columns["Name"].ColumnName = "Imie";
             dt_for_day.Columns["Surname"].ColumnName = "Nazwisko";
             dt_for_day.Columns["Of_office_number"].ColumnName = "Gabinet";
-
 
             return dt_for_day;
         }

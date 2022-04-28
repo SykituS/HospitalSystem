@@ -74,7 +74,6 @@ C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doct
 C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\bin\Debug\Doctor.dll
 C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\bin\Debug\Doctor.pdb
 C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\bin\Debug\Administation.dll
-C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\bin\Debug\bdconn.dll
 C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\bin\Debug\BusinessAdministration.dll
 C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\bin\Debug\DBSystem.dll
 C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\bin\Debug\Administation.pdb
@@ -84,15 +83,3 @@ C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\obj\Debug\Doctor.csproj.CoreC
 C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\obj\Debug\Doctor.csproj.CopyComplete
 C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\obj\Debug\Doctor.dll
 C:\Users\bartl\source\repos\Repo_Testowanie\Doctor\obj\Debug\Doctor.pdb
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\Doctor.dll
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\Doctor.pdb
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\Administation.dll
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\BusinessAdministration.dll
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\DBSystem.dll
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\Administation.pdb
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\BusinessAdministration.pdb
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doctor.csproj.AssemblyReference.cache
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doctor.csproj.CopyComplete
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doctor.dll
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doctor.pdb
