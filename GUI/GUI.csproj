@@ -111,7 +111,7 @@
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\SettingPanelPage.aspx" />
-    <Content Include="Pages\AdministratorPages\UserManagement\UserManagementPage.aspx" />
+    <Content Include="Pages\AdministratorPages\UserManagementPages\UserManagementPage.aspx" />
     <Content Include="Pages\DoctorsPages\DoctorPanelPage.aspx" />
     <Content Include="Pages\MainPages\CancelationPage.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -225,11 +225,11 @@
     <Compile Include="Pages\AdministratorPages\SettingPanelPage.aspx.designer.cs">
       <DependentUpon>SettingPanelPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\AdministratorPages\UserManagement\UserManagementPage.aspx.cs">
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserManagementPage.aspx.cs">
       <DependentUpon>UserManagementPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\AdministratorPages\UserManagement\UserManagementPage.aspx.designer.cs">
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserManagementPage.aspx.designer.cs">
       <DependentUpon>UserManagementPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\DoctorsPages\DoctorPanelPage.aspx.cs">
@@ -387,7 +387,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Administration\Administration.csproj">
       <Project>{de75dffc-8f90-452e-9cd7-f9399667f15c}</Project>
-      <Name>Administation</Name>
+      <Name>Administration</Name>
     </ProjectReference>
     <ProjectReference Include="..\BusinessAdministration\BusinessAdministration.csproj">
       <Project>{94b76d6e-7174-4668-83f1-bb394b50e91e}</Project>

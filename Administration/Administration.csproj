@@ -7,8 +7,8 @@
     <ProjectGuid>{DE75DFFC-8F90-452E-9CD7-F9399667F15C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Administation</RootNamespace>
-    <AssemblyName>Administation</AssemblyName>
+    <RootNamespace>Administration</RootNamespace>
+    <AssemblyName>Administration</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -52,6 +52,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResetPassSys.cs" />
     <Compile Include="SettingsPanel.cs" />
+    <Compile Include="UserManagement.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

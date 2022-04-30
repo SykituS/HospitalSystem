@@ -1,4 +1,4 @@
-﻿<%@ Page Title="User Management" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="UserManagementPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagement.UserManagementPage" %>
+﻿<%@ Page Title="User Management" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="UserManagementPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserManagementPage" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div style="margin-top:15px">
@@ -21,14 +21,21 @@
         </asp:DropDownList>
         <br />
         <br />
-        <asp:GridView ID="GridViewUsers" runat="server" OnSelectedIndexChanged="GridViewUsers_SelectedIndexChanged">
+        <asp:GridView ID="GridViewUsers" runat="server" AllowSorting="True" OnSorting="GridViewUsers_Sorting" AutoGenerateColumns="False" OnRowCommand="GridViewUsers_RowCommand">
             <Columns>
                 <asp:BoundField HeaderText="User name" DataField="US_Login" />
                 <asp:BoundField HeaderText="First name" DataField="EM_Name" />
-                <asp:BoundField HeaderText="Second Name" DataField="EM_Second_Name" NullDisplayText=" " />
+                <asp:BoundField HeaderText="Second Name" DataField="EM_Sec_Name" NullDisplayText=" " />
                 <asp:BoundField HeaderText="Position" DataField="PO_Name" />
-                <asp:ButtonField DataTextField="St_Status_Name" HeaderText="Active status" Text="Active" />
-                <asp:ButtonField Text="Edit user" />
+
+                <asp:TemplateField HeaderText="Status">
+                    <ItemTemplate>
+                        <asp:Button ID="BtnChangeStatus" runat="server" Text='<%# Eval("St_Status_Name") %>' CommandName="ChangeStatus" CommandArgument="<%# Container.DataItemIndex %>"/>
+                    </ItemTemplate>
+                </asp:TemplateField>
+
+                
+                <asp:ButtonField Text="Edit user" CommandName="EditUser" />
             </Columns>
         </asp:GridView>
         <br />

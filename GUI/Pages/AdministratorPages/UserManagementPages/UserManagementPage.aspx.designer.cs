@@ -7,7 +7,7 @@
 // </generowany automatycznie>
 //------------------------------------------------------------------------------
 
-namespace GUI.Pages.AdministratorPages.UserManagement
+namespace GUI.Pages.AdministratorPages.UserManagementPages
 {
 
 

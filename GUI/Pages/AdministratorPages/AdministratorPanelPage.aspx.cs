@@ -25,7 +25,7 @@ namespace GUI
 
         protected void BtnUserList_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("UserManagementPages/UserManagementPage");
         }
 
         protected void BtnEmpManage_Click(object sender, EventArgs e)

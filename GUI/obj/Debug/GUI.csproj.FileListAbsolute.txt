@@ -465,7 +465,6 @@ F:\Projekty\TestowanieOprogramowania\GUI\bin\roslyn\vbc.exe.config
 F:\Projekty\TestowanieOprogramowania\GUI\bin\roslyn\vbc.rsp
 F:\Projekty\TestowanieOprogramowania\GUI\bin\roslyn\VBCSCompiler.exe
 F:\Projekty\TestowanieOprogramowania\GUI\bin\roslyn\VBCSCompiler.exe.config
-F:\Projekty\TestowanieOprogramowania\GUI\bin\Administation.dll
 F:\Projekty\TestowanieOprogramowania\GUI\bin\Antlr3.Runtime.dll
 F:\Projekty\TestowanieOprogramowania\GUI\bin\AspNet.ScriptManager.bootstrap.dll
 F:\Projekty\TestowanieOprogramowania\GUI\bin\AspNet.ScriptManager.jQuery.dll
@@ -482,7 +481,6 @@ F:\Projekty\TestowanieOprogramowania\GUI\bin\Reception.dll
 F:\Projekty\TestowanieOprogramowania\GUI\bin\System.Web.Optimization.dll
 F:\Projekty\TestowanieOprogramowania\GUI\bin\WebGrease.dll
 F:\Projekty\TestowanieOprogramowania\GUI\bin\DBSystem.dll
-F:\Projekty\TestowanieOprogramowania\GUI\bin\Administation.pdb
 F:\Projekty\TestowanieOprogramowania\GUI\bin\BusinessAdministration.pdb
 F:\Projekty\TestowanieOprogramowania\GUI\bin\Doctor.pdb
 F:\Projekty\TestowanieOprogramowania\GUI\bin\Reception.pdb
@@ -498,3 +496,5 @@ F:\Projekty\TestowanieOprogramowania\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.
 F:\Projekty\TestowanieOprogramowania\GUI\obj\Debug\GUI.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowania\GUI\obj\Debug\GUI.dll
 F:\Projekty\TestowanieOprogramowania\GUI\obj\Debug\GUI.pdb
+F:\Projekty\TestowanieOprogramowania\GUI\bin\Administration.dll
+F:\Projekty\TestowanieOprogramowania\GUI\bin\Administration.pdb
