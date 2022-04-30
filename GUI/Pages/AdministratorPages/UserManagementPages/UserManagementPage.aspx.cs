@@ -21,6 +21,14 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
                 GridViewUsers.DataSource = UserManagement.GetUsersFromDB();
                 GridViewUsers.DataBind();
 
+                DropDownListPosition.DataSource = UserManagement.GetPostionsFromDB();
+                DropDownListPosition.DataBind();
+                DropDownListPosition.DataTextField = "PO_Name";
+                DropDownListPosition.DataValueField = "PO_id_Position";
+                DropDownListPosition.DataBind();
+
+                DropDownListPosition.Items.Add("All");
+                DropDownListPosition.SelectedValue = "All";
             }
         }
 

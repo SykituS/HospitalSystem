@@ -23,6 +23,17 @@ namespace Administration
             return dt;
         }
 
+        public static DataTable GetPostionsFromDB()
+        {
+            DataTable dt = new DataTable();
+
+            string query = "SELECT * FROM dbo.Position";
+            SqlCommand command = new SqlCommand(query);
+            DBSystem.DBSystem.SelectFromDB(dt, command);
+
+            return dt;
+        }
+
         public static DataTable UpdateUserStatus(string login, string status)
         {
             string query = "UPDATE dbo.Users SET US_Status = @StatusID WHERE US_Login = @Login";
