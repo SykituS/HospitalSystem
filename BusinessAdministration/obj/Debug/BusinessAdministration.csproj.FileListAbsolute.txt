@@ -30,3 +30,11 @@ F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessA
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\BusinessAdministration\bin\Debug\DBSystem.dll
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.dll
+F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
+F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Debug\DBSystem.dll
+F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
+F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
+F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.dll
+F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.pdb

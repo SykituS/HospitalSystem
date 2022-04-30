@@ -3,8 +3,9 @@
     "",
     "\\GUI",
     "\\GUI\\Pages",
-    "\\GUI\\Pages\\DoctorsPages"
+    "\\GUI\\Pages\\AdministratorPages",
+    "\\GUI\\Pages\\AdministratorPages\\UserManagement"
   ],
-  "SelectedNode": "\\GUI\\Pages\\DoctorsPages\\ViewAppointment.aspx.cs",
+  "SelectedNode": "\\Testowanie Oprogramowania.sln",
   "PreviewInSolutionExplorer": false
 }

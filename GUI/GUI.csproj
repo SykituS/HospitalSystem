@@ -106,10 +106,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pages\AdministratorPages\AdministratorPanelPage.aspx" />
+    <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesConfirmDelete.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\SettingPanelPage.aspx" />
+    <Content Include="Pages\AdministratorPages\UserManagement\UserManagementPage.aspx" />
     <Content Include="Pages\DoctorsPages\DoctorPanelPage.aspx" />
     <Content Include="Pages\MainPages\CancelationPage.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -188,6 +190,13 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx.cs">
+      <DependentUpon>EmployeeEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx.designer.cs">
+      <DependentUpon>EmployeeEditPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesConfirmDelete.aspx.cs">
       <DependentUpon>OfficesConfirmDelete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,6 +224,13 @@
     </Compile>
     <Compile Include="Pages\AdministratorPages\SettingPanelPage.aspx.designer.cs">
       <DependentUpon>SettingPanelPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagement\UserManagementPage.aspx.cs">
+      <DependentUpon>UserManagementPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagement\UserManagementPage.aspx.designer.cs">
+      <DependentUpon>UserManagementPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\DoctorsPages\DoctorPanelPage.aspx.cs">
       <DependentUpon>DoctorPanelPage.aspx</DependentUpon>
