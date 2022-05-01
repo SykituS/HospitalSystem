@@ -42,7 +42,7 @@ namespace Administration
                             query += " AND ";
 
                         query += "EM_Sec_Name LIKE @sName + '%'";
-                        command.Parameters.AddWithValue("@sName", fName);
+                        command.Parameters.AddWithValue("@sName", sName);
 
                         add = true;
                     }
