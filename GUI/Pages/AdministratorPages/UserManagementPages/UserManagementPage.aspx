@@ -11,26 +11,26 @@
         <asp:Label ID="Label1" runat="server" Text="Filter by:"></asp:Label>
         <br />
         <asp:Label ID="Label2" runat="server" Text="First name:   "></asp:Label>
-        <asp:TextBox ID="TBNameFirst" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBNameFirst" runat="server" OnTextChanged="Sort" AutoPostBack="true"></asp:TextBox>
         <br />
         <asp:Label ID="Label3" runat="server" Text="Second name:   "></asp:Label>
-        <asp:TextBox ID="TBNameSecond" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBNameSecond" runat="server" OnTextChanged="Sort" AutoPostBack="true"></asp:TextBox>
         <br />
         <asp:Label ID="Label4" runat="server" Text="Position:   "></asp:Label>
-        <asp:DropDownList ID="DropDownListPosition" runat="server">
+        <asp:DropDownList ID="DropDownListPosition" runat="server" OnSelectedIndexChanged="Sort" AutoPostBack="true">
         </asp:DropDownList>
         <br />
         <br />
         <asp:GridView ID="GridViewUsers" runat="server" AllowSorting="True" OnSorting="GridViewUsers_Sorting" AutoGenerateColumns="False" OnRowCommand="GridViewUsers_RowCommand">
             <Columns>
-                <asp:BoundField HeaderText="User name" DataField="US_Login" />
-                <asp:BoundField HeaderText="First name" DataField="EM_Name" />
-                <asp:BoundField HeaderText="Second Name" DataField="EM_Sec_Name" NullDisplayText=" " />
-                <asp:BoundField HeaderText="Position" DataField="PO_Name" />
+                <asp:BoundField HeaderText="User name" DataField="US_Login" SortExpression="US_Login"/>
+                <asp:BoundField HeaderText="First name" DataField="EM_Name" SortExpression="EM_Name" />
+                <asp:BoundField HeaderText="Second Name" DataField="EM_Sec_Name" SortExpression="EM_Sec_Name" NullDisplayText=" " />
+                <asp:BoundField HeaderText="Position" DataField="PO_Name" SortExpression="PO_Name" />
 
-                <asp:TemplateField HeaderText="Status">
+                <asp:TemplateField HeaderText="Status" SortExpression="St_Status_Name">
                     <ItemTemplate>
-                        <asp:Button ID="BtnChangeStatus" runat="server" Text='<%# Eval("St_Status_Name") %>' CommandName="ChangeStatus" CommandArgument="<%# Container.DataItemIndex %>"/>
+                        <asp:Button ID="BtnChangeStatus" runat="server" Text='<%# Eval("St_Status_Name") %>' CommandName="ChangeStatus" CommandArgument="<%# Container.DataItemIndex %>" />
                     </ItemTemplate>
                 </asp:TemplateField>
 

@@ -24,7 +24,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
                 DropDownListPosition.DataSource = UserManagement.GetPostionsFromDB();
                 DropDownListPosition.DataBind();
                 DropDownListPosition.DataTextField = "PO_Name";
-                DropDownListPosition.DataValueField = "PO_id_Position";
+                DropDownListPosition.DataValueField = "PO_Name";
                 DropDownListPosition.DataBind();
 
                 DropDownListPosition.Items.Add("All");
@@ -34,11 +34,16 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
 
         protected void GridViewUsers_Sorting(object sender, GridViewSortEventArgs e)
         {
-
+            GridViewUsers.DataSource = UserManagement.SortDataView(e, TBNameFirst.Text, TBNameSecond.Text, DropDownListPosition.SelectedValue);
+            GridViewUsers.DataBind();
         }
 
         protected void GridViewUsers_RowCommand(object sender, GridViewCommandEventArgs e)
         {
+            if (e.CommandName == "Sort")
+                return;
+            string s = e.CommandName;
+
             int index = Convert.ToInt32(e.CommandArgument);
             GridViewRow row = GridViewUsers.Rows[index];
 
@@ -54,6 +59,12 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             {
                 Console.Write(e.CommandName);
             }
+        }
+
+        protected void Sort(object sender, EventArgs e)
+        {
+            GridViewUsers.DataSource = UserManagement.GetUsersFromDB(TBNameFirst.Text, TBNameSecond.Text, DropDownListPosition.SelectedValue);
+            GridViewUsers.DataBind();
         }
     }
 }
