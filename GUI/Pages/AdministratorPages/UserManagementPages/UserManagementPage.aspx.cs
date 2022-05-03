@@ -51,8 +51,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
 
             if (e.CommandName == "ChangeStatus")
             {
-                GridViewUsers.DataSource = UserManagement.UpdateUserStatus(row.Cells[0].Text, btn.Text);
-                GridViewUsers.DataBind();
+                Response.Redirect("UserStatusUpdateConfirmPage.aspx?login=" + row.Cells[0].Text + "&status=" + btn.Text);
             }
 
             if (e.CommandName == "EditUser")

@@ -112,6 +112,7 @@
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\SettingPanelPage.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserManagementPage.aspx" />
+    <Content Include="Pages\AdministratorPages\UserManagementPages\UserStatusUpdateConfirmPage.aspx" />
     <Content Include="Pages\DoctorsPages\DoctorPanelPage.aspx" />
     <Content Include="Pages\MainPages\CancelationPage.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -231,6 +232,13 @@
     </Compile>
     <Compile Include="Pages\AdministratorPages\UserManagementPages\UserManagementPage.aspx.designer.cs">
       <DependentUpon>UserManagementPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserStatusUpdateConfirmPage.aspx.cs">
+      <DependentUpon>UserStatusUpdateConfirmPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserStatusUpdateConfirmPage.aspx.designer.cs">
+      <DependentUpon>UserStatusUpdateConfirmPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\DoctorsPages\DoctorPanelPage.aspx.cs">
       <DependentUpon>DoctorPanelPage.aspx</DependentUpon>
