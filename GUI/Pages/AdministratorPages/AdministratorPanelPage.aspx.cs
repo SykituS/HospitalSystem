@@ -23,7 +23,7 @@ namespace GUI
             Response.Redirect("~/Pages/MainPages/CancelationPage");
         }
 
-        protected void BtnUserList_Click(object sender, EventArgs e)
+        protected void BtnUserManagement_Click(object sender, EventArgs e)
         {
             Response.Redirect("UserManagementPages/UserManagementPage");
         }

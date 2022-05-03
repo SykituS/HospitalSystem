@@ -3,7 +3,7 @@
 
     <div style="margin-top:15px">
 
-        <asp:Button ID="BtnBack" runat="server" Text="Back to menu" />
+        <asp:Button ID="BtnBack" runat="server" Text="Back to menu" OnClick="BtnBack_Click" />
         <br />
         <asp:Button ID="BtnAddNewUser" runat="server" Text="Add new user" />
         <br />

@@ -6,7 +6,7 @@
         <asp:Button ID="BtnSettings" runat="server" Text="Settings" OnClick="BtnSettings_Click" />
         <br />
         <br />
-        <asp:Button ID="BtnUserList" runat="server" Text="User List" OnClick="BtnUserList_Click" />
+        <asp:Button ID="BtnUserManegment" runat="server" Text="User Management" OnClick="BtnUserManagement_Click" />
         <br />
         <br />
         <asp:Button ID="BtnEmpManage" runat="server" OnClick="BtnEmpManage_Click" Text="Employees Management" />

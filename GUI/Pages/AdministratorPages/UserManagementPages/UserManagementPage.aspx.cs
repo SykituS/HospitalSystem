@@ -66,5 +66,11 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             GridViewUsers.DataSource = UserManagement.GetUsersFromDB(TBNameFirst.Text, TBNameSecond.Text, DropDownListPosition.SelectedValue);
             GridViewUsers.DataBind();
         }
+
+        protected void BtnBack_Click(object sender, EventArgs e)
+        {
+            //Button which returns to the main page
+            Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
+        }
     }
 }
