@@ -42,15 +42,14 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
         {
             if (e.CommandName == "Sort")
                 return;
-            string s = e.CommandName;
 
             int index = Convert.ToInt32(e.CommandArgument);
             GridViewRow row = GridViewUsers.Rows[index];
 
-            Button btn = (Button)e.CommandSource;
 
             if (e.CommandName == "ChangeStatus")
             {
+                Button btn = (Button)e.CommandSource;
                 Response.Redirect("UserStatusUpdateConfirmPage.aspx?login=" + row.Cells[0].Text + "&status=" + btn.Text);
             }
 
