@@ -143,5 +143,25 @@ namespace Administration
             }
         }
 
+        public static string PasswordValidation(string NewPassword, string ConfirmPassword)
+        {
+            if (NewPassword.Length == ConfirmPassword.Length)
+            {
+                if (NewPassword.Length >= 8 && ConfirmPassword.Length <= 15)
+                {
+                    if (NewPassword.Any(char.IsUpper) && NewPassword.Any(char.IsLower) && NewPassword.Any(char.IsDigit) && NewPassword.Any(char.IsPunctuation))
+                    {
+                        return "OK";
+                    }
+                    else
+                        return "Password must include at least one lowercase, uppercase, number and special character (-, _, !, #, $, *)";
+                }
+                else
+                    return "Incorrect password length";
+            }
+            else
+                return "Passwords must be this same";
+
+        }
     }
 }

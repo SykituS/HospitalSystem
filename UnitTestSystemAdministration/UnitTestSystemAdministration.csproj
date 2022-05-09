@@ -51,9 +51,20 @@
   <ItemGroup>
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitTest2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Administration\Administration.csproj">
+      <Project>{de75dffc-8f90-452e-9cd7-f9399667f15c}</Project>
+      <Name>Administration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GUI\GUI.csproj">
+      <Project>{25d8c204-d3d5-40e7-914d-927e6f97ce8b}</Project>
+      <Name>GUI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
