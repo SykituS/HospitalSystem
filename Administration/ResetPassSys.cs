@@ -125,8 +125,11 @@ namespace Administration
         }
 
         //Updating password in database
-        public static void ResetPassword(string NewPassword, string login)
+        public static void ResetPassword(string NewPassword, string ConfirmPassword, string login)
         {
+            if (!PasswordValidation(NewPassword, ConfirmPassword).Equals("OK"))
+                return;
+
             string query = "UPDATE Users SET US_Password =@NewPassword WHERE US_Login= @login ";
 
             SqlCommand command = new SqlCommand(query);

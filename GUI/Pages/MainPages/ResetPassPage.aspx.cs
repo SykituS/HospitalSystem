@@ -28,7 +28,7 @@ namespace GUI
 
             if (result.Equals("OK"))
             {
-                ResetPassSys.ResetPassword(TBNewPass.Text, MySession.Current.Login);
+                ResetPassSys.ResetPassword(TBNewPass.Text, TBConfirmNewPass.Text, MySession.Current.Login);
                 Response.Redirect("Default.aspx");
             }
             else
