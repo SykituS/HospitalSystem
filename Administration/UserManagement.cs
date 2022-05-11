@@ -13,22 +13,24 @@ namespace Administration
     public class UserManagement
     {
         static string sortDirection = " ASC";
-        //Getting data from DataBase
+        //Retrieving data from a database with possible filters
         public static DataTable GetUsersFromDB(string fName = null, string sName = null, string position = null)
         {
             bool add = false;//If true then add "AND" to query
 
             DataTable dt = new DataTable();
 
+            //Default querry
             string query = "Select US_Login, EM_Name, EM_Sec_Name, PO_Name, St_Status_Name " +
                 "FROM dbo.Employee INNER JOIN dbo.Users on US_Employee = EM_Id_Employee INNER JOIN dbo.Position on EM_Position = PO_Id_Position " +
                 "INNER JOIN dbo.status on St_Id_Status = US_Status ";
 
             using (SqlCommand command = new SqlCommand())
             {
+                //Check if any filter has been activated
                 if (!string.IsNullOrEmpty(fName) || !string.IsNullOrEmpty(sName) || (!string.IsNullOrEmpty(position) && position != "All"))
                 {
-                    query += "WHERE ";
+                    query += "WHERE "; //Adding "where" to the end of querry
                     if (!string.IsNullOrEmpty(fName))
                     {
                         query += "EM_Name LIKE @fName + '%'";
@@ -92,7 +94,7 @@ namespace Administration
             DataTable dt = GetUsersFromDB();
             return dt;
         }
-
+        //Sorting data in GridView
         public static DataView SortDataView(GridViewSortEventArgs e, string fName, string sName, string position)
         {
             DataView dv = new DataView(GetUsersFromDB(fName, sName, position));

@@ -11,13 +11,13 @@
         <asp:Label ID="Label1" runat="server" Text="Filter by:"></asp:Label>
         <br />
         <asp:Label ID="Label2" runat="server" Text="First name:   "></asp:Label>
-        <asp:TextBox ID="TBNameFirst" runat="server" OnTextChanged="Sort" AutoPostBack="true"></asp:TextBox>
+        <asp:TextBox ID="TBNameFirst" runat="server" OnTextChanged="FilterGridView" AutoPostBack="true"></asp:TextBox>
         <br />
         <asp:Label ID="Label3" runat="server" Text="Second name:   "></asp:Label>
-        <asp:TextBox ID="TBNameSecond" runat="server" OnTextChanged="Sort" AutoPostBack="true"></asp:TextBox>
+        <asp:TextBox ID="TBNameSecond" runat="server" OnTextChanged="FilterGridView" AutoPostBack="true"></asp:TextBox>
         <br />
         <asp:Label ID="Label4" runat="server" Text="Position:   "></asp:Label>
-        <asp:DropDownList ID="DropDownListPosition" runat="server" OnSelectedIndexChanged="Sort" AutoPostBack="true">
+        <asp:DropDownList ID="DropDownListPosition" runat="server" OnSelectedIndexChanged="FilterGridView" AutoPostBack="true">
         </asp:DropDownList>
         <br />
         <br />

@@ -13,8 +13,6 @@ namespace Administration
         {
             Attempt = 3;
             IsLogged = false;
-
-            // SetTime = 30;
         }
 
         //gets the current session

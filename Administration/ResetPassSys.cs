@@ -34,6 +34,10 @@ namespace Administration
         //Checking user status before sending email
         public static void SendMail(string login, string email)
         {
+            //Checking if email is valid
+            if (!IsValidEmail(email))
+                return;
+
             DataTable dt = GetInforamtion(login, email);
             if (dt.Rows.Count == 0)
                 return;
@@ -84,6 +88,8 @@ namespace Administration
 
             return false;
         }
+
+        //user status update regarding sending a link to change password
         public static void StatusUpdate(string login, DateTime date, bool status)
         {
             string query = "UPDATE dbo.users " +
@@ -112,7 +118,7 @@ namespace Administration
 
             try
             {
-                var emailValid = new System.Net.Mail.MailAddress(email);
+                var emailValid = new MailAddress(email);
 
                 Result = (email.LastIndexOf(".") > email.LastIndexOf("@"));
             }
@@ -146,6 +152,7 @@ namespace Administration
             }
         }
 
+        //BackEnd password Validation
         public static string PasswordValidation(string NewPassword, string ConfirmPassword)
         {
             if (NewPassword.Length == ConfirmPassword.Length)
