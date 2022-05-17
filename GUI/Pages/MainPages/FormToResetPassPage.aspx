@@ -16,7 +16,7 @@
         <asp:Label ID="LabelSendInfo" runat="server" Text="The e-mail has been sent. Please check your mailbox." Visible="False"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="BtnOk" runat="server" OnClick="BtnOk_Click" Text="Ok" Enabled="False" />
+        <asp:Button ID="BtnOk" runat="server" OnClick="BtnOk_Click" Text="Ok" />
         <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
         </div>
         <br />
