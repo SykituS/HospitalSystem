@@ -10,7 +10,7 @@ using System.Net.Mail;
 
 namespace Administration
 {
-    class EmailSendingClass
+    public class EmailSendingClass
     {
         //Sending email to user
         public static void EmailSending(string email, string topic, StringBuilder sb)
@@ -25,6 +25,25 @@ namespace Administration
             message.IsBodyHtml = true;
 
             smtp.Send(message);
+        }
+
+        //Email validation
+        public static bool IsValidEmail(string email)
+        {
+            bool Result = false;
+
+            try
+            {
+                var emailValid = new MailAddress(email);
+
+                Result = (email.LastIndexOf(".") > email.LastIndexOf("@"));
+            }
+            catch (Exception)
+            {
+                Result = false;
+            }
+
+            return Result;
         }
     }
 }

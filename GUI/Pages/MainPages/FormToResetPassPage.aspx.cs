@@ -16,6 +16,9 @@ namespace GUI
 
         protected void BtnOk_Click(object sender, EventArgs e)
         {
+            if (!EmailSendingClass.IsValidEmail(TBEmail.Text))
+                return;
+
             LabelSendInfo.Visible = true;
             ResetPassSys.SendMail(TBLogin.Text, TBEmail.Text);
         }
@@ -23,14 +26,6 @@ namespace GUI
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
             Response.Redirect("Default.aspx");
-        }
-
-        protected void Timer1_Tick(object sender, EventArgs e)
-        {
-            if (ResetPassSys.IsValidEmail(TBEmail.Text))
-                BtnOk.Enabled = true;
-            else
-                BtnOk.Enabled = false;
         }
     }
 }

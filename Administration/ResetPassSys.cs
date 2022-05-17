@@ -35,7 +35,7 @@ namespace Administration
         public static void SendMail(string login, string email)
         {
             //Checking if email is valid
-            if (!IsValidEmail(email))
+            if (!EmailSendingClass.IsValidEmail(email))
                 return;
 
             DataTable dt = GetInforamtion(login, email);
@@ -98,25 +98,6 @@ namespace Administration
             {
                 System.Console.WriteLine("error:" + ex);
             }
-        }
-
-        //Email validation
-        public static bool IsValidEmail(string email)
-        {
-            bool Result = false;
-
-            try
-            {
-                var emailValid = new MailAddress(email);
-
-                Result = (email.LastIndexOf(".") > email.LastIndexOf("@"));
-            }
-            catch (Exception)
-            {
-                Result = false;
-            }
-
-            return Result;
         }
 
         //Updating password in database

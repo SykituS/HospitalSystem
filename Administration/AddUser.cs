@@ -38,16 +38,22 @@ namespace Administration
      
         public static void AddNewUser(int id)
         {
-           string password = Membership.GeneratePassword(12, 1);
+            string password = Membership.GeneratePassword(12, 1);
             string login = LoginGenerator(id);
+            string email = "";
             string query = "INSERT INTO Users VALUES(NEXT VALUE FOR Seq_Users, @login, @password, @id_employee, Us_isDuringReset, Us_PassResetActiveTime, US_Status)";
 
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@login", login);
             command.Parameters.AddWithValue("@password", password);
             command.Parameters.AddWithValue("@id_employee", id);
+
             try
             {
+                if (!EmailSendingClass.IsValidEmail(email))
+                    return;
+
+                EmailSendingClass.EmailSending(email, "Login data", Message(login, password));
                 DBSystem.DBSystem.UpdateDB(command);
             }
             catch (Exception ex)
@@ -55,6 +61,17 @@ namespace Administration
                 System.Console.WriteLine("error:" + ex);
             }
         }
-         
+
+        private static StringBuilder Message(string login, string password)
+        {
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Hi, <br /> Here is your login and password: <br />");
+            sb.Append("Login: " + login+ "<br />");
+            sb.Append("Password: " + password + "<br />");
+            sb.Append("Have a nice day, <br /> Medical clinic");
+
+            return sb;
+        }
     }
     }

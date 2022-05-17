@@ -15,7 +15,7 @@ namespace UnitTestSystemAdministration
             string email = "lmartin@eksoc.com";
 
             //act
-            var result = Administration.ResetPassSys.IsValidEmail(email);
+            var result = Administration.EmailSendingClass.IsValidEmail(email);
 
             //assert
             Assert.AreEqual(true, result);
@@ -31,7 +31,7 @@ namespace UnitTestSystemAdministration
             string email = "";
 
             //act
-            var result = Administration.ResetPassSys.IsValidEmail(email);
+            var result = Administration.EmailSendingClass.IsValidEmail(email);
 
             //assert
             Assert.AreEqual(true, result, "Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.");
@@ -47,7 +47,7 @@ namespace UnitTestSystemAdministration
             string email = "lmartin@eksoc@com";
 
             //act
-            var result = Administration.ResetPassSys.IsValidEmail(email);
+            var result = Administration.EmailSendingClass.IsValidEmail(email);
 
             //assert
             Assert.AreEqual(true, result, "Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.");

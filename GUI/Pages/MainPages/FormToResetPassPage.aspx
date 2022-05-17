@@ -13,20 +13,11 @@
         <br />
 
         <div>
-         <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick" ></asp:Timer>
-        
-           <asp:UpdatePanel ID="update" runat="server" Mode="Conditional">
-               <ContentTemplate>
-                <asp:Label ID="LabelSendInfo" runat="server" Text="The e-mail has been sent. Please check your mailbox." Visible="False"></asp:Label>
-                <br />
-                <br />
-                 <asp:Button ID="BtnOk" runat="server" OnClick="BtnOk_Click" Text="Ok" Enabled="False" />
-                 <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
-               </ContentTemplate>
-               <Triggers>
-                   <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="tick" />
-               </Triggers>
-           </asp:UpdatePanel> 
+        <asp:Label ID="LabelSendInfo" runat="server" Text="The e-mail has been sent. Please check your mailbox." Visible="False"></asp:Label>
+        <br />
+        <br />
+        <asp:Button ID="BtnOk" runat="server" OnClick="BtnOk_Click" Text="Ok" Enabled="False" />
+        <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
         </div>
         <br />
 
