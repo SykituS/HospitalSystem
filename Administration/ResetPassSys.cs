@@ -48,12 +48,10 @@ namespace Administration
 
             //changing information about link life time and status "is during reset"
             StatusUpdate(login, DateTime.Now.AddMinutes(15), true);
-
-            EmailSending(login, email);
+            EmailSendingClass.EmailSending(email, "Password reset", Message(login, email));
         }
 
-        //Sending email to user
-        private static void EmailSending(string login, string email)
+        private static StringBuilder Message(string login, string email)
         {
             StringBuilder sb = new StringBuilder();
 
@@ -61,16 +59,7 @@ namespace Administration
             sb.Append("<a href=https://localhost:44356/Pages/MainPages/ResetPassPage?login=" + login);
             sb.Append("&email=" + email + "> Click here to change your password</a><br />");
 
-            MailMessage message = new MailMessage("medicalcliniceksoc@gmail.com", email.Trim(), "Password reset", sb.ToString());
-
-            SmtpClient smtp = new SmtpClient();
-            smtp.Host = "smtp.gmail.com";
-            smtp.Port = 587;
-            smtp.Credentials = new NetworkCredential("medicalcliniceksoc@gmail.com", "MedicalEksoc");
-            smtp.EnableSsl = true;
-            message.IsBodyHtml = true;
-
-            smtp.Send(message);
+            return sb;
         }
 
         //Checking if user can send new link to reset password
