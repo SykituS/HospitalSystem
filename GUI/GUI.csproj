@@ -111,6 +111,8 @@
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\SettingPanelPage.aspx" />
+    <Content Include="Pages\AdministratorPages\UserManagementPages\UserAddPage.aspx" />
+    <Content Include="Pages\AdministratorPages\UserManagementPages\UserEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserStatusUpdateConfirmPage.aspx" />
     <Content Include="Pages\DoctorsPages\DoctorPanelPage.aspx" />
@@ -225,6 +227,20 @@
     </Compile>
     <Compile Include="Pages\AdministratorPages\SettingPanelPage.aspx.designer.cs">
       <DependentUpon>SettingPanelPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserAddPage.aspx.cs">
+      <DependentUpon>UserAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserAddPage.aspx.designer.cs">
+      <DependentUpon>UserAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserEditPage.aspx.cs">
+      <DependentUpon>UserEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserEditPage.aspx.designer.cs">
+      <DependentUpon>UserEditPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdministratorPages\UserManagementPages\UserManagementPage.aspx.cs">
       <DependentUpon>UserManagementPage.aspx</DependentUpon>

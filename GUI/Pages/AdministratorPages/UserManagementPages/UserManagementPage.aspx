@@ -5,7 +5,7 @@
 
         <asp:Button ID="BtnBack" runat="server" Text="Back to menu" OnClick="BtnBack_Click" />
         <br />
-        <asp:Button ID="BtnAddNewUser" runat="server" Text="Add new user" />
+        <asp:Button ID="BtnAddNewUser" runat="server" Text="Add new user" OnClick="BtnAddNewUser_Click" />
         <br />
         <br />
         <asp:Label ID="Label1" runat="server" Text="Filter by:"></asp:Label>
@@ -21,7 +21,7 @@
         </asp:DropDownList>
         <br />
         <br />
-        <asp:GridView ID="GridViewUsers" runat="server" AllowSorting="True" OnSorting="GridViewUsers_Sorting" AutoGenerateColumns="False" OnRowCommand="GridViewUsers_RowCommand">
+        <asp:GridView ID="GridViewUsers" runat="server" AllowSorting="True" OnSorting="GridViewUsers_Sorting" AutoGenerateColumns="False" OnRowCommand="GridViewUsers_RowCommand" OnSelectedIndexChanged="GridViewUsers_SelectedIndexChanged">
             <Columns>
                 <asp:BoundField HeaderText="User name" DataField="US_Login" SortExpression="US_Login"/>
                 <asp:BoundField HeaderText="First name" DataField="EM_Name" SortExpression="EM_Name" />

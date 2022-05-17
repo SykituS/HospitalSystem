@@ -54,6 +54,7 @@
     <Compile Include="ResetPassSys.cs" />
     <Compile Include="SettingsPanel.cs" />
     <Compile Include="UserManagement.cs" />
+    <Compile Include="AddUser.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

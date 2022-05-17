@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Administration;
+using System.Web.Security;
 
 namespace GUI
 {
@@ -77,7 +78,7 @@ namespace GUI
             {
                 MySession.Current.Attempt--;
                 LabelWarnings.Visible = true;
-                LabelWarnings.Text = LogSys.GetAttempTextTry();
+                LabelWarnings.Text = Membership.GeneratePassword(12, 1);
             }
             else
             {

@@ -60,7 +60,9 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             //Button "Edit user" click
             if (e.CommandName == "EditUser")
             {
-                Console.Write(e.CommandName);
+               // Console.Write(e.CommandName);
+                Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserEditPage");
+
             }
         }
 
@@ -75,6 +77,16 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
         {
             //Button which returns to the main page
             Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
+        }
+
+        protected void BtnAddNewUser_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserAddPage");
+        }
+
+        protected void GridViewUsers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -1,0 +1,60 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
+using System.Web.UI.WebControls;
+using System.Web.Security;
+
+namespace Administration
+{
+    public class AddUser
+    {
+        public static DataTable dropdownlist()
+        {
+
+
+            DataTable dt = new DataTable();
+            string query = " select EM_Id_Employee,CONCAT(EM_NAME, ' ', EM_Surname) AS Employees_Without_User from dbo.users right join dbo.employee on EM_Id_Employee = US_Employee WHERE US_Id_Users IS NULL";
+            SqlCommand command = new SqlCommand(query);
+            DBSystem.DBSystem.SelectFromDB(dt, command);
+            return dt;
+        }
+       
+
+        public static string LoginGenerator(int id)
+        {
+            
+            DataTable dt = new DataTable();
+            string query = "SELECT LEFT(EM_NAME, 1) + EM_Surname + LEFT(EM_Pesel,2) + RIGHT(EM_Pesel,2) AS User_Login FROM dbo.Employee WHERE EM_Id_Employee=@id";
+            SqlCommand command = new SqlCommand(query);
+            command.Parameters.AddWithValue("@EM_Id_Employee", id);
+            DBSystem.DBSystem.SelectFromDB(dt, command);
+            return (string)dt.Rows[0][0];
+            
+        }
+     
+        public static void AddNewUser(int id)
+        {
+           string password = Membership.GeneratePassword(12, 1);
+            string login = LoginGenerator(id);
+            string query = "INSERT INTO Users VALUES(NEXT VALUE FOR Seq_Users, @login, @password, @id_employee, Us_isDuringReset, Us_PassResetActiveTime, US_Status)";
+
+            SqlCommand command = new SqlCommand(query);
+            command.Parameters.AddWithValue("@login", login);
+            command.Parameters.AddWithValue("@password", password);
+            command.Parameters.AddWithValue("@id_employee", id);
+            try
+            {
+                DBSystem.DBSystem.UpdateDB(command);
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine("error:" + ex);
+            }
+        }
+         
+    }
+    }
