@@ -32,7 +32,7 @@ namespace Administration
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@EM_Id_Employee", id);
             DBSystem.DBSystem.SelectFromDB(dt, command);
-            return (string)dt.Rows[0][0];
+            return (string)dt.Rows[0]["User_Login"];
             
         }
      
@@ -40,12 +40,11 @@ namespace Administration
         {
             string password = Membership.GeneratePassword(12, 1);
             string login = LoginGenerator(id);
-            string email = "";
-            string query = "INSERT INTO Users VALUES(NEXT VALUE FOR Seq_Users, @login, @password, @id_employee, Us_isDuringReset, Us_PassResetActiveTime, US_Status)";
-
+            string email = "SELECT EM_Email FROM dbo.Employee WHERE EM_Id_Employee = @id_employee";
+            string query = "INSERT INTO Users (US_Id_Users, US_Login, US_Password, US_Employee, US_Status) VALUES(NEXT VALUE FOR Seq_Users, @login, @password, @id_employee, '2')";
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@login", login);
-            command.Parameters.AddWithValue("@password", password);
+            command.Parameters.AddWithValue("@password", PasswordHashing.hashPassword(password));
             command.Parameters.AddWithValue("@id_employee", id);
 
             try
