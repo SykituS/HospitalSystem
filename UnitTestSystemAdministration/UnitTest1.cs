@@ -26,6 +26,22 @@ namespace UnitTestSystemAdministration
         [TestMethod]
         public void TestMethodIDPAS0402()
         {
+            /*Correct data: user enter two passwords that are the same and they match the acceptance criteria*/
+
+            //arrange
+            string newPassword = "123zaq1@WSX4567";
+            string confirmNewPassword = "123zaq1@WSX4567";
+
+            //act
+            var result = Administration.ResetPassSys.PasswordValidation(newPassword, confirmNewPassword);
+
+            //assert
+            Assert.AreEqual("OK", result);
+        }
+
+        [TestMethod]
+        public void TestMethodIDPAS0403()
+        {
             /*Incorrect data: user enters two passwords that are not the same*/
 
             //arrange
@@ -40,7 +56,7 @@ namespace UnitTestSystemAdministration
         }
 
         [TestMethod]
-        public void TestMethodIDPAS0403()
+        public void TestMethodIDPAS0404()
         {
             /*Incorrect data: user enters two passwords that are the same but they are not matching the acceptance criteria - 
              * the password is too short (less than 8 characters)*/
@@ -57,7 +73,7 @@ namespace UnitTestSystemAdministration
         }
 
         [TestMethod]
-        public void TestMethodIDPAS0404()
+        public void TestMethodIDPAS0405()
         {
             /*Incorrect data: user enters two passwords that are the same but they are not matching the acceptance criteria - 
              * the password is too long (more than 15 characters)*/
@@ -74,7 +90,7 @@ namespace UnitTestSystemAdministration
         }
 
         [TestMethod]
-        public void TestMethodIDPAS0405()
+        public void TestMethodIDPAS0406()
         {
             /*Incorrect data: user enters two passwords that are the same but they are not matching the acceptance criteria - the lack of a lowercase character*/
 
@@ -90,7 +106,7 @@ namespace UnitTestSystemAdministration
         }
 
         [TestMethod]
-        public void TestMethodIDPAS0406()
+        public void TestMethodIDPAS0407()
         {
             /*Incorrect data: user enters two passwords that are the same but they are not matching the acceptance criteria - the lack of an uppercase character*/
 
@@ -106,7 +122,7 @@ namespace UnitTestSystemAdministration
         }
 
         [TestMethod]
-        public void TestMethodIDPAS0407()
+        public void TestMethodIDPAS0408()
         {
             /*Incorrect data: user enters two passwords that are the same but they are not matching the acceptance criteria - the lack of a number*/
 
@@ -122,7 +138,7 @@ namespace UnitTestSystemAdministration
         }
 
         [TestMethod]
-        public void TestMethodIDPAS0408()
+        public void TestMethodIDPAS0409()
         {
             /*Incorrect data: user enters two passwords that are the same but they are not matching the acceptance criteria - the lack of a special character*/
 

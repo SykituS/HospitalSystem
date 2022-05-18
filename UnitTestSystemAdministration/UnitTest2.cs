@@ -44,6 +44,22 @@ namespace UnitTestSystemAdministration
             /*Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.*/
 
             //arrange
+            string email = "lmartin@@eksoc.com";
+
+            //act
+            var result = Administration.EmailSendingClass.IsValidEmail(email);
+
+            //assert
+            Assert.AreEqual(true, result, "Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.");
+
+        }
+
+        [TestMethod]
+        public void TestMethodIDPAS0104()
+        {
+            /*Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.*/
+
+            //arrange
             string email = "lmartin@eksoc@com";
 
             //act

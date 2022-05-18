@@ -26,13 +26,16 @@ namespace Administration
 
         public static string LoginGenerator(int id)
         {
-            
             DataTable dt = new DataTable();
-            string query = "SELECT LEFT(EM_NAME, 1) + EM_Surname + LEFT(EM_Pesel,2) + RIGHT(EM_Pesel,2) AS User_Login FROM dbo.Employee WHERE EM_Id_Employee=@id";
+            string query = "SELECT CONCAT(LEFT(EM_NAME, 1), EM_Surname,  LEFT(EM_Pesel,2),  RIGHT(EM_Pesel,2)) AS User_Login FROM dbo.Employee WHERE EM_Id_Employee=@id";
             SqlCommand command = new SqlCommand(query);
-            command.Parameters.AddWithValue("@EM_Id_Employee", id);
+            command.Parameters.AddWithValue("@id", id);
             DBSystem.DBSystem.SelectFromDB(dt, command);
-            return (string)dt.Rows[0]["User_Login"];
+
+            if (dt.Rows.Count == 0)
+                return "";
+
+            return (string)dt.Rows[0][0];
             
         }
      
@@ -53,7 +56,7 @@ namespace Administration
                     return;
 
                 EmailSendingClass.EmailSending(email, "Login data", Message(login, password));
-                DBSystem.DBSystem.UpdateDB(command);
+                //DBSystem.DBSystem.UpdateDB(command);
             }
             catch (Exception ex)
             {
