@@ -31,13 +31,10 @@ namespace Administration
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@id", id);
             DBSystem.DBSystem.SelectFromDB(dt, command);
-<<<<<<< HEAD
 
             if (dt.Rows.Count == 0)
                 return "";
 
-=======
->>>>>>> 61abadb2e8860a812a4c01708f38d68bcc30e6ae
             return (string)dt.Rows[0][0];
             
         }
