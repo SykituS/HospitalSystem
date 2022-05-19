@@ -16,6 +16,7 @@ namespace GUI
 
         protected void BtnOk_Click(object sender, EventArgs e)
         {
+
             if (!EmailSendingClass.IsValidEmail(TBEmail.Text))
                 return;
 
@@ -26,6 +27,14 @@ namespace GUI
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
             Response.Redirect("Default.aspx");
+        }
+
+        protected void TBEmail_TextChanged(object sender, EventArgs e)
+        {
+            if (EmailSendingClass.IsValidEmail(TBEmail.Text))
+                BtnOk.Enabled = true;
+            else
+                BtnOk.Enabled = false;
         }
     }
 }

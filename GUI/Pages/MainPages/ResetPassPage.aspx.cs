@@ -26,6 +26,7 @@ namespace GUI
       
         protected void BtnOk_Click(object sender, EventArgs e)
         {
+
             //Getting result of validation
             string result = ResetPassSys.PasswordValidation(TBNewPass.Text, TBConfirmNewPass.Text);
 
@@ -49,7 +50,16 @@ namespace GUI
             Response.Redirect("CancelationPasswordPage.aspx");
         }
 
-        protected void Timer1_Tick(object sender, EventArgs e)
+        protected void TBNewPass_TextChanged(object sender, EventArgs e)
+        {
+            Validation();
+        }
+
+        protected void TBConfirmNewPass_TextChanged(object sender, EventArgs e)
+        {
+            Validation();
+        }
+        private void Validation()
         {
             //FronEnd validation that checks whether passwords are the same
             if (TBNewPass.Text.Count() >= 1)

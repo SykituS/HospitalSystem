@@ -24,10 +24,10 @@
 
         <asp:Label ID="LabelWarnings" runat="server" ForeColor="Red" Text="Waringin placeholder" Visible="False"></asp:Label><br />
         Login  <br />
-        <asp:TextBox ID="TBLogin" CssClass="field" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBLogin" CssClass="field" runat="server" MaxLength="100"></asp:TextBox>
         <br />
         Password  <br />
-        <asp:TextBox ID="TBPassword" CssClass="field" runat="server" TextMode="Password"></asp:TextBox>
+        <asp:TextBox ID="TBPassword" CssClass="field" runat="server" TextMode="Password" MaxLength="100"></asp:TextBox>
         <br />
           <br />
            <div id="Reset">

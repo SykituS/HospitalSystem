@@ -5,10 +5,10 @@
     <div style="margin: 15px;">
         
         <asp:Label ID="Label1" runat="server" Text="Login:"></asp:Label>
-        <asp:TextBox ID="TBLogin" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBLogin" runat="server" MaxLength="100"></asp:TextBox>
         <br /><br />
         <asp:Label ID="Label2" runat="server" Text="Email:"></asp:Label>
-        <asp:TextBox ID="TBEmail" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBEmail" runat="server" OnTextChanged="TBEmail_TextChanged" AutoPostBack="true" MaxLength="100"></asp:TextBox>
         <br />
         <br />
 
@@ -16,7 +16,7 @@
         <asp:Label ID="LabelSendInfo" runat="server" Text="The e-mail has been sent. Please check your mailbox." Visible="False"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="BtnOk" runat="server" OnClick="BtnOk_Click" Text="Ok" />
+        <asp:Button ID="BtnOk" runat="server" OnClick="BtnOk_Click" Text="Ok" Enabled="False" />
         <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
         </div>
         <br />

@@ -8,7 +8,7 @@
 
         </h5>
         <h5>Set the login form blocking time: 
-            <asp:TextBox ID="TBTimeToUnlock" runat="server" TextMode="Number"></asp:TextBox>
+            <asp:TextBox ID="TBTimeToUnlock" runat="server" TextMode="Number" MaxLength="100"></asp:TextBox>
             &nbsp;(in minutes)<br /><br />
             <asp:Button ID="BtnBack" runat="server" OnClick="BtnBack_Click" Text="Back to menu" />
             <br />
