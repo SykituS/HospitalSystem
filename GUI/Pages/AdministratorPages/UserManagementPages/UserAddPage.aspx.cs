@@ -29,11 +29,13 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             }
             }
 
-       
 
         protected void BtnAddNewUser_Click(object sender, EventArgs e)
         {
-            AddUser.AddNewUser(int.Parse(DropDownList.SelectedValue));
+            MySession.Current.IdEmployee = int.Parse(DropDownList.SelectedValue);
+            Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserAddAcceptPage");
+
+
         }
 
         protected void Button2_Click(object sender, EventArgs e)
