@@ -60,7 +60,8 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             //Button "Edit user" click
             if (e.CommandName == "EditUser")
             {
-               // Console.Write(e.CommandName);
+                // Console.Write(e.CommandName);
+                throw new NotImplementedException("Edit user");
                 Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserEditPage");
 
             }

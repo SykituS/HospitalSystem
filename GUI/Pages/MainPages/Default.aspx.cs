@@ -79,7 +79,7 @@ namespace GUI
             {
                 MySession.Current.Attempt--;
                 LabelWarnings.Visible = true;
-                LabelWarnings.Text = Membership.GeneratePassword(12, 1);
+                LabelWarnings.Text = LogSys.GetAttempTextTry();
             }
             else
             {

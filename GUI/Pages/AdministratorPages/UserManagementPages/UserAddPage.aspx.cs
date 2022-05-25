@@ -35,7 +35,11 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
         {
             AddUser.AddNewUser(int.Parse(DropDownList.SelectedValue));
         }
-             
-    
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserManagementPage");
+
+        }
     }
     }

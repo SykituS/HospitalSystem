@@ -68,7 +68,7 @@ namespace Administration
                     return;
 
                 EmailSendingClass.EmailSending(email, "Login data", Message(login, password));
-                //DBSystem.DBSystem.UpdateDB(command);
+                DBSystem.DBSystem.InsertToDB(command);
             }
             catch (Exception ex)
             {
