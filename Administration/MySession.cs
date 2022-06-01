@@ -42,5 +42,6 @@ namespace Administration
         public string TempPass { get; set; }
         public string TempLogin { get; set; }
         public string TempStatus { get; set; }
+        public string EmployeeName { get; set; }
     }
 }

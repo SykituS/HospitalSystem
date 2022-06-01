@@ -24,21 +24,8 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
         protected void BtnAccept_Click(object sender, EventArgs e)
         {
             //Getting result of validation
-            string result = ResetPassSys.PasswordValidation(TbNewPass.Text, TbConfirmPass.Text);
+            Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserManagementPage");
 
-            if (result.Equals("OK"))
-            {   
-                //changing password and closing page
-                ResetPassSys.ResetPassword(TbNewPass.Text, TbConfirmPass.Text, MySession.Current.TempLogin);
-                TbNewPass.Text= MySession.Current.TempPass;
-                EditUser.EditUsers(MySession.Current.TempLogin);
-            }
-            else
-            {
-                //showing what went wrong with validation
-                LabelCriteria.Text = result;
-            }
-            
         }
 
         protected void Btnstatus_Click(object sender, EventArgs e)
@@ -51,6 +38,11 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
         protected void Btncancel_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserManagementPage");
+        }
+
+        protected void Btnpass_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EditUserPass.aspx?Id=" + MySession.Current.TempLogin);
         }
     }
 }

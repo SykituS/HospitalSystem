@@ -31,9 +31,9 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
 
 
         protected void BtnAddNewUser_Click(object sender, EventArgs e)
-        {
+        { MySession.Current.EmployeeName = DropDownList.Text;
             MySession.Current.IdEmployee = int.Parse(DropDownList.SelectedValue);
-            Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserAddAcceptPage");
+            Response.Redirect("UserAddAcceptPage.aspx?Id=" + MySession.Current.IdEmployee);
 
 
         }

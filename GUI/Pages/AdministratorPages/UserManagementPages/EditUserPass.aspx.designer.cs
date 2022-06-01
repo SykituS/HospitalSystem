@@ -11,80 +11,62 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
 {
 
 
-    public partial class UserEditPage
+    public partial class EditUserPass
     {
 
         /// <summary>
-        /// Kontrolka LbLogin.
+        /// Kontrolka Label1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LbLogin;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Kontrolka TbLogin.
+        /// Kontrolka Tbnewpass.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbLogin;
+        protected global::System.Web.UI.WebControls.TextBox Tbnewpass;
 
         /// <summary>
-        /// Kontrolka LbPassword.
+        /// Kontrolka Label2.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LbPassword;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Kontrolka Btnpass.
+        /// Kontrolka Tbconpass.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btnpass;
+        protected global::System.Web.UI.WebControls.TextBox Tbconpass;
 
         /// <summary>
-        /// Kontrolka LbStatus.
+        /// Kontrolka BtnSave.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LbStatus;
+        protected global::System.Web.UI.WebControls.Button BtnSave;
 
         /// <summary>
-        /// Kontrolka Btnstatus.
+        /// Kontrolka BtnCancel.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btnstatus;
-
-        /// <summary>
-        /// Kontrolka BtnAccept.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAccept;
-
-        /// <summary>
-        /// Kontrolka Btncancel.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btncancel;
+        protected global::System.Web.UI.WebControls.Button BtnCancel;
 
         /// <summary>
         /// Kontrolka LabelCriteria.

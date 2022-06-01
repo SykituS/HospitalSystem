@@ -42,3 +42,13 @@ F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.CoreCo
 F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.dll
 F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.pdb
+C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\bin\Debug\Reception.dll
+C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\bin\Debug\Reception.pdb
+C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\bin\Debug\DBSystem.dll
+C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\bin\Debug\FluentValidation.dll
+C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\bin\Debug\FluentValidation.xml
+C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.CopyComplete
+C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\obj\Debug\Reception.dll
+C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\obj\Debug\Reception.pdb

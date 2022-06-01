@@ -15,7 +15,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             if (!LogSys.CheckIfLogged())
                 Response.Redirect("~/Pages/MainPages/Default");
 
-          
+            Label1.Text = "Do you want to add user for " + MySession.Current.EmployeeName + "??";
             }
 
         protected void BtnAccept_Click(object sender, EventArgs e)

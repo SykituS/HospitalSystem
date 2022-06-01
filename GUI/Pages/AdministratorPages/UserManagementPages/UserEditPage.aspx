@@ -5,21 +5,19 @@ Title="UserEditPage" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server"> 
     <div style="margin-top:15px;">
         <div>
-            <asp:Label ID="LbLogin" runat="server" Text="Login"></asp:Label>
+            <asp:Label ID="LbLogin" runat="server" Text="Login"></asp:Label><br>
             <asp:TextBox ID="TbLogin" runat="server" Enabled="False"></asp:TextBox>
         </div>
-        <asp:Label ID="LbPassword" runat="server" Text="New Password"></asp:Label>
-        <asp:TextBox ID="TbNewPass" runat="server"></asp:TextBox>
+        <asp:Label ID="LbPassword" runat="server" Text="Change Password:"></asp:Label><br>
+        <asp:Button ID="Btnpass" runat="server" OnClick="Btnpass_Click" Text="Password" />
         <p>
-            <asp:Label ID="LbConfirmPass" runat="server" Text="Confirm Password"></asp:Label>
-            <asp:TextBox ID="TbConfirmPass" runat="server"></asp:TextBox>
+            &nbsp;</p>
+        <p>
+            <asp:Label ID="LbStatus" runat="server" Text="StatusL"></asp:Label><br>
+            <asp:Button ID="Btnstatus" runat="server" Text="Btn" OnClick="Btnstatus_Click" />
         </p>
         <p>
-            <asp:Label ID="LbStatus" runat="server" Text="Status"></asp:Label>
-            <asp:Button ID="Btnstatus" runat="server" Text="Btn" Width="169px" OnClick="Btnstatus_Click" />
-        </p>
-        <p>
-            <asp:Button ID="BtnAccept" runat="server" OnClick="BtnAccept_Click" Text="Accept" />
+            <asp:Button ID="BtnAccept" runat="server" OnClick="BtnAccept_Click" Text="Save" />
             <asp:Button ID="Btncancel" runat="server" Text="Cancel" OnClick="Btncancel_Click" />
         </p>
         <p>

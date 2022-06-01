@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="Form" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ResetPassPage.aspx.cs" Inherits="GUI.ResetPassPage" %>
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div style="margin:25px; padding:10px;">
+        
         <h3>Change password!</h3><br />
         <asp:Label ID="LabelInfo" runat="server" Text="labelLoginInfo"></asp:Label>
         <br /><br />
@@ -18,4 +19,4 @@
     </div>
 
 </asp:Content>
-
+  
