@@ -46,3 +46,11 @@ C:\Users\User\Desktop\test\Reception\obj\Debug\Reception.csproj.CoreCompileInput
 C:\Users\User\Desktop\test\Reception\obj\Debug\Reception.csproj.CopyComplete
 C:\Users\User\Desktop\test\Reception\obj\Debug\Reception.dll
 C:\Users\User\Desktop\test\Reception\obj\Debug\Reception.pdb
+C:\Users\User\Desktop\testowanie\Reception\bin\Debug\Reception.dll
+C:\Users\User\Desktop\testowanie\Reception\bin\Debug\Reception.pdb
+C:\Users\User\Desktop\testowanie\Reception\bin\Debug\DBSystem.dll
+C:\Users\User\Desktop\testowanie\Reception\obj\Debug\Reception.csprojAssemblyReference.cache
+C:\Users\User\Desktop\testowanie\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\testowanie\Reception\obj\Debug\Reception.csproj.CopyComplete
+C:\Users\User\Desktop\testowanie\Reception\obj\Debug\Reception.dll
+C:\Users\User\Desktop\testowanie\Reception\obj\Debug\Reception.pdb

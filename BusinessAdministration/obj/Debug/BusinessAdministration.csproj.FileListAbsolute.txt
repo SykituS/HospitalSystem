@@ -46,3 +46,11 @@ C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministrati
 C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
 C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.dll
 C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\testowanie\BusinessAdministration\bin\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\testowanie\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\testowanie\BusinessAdministration\bin\Debug\DBSystem.dll
+C:\Users\User\Desktop\testowanie\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
+C:\Users\User\Desktop\testowanie\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\testowanie\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+C:\Users\User\Desktop\testowanie\BusinessAdministration\obj\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\testowanie\BusinessAdministration\obj\Debug\BusinessAdministration.pdb

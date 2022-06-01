@@ -69,5 +69,10 @@ namespace GUI
             //Button which returns to the main page
             Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
         }
+
+        protected void GvEmployees_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
