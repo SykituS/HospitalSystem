@@ -27,6 +27,21 @@ namespace GUI
                 DdlRoles.DataTextField = "PO_Name";
                 DdlRoles.DataBind();
             }
+
+            foreach(GridViewRow row in GvEmployees.Rows)
+            {
+                Button rowButton;
+                int id;
+
+                rowButton = (Button)row.Cells[8].Controls[0];
+                id = Convert.ToInt32(row.Cells[0].Text);
+
+                if (EmployeesManagement.GetEmployeeStatus(id) == 1)
+                    rowButton.Text = "Deactivate";
+
+                if (EmployeesManagement.GetEmployeeStatus(id) == 2)
+                    rowButton.Text = "Reactivate";
+            }    
         }
 
         protected void GvEmployees_Sorting(object sender, GridViewSortEventArgs e)
@@ -57,6 +72,26 @@ namespace GUI
 
                 Response.Redirect(detailsPageId);
             }
+
+            if(e.CommandName == "Status")
+            {
+                int index = Convert.ToInt32(e.CommandArgument);
+                GridViewRow row = GvEmployees.Rows[index];
+                int id = Convert.ToInt32(row.Cells[0].Text);
+                int status = EmployeesManagement.GetEmployeeStatus(id);
+
+                if(status == 1)
+                {
+                    string deactivationPageStatus = "EmployeeDeactivationPage.aspx?Id=" + row.Cells[0].Text;
+                    Response.Redirect(deactivationPageStatus);
+                }
+
+                if(status == 2)
+                {
+                    string reactivationPageStatus = "EmployeeReactivationPage.aspx?Id=" + row.Cells[0].Text;
+                    Response.Redirect(reactivationPageStatus);
+                }
+            }
         }
 
         protected void BtnAddEmployee_Click(object sender, EventArgs e)
@@ -68,11 +103,6 @@ namespace GUI
         {
             //Button which returns to the main page
             Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
-        }
-
-        protected void GvEmployees_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

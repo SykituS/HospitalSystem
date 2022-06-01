@@ -16,7 +16,7 @@
             <asp:ListItem Text="Inactive" Value="2"></asp:ListItem>
         </asp:DropDownList>
     </p>
-<div style="overflow-y: scroll; height: 250px; width: 700px;">
+<div style="overflow-y: scroll; height: 250px; width: 1000px;">
     <p>
         <asp:GridView ID="GvEmployees" runat="server" AllowSorting="True" OnSorting="GvEmployees_Sorting" AutoGenerateColumns="False" OnRowCommand="GvEmployees_RowCommand">
             <Columns>
@@ -28,6 +28,7 @@
                 <asp:BoundField HeaderText="Role" DataField="PO_Name" SortExpression="PO_Name" />
                 <asp:BoundField HeaderText="Status" DataField="St_Status_Name" SortExpression="St_Status_Name" />
                 <asp:ButtonField ButtonType="Button" HeaderText="Details" Text="Review employee" CommandName="View" />
+                <asp:ButtonField ButtonType="Button" HeaderText="Reactivation/Deactivation" Text="Reactivate/Deactivate" CommandName="Status" />
             </Columns>
         </asp:GridView>
     </p>

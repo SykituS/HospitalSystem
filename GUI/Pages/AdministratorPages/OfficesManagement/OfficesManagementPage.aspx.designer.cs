@@ -24,6 +24,15 @@ namespace GUI
         protected global::System.Web.UI.WebControls.GridView GvOffices;
 
         /// <summary>
+        /// Kontrolka BtnAddNewOffice.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnAddNewOffice;
+
+        /// <summary>
         /// Kontrolka BtnBackToMain.
         /// </summary>
         /// <remarks>

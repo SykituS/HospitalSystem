@@ -16,10 +16,10 @@ namespace BusinessAdministration
         public static DataTable LoadEmps()
         {
             DataTable dt = new DataTable();
-            string cmd = "SELECT EM_Id_Employee, EM_Name, EM_Surname, EM_Pesel, EM_Date_of_birth, PO_Name, St_Status_Name FROM (dbo.Employee INNER JOIN dbo.Position ON EM_Position = PO_Id_Position) INNER JOIN dbo.Status ON EM_Id_Status = St_Id_Status";
-            SqlCommand query = new SqlCommand(cmd);
+            string query = "SELECT EM_Id_Employee, EM_Name, EM_Surname, EM_Pesel, EM_Date_of_birth, PO_Name, St_Status_Name FROM (dbo.Employee INNER JOIN dbo.Position ON EM_Position = PO_Id_Position) INNER JOIN dbo.Status ON EM_Id_Status = St_Id_Status";
+            SqlCommand cmd = new SqlCommand(query);
 
-            DBSystem.DBSystem.SelectFromDB(dt, query);
+            DBSystem.DBSystem.SelectFromDB(dt, cmd);
 
             return dt;
         }
@@ -27,10 +27,10 @@ namespace BusinessAdministration
         public static DataTable LoadRoles()
         {
             DataTable dt = new DataTable();
-            string cmd = "SELECT * FROM dbo.Position";
-            SqlCommand query = new SqlCommand(cmd);
+            string query = "SELECT * FROM dbo.Position";
+            SqlCommand cmd = new SqlCommand(query);
 
-            DBSystem.DBSystem.SelectFromDB(dt, query);
+            DBSystem.DBSystem.SelectFromDB(dt, cmd);
 
             return dt;
         }
@@ -38,11 +38,11 @@ namespace BusinessAdministration
         public static DataTable LoadEmpDetails(string employeeId)
         {
             DataTable dt = new DataTable();
-            string cmd = "SELECT EM_Name, EM_Surname, EM_Email, EM_Pesel, EM_Date_of_birth, EM_Correspondence_address, EM_Phone_number, Sx_Sex FROM dbo.Employee INNER JOIN dbo.Sex ON EM_Id_Sex = Sx_Id_Status WHERE EM_Id_Employee = @Id";
-            SqlCommand query = new SqlCommand(cmd);
-            query.Parameters.AddWithValue("@Id", employeeId);
+            string query = "SELECT EM_Name, EM_Surname, EM_Email, EM_Pesel, EM_Date_of_birth, EM_Correspondence_address, EM_Phone_number, Sx_Sex FROM dbo.Employee INNER JOIN dbo.Sex ON EM_Id_Sex = Sx_Id_Status WHERE EM_Id_Employee = @Id";
+            SqlCommand cmd = new SqlCommand(query);
+            cmd.Parameters.AddWithValue("@Id", employeeId);
 
-            DBSystem.DBSystem.SelectFromDB(dt, query);
+            DBSystem.DBSystem.SelectFromDB(dt, cmd);
 
             return dt;
         }
@@ -74,6 +74,20 @@ namespace BusinessAdministration
                 sortDirection = " ASC";
 
             return dv;
+        }
+
+        public static int GetEmployeeStatus(int id)
+        {
+            DataTable dt = new DataTable();
+            string query = "SELECT EM_Id_Status FROM dbo.Employee WHERE EM_Id_Employee = @Id";
+            SqlCommand cmd = new SqlCommand(query);
+            cmd.Parameters.AddWithValue("@Id", id);
+
+            DBSystem.DBSystem.SelectFromDB(dt, cmd);
+
+            int status = (int)dt.Rows[0][0];
+
+            return status;
         }
     }
 }

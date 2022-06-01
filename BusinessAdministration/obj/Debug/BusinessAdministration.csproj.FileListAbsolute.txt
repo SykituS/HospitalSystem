@@ -30,27 +30,15 @@ F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessA
 F:\Projekty\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\BusinessAdministration\bin\Debug\DBSystem.dll
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+C:\Users\milos\source\repos\TestowanieOprogramowaniaGlowny\BusinessAdministration\bin\Debug\FluentValidation.dll
+C:\Users\milos\source\repos\TestowanieOprogramowaniaGlowny\BusinessAdministration\bin\Debug\FluentValidation.xml
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.dll
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Debug\DBSystem.dll
+F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Debug\FluentValidation.dll
+F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Debug\FluentValidation.xml
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.dll
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
-C:\Users\User\Desktop\test\BusinessAdministration\bin\Debug\BusinessAdministration.dll
-C:\Users\User\Desktop\test\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
-C:\Users\User\Desktop\test\BusinessAdministration\bin\Debug\DBSystem.dll
-C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
-C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
-C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.dll
-C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
-C:\Users\User\Desktop\testowanie\BusinessAdministration\bin\Debug\BusinessAdministration.dll
-C:\Users\User\Desktop\testowanie\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
-C:\Users\User\Desktop\testowanie\BusinessAdministration\bin\Debug\DBSystem.dll
-C:\Users\User\Desktop\testowanie\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
-C:\Users\User\Desktop\testowanie\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\testowanie\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
-C:\Users\User\Desktop\testowanie\BusinessAdministration\obj\Debug\BusinessAdministration.dll
-C:\Users\User\Desktop\testowanie\BusinessAdministration\obj\Debug\BusinessAdministration.pdb

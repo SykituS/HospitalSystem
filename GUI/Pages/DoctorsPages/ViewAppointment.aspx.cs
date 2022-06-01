@@ -8,6 +8,7 @@ using Doctor;
 using System.Data;
 using Administration;
 using System.Drawing;
+using FluentValidation.Results;
 
 namespace GUI
 {
@@ -22,19 +23,20 @@ namespace GUI
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
-            foreach (DateTime data in GetAppoitments.Get_Dates())
+            GetAppoitments getAppoitments = new GetAppoitments();
+            List<DateTime> days_with_visits = getAppoitments.Get_Dates();
+            foreach (DateTime data in days_with_visits)
                 Calendar1.SelectedDates.Add(data);
 
             Calendar1.Visible = true;
-
         }
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
             DateTime day = Calendar1.SelectedDate;
 
-            GridView1.DataSource = GetAppoitments.Get_Info_Appointment(day);
+            GetAppoitments getAppoitments = new GetAppoitments();
+            GridView1.DataSource = getAppoitments.Get_Info_Appointment(day);
             GridView1.DataBind();
         }
 
@@ -43,7 +45,8 @@ namespace GUI
 
             DateTime day = Calendar1.SelectedDate;
 
-            GridView1.DataSource = GetAppoitments.Get_Info_Appointment(day);
+            GetAppoitments getAppoitments = new GetAppoitments();
+            GridView1.DataSource = getAppoitments.Get_Info_Appointment(day);
             GridView1.DataBind();
 
             DataTable m_DataTable = GridView1.DataSource as DataTable;
@@ -64,6 +67,7 @@ namespace GUI
             //Button which returns to the main page
             Response.Redirect("DoctorPanelPage");
         }
+
         public string SortingExpression
         {
             get
@@ -103,8 +107,22 @@ namespace GUI
 
             int cell = Int32.Parse(GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text);
 
-            GridView2.DataSource = AppoitmentDetails.Get_Details(cell);
-            GridView2.DataBind();
+
+
+
+            AppoitmentDetails appoitmentDetails = new AppoitmentDetails();
+            DataTable dt = new DataTable();
+            dt = appoitmentDetails.Get_Details(cell);
+            TextBox1.Text = dt.Rows[0]["Name"].ToString();
+            TextBox2.Text = dt.Rows[0]["Surname"].ToString();
+            TextBox3.Text = dt.Rows[0]["Phone_number"].ToString();
+            TextBox7.Text = dt.Rows[0]["Pesel"].ToString();
+            TextBox4.Text = dt.Rows[0]["AD_appointment_description"].ToString();
+
+            Button5.Visible = true;
+
+            GetAppoitments getAppoitments = new GetAppoitments();
+            getAppoitments.Get_Doctor_ID();
 
         }
 
@@ -113,9 +131,73 @@ namespace GUI
             if (e.Row.RowType == DataControlRowType.DataRow)
             {
                 e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(GridView1, "Select$" + e.Row.RowIndex);
-
             }
+        }
 
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            Button7.Visible = true;
+            TextBox5.Visible = true;
+            TextBox6.Visible = true;
+            Button5.Enabled = false;
+
+        }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            DateTime Date = DateTime.Parse(TextBox6.Text);
+            DateTime Hour = DateTime.Parse(TextBox5.Text);
+
+            DateTime combined = Date.Date.Add(Hour.TimeOfDay);
+
+            AppoitmentDetails appoitmentDetails = new AppoitmentDetails();
+            appoitmentDetails.Add_New_Appoitment(combined);
+
+            Button7.Visible = false;
+            TextBox5.Visible = false;
+            TextBox6.Visible = false;
+            Button5.Enabled = true;
+
+
+        }
+
+        protected void TextBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        protected void bt_add_prescription(object sender, EventArgs e)
+        {
+            Prescription prescription = new Prescription(PrescMedicine.Text, PrescSurname.Text);
+
+            Prescription_Validation validator = new Prescription_Validation();
+
+            ValidationResult result = validator.Validate(prescription);
+
+            if (result.IsValid == false)
+            {
+                foreach(ValidationFailure failure in result.Errors)
+                       PrescSurname.Text = failure.ErrorMessage;
+            }
+            else
+            {
+                PrescSurname.Text = "Zgodne";
+            }
+        }
+
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            int cell = Int32.Parse(GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text);
+
+            AppoitmentDetails appoitmentDetails = new AppoitmentDetails();
+            appoitmentDetails.Adding_Results(cell, TextBox4.Text);
         }
     }
 }

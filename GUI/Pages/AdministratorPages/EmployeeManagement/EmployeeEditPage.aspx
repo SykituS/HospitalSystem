@@ -9,6 +9,11 @@
         <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ErrorMessage="Enter correct name" ForeColor="Red" ControlToValidate="TxbName" ValidationExpression="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" ValidationGroup="valGroup1">*</asp:RegularExpressionValidator>
     </p>
     <p>
+        Second name:
+        <asp:TextBox ID="TxbSecName" runat="server"></asp:TextBox>
+        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ErrorMessage="Enter correct second name" ForeColor="Red" ControlToValidate="TxbSecName" ValidationExpression="^[\w'\-,.][^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]{2,}$" ValidationGroup="valGroup1">*</asp:RegularExpressionValidator>
+    </p>
+    <p>
         Surname:
         <asp:TextBox ID="TxbSurname" runat="server"></asp:TextBox>
         *<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Surname cannot be blank" ControlToValidate="TxbSurname" ForeColor="Red" ValidationGroup="valGroup1">*</asp:RequiredFieldValidator>
@@ -19,7 +24,7 @@
         <asp:TextBox ID="TxbPesel" runat="server"></asp:TextBox>
         *<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="PESEL cannot be blank" ControlToValidate="TxbPesel" ForeColor="Red" ValidationGroup="valGroup1">*</asp:RequiredFieldValidator>
         <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ErrorMessage="PESEL must be 11 digit" ForeColor="Red" ControlToValidate="TxbPesel" ValidationExpression="^\d{11}$" ValidationGroup="valGroup1" >*</asp:RegularExpressionValidator>
-        <asp:CustomValidator ID="CustomValidator2" runat="server" ErrorMessage="PESEL must match your date of birth" OnServerValidate="PeselValidate" ControlToValidate="TxbPesel" ForeColor="Red" ValidationGroup="valGroup1">*</asp:CustomValidator>
+        <asp:CustomValidator ID="CustomValidator2" runat="server" ErrorMessage="PESEL must match your date of birth and selected sex" OnServerValidate="PeselValidate" ControlToValidate="TxbPesel" ForeColor="Red" ValidationGroup="valGroup1">*</asp:CustomValidator>
     </p>
     <p>
         Date of birth:
@@ -54,7 +59,7 @@
     <p>
         Sex:
         <asp:DropDownList ID="DdlSex" runat="server">
-            <asp:ListItem Text="" Value=""></asp:ListItem>
+            <asp:ListItem Text="" Value="3"></asp:ListItem>
             <asp:ListItem Text="Male" Value="1"></asp:ListItem>
             <asp:ListItem Text="Female" Value="2"></asp:ListItem>
         </asp:DropDownList>
@@ -64,6 +69,7 @@
     <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" ValidationGroup="valGroup1"/>
     <p>
         <asp:Button ID="BtnNext" runat="server" Text="Edit" ValidationGroup="valGroup1" OnClick="BtnNext_Click"/>
+        <asp:Button ID="BtnStatus" runat="server" Text="Reactivation/Deactivation" OnClick="BtnStatus_Click" />
     </p>
     <p>
         <asp:Button ID="BtnCancel" runat="server" Text="Cancel" OnClick="BtnCancel_Click" />

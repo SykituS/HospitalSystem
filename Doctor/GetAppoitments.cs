@@ -13,12 +13,11 @@ namespace Doctor
     public class GetAppoitments
     {
 
-        public static DataTable DataTable_from_SQL()
+        public DataTable DataTable_from_SQL()
         {
             
             DataTable dt = new DataTable();
             string login = Current_Login();
-            //string login = "AMaldonado5939";
 
             //a querry that returns information about visits of a logged-in doctor from the database (day, time, patient's data, office number))
             string querry = "SELECT  Ap_id_appoitment ,Ap_appoitment_day, Ap_appoitment_time,  Name, Patients.Surname, Of_office_number"+
@@ -43,7 +42,7 @@ namespace Doctor
             return dt;
         }
         
-        public static List<DateTime> Get_Dates()
+        public List<DateTime> Get_Dates()
         {   
             //creating data table with all apointments of logged doctor
             DataTable dt = DataTable_from_SQL();
@@ -61,7 +60,7 @@ namespace Doctor
         }
 
 
-        public static DataTable Get_Info_Appointment(DateTime day)
+        public DataTable Get_Info_Appointment(DateTime day)
         {
             //creating data table with all apointments of logged doctor
             DataTable dt = DataTable_from_SQL();
@@ -93,11 +92,27 @@ namespace Doctor
         }
 
         //get login of current logged account
-        public static string Current_Login()
+        public string Current_Login()
         {
             string x = MySession.Current.Login;
             return x;
         }
-            
+
+        public int Get_Doctor_ID()
+        {
+            string x = Current_Login();
+            string querry = "SELECT US_Id_Users FROM Users WHERE US_Login = @login";
+
+            DBSystem.DBSystem.sql.Open();
+
+            SqlCommand command = new SqlCommand(querry, DBSystem.DBSystem.sql);
+            command.Parameters.AddWithValue("@login", x);
+
+            int id = (Int32)command.ExecuteScalar();
+
+            DBSystem.DBSystem.sql.Close();
+
+            return id;
+        }
     }
 }

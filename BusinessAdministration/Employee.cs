@@ -10,20 +10,20 @@ namespace BusinessAdministration
 {
     public class Employee
     {
-        private int id;
         private string name;
         private string surname;
         private string email;
         private string pesel;
         private string dateOfBirth;
         private string address;
-        private string position;
+        private byte position;
         private string phoneNumber;
-        private string sex;
+        private byte sex;
+        private string secName;
+        private int status;
 
-        public Employee(int id, string name, string surname, string email, string pesel, string dateOfBirth, string address, string position, string phoneNumber, string sex)
+        public Employee(string name, string surname, string email, string pesel, string dateOfBirth, string address, byte position, string phoneNumber, byte sex, string secName)
         {
-            this.id = id;
             this.name = name;
             this.surname = surname;
             this.email = email;
@@ -33,57 +33,62 @@ namespace BusinessAdministration
             this.position = position;
             this.phoneNumber = phoneNumber;
             this.sex = sex;
+            this.secName = secName;
         }
 
-        public static int LastId()
+        public Employee(int status)
         {
-            DataTable dt = new DataTable();
-            string cmd = "SELECT TOP 1 EM_Id_Employee FROM dbo.Employee ORDER BY EM_Id_Employee DESC";
-            SqlCommand query = new SqlCommand(cmd);
-
-            DBSystem.DBSystem.SelectFromDB(dt, query);
-
-            int id = (int)dt.Rows[0][0] + 1;
-
-            return id;
+            this.status = status;
         }
 
         public void InsertEmployeeToDb()
         {
-            string cmd = "INSERT INTO dbo.Employee VALUES (@Id, @Name, @Surname, @Email, @Pesel, @DoB, @Address, @Role, @Phone, @Sex, 1)";
-            SqlCommand query = new SqlCommand(cmd);
+            string query = "INSERT INTO Employee VALUES (NEXT VALUE FOR Seq_Employee, @Name, @Surname, @Email, @Pesel, @DoB, @Address, @Role, @Phone, @Sex, 1, @SecName)";
+            SqlCommand cmd = new SqlCommand(query);
 
-            query.Parameters.AddWithValue("@Id", id);
-            query.Parameters.AddWithValue("@Name", name);
-            query.Parameters.AddWithValue("@Surname", surname);
-            query.Parameters.AddWithValue("@Email", email);
-            query.Parameters.AddWithValue("@Pesel", pesel);
-            query.Parameters.AddWithValue("@DoB", dateOfBirth);
-            query.Parameters.AddWithValue("@Address", address);
-            query.Parameters.AddWithValue("@Role", position);
-            query.Parameters.AddWithValue("@Phone", phoneNumber);
-            query.Parameters.AddWithValue("@Sex", sex);
+            cmd.Parameters.AddWithValue("@Name", name);
+            cmd.Parameters.AddWithValue("@Surname", surname);
+            cmd.Parameters.AddWithValue("@Email", email);
+            cmd.Parameters.AddWithValue("@Pesel", pesel);
+            cmd.Parameters.AddWithValue("@DoB", dateOfBirth);
+            cmd.Parameters.AddWithValue("@Address", address);
+            cmd.Parameters.AddWithValue("@Role", position);
+            cmd.Parameters.AddWithValue("@Phone", phoneNumber);
+            cmd.Parameters.AddWithValue("@Sex", sex);
+            cmd.Parameters.AddWithValue("@SecName", secName);
 
-            DBSystem.DBSystem.InsertToDB(query);
+            DBSystem.DBSystem.InsertToDB(cmd);
         }
 
-        public void UpdateEmployeeToDb()
+        public void UpdateEmployeeToDb(int id)
         {
-            string cmd = "UPDATE dbo.Employee SET EM_Name = @Name, EM_Surname = @Surname, EM_Email = @Email, EM_Pesel = @Pesel, EM_Date_of_birth = @Dob, EM_Correspondence_address = @Address, EM_Position = @Role, EM_Phone_number = @Phone, EM_Id_Sex = @Sex WHERE EM_Id_Employee = @Id";
-            SqlCommand query = new SqlCommand(cmd);
+            string query = "UPDATE dbo.Employee SET EM_Name = @Name, EM_Surname = @Surname, EM_Email = @Email, EM_Pesel = @Pesel, EM_Date_of_birth = @Dob, EM_Correspondence_address = @Address, EM_Position = @Role, EM_Phone_number = @Phone, EM_Id_Sex = @Sex, EM_Sec_Name = @SecName WHERE EM_Id_Employee = @Id";
+            SqlCommand cmd = new SqlCommand(query);
 
-            query.Parameters.AddWithValue("@Id", id);
-            query.Parameters.AddWithValue("@Name", name);
-            query.Parameters.AddWithValue("@Surname", surname);
-            query.Parameters.AddWithValue("@Email", email);
-            query.Parameters.AddWithValue("@Pesel", pesel);
-            query.Parameters.AddWithValue("@DoB", dateOfBirth);
-            query.Parameters.AddWithValue("@Address", address);
-            query.Parameters.AddWithValue("@Role", position);
-            query.Parameters.AddWithValue("@Phone", phoneNumber);
-            query.Parameters.AddWithValue("@Sex", sex);
+            cmd.Parameters.AddWithValue("@Id", id);
+            cmd.Parameters.AddWithValue("@Name", name);
+            cmd.Parameters.AddWithValue("@Surname", surname);
+            cmd.Parameters.AddWithValue("@Email", email);
+            cmd.Parameters.AddWithValue("@Pesel", pesel);
+            cmd.Parameters.AddWithValue("@DoB", dateOfBirth);
+            cmd.Parameters.AddWithValue("@Address", address);
+            cmd.Parameters.AddWithValue("@Role", position);
+            cmd.Parameters.AddWithValue("@Phone", phoneNumber);
+            cmd.Parameters.AddWithValue("@Sex", sex);
+            cmd.Parameters.AddWithValue("@SecName", secName);
 
-            DBSystem.DBSystem.UpdateDB(query);
+            DBSystem.DBSystem.UpdateDB(cmd);
+        }
+
+        public void UpdateStatusEmplyeeToDb(int id)
+        {
+            string query = "UPDATE dbo.Employee SET EM_Id_Status = @Status WHERE EM_Id_Employee = @Id";
+            SqlCommand cmd = new SqlCommand(query);
+
+            cmd.Parameters.AddWithValue("@Id", id);
+            cmd.Parameters.AddWithValue("@Status", status);
+
+            DBSystem.DBSystem.UpdateDB(cmd);
         }
     }
 }

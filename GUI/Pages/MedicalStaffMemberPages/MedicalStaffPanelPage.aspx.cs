@@ -15,7 +15,8 @@ namespace GUI.Pages.MedicalStaffMemberPages
             //Preventing non logged user to get to this site
             if (!LogSys.CheckIfLogged())
                 Response.Redirect("~/Pages/MainPages/Default");
-
+            
+            //Head admin option
             if (MySession.Current.Position == "Administrator_of_all")
             {
                 BtnBackToMenu.Visible = true;
@@ -36,7 +37,6 @@ namespace GUI.Pages.MedicalStaffMemberPages
         protected void BtnBackToMenu_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Pages/HeadAdministrator/AdministratorMainPanel");
-
         }
     }
 }

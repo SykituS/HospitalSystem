@@ -44,6 +44,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentValidation, Version=11.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.11.0.1\lib\netstandard2.0\FluentValidation.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
@@ -105,12 +108,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\AdministratorPages\AdministratorPanelPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDeactivationPage.aspx" />
+    <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeReactivationPage.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesAddPage.aspx" />
-    <Content Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx" />
-    <Content Include="Pages\AdministratorPages\AdministratorPanelPage.aspx" />
-    <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesConfirmDelete.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesManagementPage.aspx" />
@@ -122,6 +124,7 @@
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserStatusUpdateConfirmPage.aspx" />
     <Content Include="Pages\DoctorsPages\DoctorPanelPage.aspx" />
+    <Content Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx" />
     <Content Include="Pages\MainPages\CancelationPage.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -134,7 +137,6 @@
     <Content Include="Pages\DoctorsPages\ViewAppointment.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeAddPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx" />
-    <Content Include="Pages\MainPages\ForcedPasswordChangePage.aspx" />
     <Content Include="Pages\MainPages\InvalidPage.aspx" />
     <Content Include="Pages\ManagerPages\ManagerPanelPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeesManagementPage.aspx" />
@@ -191,12 +193,28 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\AdministratorPages\AdministratorPanelPage.aspx.cs">
+      <DependentUpon>AdministratorPanelPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\AdministratorPanelPage.aspx.designer.cs">
+      <DependentUpon>AdministratorPanelPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDeactivationPage.aspx.cs">
       <DependentUpon>EmployeeDeactivationPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDeactivationPage.aspx.designer.cs">
       <DependentUpon>EmployeeDeactivationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx.cs">
+      <DependentUpon>EmployeeEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx.designer.cs">
+      <DependentUpon>EmployeeEditPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeReactivationPage.aspx.cs">
       <DependentUpon>EmployeeReactivationPage.aspx</DependentUpon>
@@ -211,29 +229,6 @@
     </Compile>
     <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesAddPage.aspx.designer.cs">
       <DependentUpon>OfficesAddPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx.cs">
-      <DependentUpon>AdministratorMainPanel.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx.designer.cs">
-      <DependentUpon>AdministratorMainPanel.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\AdministratorPages\AdministratorPanelPage.aspx.cs">
-      <DependentUpon>AdministratorPanelPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\AdministratorPages\AdministratorPanelPage.aspx.designer.cs">
-      <DependentUpon>AdministratorPanelPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx.cs">
-      <DependentUpon>EmployeeEditPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx.designer.cs">
-      <DependentUpon>EmployeeEditPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesConfirmDelete.aspx.cs">
       <DependentUpon>OfficesConfirmDelete.aspx</DependentUpon>
@@ -312,6 +307,13 @@
     <Compile Include="Pages\DoctorsPages\DoctorPanelPage.aspx.designer.cs">
       <DependentUpon>DoctorPanelPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx.cs">
+      <DependentUpon>AdministratorMainPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx.designer.cs">
+      <DependentUpon>AdministratorMainPanel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainPages\CancelationPage.aspx.cs">
       <DependentUpon>CancelationPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -360,13 +362,6 @@
     </Compile>
     <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx.designer.cs">
       <DependentUpon>EmployeeDetailsPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\MainPages\ForcedPasswordChangePage.aspx.cs">
-      <DependentUpon>ForcedPasswordChangePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Pages\MainPages\ForcedPasswordChangePage.aspx.designer.cs">
-      <DependentUpon>ForcedPasswordChangePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\MainPages\InvalidPage.aspx.cs">
       <DependentUpon>InvalidPage.aspx</DependentUpon>
@@ -467,7 +462,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Administration\Administration.csproj">
       <Project>{de75dffc-8f90-452e-9cd7-f9399667f15c}</Project>
-      <Name>Administration</Name>
+      <Name>Administation</Name>
     </ProjectReference>
     <ProjectReference Include="..\BusinessAdministration\BusinessAdministration.csproj">
       <Project>{94b76d6e-7174-4668-83f1-bb394b50e91e}</Project>

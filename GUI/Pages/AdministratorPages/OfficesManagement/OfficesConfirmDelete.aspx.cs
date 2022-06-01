@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using BusinessAdministration;
 
 namespace GUI.Pages.AdministratorPages.OfficesManagement
 {
@@ -19,11 +20,20 @@ namespace GUI.Pages.AdministratorPages.OfficesManagement
 
             roomNumber = Request.QueryString["Room"];
 
-            LblConfirmText.Text = "Are you sure you want delete room " + roomNumber + "?"; 
+            LblConfirmText.Text = "Are you sure you want delete room " + roomNumber + "?";
         }
 
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
+            Response.Redirect("OfficesManagementPage");
+        }
+
+        protected void BtnDelete_Click(object sender, EventArgs e)
+        {
+            int room = Convert.ToInt32(roomNumber);
+
+            Office.DeleteOfficeFromDb(room);
+
             Response.Redirect("OfficesManagementPage");
         }
     }

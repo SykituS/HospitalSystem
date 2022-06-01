@@ -51,6 +51,24 @@ namespace GUI
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator4;
 
         /// <summary>
+        /// Kontrolka TxbSecName.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxbSecName;
+
+        /// <summary>
+        /// Kontrolka RegularExpressionValidator6.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator6;
+
+        /// <summary>
         /// Kontrolka TxbSurname.
         /// </summary>
         /// <remarks>
@@ -177,15 +195,6 @@ namespace GUI
         protected global::System.Web.UI.WebControls.TextBox TxbEmail;
 
         /// <summary>
-        /// Kontrolka RegularExpressionValidator2.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
-
-        /// <summary>
         /// Kontrolka CustomValidator1.
         /// </summary>
         /// <remarks>
@@ -204,13 +213,13 @@ namespace GUI
         protected global::System.Web.UI.WebControls.TextBox TxbPhoneNumber;
 
         /// <summary>
-        /// Kontrolka RegularExpressionValidator1.
+        /// Kontrolka CustomValidator3.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// Aby wprowadzić zmiany, przenieś deklarację pola z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::System.Web.UI.WebControls.CustomValidator CustomValidator3;
 
         /// <summary>
         /// Kontrolka DdlSex.

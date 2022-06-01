@@ -45,5 +45,10 @@ namespace GUI
         {
             Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
         }
+
+        protected void BtnAddNewOffice_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("OfficesAddPage");
+        }
     }
 }
