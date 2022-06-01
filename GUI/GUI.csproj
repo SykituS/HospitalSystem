@@ -105,6 +105,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDeactivationPage.aspx" />
+    <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeReactivationPage.aspx" />
+    <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesAddPage.aspx" />
     <Content Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx" />
     <Content Include="Pages\AdministratorPages\AdministratorPanelPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx" />
@@ -188,6 +191,27 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDeactivationPage.aspx.cs">
+      <DependentUpon>EmployeeDeactivationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDeactivationPage.aspx.designer.cs">
+      <DependentUpon>EmployeeDeactivationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeReactivationPage.aspx.cs">
+      <DependentUpon>EmployeeReactivationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeReactivationPage.aspx.designer.cs">
+      <DependentUpon>EmployeeReactivationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesAddPage.aspx.cs">
+      <DependentUpon>OfficesAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\OfficesManagement\OfficesAddPage.aspx.designer.cs">
+      <DependentUpon>OfficesAddPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx.cs">
       <DependentUpon>AdministratorMainPanel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

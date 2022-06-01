@@ -30,7 +30,8 @@ namespace Administration
                 return session;
             }
         }
-
+        
+        public int Status { get; set; }
         public bool IsLogged { get; set; }
         public int Attempt { get; set; }
         public string Login { get; set; }
