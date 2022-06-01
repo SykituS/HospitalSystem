@@ -20,7 +20,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
 
         protected void BtnAccept_Click(object sender, EventArgs e)
         {
-            AddUser.AddNewUser(MySession.Current.TempIdEmployee);
+            AddUser.AddNewUser(MySession.Current.IdEmployee);
             Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserManagementPage");
         }
 
