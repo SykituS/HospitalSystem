@@ -105,6 +105,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx" />
     <Content Include="Pages\AdministratorPages\AdministratorPanelPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesConfirmDelete.aspx" />
@@ -129,6 +130,7 @@
     <Content Include="Pages\DoctorsPages\ViewAppointment.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeAddPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx" />
+    <Content Include="Pages\MainPages\ForcedPasswordChangePage.aspx" />
     <Content Include="Pages\MainPages\InvalidPage.aspx" />
     <Content Include="Pages\ManagerPages\ManagerPanelPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeesManagementPage.aspx" />
@@ -185,6 +187,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx.cs">
+      <DependentUpon>AdministratorMainPanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HeadAdministrator\AdministratorMainPanel.aspx.designer.cs">
+      <DependentUpon>AdministratorMainPanel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdministratorPages\AdministratorPanelPage.aspx.cs">
       <DependentUpon>AdministratorPanelPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -319,6 +328,13 @@
     </Compile>
     <Compile Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDetailsPage.aspx.designer.cs">
       <DependentUpon>EmployeeDetailsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainPages\ForcedPasswordChangePage.aspx.cs">
+      <DependentUpon>ForcedPasswordChangePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MainPages\ForcedPasswordChangePage.aspx.designer.cs">
+      <DependentUpon>ForcedPasswordChangePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\MainPages\InvalidPage.aspx.cs">
       <DependentUpon>InvalidPage.aspx</DependentUpon>

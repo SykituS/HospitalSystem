@@ -25,6 +25,9 @@ namespace GUI
 		{
 			switch (MySession.Current.Position)
 			{
+				case "Administrator_of_all":
+					Response.Redirect("~/Pages/HeadAdministrator/AdministratorMainPanel");
+					break;
 				case "administrator":
 					Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
 					break;

@@ -15,6 +15,12 @@ namespace GUI.Pages.DoctorsPages
             //Preventing non logged user to get to this site
             if (!LogSys.CheckIfLogged())
                 Response.Redirect("~/Pages/MainPages/Default");
+
+            if (MySession.Current.Position == "Administrator_of_all")
+            {
+                BtnBackToMenu.Visible = true;
+                BtnBackToMenu.Enabled = true;
+            }
         }
 
         protected void BtnLogout_Click(object sender, EventArgs e)
@@ -25,6 +31,12 @@ namespace GUI.Pages.DoctorsPages
         protected void BtnEmpManage_Click(object sender, EventArgs e)
         {
             Response.Redirect("ViewAppointment");
+
+        }
+
+        protected void BtnBackToMenu_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/HeadAdministrator/AdministratorMainPanel");
 
         }
     }

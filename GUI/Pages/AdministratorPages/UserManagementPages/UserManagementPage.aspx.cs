@@ -62,7 +62,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             {
                 // Console.Write(e.CommandName);
                 throw new NotImplementedException("Edit user");
-                Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserEditPage");
+                //Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserEditPage");
 
             }
         }

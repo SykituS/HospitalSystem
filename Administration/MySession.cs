@@ -37,8 +37,9 @@ namespace Administration
         public string Email { get; set; }
         public string Position { get; set; }
         public int SetTime { get; set; }
-        public int IdEmployee { get; set; }
+        public int Status { get; set; }
 
+        public int TempIdEmployee { get; set; }
         public string TempLogin { get; set; }
         public string TempStatus { get; set; }
     }
