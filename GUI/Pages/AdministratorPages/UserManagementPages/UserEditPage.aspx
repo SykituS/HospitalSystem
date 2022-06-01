@@ -1,17 +1,32 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserEditPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserEditPage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserEditPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserEditPage"MasterPageFile="~/Site.Master"
+Title="UserEditPage" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server"> 
+    <div style="margin-top:15px;">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="LbLogin" runat="server" Text="Login"></asp:Label>
+            <asp:TextBox ID="TbLogin" runat="server" Enabled="False"></asp:TextBox>
         </div>
-    </form>
-</body>
-</html>
+        <asp:Label ID="LbPassword" runat="server" Text="New Password"></asp:Label>
+        <asp:TextBox ID="TbNewPass" runat="server"></asp:TextBox>
+        <p>
+            <asp:Label ID="LbConfirmPass" runat="server" Text="Confirm Password"></asp:Label>
+            <asp:TextBox ID="TbConfirmPass" runat="server"></asp:TextBox>
+        </p>
+        <p>
+            <asp:Label ID="LbStatus" runat="server" Text="Status"></asp:Label>
+            <asp:Button ID="Btnstatus" runat="server" Text="Btn" Width="169px" OnClick="Btnstatus_Click" />
+        </p>
+        <p>
+            <asp:Button ID="BtnAccept" runat="server" OnClick="BtnAccept_Click" Text="Accept" />
+            <asp:Button ID="Btncancel" runat="server" Text="Cancel" OnClick="Btncancel_Click" />
+        </p>
+        <p>
+            <asp:Label ID="LabelCriteria" runat="server" ></asp:Label>
+        </p>
+           
+</div>
+
+</asp:Content>
+ 

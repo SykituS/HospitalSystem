@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DebbugingClassDB.cs" />
+    <Compile Include="EditUser.cs" />
     <Compile Include="EmailSendingClass.cs" />
     <Compile Include="LogSys.cs" />
     <Compile Include="MySession.cs" />

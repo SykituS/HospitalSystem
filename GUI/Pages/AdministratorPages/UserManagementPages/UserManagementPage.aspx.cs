@@ -60,9 +60,13 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             //Button "Edit user" click
             if (e.CommandName == "EditUser")
             {
-                // Console.Write(e.CommandName);
-                throw new NotImplementedException("Edit user");
-                Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserEditPage");
+            
+                    
+                   
+                    MySession.Current.TempStatus = row.Cells[4].Text;
+                    string detailsPageId = "UserEditPage.aspx?Id=" + row.Cells[0].Text;
+                    Response.Redirect(detailsPageId);
+                
 
             }
         }
@@ -87,7 +91,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
 
         protected void GridViewUsers_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+            MySession.Current.Login = GridViewUsers.SelectedRow.Cells[0].Text;
         }
     }
 }

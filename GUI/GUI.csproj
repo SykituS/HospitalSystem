@@ -111,6 +111,7 @@
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\SettingPanelPage.aspx" />
+    <Content Include="Pages\AdministratorPages\UserManagementPages\EditUserStatus.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserAddAcceptPage.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserAddPage.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserEditPage.aspx" />
@@ -228,6 +229,13 @@
     </Compile>
     <Compile Include="Pages\AdministratorPages\SettingPanelPage.aspx.designer.cs">
       <DependentUpon>SettingPanelPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\EditUserStatus.aspx.cs">
+      <DependentUpon>EditUserStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\EditUserStatus.aspx.designer.cs">
+      <DependentUpon>EditUserStatus.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdministratorPages\UserManagementPages\UserAddAcceptPage.aspx.cs">
       <DependentUpon>UserAddAcceptPage.aspx</DependentUpon>
