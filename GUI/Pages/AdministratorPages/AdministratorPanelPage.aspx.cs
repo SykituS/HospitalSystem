@@ -12,10 +12,15 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
             //Preventing non logged user to get to this site
             if (!LogSys.CheckIfLogged())
                 Response.Redirect("~/Pages/MainPages/Default");
+
+            if (MySession.Current.Position == "Administrator_of_all")
+            {
+                BtnBackToMenu.Visible = true;
+                BtnBackToMenu.Enabled = true;
+            }
         }
 
         protected void BtnLogout_Click(object sender, EventArgs e)
@@ -41,6 +46,11 @@ namespace GUI
         protected void BtnSettings_Click(object sender, EventArgs e)
         {
             Response.Redirect("SettingPanelPage");
+        }
+
+        protected void BtnBackToMenu_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/HeadAdministrator/AdministratorMainPanel");
         }
     }
 }

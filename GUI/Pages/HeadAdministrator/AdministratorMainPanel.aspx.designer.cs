@@ -7,65 +7,56 @@
 // </generowany automatycznie>
 //------------------------------------------------------------------------------
 
-namespace GUI
+namespace GUI.Pages
 {
 
 
-    public partial class AdministratorPanelPage
+    public partial class AdministratorMainPanel
     {
 
         /// <summary>
-        /// Kontrolka BtnSettings.
+        /// Kontrolka Label1.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSettings;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Kontrolka BtnUserManegment.
+        /// Kontrolka BtnAdministrator.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnUserManegment;
+        protected global::System.Web.UI.WebControls.Button BtnAdministrator;
 
         /// <summary>
-        /// Kontrolka BtnEmpManage.
+        /// Kontrolka BtnDoctors.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnEmpManage;
+        protected global::System.Web.UI.WebControls.Button BtnDoctors;
 
         /// <summary>
-        /// Kontrolka BtnOfficesManage.
+        /// Kontrolka BtnMedicalStaffMember.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnOfficesManage;
+        protected global::System.Web.UI.WebControls.Button BtnMedicalStaffMember;
 
         /// <summary>
-        /// Kontrolka BtnLogout.
+        /// Kontrolka BtnLogOut.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnLogout;
-
-        /// <summary>
-        /// Kontrolka BtnBackToMenu.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnBackToMenu;
+        protected global::System.Web.UI.WebControls.Button BtnLogOut;
     }
 }

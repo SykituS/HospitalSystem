@@ -57,10 +57,13 @@ namespace GUI
             {
                 switch (MySession.Current.Position)
                 {
+                    case "Administrator_of_all":
+                        Response.Redirect("~/Pages/HeadAdministrator/AdministratorMainPanel");
+                        break;
                     case "administrator":
                         Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
                         break;
-                    case "doctor":
+                    case "doctor": 
                         Response.Redirect("~/Pages/Doctorspages/DoctorPanelPage");
                         break;
                     case "medical clinic staff member":

@@ -31,5 +31,14 @@ namespace GUI.Pages.DoctorsPages
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnLogout;
+
+        /// <summary>
+        /// Kontrolka BtnBackToMenu.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnBackToMenu;
     }
 }

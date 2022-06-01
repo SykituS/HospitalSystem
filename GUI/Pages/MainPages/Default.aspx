@@ -22,7 +22,10 @@
            </asp:UpdatePanel> 
         </div>
 
-        <asp:Label ID="LabelWarnings" runat="server" ForeColor="Red" Text="Waringin placeholder" Visible="False"></asp:Label><br />
+        <asp:Label ID="LabelWarnings" runat="server" ForeColor="Red" Text="Waringin placeholder" Visible="False"></asp:Label>
+           <br />
+
+        <asp:Label ID="LabelWarAct" runat="server" ForeColor="Red" Text="Waringin placeholder" Visible="False"></asp:Label><br />
         Login  <br />
         <asp:TextBox ID="TBLogin" CssClass="field" runat="server" MaxLength="100"></asp:TextBox>
         <br />

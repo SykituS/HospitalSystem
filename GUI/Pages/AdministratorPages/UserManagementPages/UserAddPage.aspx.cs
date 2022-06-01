@@ -27,12 +27,12 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
                 DropDownList.DataValueField = "EM_Id_Employee";
                 DropDownList.DataBind();
             }
-            }
+        }
 
 
         protected void BtnAddNewUser_Click(object sender, EventArgs e)
         {
-            MySession.Current.IdEmployee = int.Parse(DropDownList.SelectedValue);
+            MySession.Current.TempIdEmployee = int.Parse(DropDownList.SelectedValue);
             Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserAddAcceptPage");
 
 

@@ -31,7 +31,7 @@ namespace Administration
             It sends the DataTable variable to the database, determines what the newly created table, containing user's login, password, email and position, should be called
             and sends a query to the database, which checks whether the given data exists in the database. */
 
-            string query = "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name " +
+            string query = "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name, US_Status " +
                 "FROM dbo.Employee INNER JOIN dbo.Users ON dbo.Users.US_Employee=dbo.Employee.EM_Id_Employee INNER JOIN dbo.Position ON dbo.Employee.EM_Position = dbo.Position.PO_Id_Position " +
                 "WHERE US_Login = @Login AND US_Password = @Password";
 
@@ -44,13 +44,17 @@ namespace Administration
             if (dt.Rows.Count == 0)
                 return;
 
-            //Filling in user data
-            foreach (DataRow dr in dt.Rows)
+            if ((int)dt.Rows[0]["US_Status"] != 1)
             {
-                MySession.Current.Login = login;
-                MySession.Current.Email = dr["EM_Email"].ToString();
-                MySession.Current.Position = dr["PO_Name"].ToString();
+                MySession.Current.Status = (int)dt.Rows[0]["US_Status"];
+                return;
             }
+
+            //Filling in user data
+            MySession.Current.Login = login;
+            MySession.Current.Email = dt.Rows[0]["EM_Email"].ToString();
+            MySession.Current.Position = dt.Rows[0]["PO_Name"].ToString();
+            MySession.Current.Status = (int)dt.Rows[0]["US_Status"];
 
             //Changing the value of the variable that stores information about whether the user is logged in
             MySession.Current.IsLogged = true;
@@ -59,7 +63,7 @@ namespace Administration
 
         public static string GetAttempTextTry()
         {
-            return "Wrong login or password! You have " + MySession.Current.Attempt + " more attempts";
+            return "Wrong login or password! You have " + MySession.Current.Attempt + " more attempts! \n verify that your account is active ";
         }
 
         public static string GetAttempTextBlock(string timeText)
