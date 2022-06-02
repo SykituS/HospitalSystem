@@ -21,7 +21,7 @@
         </asp:DropDownList>
         <br />
         <br />
-        <asp:GridView ID="GridViewUsers" runat="server" AllowSorting="True" OnSorting="GridViewUsers_Sorting" AutoGenerateColumns="False" OnRowCommand="GridViewUsers_RowCommand" OnSelectedIndexChanged="GridViewUsers_SelectedIndexChanged">
+        <asp:GridView ID="GridViewUsers" runat="server" AllowSorting="True" OnSorting="GridViewUsers_Sorting" AutoGenerateColumns="False" OnRowCommand="GridViewUsers_RowCommand" OnSelectedIndexChanged="GridViewUsers_SelectedIndexChanged" Width="825px">
             <Columns>
                 <asp:BoundField HeaderText="User name" DataField="US_Login" SortExpression="US_Login"/>
                 <asp:BoundField HeaderText="First name" DataField="EM_Name" SortExpression="EM_Name" />
