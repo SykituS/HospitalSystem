@@ -24,6 +24,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
         protected void BtnAccept_Click(object sender, EventArgs e)
         {
             //Getting result of validation
+            ResetPassSys.ResetPassword(MySession.Current.TempPass, MySession.Current.TempPass, MySession.Current.TempLogin);
             Response.Redirect("~/Pages/AdministratorPages/UserManagementPages/UserManagementPage");
 
         }

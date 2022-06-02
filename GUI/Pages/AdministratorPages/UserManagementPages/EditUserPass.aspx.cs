@@ -22,9 +22,11 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
 
             if (result.Equals("OK"))
             {
+                MySession.Current.TempPass = Tbnewpass.Text;
+
                 //changing password and closing page
-                ResetPassSys.ResetPassword(Tbnewpass.Text, Tbconpass.Text, MySession.Current.TempLogin);
-                EditUser.EditUsers(MySession.Current.TempLogin);
+                //ResetPassSys.ResetPassword(Tbnewpass.Text, Tbconpass.Text, MySession.Current.TempLogin);
+                //EditUser.EditUsers(MySession.Current.TempLogin);
                 Response.Redirect("UserEditPage.aspx?Id=" + MySession.Current.TempLogin);
             }
             else

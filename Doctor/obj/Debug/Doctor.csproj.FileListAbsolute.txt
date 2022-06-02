@@ -117,3 +117,17 @@ C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.C
 C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
 C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.dll
 C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.pdb
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\Doctor.dll
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\Doctor.pdb
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\Administration.dll
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\BusinessAdministration.dll
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\DBSystem.dll
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\FluentValidation.dll
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\Administration.pdb
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\BusinessAdministration.pdb
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\FluentValidation.xml
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.csproj.AssemblyReference.cache
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.dll
+C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.pdb
