@@ -33,7 +33,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(referrals);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
 
         [TestMethod]
@@ -47,7 +47,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(referrals);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
     }
 }

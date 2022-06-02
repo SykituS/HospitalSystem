@@ -119,6 +119,64 @@
 
 
     }
+    .cbp-mc-columnn {
+    
+     width: 48%;
+     height:100%;
+     float: left;
+     margin-left:1%;
+    
+    /*border-radius:10px;*/
+    
+    
+
+
+    }
+    .roww{
+        width:100%;
+        height:100px;
+    }
+    .p{
+        font-size:16px;
+    }
+  
+
+    
+    
+
+
+
+    
+    
+
+    
+        
+  
+
+    
+    
+
+
+
+    
+    
+
+    
+    
+  
+
+    
+    
+
+
+
+    
+    
+
+    
+        
+  
+
     
     
 
@@ -132,11 +190,24 @@
 
     <div style="margin:15px;">
 
+    <div class="roww">
+        <div class="cbp-mc-columnn">
         <asp:Button ID="BtnBackToMainPage" runat="server" OnClick="BtnBackToMainPage_Click" Text="Back to main page" /> <br /><br />
-        <asp:Button ID="Button1" runat="server" Height="24px" OnClick="Button1_Click" Text="Show Calendar" />
-    
+        <asp:Button ID="Button1" runat="server" Height="24px" OnClick="Button1_Click" Text="Show Calendar" /></div>
+        
+        <div class="cbp-mc-columnn">
+            <br /> <br />
+            
+            <p>
+            
+            <asp:TextBox ID="TextBox8" runat="server" Height="25px" Width="200px" Visible="False"></asp:TextBox>
+                <asp:Button ID="Button8" runat="server" Text="Filter" Height="28px" Width="100px" Visible="False" />
+                
+        </p>
+        </div>
       
         <br /> <br />
+    </div>
         <div class="row">
             <div class="column">
                 <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" DayNameFormat="Full" FirstDayOfWeek="Monday" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="100%" NextPrevFormat="FullMonth" Width="100%" Visible="False" OnSelectionChanged="Calendar1_SelectionChanged" >
@@ -154,6 +225,8 @@
                 <br /> <br />
             </div>
             <div class="column">
+                
+            
                 <div style="overflow-y: scroll;height: 100%; width: 569px;">
                 <asp:GridView ID="GridView1" runat="server" Width="550px" AllowSorting="True" OnSorting="GridView1_Sorting" CurrentSortField="Name" CurrentSortDirection="DESC" OnRowDataBound="GridView1_RowDataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Height="100%" HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle">
                     <Columns>
@@ -168,6 +241,7 @@
                 </asp:GridView>
                 </div>
             </div>
+            
         </div>
         
         <div class="row"> <%--div rozpoczynajacy rowa--%>
@@ -196,22 +270,17 @@
             </div>
             <div class="cbp-mc-column">
                        <p>Visits history</p>
-                    <asp:ListBox ID="ListBox1" runat="server" Height="310px" Width="373px">
-                            <asp:ListItem>3123</asp:ListItem>
-                            <asp:ListItem>45425</asp:ListItem>
-                            <asp:ListItem>45ffd</asp:ListItem>
-                            <asp:ListItem>545435</asp:ListItem>
+                    <asp:ListBox ID="ListBox1" runat="server" Height="310px" Width="373px" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged" AutoPostBack="True">
                         </asp:ListBox>
                     <br /> <br />
                     <div class="smallRow">
-                          <asp:Button ID="Button4" runat="server" Text="Back to current visit" /></div>
+                          <asp:Button ID="Button4" runat="server" Text="Back to current visit" OnClick="Button4_Click" /></div>
             </div>
        </div> <%--Div konczacy rowa--%>
 
 
             
-
-        </div>
+    </div>
         <div class="row1">
             <div class="column3">
                 <h3>Prescription</h3>
@@ -252,10 +321,10 @@
                   </div>--%>
 
                   <div class="smallRow"><p>Medical examination:</p> 
-                      <asp:TextBox ID="RefExamination" runat="server" EnableTheming="True" Height="200px" Width="300px" TextMode="MultiLine"></asp:TextBox>
+                      <asp:TextBox ID="RefExamination" runat="server" EnableTheming="True" Height="200px" Width="300px" TextMode="MultiLine" OnTextChanged="RefExamination_TextChanged"></asp:TextBox>
                   </div>
                 <div class="smallRow">
-                      <asp:Button ID="Button3" runat="server" Text="Approve" /></div>
+                      <asp:Button ID="Button3" runat="server" Text="Approve" OnClick="Button3_Click" /></div>
 
 
             </div>

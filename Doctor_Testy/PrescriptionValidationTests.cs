@@ -35,7 +35,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(prescription);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
 
         [TestMethod]
@@ -50,7 +50,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(prescription);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
 
         [TestMethod]
@@ -65,7 +65,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(prescription);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
 
         [TestMethod]
@@ -80,7 +80,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(prescription);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
 
         [TestMethod]
@@ -95,7 +95,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(prescription);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
 
         [TestMethod]
@@ -110,7 +110,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(prescription);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
 
         [TestMethod]
@@ -125,7 +125,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(prescription);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
 
         [TestMethod]
@@ -140,7 +140,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(prescription);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
 
         [TestMethod]
@@ -155,7 +155,7 @@ namespace Doctor_Testy
 
             ValidationResult result = validator.Validate(prescription);
 
-            Assert.IsTrue(result.IsValid);
+            Assert.AreEqual(false, result.IsValid);
         }
 
     }

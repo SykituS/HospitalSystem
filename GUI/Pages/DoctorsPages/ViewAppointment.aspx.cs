@@ -14,6 +14,7 @@ namespace GUI
 {
     public partial class ViewAppointment : System.Web.UI.Page
     {
+        //List<int> id_wizyt = new List<int>();
         protected void Page_Load(object sender, EventArgs e)
         {
             //Preventing non logged user to get to this site
@@ -33,6 +34,9 @@ namespace GUI
 
         protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
+            TextBox8.Visible = true;
+            Button8.Visible = true;
+
             DateTime day = Calendar1.SelectedDate;
 
             GetAppoitments getAppoitments = new GetAppoitments();
@@ -118,14 +122,31 @@ namespace GUI
             TextBox3.Text = dt.Rows[0]["Phone_number"].ToString();
             TextBox7.Text = dt.Rows[0]["Pesel"].ToString();
             TextBox4.Text = dt.Rows[0]["AD_appointment_description"].ToString();
+            RefExamination.Text = dt.Rows[0]["AD_referral"].ToString();
 
             Button5.Visible = true;
 
             GetAppoitments getAppoitments = new GetAppoitments();
             getAppoitments.Get_Doctor_ID();
 
-        }
 
+            AppoitmentDetails patients_visits = new AppoitmentDetails();
+            DataTable d = new DataTable();
+            d = patients_visits.All_appoitments_of_current_patient(cell);
+
+            ListBox1.Items.Clear();
+            foreach (DataRow item in d.Rows)
+            {
+                DateTime date = DateTime.Parse(item["Ap_appoitment_day"].ToString());
+                DateTime time = DateTime.Parse(item["Ap_appoitment_time"].ToString());
+                var id = int.Parse(item["Ap_id_appoitment"].ToString());
+                //id_wizyt.Add(id);
+                
+                ListBox1.Items.Add("Date of visit: "+date.ToString("yyyy-MM-dd") + " " + time.ToString("HH:mm:ss"));
+            }
+
+        }
+        
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.DataRow)
@@ -149,9 +170,10 @@ namespace GUI
             DateTime Hour = DateTime.Parse(TextBox5.Text);
 
             DateTime combined = Date.Date.Add(Hour.TimeOfDay);
-
+            int cell = Int32.Parse(GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text);
             AppoitmentDetails appoitmentDetails = new AppoitmentDetails();
-            appoitmentDetails.Add_New_Appoitment(combined);
+            
+            appoitmentDetails.Add_New_Appoitment(combined,cell);
 
             Button7.Visible = false;
             TextBox5.Visible = false;
@@ -171,14 +193,15 @@ namespace GUI
 
         }
 
-
-
         protected void bt_add_prescription(object sender, EventArgs e)
         {
             Prescription prescription = new Prescription(PrescMedicine.Text, PrescSurname.Text);
 
             Prescription_Validation validator = new Prescription_Validation();
 
+            AppoitmentDetails appoitmentDetails = new AppoitmentDetails();
+            int cell = Int32.Parse(GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text);
+            //appoitmentDetails.Add_prescription(cell,);
             ValidationResult result = validator.Validate(prescription);
 
             if (result.IsValid == false)
@@ -198,6 +221,37 @@ namespace GUI
 
             AppoitmentDetails appoitmentDetails = new AppoitmentDetails();
             appoitmentDetails.Adding_Results(cell, TextBox4.Text);
+        }
+
+        protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            int cell = Int32.Parse(GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text);
+            AppoitmentDetails appoitmentDetails = new AppoitmentDetails();
+            DataTable dt = new DataTable();
+            dt = appoitmentDetails.All_appoitments_of_current_patient(cell);
+            
+           
+           TextBox4.Text = dt.Rows[ListBox1.SelectedIndex]["AD_appointment_description"].ToString();
+            
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            GridView1_SelectedIndexChanged(sender, e);
+        }
+
+        protected void RefExamination_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            int cell = Int32.Parse(GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text);
+            AppoitmentDetails appoitmentDetails = new AppoitmentDetails();
+            appoitmentDetails.Add_refferal(cell, RefExamination.Text);
+            RefExamination.Text = string.Empty;
         }
     }
 }

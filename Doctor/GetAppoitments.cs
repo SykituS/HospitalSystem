@@ -22,7 +22,7 @@ namespace Doctor
             //a querry that returns information about visits of a logged-in doctor from the database (day, time, patient's data, office number))
             string querry = "SELECT  Ap_id_appoitment ,Ap_appoitment_day, Ap_appoitment_time,  Name, Patients.Surname, Of_office_number"+
                 "\n FROM Term_Of_Visit, Patients, Doctors, Office, Users, Employee, Appointment_details"+
-                "\n WHERE Id_Patients = AD_id"+
+                "\n WHERE Id_Patients = AD_fk_patients"+
                 "\n AND ID_Doctor = Ap_doctor"+
                 "\n AND Of_id_office = Ap_office"+
                 "\n AND EM_Id_Employee = US_Employee"+
@@ -58,7 +58,6 @@ namespace Doctor
 
             return dates;
         }
-
 
         public DataTable Get_Info_Appointment(DateTime day)
         {
