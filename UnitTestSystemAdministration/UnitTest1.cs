@@ -52,7 +52,7 @@ namespace UnitTestSystemAdministration
             var result = Administration.ResetPassSys.PasswordValidation(newPassword, confirmNewPassword);
 
             //assert
-            Assert.AreEqual("OK", result);
+            Assert.AreEqual("Passwords must be this same", result);
         }
 
         [TestMethod]
@@ -69,7 +69,7 @@ namespace UnitTestSystemAdministration
             var result = Administration.ResetPassSys.PasswordValidation(newPassword, confirmNewPassword);
 
             //assert
-            Assert.AreEqual("OK", result);
+            Assert.AreEqual("Incorrect password length", result);
         }
 
         [TestMethod]
@@ -86,7 +86,7 @@ namespace UnitTestSystemAdministration
             var result = Administration.ResetPassSys.PasswordValidation(newPassword, confirmNewPassword);
 
             //assert
-            Assert.AreEqual("OK", result);
+            Assert.AreEqual("Incorrect password length", result);
         }
 
         [TestMethod]
@@ -102,7 +102,7 @@ namespace UnitTestSystemAdministration
             var result = Administration.ResetPassSys.PasswordValidation(newPassword, confirmNewPassword);
 
             //assert
-            Assert.AreEqual("OK", result, "test");
+            Assert.AreEqual("Password must include at least one lowercase, uppercase, number and special character (-, _, !, #, $, *)", result, "test");
         }
 
         [TestMethod]
@@ -118,7 +118,7 @@ namespace UnitTestSystemAdministration
             var result = Administration.ResetPassSys.PasswordValidation(newPassword, confirmNewPassword);
 
             //assert
-            Assert.AreEqual("OK", result);
+            Assert.AreEqual("Password must include at least one lowercase, uppercase, number and special character (-, _, !, #, $, *)", result);
         }
 
         [TestMethod]
@@ -134,7 +134,7 @@ namespace UnitTestSystemAdministration
             var result = Administration.ResetPassSys.PasswordValidation(newPassword, confirmNewPassword);
 
             //assert
-            Assert.AreEqual("OK", result);
+            Assert.AreEqual("Password must include at least one lowercase, uppercase, number and special character (-, _, !, #, $, *)", result);
         }
 
         [TestMethod]
@@ -150,7 +150,7 @@ namespace UnitTestSystemAdministration
             var result = Administration.ResetPassSys.PasswordValidation(newPassword, confirmNewPassword);
 
             //assert
-            Assert.AreEqual("OK", result);
+            Assert.AreEqual("Password must include at least one lowercase, uppercase, number and special character (-, _, !, #, $, *)", result);
         }
     }
 }

@@ -34,7 +34,7 @@ namespace UnitTestSystemAdministration
             var result = Administration.EmailSendingClass.IsValidEmail(email);
 
             //assert
-            Assert.AreEqual(true, result, "Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.");
+            Assert.AreEqual(false, result, "Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.");
 
         }
 
@@ -50,7 +50,7 @@ namespace UnitTestSystemAdministration
             var result = Administration.EmailSendingClass.IsValidEmail(email);
 
             //assert
-            Assert.AreEqual(true, result, "Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.");
+            Assert.AreEqual(false, result, "Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.");
 
         }
 
@@ -66,7 +66,7 @@ namespace UnitTestSystemAdministration
             var result = Administration.EmailSendingClass.IsValidEmail(email);
 
             //assert
-            Assert.AreEqual(true, result, "Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.");
+            Assert.AreEqual(false, result, "Incorrect data format: user entered the login and an e-mail address that didn't have exactly one '@' character.");
 
         }
     }
