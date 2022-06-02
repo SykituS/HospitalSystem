@@ -103,3 +103,17 @@ D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\obj\Debug\Doctor.csproj.CoreCom
 D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\obj\Debug\Doctor.csproj.CopyComplete
 D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\obj\Debug\Doctor.dll
 D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\obj\Debug\Doctor.pdb
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\Doctor.dll
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\Doctor.pdb
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\Administration.dll
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\DBSystem.dll
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\FluentValidation.dll
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\Administration.pdb
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\FluentValidation.xml
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.dll
+C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.pdb

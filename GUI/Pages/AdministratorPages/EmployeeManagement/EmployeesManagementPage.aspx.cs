@@ -26,40 +26,33 @@ namespace GUI
                 DdlRoles.DataValueField = "PO_Id_Position";
                 DdlRoles.DataTextField = "PO_Name";
                 DdlRoles.DataBind();
-            }
 
-            foreach(GridViewRow row in GvEmployees.Rows)
-            {
-                Button rowButton;
-                int id;
-
-                rowButton = (Button)row.Cells[8].Controls[0];
-                id = Convert.ToInt32(row.Cells[0].Text);
-
-                if (EmployeesManagement.GetEmployeeStatus(id) == 1)
-                    rowButton.Text = "Deactivate";
-
-                if (EmployeesManagement.GetEmployeeStatus(id) == 2)
-                    rowButton.Text = "Reactivate";
-            }    
+                SetStatusButtonText();
+            } 
         }
 
         protected void GvEmployees_Sorting(object sender, GridViewSortEventArgs e)
         {
             GvEmployees.DataSource = EmployeesManagement.SortDataView(e, DdlRoles, DdlStatus);
             GvEmployees.DataBind();
+
+            SetStatusButtonText();
         }
 
         protected void DdlRoles_SelectedIndexChanged(object sender, EventArgs e)
         {
             GvEmployees.DataSource = EmployeesManagement.FilterDataView(DdlRoles, DdlStatus);
             GvEmployees.DataBind();
+
+            SetStatusButtonText();
         }
 
         protected void DdlStatus_SelectedIndexChanged(object sender, EventArgs e)
         {
             GvEmployees.DataSource = EmployeesManagement.FilterDataView(DdlRoles, DdlStatus);
             GvEmployees.DataBind();
+
+            SetStatusButtonText();
         }
 
         protected void GvEmployees_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -103,6 +96,21 @@ namespace GUI
         {
             //Button which returns to the main page
             Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
+        }
+
+        private void SetStatusButtonText()
+        {
+            foreach (GridViewRow row in GvEmployees.Rows)
+            {
+                Button rowButton;
+                rowButton = (Button)row.Cells[8].Controls[0];
+
+                if (row.Cells[6].Text == "Active")
+                    rowButton.Text = "Deactivate";
+
+                if (row.Cells[6].Text == "Inactive")
+                    rowButton.Text = "Reactivate";
+            }
         }
     }
 }

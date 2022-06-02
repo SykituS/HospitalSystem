@@ -42,13 +42,13 @@ F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAd
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.dll
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
-C:\Users\User\Desktop\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
-C:\Users\User\Desktop\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\DBSystem.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\FluentValidation.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\FluentValidation.xml
-C:\Users\User\Desktop\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
-C:\Users\User\Desktop\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
-C:\Users\User\Desktop\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\TestowanieOprogramowaniaGlowny (2)\BusinessAdministration\bin\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\TestowanieOprogramowaniaGlowny (2)\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\TestowanieOprogramowaniaGlowny (2)\BusinessAdministration\bin\Debug\DBSystem.dll
+C:\Users\User\Desktop\TestowanieOprogramowaniaGlowny (2)\BusinessAdministration\bin\Debug\FluentValidation.dll
+C:\Users\User\Desktop\TestowanieOprogramowaniaGlowny (2)\BusinessAdministration\bin\Debug\FluentValidation.xml
+C:\Users\User\Desktop\TestowanieOprogramowaniaGlowny (2)\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
+C:\Users\User\Desktop\TestowanieOprogramowaniaGlowny (2)\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\TestowanieOprogramowaniaGlowny (2)\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+C:\Users\User\Desktop\TestowanieOprogramowaniaGlowny (2)\BusinessAdministration\obj\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\TestowanieOprogramowaniaGlowny (2)\BusinessAdministration\obj\Debug\BusinessAdministration.pdb

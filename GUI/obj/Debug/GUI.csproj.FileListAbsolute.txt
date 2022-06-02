@@ -597,5 +597,3 @@ C:\Users\User\Desktop\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CoreCom
 C:\Users\User\Desktop\Testowanie Oprogramowania\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\User\Desktop\Testowanie Oprogramowania\GUI\obj\Debug\GUI.dll
 C:\Users\User\Desktop\Testowanie Oprogramowania\GUI\obj\Debug\GUI.pdb
-C:\Users\User\Desktop\Testowanie Oprogramowania\GUI\bin\Administation.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\GUI\bin\Administation.pdb
