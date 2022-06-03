@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Administration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,13 @@ namespace GUI.Pages.AdministratorPages.SpecializationManagementPages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!LogSys.CheckIfLogged())
+                Response.Redirect("~/Pages/MainPages/Default");
+        }
 
+        protected void BtnBackToMenu_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
         }
     }
 }

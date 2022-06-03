@@ -52,5 +52,10 @@ namespace GUI
         {
             Response.Redirect("~/Pages/HeadAdministrator/AdministratorMainPanel");
         }
+
+        protected void BtnSpecializationManagement_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("SpecializationManagementPages/SpecializationManagementPage");
+        }
     }
 }

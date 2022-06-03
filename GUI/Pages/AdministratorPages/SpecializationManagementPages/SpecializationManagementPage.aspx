@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div style="margin-top: 15px;">
 
-        <asp:Button ID="BtnBackToMenu" runat="server" Text="Button" />
+        <asp:Button ID="BtnBackToMenu" runat="server" Text="Back to menu" OnClick="BtnBackToMenu_Click" />
         <asp:Button ID="BtnAddNewSpecialization" runat="server" Text="Button" />
         <br />
         <br />
