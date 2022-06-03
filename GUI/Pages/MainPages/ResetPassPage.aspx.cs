@@ -50,15 +50,6 @@ namespace GUI
             Response.Redirect("CancelationPasswordPage.aspx");
         }
 
-        protected void TBNewPass_TextChanged(object sender, EventArgs e)
-        {
-            Validation();
-        }
-
-        protected void TBConfirmNewPass_TextChanged(object sender, EventArgs e)
-        {
-            Validation();
-        }
         private void Validation()
         {
             //FronEnd validation that checks whether passwords are the same
@@ -71,6 +62,11 @@ namespace GUI
                 else
                     BtnOk.Enabled = false;
             }
+        }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            Validation();
         }
     }
 }

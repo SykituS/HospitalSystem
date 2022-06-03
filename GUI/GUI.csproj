@@ -117,6 +117,7 @@
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\OfficesManagement\OfficesManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\SettingPanelPage.aspx" />
+    <Content Include="Pages\AdministratorPages\SpecializationManagementPages\SpecializationManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\EditUserPass.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\EditUserStatus.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserAddAcceptPage.aspx" />
@@ -258,6 +259,13 @@
     </Compile>
     <Compile Include="Pages\AdministratorPages\SettingPanelPage.aspx.designer.cs">
       <DependentUpon>SettingPanelPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\SpecializationManagementPages\SpecializationManagementPage.aspx.cs">
+      <DependentUpon>SpecializationManagementPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\SpecializationManagementPages\SpecializationManagementPage.aspx.designer.cs">
+      <DependentUpon>SpecializationManagementPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdministratorPages\UserManagementPages\EditUserPass.aspx.cs">
       <DependentUpon>EditUserPass.aspx</DependentUpon>

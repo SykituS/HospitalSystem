@@ -34,7 +34,7 @@
         <br />
           <br />
            <div id="Reset">
-            <asp:Button ID="Button1" CssClass="psswrd" runat="server" Text="Forgot password" OnClick="BtnResetPassword_Click" />
+            <asp:Button ID="Button1" CssClass="psswrd" runat="server" Text="Forgot password" OnClick="BtnResetPassword_Click" UseSubmitBehavior="False" />
         </div>
         <asp:Button ID="BtnLogin" CssClass="btn" runat="server" OnClick="BtnLogin_Click" Text="Login" />
         

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="User Management" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="UserManagementPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserManagementPage" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div style="margin-top:15px">
+    <div style="margin-top:15px;">
 
         <asp:Button ID="BtnBack" runat="server" Text="Back to menu" OnClick="BtnBack_Click" />
         <br />
@@ -21,7 +21,7 @@
         </asp:DropDownList>
         <br />
         <br />
-        <asp:GridView ID="GridViewUsers" runat="server" AllowSorting="True" OnSorting="GridViewUsers_Sorting" AutoGenerateColumns="False" OnRowCommand="GridViewUsers_RowCommand" OnSelectedIndexChanged="GridViewUsers_SelectedIndexChanged" Width="825px">
+        <asp:GridView ID="GridViewUsers" runat="server" AllowSorting="True" OnSorting="GridViewUsers_Sorting" AutoGenerateColumns="False" OnRowCommand="GridViewUsers_RowCommand" OnSelectedIndexChanged="GridViewUsers_SelectedIndexChanged" Width="740px">
             <Columns>
                 <asp:BoundField HeaderText="User name" DataField="US_Login" SortExpression="US_Login"/>
                 <asp:BoundField HeaderText="First name" DataField="EM_Name" SortExpression="EM_Name" />
@@ -34,7 +34,7 @@
                     </ItemTemplate>
                 </asp:TemplateField>
 
-                
+                <asp:ButtonField Text="View user details" CommandName="UserDetails" />                
                 <asp:ButtonField Text="Edit user" CommandName="EditUser" />
             </Columns>
         </asp:GridView>
