@@ -135,9 +135,9 @@ input[type="submit"] {
   cursor: pointer;
     position: relative;
     top: 16px;
-    left: -32px;
+    left: -23px;
     height: 31px;
-    width: 200px;
+    width: 191px;
 }
 button[disabled],
 html input[disabled] {
