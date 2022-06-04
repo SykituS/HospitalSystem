@@ -125,6 +125,8 @@
     <Content Include="Pages\AdministratorPages\UserManagementPages\EditUserStatus.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserAddAcceptPage.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserAddPage.aspx" />
+    <Content Include="Pages\AdministratorPages\UserManagementPages\UserDetailsPage.aspx" />
+    <Content Include="Pages\AdministratorPages\UserManagementPages\UserEditCancel.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserEditPage.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserManagementPage.aspx" />
     <Content Include="Pages\AdministratorPages\UserManagementPages\UserStatusUpdateConfirmPage.aspx" />
@@ -319,6 +321,20 @@
     </Compile>
     <Compile Include="Pages\AdministratorPages\UserManagementPages\UserAddPage.aspx.designer.cs">
       <DependentUpon>UserAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserDetailsPage.aspx.cs">
+      <DependentUpon>UserDetailsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserDetailsPage.aspx.designer.cs">
+      <DependentUpon>UserDetailsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserEditCancel.aspx.cs">
+      <DependentUpon>UserEditCancel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AdministratorPages\UserManagementPages\UserEditCancel.aspx.designer.cs">
+      <DependentUpon>UserEditCancel.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdministratorPages\UserManagementPages\UserEditPage.aspx.cs">
       <DependentUpon>UserEditPage.aspx</DependentUpon>

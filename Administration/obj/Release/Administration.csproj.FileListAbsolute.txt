@@ -1,8 +1,0 @@
-F:\Projekty\TestowanieOprogramowania\Administration\bin\Release\Administration.dll
-F:\Projekty\TestowanieOprogramowania\Administration\bin\Release\Administration.pdb
-F:\Projekty\TestowanieOprogramowania\Administration\bin\Release\DBSystem.dll
-F:\Projekty\TestowanieOprogramowania\Administration\obj\Release\Administration.csprojAssemblyReference.cache
-F:\Projekty\TestowanieOprogramowania\Administration\obj\Release\Administration.csproj.CoreCompileInputs.cache
-F:\Projekty\TestowanieOprogramowania\Administration\obj\Release\Administration.csproj.CopyComplete
-F:\Projekty\TestowanieOprogramowania\Administration\obj\Release\Administration.dll
-F:\Projekty\TestowanieOprogramowania\Administration\obj\Release\Administration.pdb

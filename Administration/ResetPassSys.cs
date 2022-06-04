@@ -1,8 +1,13 @@
-﻿using System;
-using System.Data;
-using System.Data.SqlClient;
+﻿using Administration;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Data;
+using System.Net;
+using System.Net.Mail;
 
 namespace Administration
 {
@@ -61,7 +66,7 @@ namespace Administration
         public static bool CheckStatus(string login, string email)
         {
             DataTable dt = GetInforamtion(login, email);
-
+            
             //check if user is doing reset
             if ((bool)dt.Rows[0]["US_isDuringReset"])
             {
@@ -96,9 +101,9 @@ namespace Administration
         }
 
         //Updating password in database
-        public static void ResetPassword(string NewPassword, string ConfirmPassword, string login)
+        public static void ResetPassword(string NewPassword, string ConfirmPassword, string login) 
         {
-            if (!PasswordValidation(NewPassword, ConfirmPassword).Equals("OK"))
+            if (MySession.Current.PasswordValidation != "OK"||!PasswordValidation(NewPassword, ConfirmPassword).Equals("OK"))
                 return;
 
             string query = "UPDATE Users SET US_Password =@NewPassword WHERE US_Login= @login ";
@@ -106,7 +111,7 @@ namespace Administration
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@login", login);
             command.Parameters.AddWithValue("@NewPassword", PasswordHashing.hashPassword(NewPassword));
-
+            
             try
             {
                 DBSystem.DBSystem.UpdateDB(command);

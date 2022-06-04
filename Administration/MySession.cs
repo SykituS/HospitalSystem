@@ -1,4 +1,9 @@
-﻿using System.Web;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
 
 namespace Administration
 {
@@ -25,7 +30,7 @@ namespace Administration
                 return session;
             }
         }
-
+        
         public int Status { get; set; }
         public bool IsLogged { get; set; }
         public int Attempt { get; set; }
@@ -34,11 +39,13 @@ namespace Administration
         public string Position { get; set; }
         public int SetTime { get; set; }
         public int IdEmployee { get; set; }
-
+       
         //Temp varibles
         public string TempPass { get; set; }
         public string TempLogin { get; set; }
         public string TempStatus { get; set; }
         public string EmployeeName { get; set; }
+        public int FirstLoad { get; set; }
+        public string PasswordValidation { get; set; }
     }
 }

@@ -1,5 +1,9 @@
-﻿using Administration;
-using System;
+﻿using System;
+using Administration;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace GUI.Pages.AdministratorPages.UserManagementPages
@@ -53,18 +57,17 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
                 Response.Redirect("UserStatusUpdateConfirmPage.aspx?login=" + row.Cells[0].Text + "&status=" + btn.Text);
             }
 
-            //Button "View user detail" click
-            if (e.CommandName == "UserDetails")
-            {
-                //Do something
-            }
-
             //Button "Edit user" click
             if (e.CommandName == "EditUser")
             {
-                MySession.Current.TempStatus = row.Cells[4].Text;
-                string detailsPageId = "UserEditPage.aspx?Id=" + row.Cells[0].Text;
-                Response.Redirect(detailsPageId);
+            
+                    
+                   
+                    MySession.Current.TempStatus = row.Cells[4].Text;
+                    string detailsPageId = "UserDetailsPage.aspx?Id=" + row.Cells[0].Text;
+                    Response.Redirect(detailsPageId);
+                
+
             }
         }
 

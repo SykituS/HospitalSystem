@@ -1,5 +1,10 @@
-﻿using Administration;
-using System;
+﻿using System;
+using Administration;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace GUI.Pages.AdministratorPages.UserManagementPages
 {
@@ -18,7 +23,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             if (result.Equals("OK"))
             {
                 MySession.Current.TempPass = Tbnewpass.Text;
-
+                MySession.Current.PasswordValidation = "OK"; 
                 //changing password and closing page
                 //ResetPassSys.ResetPassword(Tbnewpass.Text, Tbconpass.Text, MySession.Current.TempLogin);
                 //EditUser.EditUsers(MySession.Current.TempLogin);
@@ -26,9 +31,11 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             }
             else
             {
+               
                 //showing what went wrong with validation
                 LabelCriteria.Text = result;
             }
+           
 
         }
 

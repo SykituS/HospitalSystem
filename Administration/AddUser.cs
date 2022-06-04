@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using System.Text;
+using System.Web.UI.WebControls;
 using System.Web.Security;
 
 namespace Administration
@@ -18,7 +22,7 @@ namespace Administration
             DBSystem.DBSystem.SelectFromDB(dt, command);
             return dt;
         }
-
+       
 
         public static string LoginGenerator(int id)
         {
@@ -32,7 +36,7 @@ namespace Administration
                 return "";
 
             return (string)dt.Rows[0][0];
-
+            
         }
         public static string GetEmail(int id)
         {
@@ -45,7 +49,7 @@ namespace Administration
             return (string)dt.Rows[0][0];
 
         }
-
+       
 
         public static void AddNewUser(int id)
         {
@@ -78,11 +82,11 @@ namespace Administration
             StringBuilder sb = new StringBuilder();
 
             sb.Append("Hi, <br /> Here is your login and password: <br />");
-            sb.Append("Login: " + login + "<br />");
+            sb.Append("Login: " + login+ "<br />");
             sb.Append("Password: " + password + "<br />");
             sb.Append("Have a nice day, <br /> Medical clinic");
 
             return sb;
         }
     }
-}
+    }

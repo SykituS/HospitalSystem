@@ -1,7 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.DirectoryServices;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 
 
 namespace Administration
@@ -59,7 +64,48 @@ namespace Administration
 
             return sb;
         }
+        public static void SetUserStatus()
+        {
 
 
+            if (MySession.Current.TempStatus != "Active")
+            {
+                MySession.Current.TempStatus = "Active";
+
+            }
+            else
+            {
+                MySession.Current.TempStatus = "Inactive";
+
+            }
+        }
+        public static void ClearEdit()
+        {
+            MySession.Current.PasswordValidation = null;
+            MySession.Current.TempPass = null;
+            MySession.Current.TempStatus = null;
+            MySession.Current.FirstLoad = 0;
+
+        }
+
+
+
+        public static DataTable UpdateUserEditStatus(string login, string status)
+        {
+            string query = "UPDATE dbo.Users SET US_Status = @StatusID WHERE US_Login = @Login";
+            SqlCommand command = new SqlCommand(query);
+
+            command.Parameters.AddWithValue("@Login", login);
+
+            if (status != "Active")
+                command.Parameters.AddWithValue("@StatusID", 2); //Change to inactive
+            else
+                command.Parameters.AddWithValue("@StatusID", 1); //Change to active
+
+            DBSystem.DBSystem.UpdateDB(command);
+
+            DataTable dt = UserManagement.GetUsersFromDB();
+            return dt;
+        }
     }
 }

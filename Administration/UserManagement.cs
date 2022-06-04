@@ -1,5 +1,11 @@
-﻿using System.Data;
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
+using System.DirectoryServices;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 
 namespace Administration
@@ -78,7 +84,7 @@ namespace Administration
 
             command.Parameters.AddWithValue("@Login", login);
 
-            if (status == "Active")
+            if (status == "Active" )
                 command.Parameters.AddWithValue("@StatusID", 2); //Change to inactive
             else
                 command.Parameters.AddWithValue("@StatusID", 1); //Change to active

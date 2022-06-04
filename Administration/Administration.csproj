@@ -56,7 +56,7 @@
     <Compile Include="RedirectingUser.cs" />
     <Compile Include="ResetPassSys.cs" />
     <Compile Include="SettingsPanel.cs" />
-    <Compile Include="SpecializationManagement.cs" />
+    <Compile Include="UserDetails.cs" />
     <Compile Include="UserManagement.cs" />
     <Compile Include="AddUser.cs" />
   </ItemGroup>
