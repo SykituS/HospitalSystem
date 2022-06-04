@@ -1,0 +1,14 @@
+F:\Projekty\TestowanieOprogramowania\Doctor\bin\Release\Doctor.dll
+F:\Projekty\TestowanieOprogramowania\Doctor\bin\Release\Doctor.pdb
+F:\Projekty\TestowanieOprogramowania\Doctor\bin\Release\Administration.dll
+F:\Projekty\TestowanieOprogramowania\Doctor\bin\Release\BusinessAdministration.dll
+F:\Projekty\TestowanieOprogramowania\Doctor\bin\Release\DBSystem.dll
+F:\Projekty\TestowanieOprogramowania\Doctor\bin\Release\FluentValidation.dll
+F:\Projekty\TestowanieOprogramowania\Doctor\bin\Release\Administration.pdb
+F:\Projekty\TestowanieOprogramowania\Doctor\bin\Release\BusinessAdministration.pdb
+F:\Projekty\TestowanieOprogramowania\Doctor\bin\Release\FluentValidation.xml
+F:\Projekty\TestowanieOprogramowania\Doctor\obj\Release\Doctor.csprojAssemblyReference.cache
+F:\Projekty\TestowanieOprogramowania\Doctor\obj\Release\Doctor.csproj.CoreCompileInputs.cache
+F:\Projekty\TestowanieOprogramowania\Doctor\obj\Release\Doctor.csproj.CopyComplete
+F:\Projekty\TestowanieOprogramowania\Doctor\obj\Release\Doctor.dll
+F:\Projekty\TestowanieOprogramowania\Doctor\obj\Release\Doctor.pdb

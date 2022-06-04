@@ -1,0 +1,10 @@
+F:\Projekty\TestowanieOprogramowania\Reception\bin\Release\Reception.dll
+F:\Projekty\TestowanieOprogramowania\Reception\bin\Release\Reception.pdb
+F:\Projekty\TestowanieOprogramowania\Reception\bin\Release\DBSystem.dll
+F:\Projekty\TestowanieOprogramowania\Reception\bin\Release\FluentValidation.dll
+F:\Projekty\TestowanieOprogramowania\Reception\bin\Release\FluentValidation.xml
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Release\Reception.csprojAssemblyReference.cache
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Release\Reception.csproj.CoreCompileInputs.cache
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Release\Reception.csproj.CopyComplete
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Release\Reception.dll
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Release\Reception.pdb

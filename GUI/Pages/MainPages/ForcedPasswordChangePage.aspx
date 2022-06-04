@@ -3,19 +3,19 @@
 
     <div style="margin-top:15px;">
 
-        <asp:Label ID="Label1" runat="server" Text="You changed your password, to login to system you need to change it first"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="It looks like your password has been changed by the system! For security reasons, we ask you to change your password again"></asp:Label>
         <br /><br />
         <asp:Label ID="Label2" runat="server" Text="New password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBNewPassword" runat="server"></asp:TextBox>
         <br /><br />
         <asp:Label ID="Label3" runat="server" Text="Confirmy password"></asp:Label>
         <br />
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBConfirmNewPassword" runat="server"></asp:TextBox>
         <br /><br />
         <asp:Label ID="Label4" runat="server" Text="Warning" Visible="False"></asp:Label>
         <br /><br />
-        <asp:Button ID="Button1" runat="server" Text="Button" />
+        <asp:Button ID="BtnContiune" runat="server" Text="Contiune" />
 
     </div>
 

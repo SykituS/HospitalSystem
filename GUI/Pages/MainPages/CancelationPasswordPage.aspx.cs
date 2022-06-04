@@ -1,10 +1,5 @@
 ﻿using Administration;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace GUI.Pages.MainPages
 {
@@ -25,7 +20,7 @@ namespace GUI.Pages.MainPages
 
         protected void BtnCancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ResetPassPage?login=" + MySession.Current.Login + "&email="+ MySession.Current.Email);
+            Response.Redirect("ResetPassPage?login=" + MySession.Current.Login + "&email=" + MySession.Current.Email);
         }
     }
 }

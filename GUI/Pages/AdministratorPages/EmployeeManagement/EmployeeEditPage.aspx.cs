@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using Administration;
 using BusinessAdministration;
-using Administration;
+using System;
 using System.Data;
+using System.Web.UI.WebControls;
 
 namespace GUI
 {
@@ -42,10 +38,10 @@ namespace GUI
                 TxbPhoneNumber.Text = empDetails.Rows[0]["EM_Phone_number"].ToString();
             }
 
-            if(EmployeesManagement.GetEmployeeStatus(id) == 1)
+            if (EmployeesManagement.GetEmployeeStatus(id) == 1)
                 BtnStatus.Text = "Deactivate";
 
-            if(EmployeesManagement.GetEmployeeStatus(id) == 2)
+            if (EmployeesManagement.GetEmployeeStatus(id) == 2)
                 BtnStatus.Text = "Reactivate";
 
         }
@@ -86,13 +82,13 @@ namespace GUI
         {
             int id = Convert.ToInt32(employeeId);
 
-            if(EmployeesManagement.GetEmployeeStatus(id) == 1)
+            if (EmployeesManagement.GetEmployeeStatus(id) == 1)
             {
                 string deactivationPageStatus = "EmployeeDeactivationPage.aspx?Id=" + employeeId;
                 Response.Redirect(deactivationPageStatus);
             }
 
-            if(EmployeesManagement.GetEmployeeStatus(id) == 2)
+            if (EmployeesManagement.GetEmployeeStatus(id) == 2)
             {
                 string reactivationPageStatus = "EmployeeReactivationPage.aspx?Id=" + employeeId;
                 Response.Redirect(reactivationPageStatus);

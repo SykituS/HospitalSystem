@@ -1,10 +1,5 @@
-﻿using System;
-using Administration;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using Administration;
+using System;
 namespace GUI.Pages.AdministratorPages.UserManagementPages
 {
     public partial class EditUserStatus : System.Web.UI.Page
@@ -22,7 +17,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
         protected void BtnAccept_Click(object sender, EventArgs e)
         {
             MySession.Current.TempStatus = (string)UserManagement.UpdateUserStatus(MySession.Current.TempLogin, MySession.Current.TempStatus).Rows[4]["St_Status_Name"];
-            
+
             Response.Redirect("UserEditPage.aspx?Id=" + MySession.Current.TempLogin);
 
         }

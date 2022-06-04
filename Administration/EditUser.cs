@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
-using System.Web.UI.WebControls;
-using System.Web.Security;
+using System.Text;
 
 
 namespace Administration
@@ -20,7 +15,7 @@ namespace Administration
             DataTable dt = new DataTable();
             string query = "SELECT EM_Email FROM dbo.Employee WHERE (CONCAT(LEFT(EM_NAME, 1), EM_Surname,  LEFT(EM_Pesel,2),  RIGHT(EM_Pesel,2))) = @login";
             SqlCommand command = new SqlCommand(query);
-            command.Parameters.AddWithValue("@login",login);
+            command.Parameters.AddWithValue("@login", login);
             DBSystem.DBSystem.SelectFromDB(dt, command);
             return (string)dt.Rows[0][0];
 
@@ -47,14 +42,14 @@ namespace Administration
                 if (!EmailSendingClass.IsValidEmail(email))
                     return;
 
-                EmailSendingClass.EmailSending(email, "Login data", Message( password));
+                EmailSendingClass.EmailSending(email, "Login data", Message(password));
             }
             catch (Exception ex)
             {
                 System.Console.WriteLine("error:" + ex);
             }
         }
-        private static StringBuilder Message( string password)
+        private static StringBuilder Message(string password)
         {
             StringBuilder sb = new StringBuilder();
 
@@ -65,6 +60,6 @@ namespace Administration
             return sb;
         }
 
-        
+
     }
 }

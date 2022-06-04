@@ -1,12 +1,8 @@
-﻿using System;
+﻿using Administration;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Administration;
 using System.Data;
 using System.Data.SqlClient;
-using DBSystem;
 
 namespace Doctor
 {
@@ -15,19 +11,19 @@ namespace Doctor
 
         public DataTable DataTable_from_SQL()
         {
-            
+
             DataTable dt = new DataTable();
             string login = Current_Login();
 
             //a querry that returns information about visits of a logged-in doctor from the database (day, time, patient's data, office number))
-            string querry = "SELECT  Ap_id_appoitment ,Ap_appoitment_day, Ap_appoitment_time,  Name, Patients.Surname, Of_office_number"+
-                "\n FROM Term_Of_Visit, Patients, Doctors, Office, Users, Employee, Appointment_details"+
-                "\n WHERE Id_Patients = AD_fk_patients"+
-                "\n AND ID_Doctor = Ap_doctor"+
-                "\n AND Of_id_office = Ap_office"+
-                "\n AND EM_Id_Employee = US_Employee"+
-                "\n AND EM_Id_Employee = ID_Employee"+
-                "\n AND Ap_id_appoitment = AD_fk_appointments"+
+            string querry = "SELECT  Ap_id_appoitment ,Ap_appoitment_day, Ap_appoitment_time,  Name, Patients.Surname, Of_office_number" +
+                "\n FROM Term_Of_Visit, Patients, Doctors, Office, Users, Employee, Appointment_details" +
+                "\n WHERE Id_Patients = AD_fk_patients" +
+                "\n AND ID_Doctor = Ap_doctor" +
+                "\n AND Of_id_office = Ap_office" +
+                "\n AND EM_Id_Employee = US_Employee" +
+                "\n AND EM_Id_Employee = ID_Employee" +
+                "\n AND Ap_id_appoitment = AD_fk_appointments" +
                 "\n AND US_Login = @login";
 
             //hooking a query
@@ -41,9 +37,9 @@ namespace Doctor
 
             return dt;
         }
-        
+
         public List<DateTime> Get_Dates()
-        {   
+        {
             //creating data table with all apointments of logged doctor
             DataTable dt = DataTable_from_SQL();
 
@@ -51,7 +47,7 @@ namespace Doctor
             List<DateTime> dates = new List<DateTime>();
 
             //adding days to list
-            foreach(DataRow row in dt.Rows)
+            foreach (DataRow row in dt.Rows)
             {
                 dates.Add((DateTime)row[1]);
             }

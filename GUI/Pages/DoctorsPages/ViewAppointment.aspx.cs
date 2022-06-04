@@ -1,14 +1,12 @@
-﻿using System;
+﻿using Administration;
+using Doctor;
+using FluentValidation.Results;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Data;
+using System.Drawing;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Doctor;
-using System.Data;
-using Administration;
-using System.Drawing;
-using FluentValidation.Results;
 
 namespace GUI
 {
@@ -97,7 +95,7 @@ namespace GUI
                 if (row.RowIndex == GridView1.SelectedIndex)
                 {
                     row.BackColor = ColorTranslator.FromHtml("#A1DCF2");
-                    
+
                     //row.ToolTip = string.Empty;
                     //string dane;
                     //dane = row.Cells[2].Text;
@@ -141,12 +139,12 @@ namespace GUI
                 DateTime time = DateTime.Parse(item["Ap_appoitment_time"].ToString());
                 var id = int.Parse(item["Ap_id_appoitment"].ToString());
                 //id_wizyt.Add(id);
-                
-                ListBox1.Items.Add("Date of visit: "+date.ToString("yyyy-MM-dd") + " " + time.ToString("HH:mm:ss"));
+
+                ListBox1.Items.Add("Date of visit: " + date.ToString("yyyy-MM-dd") + " " + time.ToString("HH:mm:ss"));
             }
 
         }
-        
+
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.DataRow)
@@ -172,8 +170,8 @@ namespace GUI
             DateTime combined = Date.Date.Add(Hour.TimeOfDay);
             int cell = Int32.Parse(GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text);
             AppoitmentDetails appoitmentDetails = new AppoitmentDetails();
-            
-            appoitmentDetails.Add_New_Appoitment(combined,cell);
+
+            appoitmentDetails.Add_New_Appoitment(combined, cell);
 
             Button7.Visible = false;
             TextBox5.Visible = false;
@@ -206,8 +204,8 @@ namespace GUI
 
             if (result.IsValid == false)
             {
-                foreach(ValidationFailure failure in result.Errors)
-                       PrescSurname.Text = failure.ErrorMessage;
+                foreach (ValidationFailure failure in result.Errors)
+                    PrescSurname.Text = failure.ErrorMessage;
             }
             else
             {
@@ -230,10 +228,10 @@ namespace GUI
             AppoitmentDetails appoitmentDetails = new AppoitmentDetails();
             DataTable dt = new DataTable();
             dt = appoitmentDetails.All_appoitments_of_current_patient(cell);
-            
-           
-           TextBox4.Text = dt.Rows[ListBox1.SelectedIndex]["AD_appointment_description"].ToString();
-            
+
+
+            TextBox4.Text = dt.Rows[ListBox1.SelectedIndex]["AD_appointment_description"].ToString();
+
         }
 
         protected void Button4_Click(object sender, EventArgs e)

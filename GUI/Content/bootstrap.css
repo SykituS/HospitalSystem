@@ -118,7 +118,8 @@ optgroup,
 select,
 textarea {
   color: inherit;
-  margin: 0 0 0 36px;
+  font: inherit;
+  margin: 0;
 }
 button {
   overflow: visible;
@@ -134,10 +135,10 @@ input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
     position: relative;
-    top: 16px;
-    left: -23px;
+    top: 2px;
+    left: 0px;
     height: 31px;
-    width: 191px;
+    width: 232px;
 }
 button[disabled],
 html input[disabled] {

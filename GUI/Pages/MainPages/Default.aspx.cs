@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Administration;
+using System;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using Administration;
-using System.Web.Security;
 
 namespace GUI
 {
@@ -19,7 +14,7 @@ namespace GUI
                 CancelUnexpectedRePost();
 
             //Checking whether the user is already logged in
-           if (LogSys.CheckIfLogged())
+            if (LogSys.CheckIfLogged())
             {
                 switch (MySession.Current.Position)
                 {
@@ -63,7 +58,7 @@ namespace GUI
                     case "administrator":
                         Response.Redirect("~/Pages/AdministratorPages/AdministratorPanelPage");
                         break;
-                    case "doctor": 
+                    case "doctor":
                         Response.Redirect("~/Pages/Doctorspages/DoctorPanelPage");
                         break;
                     case "medical clinic staff member":

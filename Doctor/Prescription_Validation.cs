@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using FluentValidation;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FluentValidation;
 
 namespace Doctor
 {
-    public class Prescription_Validation: AbstractValidator<Prescription>
+    public class Prescription_Validation : AbstractValidator<Prescription>
     {
         public Prescription_Validation()
         {
@@ -20,7 +16,7 @@ namespace Doctor
                 .MaximumLength(100)
                 .WithMessage("Przekroczoną dostępną ilość znaków w liście leków");
 
-            RuleFor(p=>p.Dosage)
+            RuleFor(p => p.Dosage)
                 .Cascade(CascadeMode.StopOnFirstFailure)
                 .NotEmpty()
                 .WithMessage("Dawkowanie nie może być pusta")

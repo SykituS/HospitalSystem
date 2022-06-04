@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
+﻿using Administration;
+using System;
 using System.Web.UI.WebControls;
-using Administration;
-using Reception;
 
 namespace Reception
 {
@@ -21,7 +16,7 @@ namespace Reception
             Gv_patients.DataBind();
         }
 
-        
+
         protected void Btn_filter_Click(object sender, EventArgs e)
         {
             Gv_patients.DataSource = Reception.FilterDataView(Tbx_name.Text, Tbx_surname.Text, Tbx_pesel.Text);

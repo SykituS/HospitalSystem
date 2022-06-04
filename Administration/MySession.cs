@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
+﻿using System.Web;
 
 namespace Administration
 {
@@ -30,7 +25,7 @@ namespace Administration
                 return session;
             }
         }
-        
+
         public int Status { get; set; }
         public bool IsLogged { get; set; }
         public int Attempt { get; set; }

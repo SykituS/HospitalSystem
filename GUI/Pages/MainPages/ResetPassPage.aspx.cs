@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Administration;
+using System;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using Administration;
 
 namespace GUI
 {
@@ -13,7 +9,7 @@ namespace GUI
         protected void Page_Load(object sender, EventArgs e)
         {
             //Geting login and email from URL
-            MySession.Current.Login = Request.QueryString["login"]; 
+            MySession.Current.Login = Request.QueryString["login"];
             MySession.Current.Email = Request.QueryString["email"];
 
             //Checking if user should be on this page
@@ -23,7 +19,7 @@ namespace GUI
             //Showing information for what user is password changing
             LabelInfo.Text = "Change password for " + MySession.Current.Login;
         }
-      
+
         protected void BtnOk_Click(object sender, EventArgs e)
         {
 

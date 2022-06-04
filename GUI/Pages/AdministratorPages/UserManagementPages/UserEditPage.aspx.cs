@@ -1,10 +1,5 @@
-﻿using System;
-using Administration;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using Administration;
+using System;
 
 namespace GUI.Pages.AdministratorPages.UserManagementPages
 {
@@ -18,7 +13,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             MySession.Current.TempLogin = Request.QueryString["Id"];
             Btnstatus.Text = EditUser.GetStatus(MySession.Current.TempLogin);
             TbLogin.Text = MySession.Current.TempLogin;
-            MySession.Current.TempStatus= EditUser.GetStatus(MySession.Current.TempLogin);
+            MySession.Current.TempStatus = EditUser.GetStatus(MySession.Current.TempLogin);
         }
 
         protected void BtnAccept_Click(object sender, EventArgs e)
@@ -33,7 +28,7 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
         {
 
             Response.Redirect("EditUserStatus.aspx?Id=" + MySession.Current.TempLogin);
-            
+
         }
 
         protected void Btncancel_Click(object sender, EventArgs e)

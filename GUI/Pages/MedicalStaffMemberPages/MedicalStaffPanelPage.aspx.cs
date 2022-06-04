@@ -1,10 +1,5 @@
 ﻿using Administration;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace GUI.Pages.MedicalStaffMemberPages
 {
@@ -15,7 +10,7 @@ namespace GUI.Pages.MedicalStaffMemberPages
             //Preventing non logged user to get to this site
             if (!LogSys.CheckIfLogged())
                 Response.Redirect("~/Pages/MainPages/Default");
-            
+
             //Head admin option
             if (MySession.Current.Position == "Administrator_of_all")
             {

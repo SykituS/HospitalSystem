@@ -1,10 +1,6 @@
 ﻿using Administration;
 using BusinessAdministration;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace GUI.Pages.AdministratorPages.OfficesManagement
@@ -33,7 +29,7 @@ namespace GUI.Pages.AdministratorPages.OfficesManagement
             string status = DdlStatus.SelectedValue;
             string renumerated = DdlRenumerated.SelectedValue;
 
-            if(IsRoomNumberValid(TxbOfficeNumber.Text))
+            if (IsRoomNumberValid(TxbOfficeNumber.Text))
             {
                 Office office = new Office(TxbOfficeNumber.Text, specialisation, plenary, status, renumerated);
 

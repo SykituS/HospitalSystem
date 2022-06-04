@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using Administration;
 using BusinessAdministration;
-using Administration;
+using System;
+using System.Web.UI.WebControls;
 
 namespace GUI
 {
@@ -33,7 +29,7 @@ namespace GUI
                 Response.Redirect("OfficesConfirmDelete?Room=" + row.Cells[1].Text);
             }
 
-            if(e.CommandName == "Edit")
+            if (e.CommandName == "Edit")
             {
                 int index = Convert.ToInt32(e.CommandArgument);
                 GridViewRow row = GvOffices.Rows[index];
