@@ -10,6 +10,13 @@ namespace GUI.Pages.DoctorsPages
             //Preventing non logged user to get to this site
             if (!LogSys.CheckIfLogged())
                 Response.Redirect("~/Pages/MainPages/Default");
+
+            //Head admin option
+            if (MySession.Current.Position == "Administrator_of_all")
+            {
+                BtnBackToMenu.Visible = true;
+                BtnBackToMenu.Enabled = true;
+            }
         }
 
         protected void BtnLogout_Click(object sender, EventArgs e)

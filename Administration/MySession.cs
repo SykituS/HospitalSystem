@@ -47,5 +47,12 @@ namespace Administration
         public string EmployeeName { get; set; }
         public int FirstLoad { get; set; }
         public string PasswordValidation { get; set; }
+
+        public int? TempID { get; set; } //temp varible for id from specialization
+        public string TempSpecTextOriginal { get; set; }
+        public string TempSpecText { get; set; }
+
+        public string TempRedirectText { get; set; }
+        public string TempAction { get; set; }
     }
 }

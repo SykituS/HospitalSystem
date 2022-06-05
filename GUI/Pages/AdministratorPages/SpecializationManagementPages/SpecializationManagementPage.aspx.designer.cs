@@ -33,12 +33,12 @@ namespace GUI.Pages.AdministratorPages.SpecializationManagementPages
         protected global::System.Web.UI.WebControls.Button BtnAddNewSpecialization;
 
         /// <summary>
-        /// Kontrolka GridView1.
+        /// Kontrolka GridViewSpecialization.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView GridViewSpecialization;
     }
 }

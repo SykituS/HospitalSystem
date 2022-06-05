@@ -60,14 +60,9 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
             //Button "Edit user" click
             if (e.CommandName == "EditUser")
             {
-            
-                    
-                   
                     MySession.Current.TempStatus = row.Cells[4].Text;
                     string detailsPageId = "UserDetailsPage.aspx?Id=" + row.Cells[0].Text;
                     Response.Redirect(detailsPageId);
-                
-
             }
         }
 
