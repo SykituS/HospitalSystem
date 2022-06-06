@@ -29,5 +29,10 @@ namespace GUI.Pages.DoctorsPages
             Response.Redirect("ViewAppointment");
 
         }
+
+        protected void BtnBackToMenu_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/HeadAdministrator/AdministratorMainPanel");
+        }
     }
 }
