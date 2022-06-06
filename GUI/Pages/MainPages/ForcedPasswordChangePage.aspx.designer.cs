@@ -33,13 +33,13 @@ namespace GUI.Pages.MainPages
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// Kontrolka TextBox1.
+        /// Kontrolka TBNewPassword.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox TBNewPassword;
 
         /// <summary>
         /// Kontrolka Label3.
@@ -51,30 +51,30 @@ namespace GUI.Pages.MainPages
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// Kontrolka TextBox2.
+        /// Kontrolka TBConfirmNewPassword.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox TBConfirmNewPassword;
 
         /// <summary>
-        /// Kontrolka Label4.
+        /// Kontrolka LabelWarning.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label LabelWarning;
 
         /// <summary>
-        /// Kontrolka Button1.
+        /// Kontrolka BtnContiune.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button BtnContiune;
     }
 }

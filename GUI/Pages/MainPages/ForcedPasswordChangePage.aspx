@@ -7,15 +7,19 @@
         <br /><br />
         <asp:Label ID="Label2" runat="server" Text="New password"></asp:Label>
         <br />
-        <asp:TextBox ID="TBNewPassword" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBNewPassword" runat="server" TextMode="Password"></asp:TextBox>
         <br /><br />
         <asp:Label ID="Label3" runat="server" Text="Confirmy password"></asp:Label>
         <br />
-        <asp:TextBox ID="TBConfirmNewPassword" runat="server"></asp:TextBox>
+        <asp:TextBox ID="TBConfirmNewPassword" runat="server" TextMode="Password"></asp:TextBox>
         <br /><br />
-        <asp:Label ID="Label4" runat="server" Text="Warning" Visible="False"></asp:Label>
-        <br /><br />
-        <asp:Button ID="BtnContiune" runat="server" Text="Contiune" />
+        <asp:UpdatePanel runat="server">
+            <ContentTemplate>
+                <asp:Label ID="LabelWarning" runat="server" Text="Warning" Visible="False"></asp:Label>
+                <br /><br />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <asp:Button ID="BtnContiune" runat="server" Text="Contiune" OnClick="BtnContiune_Click" />
 
     </div>
 

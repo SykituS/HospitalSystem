@@ -81,7 +81,6 @@ namespace Administration
         }
         public static void ClearEdit()
         {
-            MySession.Current.PasswordValidation = null;
             MySession.Current.TempPass = null;
             MySession.Current.TempStatus = null;
             MySession.Current.FirstLoad = 0;

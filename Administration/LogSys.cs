@@ -31,7 +31,7 @@ namespace Administration
             It sends the DataTable variable to the database, determines what the newly created table, containing user's login, password, email and position, should be called
             and sends a query to the database, which checks whether the given data exists in the database. */
 
-            string query = "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name, US_Status " +
+            string query = "SELECT dbo.Users.US_login, dbo.users.US_Password, dbo.employee.EM_Email, dbo.Position.PO_Name, US_Status, US_ForcePasswordChange " +
                 "FROM dbo.Employee INNER JOIN dbo.Users ON dbo.Users.US_Employee=dbo.Employee.EM_Id_Employee INNER JOIN dbo.Position ON dbo.Employee.EM_Position = dbo.Position.PO_Id_Position " +
                 "WHERE US_Login = @Login AND US_Password = @Password";
 
@@ -55,6 +55,7 @@ namespace Administration
             MySession.Current.Email = dt.Rows[0]["EM_Email"].ToString();
             MySession.Current.Position = dt.Rows[0]["PO_Name"].ToString();
             MySession.Current.Status = (int)dt.Rows[0]["US_Status"];
+            MySession.Current.ForcedPasswordChange = (int)dt.Rows[0]["US_ForcePasswordChange"];
 
             //Changing the value of the variable that stores information about whether the user is logged in
             MySession.Current.IsLogged = true;

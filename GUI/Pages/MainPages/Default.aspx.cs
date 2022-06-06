@@ -50,6 +50,11 @@ namespace GUI
             //Checking whether the user has successfully logged in
             if (LogSys.CheckIfLogged())
             {
+                if (MySession.Current.ForcedPasswordChange == 1)
+                {
+                    Response.Redirect("ForcedPasswordChangePage");
+                }
+
                 switch (MySession.Current.Position)
                 {
                     case "Administrator_of_all":

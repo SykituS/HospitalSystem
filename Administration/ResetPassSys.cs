@@ -103,7 +103,7 @@ namespace Administration
         //Updating password in database
         public static void ResetPassword(string NewPassword, string ConfirmPassword, string login) 
         {
-            if (MySession.Current.PasswordValidation != "OK"||!PasswordValidation(NewPassword, ConfirmPassword).Equals("OK"))
+            if (!PasswordValidation(NewPassword, ConfirmPassword).Equals("OK"))
                 return;
 
             string query = "UPDATE Users SET US_Password =@NewPassword WHERE US_Login= @login ";
@@ -142,6 +142,24 @@ namespace Administration
             else
                 return "Passwords must be this same";
 
+        }
+
+        public static void ForcePasswordChange(string login, int forceType)
+        {
+            string query = "UPDATE dbo.Users SET US_ForcePasswordChange = @type WHERE US_Login = @login";
+
+            SqlCommand command = new SqlCommand(query);
+            command.Parameters.AddWithValue("@login", login);
+            command.Parameters.AddWithValue("@type", forceType);
+
+            try
+            {
+                DBSystem.DBSystem.UpdateDB(command);
+            }
+            catch (Exception ex)
+            {
+                System.Console.WriteLine("error:" + ex);
+            }
         }
     }
 }
