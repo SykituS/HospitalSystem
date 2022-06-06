@@ -1,6 +1,11 @@
-﻿using Administration;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
 using System.Web.UI.WebControls;
+using Administration;
+using Reception;
 
 namespace Reception
 {
@@ -16,16 +21,16 @@ namespace Reception
             Gv_patients.DataBind();
         }
 
-
+        
         protected void Btn_filter_Click(object sender, EventArgs e)
         {
-            Gv_patients.DataSource = Reception.FilterDataView(Tbx_name.Text, Tbx_surname.Text, Tbx_pesel.Text);
-            Gv_patients.DataBind();
+                Gv_patients.DataSource = Reception.FilterDataView(Tbx_name.Text, Tbx_surname.Text, Tbx_pesel.Text, ChBx_visit.Checked);
+                Gv_patients.DataBind();
         }
 
         protected void Gv_patients_Sorting(object sender, GridViewSortEventArgs e)
         {
-            Gv_patients.DataSource = Reception.SortDataView(e, Tbx_name.Text, Tbx_surname.Text, Tbx_pesel.Text);
+            Gv_patients.DataSource = Reception.SortDataView(e, Tbx_name.Text, Tbx_surname.Text, Tbx_pesel.Text, ChBx_visit.Checked);
             Gv_patients.DataBind();
         }
 
@@ -33,5 +38,34 @@ namespace Reception
         {
             Response.Redirect("MedicalStaffPanelPage");
         }
+
+        
+        protected void Gv_patients_RowCommand(object sneder, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Details")
+            {
+                int index = Convert.ToInt32(e.CommandArgument);
+                GridViewRow row = Gv_patients.Rows[index];
+                string detailsPageId = "PatientDetailsPage.aspx?Id=" + row.Cells[0].Text;
+
+                Response.Redirect(detailsPageId);
+            }
+            if (e.CommandName == "Edit")
+            {
+                int index = Convert.ToInt32(e.CommandArgument);
+                GridViewRow row = Gv_patients.Rows[index];
+                string editPageId = "PatientEditPage.aspx?Id=" + row.Cells[0].Text;
+
+                Response.Redirect(editPageId);
+            }
+        }
+
+        protected void Btn_addpat_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PatientAddPage");
+        }
+
+       
+      
     }
 }

@@ -42,6 +42,15 @@ namespace Reception
         protected global::System.Web.UI.WebControls.Button Btn_filter;
 
         /// <summary>
+        /// Kontrolka Btn_addpat.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_addpat;
+
+        /// <summary>
         /// Kontrolka Tbx_surname.
         /// </summary>
         /// <remarks>
@@ -60,13 +69,13 @@ namespace Reception
         protected global::System.Web.UI.WebControls.TextBox Tbx_pesel;
 
         /// <summary>
-        /// Kontrolka Calendar1.
+        /// Kontrolka ChBx_visit.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.CheckBox ChBx_visit;
 
         /// <summary>
         /// Kontrolka Gv_patients.

@@ -14,51 +14,43 @@ F:\Projekty\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.CoreC
 F:\Projekty\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.CopyComplete
 F:\Projekty\Testowanie Oprogramowania\Reception\obj\Debug\Reception.dll
 F:\Projekty\Testowanie Oprogramowania\Reception\obj\Debug\Reception.pdb
-C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\Reception\bin\Debug\Reception.dll
-C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\Reception\bin\Debug\Reception.pdb
-C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\Reception\bin\Debug\DBSystem.dll
-C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
-C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
-C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\Reception\obj\Debug\Reception.csproj.CopyComplete
-C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\Reception\obj\Debug\Reception.dll
-C:\Users\milos\Source\Repos\TestowanieOprogramowaniaGlowny\Reception\obj\Debug\Reception.pdb
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Reception\bin\Debug\Reception.dll
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Reception\bin\Debug\Reception.pdb
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Reception\bin\Debug\DBSystem.dll
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Reception\obj\Debug\Reception.csproj.CopyComplete
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Reception\obj\Debug\Reception.dll
-F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Reception\obj\Debug\Reception.pdb
-C:\Users\milos\source\repos\TestowanieOprogramowaniaGlowny\Reception\bin\Debug\FluentValidation.dll
-C:\Users\milos\source\repos\TestowanieOprogramowaniaGlowny\Reception\bin\Debug\FluentValidation.xml
-F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\Reception.dll
-F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\Reception.pdb
-F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\DBSystem.dll
-F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\FluentValidation.dll
-F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\FluentValidation.xml
-F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csprojAssemblyReference.cache
-F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
-F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.CopyComplete
-F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.dll
-F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.pdb
-C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\bin\Debug\Reception.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\bin\Debug\Reception.pdb
-C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\bin\Debug\DBSystem.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\bin\Debug\FluentValidation.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\bin\Debug\FluentValidation.xml
-C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csprojAssemblyReference.cache
-C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.CopyComplete
-C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\obj\Debug\Reception.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\Reception\obj\Debug\Reception.pdb
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Reception\bin\Debug\Reception.dll
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Reception\bin\Debug\Reception.pdb
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Reception\bin\Debug\DBSystem.dll
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Reception\bin\Debug\FluentValidation.dll
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Reception\bin\Debug\FluentValidation.xml
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.CopyComplete
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Reception\obj\Debug\Reception.dll
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Reception\obj\Debug\Reception.pdb
+C:\Users\marys\OneDrive\Pulpit\testowanie\Reception\bin\Debug\Reception.dll
+C:\Users\marys\OneDrive\Pulpit\testowanie\Reception\bin\Debug\Reception.pdb
+C:\Users\marys\OneDrive\Pulpit\testowanie\Reception\bin\Debug\DBSystem.dll
+C:\Users\marys\OneDrive\Pulpit\testowanie\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
+C:\Users\marys\OneDrive\Pulpit\testowanie\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+C:\Users\marys\OneDrive\Pulpit\testowanie\Reception\obj\Debug\Reception.csproj.CopyComplete
+C:\Users\marys\OneDrive\Pulpit\testowanie\Reception\obj\Debug\Reception.dll
+C:\Users\marys\OneDrive\Pulpit\testowanie\Reception\obj\Debug\Reception.pdb
+C:\Users\ika11\Desktop\1111testowaniepozdroandżela\testowanie\Reception\bin\Debug\Reception.dll
+C:\Users\ika11\Desktop\1111testowaniepozdroandżela\testowanie\Reception\bin\Debug\Reception.pdb
+C:\Users\ika11\Desktop\1111testowaniepozdroandżela\testowanie\Reception\bin\Debug\DBSystem.dll
+C:\Users\ika11\Desktop\1111testowaniepozdroandżela\testowanie\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
+C:\Users\ika11\Desktop\1111testowaniepozdroandżela\testowanie\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+C:\Users\ika11\Desktop\1111testowaniepozdroandżela\testowanie\Reception\obj\Debug\Reception.csproj.CopyComplete
+C:\Users\ika11\Desktop\1111testowaniepozdroandżela\testowanie\Reception\obj\Debug\Reception.dll
+C:\Users\ika11\Desktop\1111testowaniepozdroandżela\testowanie\Reception\obj\Debug\Reception.pdb
+C:\Users\marys\OneDrive\Pulpit\testowanienielipton\1111testowaniepozdroandżela\testowanie\Reception\bin\Debug\Reception.dll
+C:\Users\marys\OneDrive\Pulpit\testowanienielipton\1111testowaniepozdroandżela\testowanie\Reception\bin\Debug\Reception.pdb
+C:\Users\marys\OneDrive\Pulpit\testowanienielipton\1111testowaniepozdroandżela\testowanie\Reception\bin\Debug\DBSystem.dll
+C:\Users\marys\OneDrive\Pulpit\testowanienielipton\1111testowaniepozdroandżela\testowanie\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
+C:\Users\marys\OneDrive\Pulpit\testowanienielipton\1111testowaniepozdroandżela\testowanie\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+C:\Users\marys\OneDrive\Pulpit\testowanienielipton\1111testowaniepozdroandżela\testowanie\Reception\obj\Debug\Reception.csproj.CopyComplete
+C:\Users\marys\OneDrive\Pulpit\testowanienielipton\1111testowaniepozdroandżela\testowanie\Reception\obj\Debug\Reception.dll
+C:\Users\marys\OneDrive\Pulpit\testowanienielipton\1111testowaniepozdroandżela\testowanie\Reception\obj\Debug\Reception.pdb
+C:\Users\marys\OneDrive\Pulpit\testdeydbud\Reception\bin\Debug\Reception.dll
+C:\Users\marys\OneDrive\Pulpit\testdeydbud\Reception\bin\Debug\Reception.pdb
+C:\Users\marys\OneDrive\Pulpit\testdeydbud\Reception\bin\Debug\DBSystem.dll
+C:\Users\marys\OneDrive\Pulpit\testdeydbud\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
+C:\Users\marys\OneDrive\Pulpit\testdeydbud\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+C:\Users\marys\OneDrive\Pulpit\testdeydbud\Reception\obj\Debug\Reception.csproj.CopyComplete
+C:\Users\marys\OneDrive\Pulpit\testdeydbud\Reception\obj\Debug\Reception.dll
+C:\Users\marys\OneDrive\Pulpit\testdeydbud\Reception\obj\Debug\Reception.pdb
+C:\Users\marys\Downloads\ststststst\Reception\bin\Debug\Reception.dll
+C:\Users\marys\Downloads\ststststst\Reception\bin\Debug\Reception.pdb
+C:\Users\marys\Downloads\ststststst\Reception\bin\Debug\DBSystem.dll
+C:\Users\marys\Downloads\ststststst\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
+C:\Users\marys\Downloads\ststststst\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+C:\Users\marys\Downloads\ststststst\Reception\obj\Debug\Reception.csproj.CopyComplete
+C:\Users\marys\Downloads\ststststst\Reception\obj\Debug\Reception.dll
+C:\Users\marys\Downloads\ststststst\Reception\obj\Debug\Reception.pdb

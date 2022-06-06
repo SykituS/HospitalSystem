@@ -1,7 +1,11 @@
-﻿using Administration;
-using BusinessAdministration;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
 using System.Web.UI.WebControls;
+using BusinessAdministration;
+using Administration;
 
 namespace GUI
 {
@@ -24,7 +28,7 @@ namespace GUI
                 DdlRoles.DataBind();
 
                 SetStatusButtonText();
-            }
+            } 
         }
 
         protected void GvEmployees_Sorting(object sender, GridViewSortEventArgs e)
@@ -62,20 +66,20 @@ namespace GUI
                 Response.Redirect(detailsPageId);
             }
 
-            if (e.CommandName == "Status")
+            if(e.CommandName == "Status")
             {
                 int index = Convert.ToInt32(e.CommandArgument);
                 GridViewRow row = GvEmployees.Rows[index];
                 int id = Convert.ToInt32(row.Cells[0].Text);
                 int status = EmployeesManagement.GetEmployeeStatus(id);
 
-                if (status == 1)
+                if(status == 1)
                 {
                     string deactivationPageStatus = "EmployeeDeactivationPage.aspx?Id=" + row.Cells[0].Text;
                     Response.Redirect(deactivationPageStatus);
                 }
 
-                if (status == 2)
+                if(status == 2)
                 {
                     string reactivationPageStatus = "EmployeeReactivationPage.aspx?Id=" + row.Cells[0].Text;
                     Response.Redirect(reactivationPageStatus);
