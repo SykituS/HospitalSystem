@@ -14,7 +14,7 @@ namespace Administration
         public static DataTable GetSpecializationList()
         {
             DataTable dt = new DataTable();
-            string query = "SELECT * FROM Specialisation";
+            string query = "SELECT ID_Specialisation, Name FROM Specialisation WHERE Is_ActiveSpecialisation = 0";
             SqlCommand command = new SqlCommand(query);
             DBSystem.DBSystem.SelectFromDB(dt, command);
             return dt;
@@ -34,10 +34,14 @@ namespace Administration
         public static void UpdateSpecialization()
         {
             string query = "UPDATE Specialisation SET Name = @name WHERE Name = @oldName";
-            SqlCommand command = new SqlCommand(query);
             if (MySession.Current.TempAction == "Delete")
+            {
                 MySession.Current.TempSpecText = PasswordHashing.hashPassword(MySession.Current.TempSpecText.Trim());
+                query = "UPDATE Specialisation SET Name = @name, Is_ActiveSpecialisation = 1 WHERE Name = @oldName";
+            }
+                
 
+            SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@name", MySession.Current.TempSpecText);
             command.Parameters.AddWithValue("@oldName", MySession.Current.TempSpecTextOriginal);
             DBSystem.DBSystem.UpdateDB(command);

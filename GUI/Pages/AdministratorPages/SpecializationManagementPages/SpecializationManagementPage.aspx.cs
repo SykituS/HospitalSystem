@@ -16,6 +16,8 @@ namespace GUI.Pages.AdministratorPages.SpecializationManagementPages
                 GridViewSpecialization.DataSource = SpecializationManagement.GetSpecializationList();
                 GridViewSpecialization.DataBind();
             }
+
+            GridViewSpecialization.Columns[0].Visible = false;
         }
 
         protected void BtnBackToMenu_Click(object sender, EventArgs e)
