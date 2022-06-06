@@ -51,7 +51,7 @@ namespace Administration
 
         public static void AddNewSpecialization()
         {
-            string query = "INSERT INTO Specialisation Values(NEXT VALUE FOR Seq_Specialisation, @name)";
+            string query = "INSERT INTO Specialisation(ID_Specialisation, Name) Values(NEXT VALUE FOR Seq_Specialisation, @name)";
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@name", MySession.Current.TempSpecText);
             DBSystem.DBSystem.InsertToDB(command);
