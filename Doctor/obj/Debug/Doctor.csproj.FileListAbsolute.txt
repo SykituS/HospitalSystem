@@ -145,3 +145,17 @@ F:\Projekty\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.csproj.CoreCompileI
 F:\Projekty\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.dll
 F:\Projekty\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.pdb
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\Doctor.dll
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\Doctor.pdb
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\Administration.dll
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\BusinessAdministration.dll
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\DBSystem.dll
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\FluentValidation.dll
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\Administration.pdb
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\BusinessAdministration.pdb
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\FluentValidation.xml
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.dll
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.pdb

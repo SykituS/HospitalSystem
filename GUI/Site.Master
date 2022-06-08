@@ -17,109 +17,109 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <style>
-        body {
+         body {
             margin: 0;
             padding: 50px;
             box-sizing: border-box;
             font-family: 'Roboto', sans-serif;
         }
-        
-        h3{
-            margin-left: 10px;
+  /* textboxy */
+        .field{
+            max-width: 350px;
+            width: 80%;
+            padding: 0.5rem 1rem;
+            outline: none;
+            border: 2px solid rgba(0, 0,0,0);
+            background-color: rgba(230,230,230,0.6);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            transition: .3s;
         }
-  /* textboxy */
-  .field{
-    width: 80%;
-    padding: 0.5rem 1rem;
-    outline: none;
-    border: 2px solid rgba(0, 0,0,0);
-    background-color: rgba(230,230,230,0.6);
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: .3s;
-    margin-right: 20px;
-}
-.field:hover{
-    background-color: rgba(0, 0,0,0.1);
-}
-.field:focus{
-    background-color: #fff;
-    border: 2px solid rgba(30,85,250, 0.47);
-}
-  /* textboxy */
-  /* Sign Buttons */
-.btn{
-  margin-top: 20px;
-  width: 100%;
-  padding: 0.5rem 1rem;
-  font-size: 1.1rem;
-  background-color: #1b2750;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  transition: 0.3s;
-  color: #fff;
-}
-.btn:hover{
-  background-color: #141d3a;
-}
-.btn:hover text{
-  color: #fff;
-}
-/* Login Cancel Buttons */
-.jumptron{
-  margin-top: 100px;
-  max-width: 1000px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
-  /* Login Cancel Buttons */
+        .field:hover{
+            background-color: rgba(0, 0,0,0.1);
+        }
+        .field:focus{
+            background-color: #fff;
+            border: 2px solid rgba(30,85,250, 0.47);
+        }
+          /* textboxy */
+          /* Sign Buttons */
+        .btn{
+          margin-top: 20px;
+          width: 100%;
+          padding: 0.5rem 1rem;
+          font-size: 1.1rem;
+          background-color: #1b2750;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          transition: 0.3s;
+          color: #fff;
+        }
+
+        .btn:hover, .btn:focus, .btn.focus{
+          background-color: #fff;
+          border-radius: 25px;
+          border: 2px solid #1b2750;
+        }
+        .btn:hover text{
+          color: #fff;
+        }
+        /* Login Cancel Buttons */
+        .jumptron{
+          margin-top: 100px;
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          background-color: #fff;
+          box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+          margin-right: auto;
+          /* Login Cancel Buttons */
   
-}
-  /* Top img 3guys */
-.top-side{
-  height: 100%;
-width: 100%;
-background-color: rgb(39, 23, 110);
+        }
+        .container body-content{
+            margin: 0 auto;
+        }
+        .top-side{
+          height: 100%;
+        width: 100%;
+        background-color: rgb(39, 23, 110);
 
-}
-.top-side img{
-    max-height: 100%;
-    max-width: 200px;
-}
-.bot-side{
-      justify-content: center;
-  align-items: center;
-  padding: 25px 40px;
-}
-.bot-side h3{
-  position: relative;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-.bot-side h3::after{
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom:0;
-  transform:translateX(-50%);
-  height: 4px;
-  width: 50px;
-  border-radius: 2px;
-  background-color: #1b2750;
-}
-/* Navbar */
-.navbar-inverse{
-  background: linear-gradient(56deg, rgba(24,173,236,1) 0%, rgb(39, 23, 110) 84%);
-  border: none;
+        }
+        .bot-side{
+          justify-content: center;
+          align-items: center;
+          padding: 25px 40px;
+        }
+        .bot-side h3{
+          position: relative;
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          font-size: 3em;
 
-}
-.navbar-inverse .navbar-brand {
-  color: #ffffff;
+        }
+        .bot-side h3::after{
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom:0;
+          transform:translateX(-50%);
+          height: 4px;
+          width:5em;
+          border-radius: 2px;
+          background-color: #1b2750;
+        }
+        /* Navbar */
+        .navbar-inverse{
+          background: linear-gradient(56deg, rgba(24,173,236,1) 0%, rgb(39, 23, 110) 84%);
+          border: none;
+
+        }
+        .navbar-inverse .navbar-brand {
+          color: #ffffff;
+          font-size: 2.5em;
 }
          .psswrd{
              border: none;

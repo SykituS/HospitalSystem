@@ -54,3 +54,11 @@ C:\Users\marys\Downloads\ststststst\Reception\obj\Debug\Reception.csproj.CoreCom
 C:\Users\marys\Downloads\ststststst\Reception\obj\Debug\Reception.csproj.CopyComplete
 C:\Users\marys\Downloads\ststststst\Reception\obj\Debug\Reception.dll
 C:\Users\marys\Downloads\ststststst\Reception\obj\Debug\Reception.pdb
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Reception\bin\Debug\Reception.dll
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Reception\bin\Debug\Reception.pdb
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Reception\bin\Debug\DBSystem.dll
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Reception\obj\Debug\Reception.csproj.CopyComplete
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Reception\obj\Debug\Reception.dll
+C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Reception\obj\Debug\Reception.pdb
