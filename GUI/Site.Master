@@ -227,6 +227,43 @@
             }
 
          /* 3. Administarotr Panel End*/
+           /* 4. LogoutPage Start */
+         #logout-page-div{
+            margin-top: 4em;
+            padding-top:30px;
+            padding-bottom:30px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 19px 5px rgb(0 0 0 / 19%);
+            margin-right: auto;
+            max-width: 700px;
+            margin-left: auto;
+            margin-bottom: 3em;
+            border-radius: 30px;
+         }
+
+         .btn-logout-page{
+          margin: 20px 10px 0 10px;
+          width: 100%;
+          padding: 0.5rem 1rem;
+          font-size: 1.1rem;
+          background-color: #1b2750;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          transition: 0.3s;
+          color: #fff;
+        }
+
+        .btn-logout-page:hover, .btn-logout-page:focus, .btn-logout-page.focus{
+          background-color: #fff;
+          border-radius: 25px;
+          border: 2px solid #1b2750;
+          color: #1b2750;
+        }
+        /* 4. LogoutPage End */
 
     </style>
 </head>
