@@ -4,7 +4,7 @@
 
     <div class="settings-panel-page">
         <h5>
-            <asp:Label ID="LabelWarning" runat="server" Text="InfoPlaceholder"></asp:Label>
+            <asp:Label ID="LabelWarning" runat="server" Text=""></asp:Label>
 
         </h5>
         <h5>Set the login form blocking time: 
