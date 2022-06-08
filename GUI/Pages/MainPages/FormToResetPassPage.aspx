@@ -2,7 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div style="margin: 15px;">
+    <div class="form-to-reset-password">
+        <h3 id="form-pass-page-header">Password change</h3>
         
         <asp:Label ID="Label1" runat="server" Text="Login:"></asp:Label>
         <asp:TextBox ID="TBLogin" runat="server" MaxLength="100"></asp:TextBox>
@@ -16,8 +17,8 @@
         <asp:Label ID="LabelSendInfo" runat="server" Text="The e-mail has been sent. Please check your mailbox." Visible="False"></asp:Label>
         <br />
         <br />
-        <asp:Button ID="BtnOk" runat="server" OnClick="BtnOk_Click" Text="Ok" Enabled="False" />
-        <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
+        <asp:Button ID="BtnOk" CssClass="btn" runat="server" OnClick="BtnOk_Click" Text="Ok" Enabled="False" />
+        <asp:Button ID="BtnCancel" CssClass="btn" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
         </div>
         <br />
 
