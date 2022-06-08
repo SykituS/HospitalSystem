@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div style="margin-top: 15px;">
+    <div class="settings-panel-page">
         <h5>
             <asp:Label ID="LabelWarning" runat="server" Text="InfoPlaceholder"></asp:Label>
 
@@ -10,9 +10,9 @@
         <h5>Set the login form blocking time: 
             <asp:TextBox ID="TBTimeToUnlock" runat="server" TextMode="Number" MaxLength="100"></asp:TextBox>
             &nbsp;(in minutes)<br /><br />
-            <asp:Button ID="BtnBack" runat="server" OnClick="BtnBack_Click" Text="Back to menu" />
+            <asp:Button ID="BtnBack" CssClass="btn-logout-page" runat="server" OnClick="BtnBack_Click" Text="Back to menu" />
             <br />
-            <asp:Button ID="BtnConfirm" runat="server" OnClick="BtnConfirm_Click" Text="Confirm " />
+            <asp:Button ID="BtnConfirm" CssClass="btn-logout-page" runat="server" OnClick="BtnConfirm_Click" Text="Confirm " />
 
         </h5>  
     </div>
