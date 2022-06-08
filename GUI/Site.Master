@@ -23,6 +23,21 @@
             box-sizing: border-box;
             font-family: 'Roboto', sans-serif;
         }
+                 /*
+
+                 NAVIGATION PANEL
+
+            1. Login panel
+            2. FormToResetPassPage
+            3. Administarotr Panel
+            4. LogoutPage
+            5. SettingPanelPage
+            6. UserManagementPage
+            7. UserAddPage
+            8. UserDetailsPage
+            9. UserEditPage
+
+                 */
   /* textboxy */
         .field{
             max-width: 350px;
