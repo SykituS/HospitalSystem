@@ -8,7 +8,7 @@
     <link href="Css/login.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %>- Moja aplikacja platformy ASP.NET</title>
+    <title><%: Page.Title %>-</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -414,7 +414,7 @@
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                     <a class="navbar-brand" runat="server" >Medical Clinic</a>
-                    <asp:Label ID="LabelPositionMasterInfo" runat="server" Text="Label" style="float:right; margin-right:35px; margin-top:25px; color:aqua;"></asp:Label>
+                    <asp:Label ID="LabelPositionMasterInfo" runat="server" Text="Label" style="float:right; margin-right:35px; margin-top:25px; color:#fff;text-transform: uppercase;"></asp:Label>
             </div>
         </div>
         <div class="container body-content">
