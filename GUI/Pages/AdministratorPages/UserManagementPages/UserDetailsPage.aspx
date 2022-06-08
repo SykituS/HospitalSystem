@@ -4,7 +4,7 @@ Title="User Details"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div style="margin-top:15px;">
+    <div class="user-add-page-div">
         <asp:GridView ID="GridViewUsers" runat="server" AutoGenerateColumns="False">
             <Columns>
                 <asp:BoundField DataField="Name" HeaderText="Name &amp; Surname" />
@@ -15,8 +15,8 @@ Title="User Details"%>
         </asp:GridView>
         <div>
         </div>
-        <asp:Button ID="Btneddit" runat="server" OnClick="Btneddit_Click" Text="Edit" />
-        <asp:Button ID="Btncancel" runat="server" OnClick="Btncancel_Click" Text="Cancel" />
+        <asp:Button CssClass="btn-logout-page" ID="Btneddit" runat="server" OnClick="Btneddit_Click" Text="Edit" />
+        <asp:Button CssClass="btn-logout-page" ID="Btncancel" runat="server" OnClick="Btncancel_Click" Text="Cancel" />
 </div>
 
 </asp:Content>

@@ -2,12 +2,12 @@
 Title="EditUserStatus" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server"> 
-    <div style="margin-top:15px;">
+    <div class="user-add-page-div">
         <div>
             <asp:Label ID="Label1" runat="server" Text=" "></asp:Label>
             <br>
-            <asp:Button ID="BtnAccept" runat="server" OnClick="BtnAccept_Click" Text="Accept" />
-            <asp:Button ID="BtnCancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
+            <asp:Button ID="BtnAccept" CssClass="btn-usr-mngmt-pg" runat="server" OnClick="BtnAccept_Click" Text="Accept" />
+            <asp:Button ID="BtnCancel" CssClass="btn-usr-mngmt-pg" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
         </div>
    <div style="margin-top:15px;">
 </div>

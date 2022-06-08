@@ -3,21 +3,21 @@ Title="UserEditPage" %>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server"> 
-    <div style="margin-top:15px;">
+    <div class="settings-panel-page">
         <div>
-            <asp:Label ID="LbLogin" runat="server" Text="Login"></asp:Label><br />
-            <asp:TextBox ID="TbLogin" runat="server" Enabled="False"></asp:TextBox>
+            <asp:Label ID="LbLogin" CssClass="edit-page-h" runat="server" Text="Login"></asp:Label><br />
+            <asp:TextBox ID="TbLogin" CssClass="edit-page-btn" runat="server" Enabled="False"></asp:TextBox>
         </div>
-        <asp:Label ID="LbPassword" runat="server" Text="Change Password:"></asp:Label><br />
-        <asp:Button ID="Btnpass" runat="server" OnClick="Btnpass_Click" Text="Password" />
+        <asp:Label ID="LbPassword" CssClass="edit-page-h" runat="server" Text="Change Password:"></asp:Label><br />
+        <asp:Button ID="Btnpass" CssClass="edit-page-btn" runat="server" OnClick="Btnpass_Click" Text="Password" />
         <br />        
         <div>
-            <asp:Label ID="LbStatus" runat="server" Text="Status"></asp:Label><br>
-            <asp:Button ID="Btnstatus" runat="server" Text="Btn" OnClick="Btnstatus_Click" />
+            <asp:Label ID="LbStatus" CssClass="edit-page-h" runat="server" Text="Status"></asp:Label><br>
+            <asp:Button ID="Btnstatus" CssClass="edit-page-btn" runat="server" Text="Btn" OnClick="Btnstatus_Click" />
         </div>
         <div>
-            <asp:Button ID="BtnAccept" runat="server" OnClick="BtnAccept_Click" Text="Save" />
-            <asp:Button ID="Btncancel" runat="server" Text="Cancel" OnClick="Btncancel_Click" />
+            <asp:Button ID="BtnAccept" CssClass="btn-usr-mngmt-pg" runat="server" OnClick="BtnAccept_Click" Text="Save" />
+            <asp:Button ID="Btncancel" CssClass="btn-usr-mngmt-pg" runat="server" Text="Cancel" OnClick="Btncancel_Click" />
         </div>
         <div>
             <asp:Label ID="LabelCriteria" runat="server" ></asp:Label>

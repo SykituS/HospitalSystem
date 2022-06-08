@@ -3,7 +3,8 @@ Title="Edit User Page" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div style="margin-top:15px;">
+    <div class="user-add-page-div">
+        <h3 >Password change</h3>
         <div>
             <asp:Label ID="Label1" runat="server" Text="New Password"></asp:Label><br>
             <asp:TextBox ID="Tbnewpass" runat="server" Width="119px" TextMode="Password"></asp:TextBox>
@@ -11,8 +12,8 @@ Title="Edit User Page" %>
         <br><asp:Label ID="Label2" runat="server" Text="Confirm Password"></asp:Label><br>
         <asp:TextBox ID="Tbconpass" runat="server" Height="22px" TextMode="Password"></asp:TextBox>
         <p>
-            <asp:Button ID="BtnSave" runat="server" Text="Save" OnClick="Button1_Click" Height="30px" Width="200px" />
-            <asp:Button ID="BtnCancel" runat="server" Text="Cancel" OnClick="Button2_Click" EnableTheming="True" />
+            <asp:Button ID="BtnSave"  CssClass="btn-usr-mngmt-pg" runat="server" Text="Save" OnClick="Button1_Click" Height="30px" Width="200px" />
+            <asp:Button ID="BtnCancel" CssClass="btn-usr-mngmt-pg" runat="server" Text="Cancel" OnClick="Button2_Click" EnableTheming="True" />
             <p>
             <asp:Label ID="LabelCriteria" runat="server"></asp:Label>
         </p>

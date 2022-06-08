@@ -1,21 +1,21 @@
 ﻿<%@ Page Title="User Management" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="UserManagementPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserManagementPage" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div style="margin-top:15px">
+    <div class="usr-mng-pg-div">
 
-        <asp:Button ID="BtnBack" runat="server" Text="Back to menu" OnClick="BtnBack_Click" />
+        <asp:Button ID="BtnBack" CssClass="btn-usr-mngmt-pg" runat="server" Text="Back to menu" OnClick="BtnBack_Click" />
         <br />
-        <asp:Button ID="BtnAddNewUser" runat="server" Text="Add new user" OnClick="BtnAddNewUser_Click" />
+        <asp:Button ID="BtnAddNewUser" CssClass="btn-usr-mngmt-pg" runat="server" Text="Add new user" OnClick="BtnAddNewUser_Click" />
         <br />
         <br />
         <asp:Label ID="Label1" runat="server" Text="Filter by:"></asp:Label>
-        <br />
+        <br /><br />
         <asp:Label ID="Label2" runat="server" Text="First name:   "></asp:Label>
         <asp:TextBox ID="TBNameFirst" runat="server" OnTextChanged="FilterGridView" AutoPostBack="true" MaxLength="100"></asp:TextBox>
-        <br />
+        <br /><br />
         <asp:Label ID="Label3" runat="server" Text="Second name:   "></asp:Label>
         <asp:TextBox ID="TBNameSecond" runat="server" OnTextChanged="FilterGridView" AutoPostBack="true" MaxLength="100"></asp:TextBox>
-        <br />
+        <br /><br />
         <asp:Label ID="Label4" runat="server" Text="Position:   "></asp:Label>
         <asp:DropDownList ID="DropDownListPosition" runat="server" OnSelectedIndexChanged="FilterGridView" AutoPostBack="true">
         </asp:DropDownList>
