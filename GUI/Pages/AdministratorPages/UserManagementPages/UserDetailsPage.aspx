@@ -5,7 +5,7 @@ Title="User Details"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="user-add-page-div">
-        <asp:GridView ID="GridViewUsers" runat="server" AutoGenerateColumns="False">
+        <asp:GridView CssClass="tb-user-detail" ID="GridViewUsers" runat="server" AutoGenerateColumns="False">
             <Columns>
                 <asp:BoundField DataField="Name" HeaderText="Name &amp; Surname" />
                 <asp:BoundField DataField="US_login" HeaderText="Login" />

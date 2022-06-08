@@ -6,7 +6,7 @@
             <asp:Label ID="Label1" runat="server" Text="Select employee"></asp:Label>
             <asp:DropDownList ID="DropDownList" runat="server" AutoPostBack="true" >
             </asp:DropDownList>
-        </div>
+
         <p>
             &nbsp;</p>
         <p>
