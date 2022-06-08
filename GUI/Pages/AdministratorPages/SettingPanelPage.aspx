@@ -7,7 +7,7 @@
             <asp:Label ID="LabelWarning" runat="server" Text=""></asp:Label>
 
         </h5>
-        <h5>Set the login form blocking time: 
+        <h5>Set the login form blocking time: <br /><br />
             <asp:TextBox ID="TBTimeToUnlock" runat="server" TextMode="Number" MaxLength="100"></asp:TextBox>
             &nbsp;(in minutes)<br /><br />
             <asp:Button ID="BtnBack" CssClass="btn-logout-page" runat="server" OnClick="BtnBack_Click" Text="Back to menu" />
