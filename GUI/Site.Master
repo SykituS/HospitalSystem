@@ -264,6 +264,110 @@
           color: #1b2750;
         }
         /* 4. LogoutPage End */
+        /* 5. SettingPanelPage Start*/
+
+        .settings-panel-page{
+            margin-top: 4em;
+            padding-top:30px;
+            padding-bottom:30px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 19px 5px rgb(0 0 0 / 19%);
+            margin-right: auto;
+            max-width: 700px;
+            margin-left: auto;
+            border-radius: 0 30px 0 30px;
+        }
+        .settings-panel-page h5{
+            margin-bottom: 10px;
+        }
+
+        /* 5. SettingPanelPage End */
+
+        /* 6. UserManagementPage Start */
+        .usr-mng-pg-div{
+            padding-top:30px;
+            padding-bottom:30px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-right: auto;
+            max-width: 700px;
+            margin-left: auto;
+        }
+        .btn-usr-mngmt-pg{
+          margin-top: 20px;
+          width: 100%;
+          padding: 0.5rem 1rem;
+          font-size: 1.5rem;
+          background-color: #1b2750;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          transition: 0.3s;
+          color: #fff;
+          
+        }
+
+         .btn-usr-mngmt-pg:hover,  .btn-usr-mngmt-pg:focus, .btn-usr-mngmt-pg.focus{
+          background-color: #fff;
+          border-radius: 25px;
+          border: 2px solid #1b2750;
+          color: #1b2750;
+        }
+         /* 6. UserManagementPage End */
+
+         /* 7. UserAddPage Start */
+
+         .user-add-page-div{
+            margin-top: 4em;
+            padding-top:30px;
+            padding-bottom:30px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 19px 5px rgb(0 0 0 / 19%);
+            margin-right: auto;
+            max-width: 700px;
+            margin-left: auto;
+            border-radius: 20px;
+         }
+         /* 7. UserAddPage End*/
+
+
+         /* 8. UserDetailsPage Start */
+
+         .tb-user-detail{
+             position: relative;
+             margin-left: auto;
+             margin-right:auto;
+              justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom:20px;
+         }
+         .tb-user-detail td,th{
+             padding:5px;
+
+         }
+
+         /* 8. UserDetailsPage End */
+
+         /* 9. UserEditPage  Start*/
+
+         .edit-page-h{
+             font-size: 18px;
+         }
+
+          .edit-page-btn{
+              margin-top:10px;
+              margin-bottom:20px;
+          }
+
+         /* 9. UserEditPage  End*/
 
     </style>
 </head>
