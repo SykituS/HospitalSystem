@@ -11,34 +11,34 @@ namespace GUI.Pages.AdministratorPages.SpecializationManagementPages
 {
 
 
-    public partial class SpecializationManagementPage
-    {
+	public partial class SpecializationManagementPage
+	{
 
-        /// <summary>
-        /// Kontrolka BtnBackToMenu.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnBackToMenu;
+		/// <summary>
+		/// Kontrolka GridViewSpecialization.
+		/// </summary>
+		/// <remarks>
+		/// Pole generowane automatycznie.
+		/// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.GridView GridViewSpecialization;
 
-        /// <summary>
-        /// Kontrolka BtnAddNewSpecialization.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAddNewSpecialization;
+		/// <summary>
+		/// Kontrolka Button1.
+		/// </summary>
+		/// <remarks>
+		/// Pole generowane automatycznie.
+		/// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button Button1;
 
-        /// <summary>
-        /// Kontrolka GridViewSpecialization.
-        /// </summary>
-        /// <remarks>
-        /// Pole generowane automatycznie.
-        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridViewSpecialization;
-    }
+		/// <summary>
+		/// Kontrolka Button2.
+		/// </summary>
+		/// <remarks>
+		/// Pole generowane automatycznie.
+		/// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button Button2;
+	}
 }
