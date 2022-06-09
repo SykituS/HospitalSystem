@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reception", "Reception\Rece
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestSystemAdministration", "UnitTestSystemAdministration\UnitTestSystemAdministration.csproj", "{81FB4D06-0655-4098-A10F-71D3562CC121}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reception.UnitTests", "Reception.UnitTests\Reception.UnitTests.csproj", "{56B2071B-8AD7-4F8E-9AB8-1F3F7B262A1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{81FB4D06-0655-4098-A10F-71D3562CC121}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81FB4D06-0655-4098-A10F-71D3562CC121}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81FB4D06-0655-4098-A10F-71D3562CC121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B2071B-8AD7-4F8E-9AB8-1F3F7B262A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B2071B-8AD7-4F8E-9AB8-1F3F7B262A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B2071B-8AD7-4F8E-9AB8-1F3F7B262A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B2071B-8AD7-4F8E-9AB8-1F3F7B262A1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

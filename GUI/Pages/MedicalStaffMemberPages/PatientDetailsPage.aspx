@@ -3,6 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
+    <br />
+
+
     <asp:DetailsView ID="Gv_PatientDetails" runat="server" Height="50px" Width="125px" AutoGenerateRows="False">
         <Fields>
                 <asp:BoundField DataField="Name" HeaderText="Name"/>
@@ -12,6 +15,8 @@
                 <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                 <asp:BoundField DataField="Phone_number" HeaderText="Phone number" />
                 <asp:BoundField DataField="Correspondence_adress" HeaderText="Correspondence adress" />
+                <asp:BoundField DataField="St_Status_Name" HeaderText="Status" />
+
                
         </Fields>
     </asp:DetailsView>

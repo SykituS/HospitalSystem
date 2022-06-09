@@ -22,7 +22,7 @@ namespace GUI.Pages.MedicalStaffMemberPages
 
         protected void Btn_cancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect("PatientList.aspx");
+            Response.Redirect("ListofPatients.aspx");
         }
 
         protected void Btn_addpatient_Click(object sender, EventArgs e)

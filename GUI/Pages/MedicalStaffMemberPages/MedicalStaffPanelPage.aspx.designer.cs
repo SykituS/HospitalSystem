@@ -24,6 +24,33 @@ namespace GUI.Pages.MedicalStaffMemberPages
         protected global::System.Web.UI.WebControls.Button BtnPatientList;
 
         /// <summary>
+        /// Kontrolka Btn_visits.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btn_visits;
+
+        /// <summary>
+        /// Kontrolka Cal_appointments.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Cal_appointments;
+
+        /// <summary>
+        /// Kontrolka Gv_appointments.
+        /// </summary>
+        /// <remarks>
+        /// Pole generowane automatycznie.
+        /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView Gv_appointments;
+
+        /// <summary>
         /// Kontrolka BtnLogout.
         /// </summary>
         /// <remarks>

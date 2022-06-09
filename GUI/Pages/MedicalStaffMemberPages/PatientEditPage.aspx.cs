@@ -40,7 +40,7 @@ namespace GUI.Pages.MedicalStaffMemberPages
 
         protected void Btn_Cancel_Click(object sender, EventArgs e)
         {
-            Response.Redirect("PatientList.aspx");
+            Response.Redirect("ListofPatients.aspx");
 
         }
 

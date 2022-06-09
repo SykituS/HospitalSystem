@@ -21,6 +21,7 @@ namespace Reception
         private DateTime dateOfBirth;
         private string email;
         private string phoneNumber;
+        private int status;
 
         public Patient(string name, string surname, string pesel, byte sex, string email, string address, string phoneNumber, DateTime dateOfBirth)
         {
@@ -33,11 +34,16 @@ namespace Reception
             this.email = email;
             this.sex = sex;
             this.phoneNumber = phoneNumber;
+            
         }
 
+        public Patient(int status)
+        {
+            this.status = status;
+        }
         public void AddPatientToDb()
         {
-            string cmd = "INSERT INTO dbo.Patients(Name, Surname, Pesel, Sex, Date_of_birth, Correspondence_adress, Email, Phone_number) VALUES(@Name, @Surname, @Pesel, @Sex, @DoB, @Address,@Email, @Phone)";
+            string cmd = "INSERT INTO dbo.Patients(Name, Surname, Pesel, Sex, Date_of_birth, Correspondence_adress, Email, Phone_number, Active) VALUES(@Name, @Surname, @Pesel, @Sex, @DoB, @Address,@Email, @Phone, 1)";
             SqlCommand query = new SqlCommand(cmd);
 
             query.Parameters.AddWithValue("@Name", name);
@@ -71,6 +77,33 @@ namespace Reception
             DBSystem.DBSystem.UpdateDB(query);
         }
 
+    
+
+        public void UpdateStatusToDB(int id)
+        {
+            string cmd = "UPDATE dbo.Patients SET Active = @Status WHERE Id_Patients = @Id";
+            SqlCommand query = new SqlCommand(cmd);
+
+            query.Parameters.AddWithValue("@Id", id);
+            query.Parameters.AddWithValue("@Status", status);
+
+            DBSystem.DBSystem.UpdateDB(query);
+        }
+
+        public static void DeletePatientFromDB(int patientId)
+        {
+            string cmd = "";
+            SqlCommand query = new SqlCommand(cmd);
+
+            query.Parameters.AddWithValue("Id", patientId);
+            DBSystem.DBSystem.DeleteFromDB(query);
+
+            string cmd2 = "delete from patient";
+            SqlCommand query2 = new SqlCommand(cmd2);
+            query.Parameters.AddWithValue("Id", patientId);
+            DBSystem.DBSystem.DeleteFromDB(query2);
+        }
+        
         public static bool ValidateName(string name)
         {
             Regex regex = new Regex(@"^[\p{Lu}\p{Ll}][\p{Ll}]*(([,.] |[ '-])[\p{Lu}\p{Ll}][\p{Ll}]*)*(\.?)$");
@@ -157,24 +190,24 @@ namespace Reception
                 {
 
                     int digitOfHundreds = (dateofbirth.Year - 2000) / 100; //taking hundreds digit of the year of birth if its earlier than 2000
-                    int toAddToMonth = 0;
+                    int addToMonth = 0;
                     switch (digitOfHundreds)
                     {
                         case 0:
-                            toAddToMonth = 20;
+                            addToMonth = 20;
                             break;
                         case 1:
-                            toAddToMonth = 40;
+                            addToMonth = 40;
                             break;
                         case 2:
-                            toAddToMonth = 60;
+                            addToMonth = 60;
                             break;
                         case 3:
-                            toAddToMonth = 80;
+                            addToMonth = 80;
                             break;
 
                     }
-                    thirdAndFourthDigit = (Convert.ToInt32(monthOfBirth) + toAddToMonth).ToString();
+                    thirdAndFourthDigit = (Convert.ToInt32(monthOfBirth) + addToMonth).ToString();
 
                 }
                 else

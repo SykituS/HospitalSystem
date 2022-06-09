@@ -771,3 +771,4 @@ C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\GUI\bi
 C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\GUI\bin\roslyn\vbc.rsp
 C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\GUI\bin\roslyn\VBCSCompiler.exe
 C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\GUI\bin\roslyn\VBCSCompiler.exe.config
+F:\Projekty\TestowanieOprogramowania\GUI\bin\Reception.dll.config

@@ -20,10 +20,13 @@ namespace Reception
             DataTable dt = new DataTable();
 
             //a query which returns data about patients from the database 
-            string cmd = "SELECT p.Id_Patients, p.Name, p.Surname, p.Pesel, p.Sex, p.Date_of_birth, p.Correspondence_adress, p.Email, p.Phone_number, tv.Ap_appoitment_day FROM Patients p LEFT JOIN Appointment_details ad ON ad.AD_fk_patients = p.Id_Patients LEFT JOIN Term_Of_Visit tv ON tv.Ap_id_appoitment = ad.AD_fk_appointments";
+            //string cmd = "SELECT p.Id_Patients, p.Name, p.Surname, p.Pesel, p.Sex, p.Date_of_birth, p.Correspondence_adress, p.Email, p.Phone_number, tv.Ap_appoitment_day FROM Patients p LEFT JOIN Appointment_details ad ON ad.AD_fk_patients = p.Id_Patients LEFT JOIN Term_Of_Visit tv ON tv.Ap_id_appoitment = ad.AD_fk_appointments";
+            //string cmd = "SELECT p.Id_Patients, p.Name, p.Surname, p.Pesel, p.Sex, p.Date_of_birth, p.Correspondence_adress, p.Email, p.Phone_number, tv.Ap_appoitment_day, st.St.St_Status_Name FROM Patients p LEFT JOIN Appointment_details ad ON ad.AD_fk_patients = p.Id_Patients LEFT JOIN Term_Of_Visit tv ON tv.Ap_id_appoitment = ad.AD_fk_appointments LEFT JOIN Status st ON st.St_Id_Status = p.Active";
+            string cmd = "SELECT p.Id_Patients, p.Name, p.Surname, p.Pesel, p.Sex, p.Date_of_birth, p.Correspondence_adress, p.Email, p.Phone_number, tv.Ap_appoitment_day, st.St_Status_Name FROM Patients p LEFT JOIN Appointment_details ad ON ad.AD_fk_patients = p.Id_Patients LEFT JOIN Term_Of_Visit tv ON tv.Ap_id_appoitment = ad.AD_fk_appointments LEFT JOIN Status st ON p.Active = st.St_Id_Status";
             if (check)
             {
-                cmd = "SELECT p.Id_Patients, p.Name, p.Surname, p.Pesel, p.Sex, p.Date_of_birth, p.Correspondence_adress, p.Email, p.Phone_number, tv.Ap_appoitment_day FROM Patients p LEFT JOIN Appointment_details ad ON ad.AD_fk_patients = p.Id_Patients LEFT JOIN Term_Of_Visit tv ON tv.Ap_id_appoitment = ad.AD_fk_appointments ORDER BY  tv.Ap_appoitment_day DESC";
+                //cmd = "SELECT p.Id_Patients, p.Name, p.Surname, p.Pesel, p.Sex, p.Date_of_birth, p.Correspondence_adress, p.Email, p.Phone_number, tv.Ap_appoitment_day FROM Patients p LEFT JOIN Appointment_details ad ON ad.AD_fk_patients = p.Id_Patients LEFT JOIN Term_Of_Visit tv ON tv.Ap_id_appoitment = ad.AD_fk_appointments ORDER BY  tv.Ap_appoitment_day DESC";
+                cmd = "SELECT p.Id_Patients, p.Name, p.Surname, p.Pesel, p.Sex, p.Date_of_birth, p.Correspondence_adress, p.Email, p.Phone_number, tv.Ap_appoitment_day, st.St_Status_Name FROM Patients p LEFT JOIN Appointment_details ad ON ad.AD_fk_patients = p.Id_Patients LEFT JOIN Term_Of_Visit tv ON tv.Ap_id_appoitment = ad.AD_fk_appointments LEFT JOIN Status st ON p.Active = st.St_Id_Status ORDER BY tv.Ap_appoitment_day DESC";
             }
             //hooking a query
 
@@ -35,10 +38,51 @@ namespace Reception
             return dt;
         }
 
+        public static DataTable Patients()
+        {
+            DataTable dt = new DataTable();
+            string cmd = "SELECT Id_Patients, Name + ' ' + Surname AS Patient FROM dbo.Patients ";
+            SqlCommand query = new SqlCommand(cmd);
+
+            DBSystem.DBSystem.SelectFromDB(dt, query);
+            return dt;
+        }
+
+        public static DataTable Doctors()
+        {
+            DataTable dt = new DataTable();
+            string cmd = "SELECT ID_Doctor, First_Name + ' ' + Surname AS Doctor FROM dbo.Doctors";
+            //string cmd = "SELECT d.First_name+'  '+d.Surname FROM Doctors d, Specialisation s Where d.ID_Specialisation = s.ID_Specialisation AND s.Name = @spec";
+            SqlCommand query = new SqlCommand(cmd);
+            //query.Parameters.AddWithValue("@spec", specialization);
+            DBSystem.DBSystem.SelectFromDB(dt, query);
+            return dt;
+        }
+
+        public static DataTable Specialization()
+        {
+            DataTable dt = new DataTable();
+            string cmd = "SELECT * FROM dbo.Specialisation";
+            SqlCommand query = new SqlCommand(cmd);
+
+            DBSystem.DBSystem.SelectFromDB(dt, query);
+            return dt;
+        }
+
+        public static DataTable Office()
+        {
+            DataTable dt = new DataTable();
+            string cmd = "SELECT * FROM dbo.Office";
+            SqlCommand query = new SqlCommand(cmd);
+
+            DBSystem.DBSystem.SelectFromDB(dt, query);
+            return dt;
+        }
+
         public static DataTable LoadPatientDetails(string patientId)
         {
             DataTable dt = new DataTable();
-            string cmd = "SELECT p.Name, p.Surname, p.Pesel, p.Sex, p.Date_of_birth, p.Correspondence_adress, p.Email, p.Phone_number FROM Patients p INNER JOIN Sex s ON p.Sex = s.Sx_Id_Status WHERE p.Id_Patients = @Id";
+            string cmd = "SELECT p.Name, p.Surname, p.Pesel, p.Sex, p.Date_of_birth, p.Correspondence_adress, p.Email, p.Phone_number, st.St_Status_Name FROM Patients p INNER JOIN Sex s ON p.Sex = s.Sx_Id_Status INNER JOIN Status st ON p.Active = st.St_Id_Status WHERE p.Id_Patients = @Id";
             SqlCommand query = new SqlCommand(cmd);
             query.Parameters.AddWithValue("@Id", patientId);
 
@@ -47,6 +91,25 @@ namespace Reception
             return dt;
         }
 
+        public static int GetPatientStatus(int id)
+        {
+            DataTable dt = new DataTable();
+            string cmd = "SELECT Active FROM dbo.Patients WHERE Id_Patients = @Id";
+            SqlCommand query = new SqlCommand(cmd);
+            query.Parameters.AddWithValue("@Id", id);
+
+            DBSystem.DBSystem.SelectFromDB(dt, query);
+
+            int status = int.Parse((string)dt.Rows[0][0]);
+
+            return status;
+        }
+
+        /*public static int GetPatientsId(int id)
+        {
+
+        }*/
+        
         //Filtering data by name, surname and pesel
         public static DataView FilterDataView(string Tbx_name, string Tbx_surname, string Tbx_pesel, bool check)
         {

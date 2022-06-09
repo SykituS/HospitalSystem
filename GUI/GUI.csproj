@@ -161,12 +161,16 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Pages\MainPages\ResetPassPage.aspx" />
+    <Content Include="Pages\MedicalStaffMemberPages\AddVisit.aspx" />
+    <Content Include="Pages\MedicalStaffMemberPages\ListofPatients.aspx" />
+    <Content Include="Pages\MedicalStaffMemberPages\ListofVisits.aspx" />
     <Content Include="Pages\MedicalStaffMemberPages\MedicalStaffPanelPage.aspx" />
     <Content Include="Pages\MedicalStaffMemberPages\PatientAddPage.aspx" />
+    <Content Include="Pages\MedicalStaffMemberPages\PatientDeactivationPage.aspx" />
     <Content Include="Pages\MedicalStaffMemberPages\PatientDeletePage.aspx" />
     <Content Include="Pages\MedicalStaffMemberPages\PatientDetailsPage.aspx" />
     <Content Include="Pages\MedicalStaffMemberPages\PatientEditPage.aspx" />
-    <Content Include="Pages\MedicalStaffMemberPages\PatientList.aspx" />
+    <Content Include="Pages\MedicalStaffMemberPages\PatientReactivationPage.aspx" />
     <Content Include="Pages\PatientManagementStaffPages\PatientManagementPanelPage.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -461,6 +465,27 @@
     <Compile Include="Pages\MainPages\ResetPassPage.aspx.designer.cs">
       <DependentUpon>ResetPassPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\AddVisit.aspx.cs">
+      <DependentUpon>AddVisit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\AddVisit.aspx.designer.cs">
+      <DependentUpon>AddVisit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\ListofPatients.aspx.cs">
+      <DependentUpon>ListofPatients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\ListofPatients.aspx.designer.cs">
+      <DependentUpon>ListofPatients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\ListofVisits.aspx.cs">
+      <DependentUpon>ListofVisits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\ListofVisits.aspx.designer.cs">
+      <DependentUpon>ListofVisits.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MedicalStaffMemberPages\MedicalStaffPanelPage.aspx.cs">
       <DependentUpon>MedicalStaffPanelPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -474,6 +499,13 @@
     </Compile>
     <Compile Include="Pages\MedicalStaffMemberPages\PatientAddPage.aspx.designer.cs">
       <DependentUpon>PatientAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\PatientDeactivationPage.aspx.cs">
+      <DependentUpon>PatientDeactivationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\MedicalStaffMemberPages\PatientDeactivationPage.aspx.designer.cs">
+      <DependentUpon>PatientDeactivationPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\MedicalStaffMemberPages\PatientDeletePage.aspx.cs">
       <DependentUpon>PatientDeletePage.aspx</DependentUpon>
@@ -496,12 +528,12 @@
     <Compile Include="Pages\MedicalStaffMemberPages\PatientEditPage.aspx.designer.cs">
       <DependentUpon>PatientEditPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MedicalStaffMemberPages\PatientList.aspx.cs">
-      <DependentUpon>PatientList.aspx</DependentUpon>
+    <Compile Include="Pages\MedicalStaffMemberPages\PatientReactivationPage.aspx.cs">
+      <DependentUpon>PatientReactivationPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\MedicalStaffMemberPages\PatientList.aspx.designer.cs">
-      <DependentUpon>PatientList.aspx</DependentUpon>
+    <Compile Include="Pages\MedicalStaffMemberPages\PatientReactivationPage.aspx.designer.cs">
+      <DependentUpon>PatientReactivationPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\PatientManagementStaffPages\PatientManagementPanelPage.aspx.cs">
       <DependentUpon>PatientManagementPanelPage.aspx</DependentUpon>

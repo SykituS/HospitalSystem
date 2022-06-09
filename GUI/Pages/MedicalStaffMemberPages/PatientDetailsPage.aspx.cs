@@ -25,7 +25,7 @@ namespace GUI.Pages.MedicalStaffMemberPages
 
         protected void Btn_cancel_edit_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Pages/MedicalStaffMemberPages/PatientList");
+            Response.Redirect("ListofPatients.aspx");
         }
     }
 }
