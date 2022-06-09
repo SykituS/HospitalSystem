@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using Administration;
+using System.Collections.Generic;
 
 
 namespace Doctor
@@ -41,7 +43,7 @@ namespace Doctor
 
             DBSystem.DBSystem.UpdateDB(command);
         }
-
+           
         public void Add_New_Appoitment(DateTime dateTime, int current_visit_id)
         {
             GetAppoitments getAppoitments = new GetAppoitments();
@@ -60,7 +62,7 @@ namespace Doctor
             command.Parameters.AddWithValue("@doctor_id", doctor_id);
             command.Parameters.AddWithValue("@hour", hour);
             command.Parameters.AddWithValue("@office_id", office_id);
-
+            
             DBSystem.DBSystem.InsertToDB(command);
 
 
@@ -79,7 +81,7 @@ namespace Doctor
 
             string details = "insert into Appointment_details(AD_id, AD_fk_patients, AD_visit_progress, AD_referral, AD_needed_next_visit, AD_appointment_description, AD_fk_appointments)" +
                                 "\n values" +
-                                "\n (NEXT VALUE FOR details_seq, @id_patient , 'correct', 'no', 'no', '', @id_visit)";
+                                "\n (NEXT VALUE FOR sequen_details_ap, @id_patient , 'correct', 'no', 'no', '', @id_visit)";
 
             SqlCommand command_details = new SqlCommand(details);
             command_details.Parameters.AddWithValue("@id_visit", id_of_last_visit.ToString());
@@ -93,8 +95,8 @@ namespace Doctor
         public DataTable All_appoitments_of_current_patient(int current_id)
         {
             DataTable dt = new DataTable();
-
-            //dodalem pobieranie ap_id_appoitment \/
+            
+                      //dodalem pobieranie ap_id_appoitment \/
             string querry = "SELECT Id_Patients,Ap_id_appoitment,Ap_appoitment_day, Ap_appoitment_time, AD_appointment_description FROM Term_Of_Visit, Appointment_details ,Patients" +
                             "\n WHERE Ap_id_appoitment = AD_fk_appointments" +
                             "\n AND Id_Patients = AD_fk_patients" +
@@ -104,7 +106,7 @@ namespace Doctor
                             "\n AND Ap_id_appoitment = @id)";
 
             SqlCommand command = new SqlCommand(querry);
-
+            
             command.Parameters.AddWithValue("@id", current_id.ToString());
 
             DBSystem.DBSystem.SelectFromDB(dt, command);
@@ -128,8 +130,8 @@ namespace Doctor
 
         public void Add_refferal(int id_visit, string refferal)
         {
-            string querry = "UPDATE Appointment_details" +
-                            "\n SET AD_referral_description = '@refferal'" +
+            string querry = "UPDATE Appointment_details"+
+                            "\n SET AD_referral_description = @refferal" +
                             "\n WHERE AD_fk_appointments = @id_visit";
 
             SqlCommand command = new SqlCommand(querry);

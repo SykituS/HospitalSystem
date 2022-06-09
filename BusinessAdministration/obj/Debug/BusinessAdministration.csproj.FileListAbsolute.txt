@@ -62,23 +62,13 @@ C:\Users\uznan\Desktop\TestowanieOprogramowania\BusinessAdministration\obj\Debug
 C:\Users\uznan\Desktop\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
 C:\Users\uznan\Desktop\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.dll
 C:\Users\uznan\Desktop\TestowanieOprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.dll
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\DBSystem.dll
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\FluentValidation.dll
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\BusinessAdministration\bin\Debug\FluentValidation.xml
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.AssemblyReference.cache
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.dll
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\BusinessAdministration\bin\Debug\BusinessAdministration.dll
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\BusinessAdministration\bin\Debug\DBSystem.dll
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\BusinessAdministration\bin\Debug\FluentValidation.dll
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\BusinessAdministration\bin\Debug\FluentValidation.xml
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\BusinessAdministration\obj\Debug\BusinessAdministration.dll
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
+F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\bin\Debug\BusinessAdministration.dll
+F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
+F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\bin\Debug\DBSystem.dll
+F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\bin\Debug\FluentValidation.dll
+F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\bin\Debug\FluentValidation.xml
+F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
+F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
+F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.dll
+F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.pdb

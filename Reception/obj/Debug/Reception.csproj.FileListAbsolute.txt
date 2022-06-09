@@ -70,3 +70,11 @@ C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Recept
 C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Reception\obj\Debug\Reception.csproj.CopyComplete
 C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Reception\obj\Debug\Reception.dll
 C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Reception\obj\Debug\Reception.pdb
+F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\Reception.dll
+F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\Reception.pdb
+F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\DBSystem.dll
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csprojAssemblyReference.cache
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.CopyComplete
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.dll
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.pdb

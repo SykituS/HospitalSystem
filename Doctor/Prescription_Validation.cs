@@ -1,29 +1,33 @@
-﻿using FluentValidation;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using FluentValidation;
 
 namespace Doctor
 {
-    public class Prescription_Validation : AbstractValidator<Prescription>
+    public class Prescription_Validation: AbstractValidator<Prescription>
     {
         public Prescription_Validation()
         {
             RuleFor(p => p.Medicine)
                 .Cascade(CascadeMode.StopOnFirstFailure)
                 .NotEmpty()
-                .WithMessage("Lista leków nie może być pusta")
+                .WithMessage("List of medicine is empty")
                 .Must(BeValidMedicine)
-                .WithMessage("Lista leków zawiera niewłasciwe znaki")
+                .WithMessage("Invalid signs in medicine")
                 .MaximumLength(100)
-                .WithMessage("Przekroczoną dostępną ilość znaków w liście leków");
+                .WithMessage("Too much letters in medicine");
 
-            RuleFor(p => p.Dosage)
+            RuleFor(p=>p.Dosage)
                 .Cascade(CascadeMode.StopOnFirstFailure)
                 .NotEmpty()
-                .WithMessage("Dawkowanie nie może być pusta")
+                .WithMessage("Dosage is empty")
                 .Must(BeValidMedicine)
-                .WithMessage("Dawkowanie zawiera niewłasciwe znaki")
+                .WithMessage("Invalid signs in dosage")
                 .MaximumLength(100)
-                .WithMessage("Dawkowanie przekracza dostępną ilość znaków");
+                .WithMessage("Too much letters in dosage");
         }
 
         private bool BeValidMedicine(string Medicine)

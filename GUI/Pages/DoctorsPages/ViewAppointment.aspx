@@ -55,16 +55,6 @@
         background-color:lightgray;
         margin-left:1%;
     }
-
-
-
-    .Label{
-        margin-left:20%;
-        width:100%;
-    }
-    .Label1{
-        margin-left:10%;
-    }
     .row2{
         width:100%;
         height:65%;
@@ -83,39 +73,12 @@
     h3{
         text-align:center;
     }
-    /*.box{
-        border:double;
-        height:98%;
-        width:100%;
-        background-color:lightgray;
-        border:solid;
-        border-color:black;
-        border-radius:10px;
-        margin-bottom:20px;*/
-        /*place-content:flex-start;
-        display:flex;*/
-        /*place-items:normal;
-        
-    }*/
-/*    .boxPlaski{
-        width:70%;
-        height:50%;
-        border:dotted;
-    }
-    .boxPionowy{
-        width:30%;
-        height:100%;
-        border:dotted;
-        
-    }*/
+ 
     .cbp-mc-column {
     width: 33.33%;
     height:100%;
     float: left;
     background-color:lightgray;
-    /*border-radius:10px;*/
-    
-    
 
 
     }
@@ -126,11 +89,6 @@
      float: left;
      margin-left:1%;
     
-    /*border-radius:10px;*/
-    
-    
-
-
     }
     .roww{
         width:100%;
@@ -139,52 +97,6 @@
     .p{
         font-size:16px;
     }
-  
-
-    
-    
-
-
-
-    
-    
-
-    
-        
-  
-
-    
-    
-
-
-
-    
-    
-
-    
-    
-  
-
-    
-    
-
-
-
-    
-    
-
-    
-        
-  
-
-    
-    
-
-
-
-    
-    
-
     
     </style>
 
@@ -198,12 +110,7 @@
         <div class="cbp-mc-columnn">
             <br /> <br />
             
-            <p>
-            
-            <asp:TextBox ID="TextBox8" runat="server" Height="25px" Width="200px" Visible="False"></asp:TextBox>
-                <asp:Button ID="Button8" runat="server" Text="Filter" Height="28px" Width="100px" Visible="False" />
-                
-        </p>
+
         </div>
       
         <br /> <br />
@@ -230,7 +137,7 @@
                 <div style="overflow-y: scroll;height: 100%; width: 569px;">
                 <asp:GridView ID="GridView1" runat="server" Width="550px" AllowSorting="True" OnSorting="GridView1_Sorting" CurrentSortField="Name" CurrentSortDirection="DESC" OnRowDataBound="GridView1_RowDataBound" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Height="100%" HeaderStyle-HorizontalAlign="Center" HeaderStyle-VerticalAlign="Middle">
                     <Columns>
-                        <asp:CommandField ButtonType="Button" HeaderText="Szczegóły wizyty" ShowHeader="True" ShowSelectButton="True"   >
+                        <asp:CommandField ButtonType="Button" HeaderText="Appointment details" ShowHeader="True" ShowSelectButton="True" SelectText="Select"   >
                         <ControlStyle Width="120px" />
                         <HeaderStyle Width="130px" ForeColor="White" />
 
@@ -244,7 +151,7 @@
             
         </div>
         
-        <div class="row"> <%--div rozpoczynajacy rowa--%>
+        <div class="row"> 
             
             <div class="cbp-mc-column">
                 <div class="smallRow"><p>Name: </p> <asp:TextBox ID="TextBox1" runat="server" ReadOnly="True"></asp:TextBox> </div>
@@ -276,7 +183,7 @@
                     <div class="smallRow">
                           <asp:Button ID="Button4" runat="server" Text="Back to current visit" OnClick="Button4_Click" /></div>
             </div>
-       </div> <%--Div konczacy rowa--%>
+       </div> 
 
 
             
@@ -286,12 +193,7 @@
                 <h3>Prescription</h3>
                 <div class="row_persc">
                     <div class="column0">
-               
-                 <%-- <div class="smallRow"><p>Name: </p> <asp:TextBox ID="PrescName" runat="server"></asp:TextBox> </div>
-                                                          
-                  
-                               
-                  <div class="smallRow"><p>Pesel: </p> <asp:TextBox ID="PrescPesel" runat="server"></asp:TextBox></div>--%>
+              
 
                         <div class="smallRow"><p>Medicine: </p> <asp:TextBox ID="PrescMedicine" runat="server" Height="100px" Width="250px" TextMode="MultiLine" Columns="0"></asp:TextBox></div>
                     </div>
@@ -300,7 +202,10 @@
                         <div class="smallRow"><p>Dosage: </p> <asp:TextBox ID="PrescSurname" runat="server" Height="100px" TextMode="MultiLine" Width="250px"></asp:TextBox></div>
                     </div>
                 </div>
-                  <div class="smallRow"><asp:Button ID="Button2" runat="server" Text="Approve" OnClick="bt_add_prescription" /></div>
+                    
+                  <div class="smallRow">
+                      <p><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></p>
+                      <asp:Button ID="Button2" runat="server" Text="Approve" OnClick="bt_add_prescription" /></div>
 
 
                    
@@ -308,47 +213,19 @@
             <div class="column3">
                 <h3>Referral</h3>
                
-                  <%--<div class="smallRow"><p>Name:</p>
-                      <asp:TextBox ID="RefName" runat="server"></asp:TextBox>
-                  </div>
-                
-                  <div class="smallRow"><p>Surname:</p>
-                      <asp:TextBox ID="RefSurname" runat="server"></asp:TextBox>
-                  </div>
-                               
-                  <div class="smallRow"><p>Pesel:</p>
-                      <asp:TextBox ID="RefPesel" runat="server"></asp:TextBox>
-                  </div>--%>
 
                   <div class="smallRow"><p>Medical examination:</p> 
                       <asp:TextBox ID="RefExamination" runat="server" EnableTheming="True" Height="200px" Width="300px" TextMode="MultiLine" OnTextChanged="RefExamination_TextChanged"></asp:TextBox>
                   </div>
                 <div class="smallRow">
+                    <p><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></p>
                       <asp:Button ID="Button3" runat="server" Text="Approve" OnClick="Button3_Click" /></div>
 
 
             </div>
-<%--            <div class="column3">
-                <h3>New appointment</h3>
-               
-                  <div class="smallRow"><p>Name:</p> <asp:TextBox ID="AppoName" runat="server"></asp:TextBox></div>
-                
-                  <div class="smallRow"><p>Surname:</p> <asp:TextBox ID="AppoSurname" runat="server"></asp:TextBox></div>
-                               
-                  <div class="smallRow"><p>Pesel:</p> <asp:TextBox ID="AppoPesel" runat="server"></asp:TextBox></div>
-
-                  <div class="smallRow"><p>Date of visit:</p> <asp:TextBox ID="AppoDate" runat="server"></asp:TextBox>
-                  </div>
-                <div class="smallRow"><p>Time of visit:</p> <asp:TextBox ID="AppoTime" runat="server"></asp:TextBox>
-                  </div>
-                <div class="smallRow">
-                      <asp:Button ID="Button4" runat="server" Text="Approve" /></div>
-
-            </div>--%>
+         
 
         </div>
 
     
-    
-
 </asp:Content>

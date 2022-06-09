@@ -1,5 +1,9 @@
 ﻿using FluentValidation;
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Doctor
 {
@@ -10,11 +14,11 @@ namespace Doctor
             RuleFor(r => r.Referral)
                 .Cascade(CascadeMode.StopOnFirstFailure)
                 .NotEmpty()
-                .WithMessage("Skierowanie nie może być pusta")
+                .WithMessage("Referral is empty")
                 .Must(BeValidReferral)
-                .WithMessage("Błędne skierowanie. Zawiera niedozwolone znaki (można używać tylko liter i cyfr")
+                .WithMessage("Invalid signs in referral")
                 .MaximumLength(200)
-                .WithMessage("Wprowadzona wartość jest za długa");
+                .WithMessage("Too much letters");
         }
 
         private bool BeValidReferral(string referral)

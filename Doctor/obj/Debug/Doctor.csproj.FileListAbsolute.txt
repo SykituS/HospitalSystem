@@ -89,48 +89,20 @@ C:\Users\erfra\Source\Repos\Moduł Lekarza\Doctor\bin\Debug\FluentValidation.dll
 C:\Users\erfra\Source\Repos\Moduł Lekarza\Doctor\bin\Debug\FluentValidation.xml
 C:\Users\milos\Source\Repos\Moduł Lekarza\Doctor\bin\Debug\FluentValidation.dll
 C:\Users\milos\Source\Repos\Moduł Lekarza\Doctor\bin\Debug\FluentValidation.xml
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\bin\Debug\Doctor.dll
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\bin\Debug\Doctor.pdb
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\bin\Debug\Administation.dll
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\bin\Debug\BusinessAdministration.dll
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\bin\Debug\DBSystem.dll
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\bin\Debug\FluentValidation.dll
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\bin\Debug\Administation.pdb
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\bin\Debug\BusinessAdministration.pdb
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\bin\Debug\FluentValidation.xml
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\obj\Debug\Doctor.csprojAssemblyReference.cache
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\obj\Debug\Doctor.csproj.CopyComplete
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\obj\Debug\Doctor.dll
-D:\Programowanie C#\moduł\Moduł Lekarza\Doctor\obj\Debug\Doctor.pdb
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\Doctor.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\Doctor.pdb
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\Administration.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\BusinessAdministration.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\DBSystem.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\FluentValidation.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\Administration.pdb
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\BusinessAdministration.pdb
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\bin\Debug\FluentValidation.xml
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csprojAssemblyReference.cache
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.dll
-C:\Users\User\Desktop\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.pdb
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\Doctor.dll
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\Doctor.pdb
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\Administration.dll
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\BusinessAdministration.dll
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\DBSystem.dll
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\FluentValidation.dll
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\Administration.pdb
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\BusinessAdministration.pdb
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\bin\Debug\FluentValidation.xml
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.csproj.AssemblyReference.cache
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.dll
-C:\Users\uznan\Desktop\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.pdb
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\Doctor.dll
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\Doctor.pdb
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\Administration.dll
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\BusinessAdministration.dll
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\DBSystem.dll
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\FluentValidation.dll
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\Administration.pdb
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\BusinessAdministration.pdb
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\bin\Debug\FluentValidation.xml
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doctor.csprojAssemblyReference.cache
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doctor.csproj.CopyComplete
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doctor.dll
+F:\Projekty\TestowanieOprogramowaniaGlowny\Doctor\obj\Debug\Doctor.pdb
 F:\Projekty\TestowanieOprogramowania\Doctor\bin\Debug\Doctor.dll
 F:\Projekty\TestowanieOprogramowania\Doctor\bin\Debug\Doctor.pdb
 F:\Projekty\TestowanieOprogramowania\Doctor\bin\Debug\Administration.dll
@@ -145,31 +117,3 @@ F:\Projekty\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.csproj.CoreCompileI
 F:\Projekty\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.dll
 F:\Projekty\TestowanieOprogramowania\Doctor\obj\Debug\Doctor.pdb
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\Doctor.dll
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\Doctor.pdb
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\Administration.dll
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\BusinessAdministration.dll
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\DBSystem.dll
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\FluentValidation.dll
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\Administration.pdb
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\BusinessAdministration.pdb
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\bin\Debug\FluentValidation.xml
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.AssemblyReference.cache
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.dll
-C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Doctor\obj\Debug\Doctor.pdb
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\bin\Debug\Doctor.dll
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\bin\Debug\Doctor.pdb
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\bin\Debug\Administration.dll
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\bin\Debug\BusinessAdministration.dll
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\bin\Debug\DBSystem.dll
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\bin\Debug\FluentValidation.dll
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\bin\Debug\Administration.pdb
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\bin\Debug\BusinessAdministration.pdb
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\bin\Debug\FluentValidation.xml
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\obj\Debug\Doctor.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\obj\Debug\Doctor.csproj.CopyComplete
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\obj\Debug\Doctor.dll
-C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Doctor\obj\Debug\Doctor.pdb
