@@ -22,7 +22,7 @@ namespace GUI.Pages.AdministratorPages.SettingsPages
 
             if (time >= 0)
             {
-                //SettingsPanel.TimeSet(time);
+                SettingsPanel.TimeSet(time);
                 LabelWarning.Visible = true;
                 LabelWarning.Text = "The time to unlock page has been changed";
             }

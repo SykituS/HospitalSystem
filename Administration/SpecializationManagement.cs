@@ -33,6 +33,9 @@ namespace Administration
 
         public static void UpdateSpecialization()
         {
+            if (!Validation(MySession.Current.TempSpecText))
+                return;
+
             string query = "UPDATE Specialisation SET Name = @name WHERE Name = @oldName";
             if (MySession.Current.TempAction == "Delete")
             {
@@ -51,6 +54,9 @@ namespace Administration
 
         public static void AddNewSpecialization()
         {
+            if (!Validation(MySession.Current.TempSpecText))
+                return;
+
             string query = "INSERT INTO Specialisation(ID_Specialisation, Name) Values(NEXT VALUE FOR Seq_Specialisation, @name)";
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@name", MySession.Current.TempSpecText);
@@ -66,6 +72,13 @@ namespace Administration
             MySession.Current.TempRedirectText = null;
             MySession.Current.TempSpecText = null;
             MySession.Current.TempSpecTextOriginal = null;
+        }
+
+        public static bool Validation(string name)
+        {
+            if (name.Any(char.IsDigit) || name.Any(char.IsPunctuation) || name.Any(char.IsSymbol))
+                return false;
+            return true;
         }
     }
 }

@@ -32,9 +32,11 @@ namespace GUI.Pages.AdministratorPages.UserManagementPages
         protected void BtnAccept_Click(object sender, EventArgs e)
         {
             //Getting result of validation
-         
-            ResetPassSys.ResetPassword(MySession.Current.TempPass, MySession.Current.TempPass, MySession.Current.TempLogin);
-            ResetPassSys.ForcePasswordChange(MySession.Current.TempLogin, 1);
+            if (MySession.Current.TempPass != null)
+            {
+                ResetPassSys.ResetPassword(MySession.Current.TempPass, MySession.Current.TempPass, MySession.Current.TempLogin);
+                ResetPassSys.ForcePasswordChange(MySession.Current.TempLogin, 1);
+            }
             EditUser.EditUsers(MySession.Current.TempLogin);
             MySession.Current.TempStatus = (string)EditUser.UpdateUserEditStatus(MySession.Current.TempLogin, MySession.Current.TempStatus).Rows[4]["St_Status_Name"];
 
