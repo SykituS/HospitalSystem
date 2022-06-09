@@ -93,3 +93,11 @@ C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Administration\obj\Debug\A
 C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Administration\obj\Debug\Administration.csproj.CopyComplete
 C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Administration\obj\Debug\Administration.dll
 C:\Users\Admin\Source\Repos\Testowanie Oprogramowania\Administration\obj\Debug\Administration.pdb
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Administration\bin\Debug\Administration.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Administration\bin\Debug\Administration.pdb
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Administration\bin\Debug\DBSystem.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Administration\obj\Debug\Administration.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Administration\obj\Debug\Administration.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Administration\obj\Debug\Administration.csproj.CopyComplete
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Administration\obj\Debug\Administration.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\final\Administration\obj\Debug\Administration.pdb
