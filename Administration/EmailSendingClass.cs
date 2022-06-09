@@ -15,12 +15,12 @@ namespace Administration
         //Sending email to user
         public static void EmailSending(string email, string topic, StringBuilder sb)
         {
-            MailMessage message = new MailMessage("medicalcliniceksoc@gmail.com", email.Trim(), topic, sb.ToString());
+            MailMessage message = new MailMessage("medicalcliniceksoc@outlook.com", email.Trim(), topic, sb.ToString());
 
             SmtpClient smtp = new SmtpClient();
-            smtp.Host = "smtp.gmail.com";
+            smtp.Host = "smtp.office365.com";
             smtp.Port = 587;
-            smtp.Credentials = new NetworkCredential("medicalcliniceksoc@gmail.com", "MedicalEksoc");
+            smtp.Credentials = new NetworkCredential("medicalcliniceksoc@outlook.com", "MedicalEksoc");
             smtp.EnableSsl = true;
             message.IsBodyHtml = true;
 

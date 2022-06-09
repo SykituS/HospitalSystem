@@ -11,7 +11,6 @@ namespace GUI
 
         protected void BtnOk_Click(object sender, EventArgs e)
         {
-
             if (!EmailSendingClass.IsValidEmail(TBEmail.Text))
                 return;
 
