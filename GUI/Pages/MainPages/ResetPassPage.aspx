@@ -14,11 +14,11 @@
         <div>Confirm password: </div><asp:TextBox ID="TBConfirmNewPass" runat="server" TextMode="Password" ></asp:TextBox>
         <br />
         <br />
-        <asp:Label ID="LabelCriteria" runat="server" Text=""></asp:Label>
         
 
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
+                <asp:Label ID="LabelCriteria" runat="server" Text=""></asp:Label><br />
                 <asp:Button ID="BtnOk" CssClass="btn" runat="server" Text="OK" OnClick="BtnOk_Click" Enabled="False"/>
                 <asp:Button ID="BtnCancel" CssClass="btn" runat="server" Text="Cancel" OnClick="BtnCancel_Click" />
                 <br /><br />

@@ -2,7 +2,8 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="spec-mng-pg-div">
         <h2 style="margin-bottom: 40px">New specialization</h2>
-        <asp:Label ID="Label1" runat="server" Text="Name of specialization"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="Name of specialization"></asp:Label><br/>
+        <asp:Label ID="LabelWaring" runat="server" Text="Warning" ForeColor="#990000" Visible="False"></asp:Label>
         <asp:TextBox ID="TBName" runat="server"></asp:TextBox>
         <br />
         <br />

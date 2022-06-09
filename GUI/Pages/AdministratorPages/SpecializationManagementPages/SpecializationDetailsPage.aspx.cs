@@ -27,6 +27,12 @@ namespace GUI.Pages.AdministratorPages.SpecializationManagementPages
 
         protected void BtnSave_Click(object sender, EventArgs e)
         {
+            if (!SpecializationManagement.Validation(TBName.Text))
+            {
+                LabelWaring.Text = "The specialty name cannot contain numbers or special characters";
+                LabelWaring.Visible = true;
+                return;
+            }
             MySession.Current.TempSpecText = TBName.Text;
 
             if (MySession.Current.TempAction == "Add")

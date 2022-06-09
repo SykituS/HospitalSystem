@@ -70,6 +70,7 @@ namespace Administration
 
                 EmailSendingClass.EmailSending(email, "Login data", Message(login, password));
                 DBSystem.DBSystem.InsertToDB(command);
+                ResetPassSys.ForcePasswordChange(login, 1);
             }
             catch (Exception ex)
             {
