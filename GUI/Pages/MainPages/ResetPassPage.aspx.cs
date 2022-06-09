@@ -8,7 +8,7 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*//Geting login and email from URL
+            //Geting login and email from URL
             MySession.Current.Login = Request.QueryString["login"];
             MySession.Current.Email = Request.QueryString["email"];
 
@@ -17,7 +17,7 @@ namespace GUI
                 Response.Redirect("~/Pages/MainPages/InvalidPage");
 
             //Showing information for what user is password changing
-            LabelInfo.Text = "Change password for " + MySession.Current.Login;*/
+            LabelInfo.Text = "Change password for " + MySession.Current.Login;
         }
 
         protected void BtnOk_Click(object sender, EventArgs e)
