@@ -3,7 +3,8 @@
 
     <div class="form-to-reset-password">
 
-        <h3 id="form-pass-page-header">Page not found</h3>
+        <h3 id="form-pass-page-header">Something went wrong :( <br />Back to Home Page</h3>
+        
         <p>
             <asp:Button ID="BtnBack" CssClass="btn" runat="server" OnClick="BtnBack_Click" Text="Back to main page" />
         </p>

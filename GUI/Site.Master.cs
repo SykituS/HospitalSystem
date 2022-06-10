@@ -12,12 +12,19 @@ namespace GUI
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LabelPositionMasterInfo.Visible = false;
-
-            if (LogSys.CheckIfLogged())
+            try
             {
-                LabelPositionMasterInfo.Visible = true;
-                LabelPositionMasterInfo.Text = "You are logged as: \n " + MySession.Current.Position;
+                LabelPositionMasterInfo.Visible = false;
+
+                if (LogSys.CheckIfLogged())
+                {
+                    LabelPositionMasterInfo.Visible = true;
+                    LabelPositionMasterInfo.Text = "You are logged as: \n " + MySession.Current.Position;
+                }
+            }
+            catch (Exception)
+            {
+                Response.Redirect("~/Pages/MainPages/Default");
             }
         }
     }

@@ -39,27 +39,34 @@ namespace Administration
             command.Parameters.AddWithValue("@Login", login);
             command.Parameters.AddWithValue("@Password", PasswordHashing.hashPassword(password));
             DBSystem.DBSystem.SelectFromDB(dt, command);
-
-            //Checking if DataTable dt contains any data, the lack of it means that the user being checked does not exist in the database
-            if (dt.Rows.Count == 0)
-                return;
-
-            if ((int)dt.Rows[0]["US_Status"] != 1)
+            
+            try
             {
+                //Checking if DataTable dt contains any data, the lack of it means that the user being checked does not exist in the database
+                if (dt.Rows.Count == 0)
+                    return;
+
+                if ((int)dt.Rows[0]["US_Status"] != 1)
+                {
+                    MySession.Current.Status = (int)dt.Rows[0]["US_Status"];
+                    return;
+                }
+
+                //Filling in user data
+                MySession.Current.Login = login;
+                MySession.Current.Email = dt.Rows[0]["EM_Email"].ToString();
+                MySession.Current.Position = dt.Rows[0]["PO_Name"].ToString();
                 MySession.Current.Status = (int)dt.Rows[0]["US_Status"];
-                return;
+                MySession.Current.ForcedPasswordChange = (int)dt.Rows[0]["US_ForcePasswordChange"];
+
+                //Changing the value of the variable that stores information about whether the user is logged in
+                MySession.Current.IsLogged = true;
+                MySession.Current.Attempt = 3;
             }
+            catch(System.Exception)
+            {
 
-            //Filling in user data
-            MySession.Current.Login = login;
-            MySession.Current.Email = dt.Rows[0]["EM_Email"].ToString();
-            MySession.Current.Position = dt.Rows[0]["PO_Name"].ToString();
-            MySession.Current.Status = (int)dt.Rows[0]["US_Status"];
-            MySession.Current.ForcedPasswordChange = (int)dt.Rows[0]["US_ForcePasswordChange"];
-
-            //Changing the value of the variable that stores information about whether the user is logged in
-            MySession.Current.IsLogged = true;
-            MySession.Current.Attempt = 3;
+            }
         }
 
         public static string GetAttempTextTry()

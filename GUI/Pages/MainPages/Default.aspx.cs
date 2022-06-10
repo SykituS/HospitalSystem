@@ -39,7 +39,6 @@ namespace GUI
 
         protected void BtnLogin_Click(object sender, EventArgs e)
         {
-
             MySession.Current.SetTime = SettingsPanel.ShowTime();
             //Cancel the side effects of refreshing the page
             CancelUnexpectedRePost();
