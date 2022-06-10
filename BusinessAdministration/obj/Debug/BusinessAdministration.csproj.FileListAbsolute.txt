@@ -72,3 +72,13 @@ F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\Busi
 F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.dll
 F:\Projekty\TestowanieOprogramowaniaGlowny\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
+C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\bin\Debug\BusinessAdministration.dll
+C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
+C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\bin\Debug\DBSystem.dll
+C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\bin\Debug\FluentValidation.dll
+C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\bin\Debug\FluentValidation.xml
+C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.AssemblyReference.cache
+C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
+C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\obj\Debug\BusinessAdministration.dll
+C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\obj\Debug\BusinessAdministration.pdb

@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GUI",
+    "\\GUI\\Pages",
+    "\\GUI\\Pages\\MedicalStaffMemberPages"
   ],
+  "SelectedNode": "\\GUI\\Pages\\MedicalStaffMemberPages\\MedicalStaffPanelPage.aspx.cs",
   "PreviewInSolutionExplorer": false
 }

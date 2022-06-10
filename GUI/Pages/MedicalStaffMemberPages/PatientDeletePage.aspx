@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PatientDeletePage.aspx.cs" Inherits="GUI.Pages.MedicalStaffMemberPages.PatientDeletePage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+    <div Class="user-add-page-div">
     <p>
         &nbsp;</p>
     <p>
@@ -7,9 +9,10 @@
     </p>
     <p>
         <br />
-        <asp:Button ID="Btn_Delete" runat="server" Text="Remove" OnClick="BtnDelete_Click" />
+        <asp:Button ID="Btn_Delete" CssClass="btn-usr-mngmt-pg" runat="server" Text="Remove" OnClick="BtnDelete_Click" />
     </p>
     <p>
-        <asp:Button ID="Btn_Cancel" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
-    </p>
+        <asp:Button ID="Btn_Cancel" CssClass="btn-usr-mngmt-pg" runat="server" OnClick="BtnCancel_Click" Text="Cancel" />
+    </p
+     </div>
 </asp:Content>

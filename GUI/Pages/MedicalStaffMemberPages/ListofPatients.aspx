@@ -1,20 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ListofPatients.aspx.cs" Inherits="Reception.PatientList" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
+   <div Class="spec-mng-pg-div"> 
  <p>
-     <asp:Button ID="BtnBack" runat="server" OnClick="BtnBack_Click" Text="Back to panel" style="left: -4px; top: 8px" />
+     <asp:Button ID="BtnBack" CssClass="btn-usr-mngmt-pg" runat="server" OnClick="BtnBack_Click" Text="Back to panel" />
     </p>
-    
+    <asp:Button ID="Button1" CssClass="btn-usr-mngmt-pg" runat="server" OnClick="Btn_filter_Click" Text="Filter" />
+
+       
+     <asp:Button ID="Button2" CssClass="btn-usr-mngmt-pg" runat="server" OnClick="Btn_addpat_Click" Text="Add a patient" />
+       <br />
+       <br />
         <p>
             Filter by name:
 
             <asp:TextBox ID="Tbx_name" runat="server"></asp:TextBox>
 
-            <asp:Button ID="Btn_filter" runat="server" OnClick="Btn_filter_Click" Text="Filter" style="left: 30px; top: 9px" />
-
-       
-
-            <asp:Button ID="Btn_addpat" runat="server" OnClick="Btn_addpat_Click" Text="Add a patient" style="left: 53px; top: 9px" />
 
         </p>
     <p>
@@ -29,9 +29,11 @@
         <p>
             Filter by date of the latest visit:<asp:CheckBox ID="ChBx_visit" runat="server"  />
     </p>
+        
+    
+        </div> 
     <br />
-    <br />
-  <!--<div style="overflow-y: scroll; height: 250px; width: 1000px;"> -->
+  <div style="overflow-y: scroll; height: 350px; width: 1000px;">
          <asp:GridView ID="Gv_patients" runat="server" AllowSorting="True" AutoGenerateColumns="False" OnSorting="Gv_patients_Sorting" OnRowCommand="Gv_patients_RowCommand" >
             <Columns>
                 <asp:BoundField DataField="Id_Patients" HeaderText="ID" SortExpression="Id_Patients" />
@@ -52,7 +54,7 @@
             </Columns>
         </asp:GridView>
              
-   <!--</div>       -->
+   </div>       
 
         <p>
             &nbsp;</p>

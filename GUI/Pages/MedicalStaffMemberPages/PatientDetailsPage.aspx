@@ -4,7 +4,7 @@
 
 
     <br />
-
+    <div class="user-add-page-div">
 
     <asp:DetailsView ID="Gv_PatientDetails" runat="server" Height="50px" Width="125px" AutoGenerateRows="False">
         <Fields>
@@ -27,7 +27,7 @@
         </p>
 
    <p>
-    <asp:Button ID="Btn_cancel_edit" runat="server" Text="Cancel" OnClick="Btn_cancel_edit_Click" />
+    <asp:Button ID="Btn_cancel_edit" cssClass="btn-usr-mngmt-pg" runat="server" Text="Cancel" OnClick="Btn_cancel_edit_Click" />
     </p>
-
+</div>
 </asp:Content> 

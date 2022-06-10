@@ -1,23 +1,24 @@
 ﻿<%@ Page Title="List of Patients" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MedicalStaffPanelPage.aspx.cs" Inherits="GUI.Pages.MedicalStaffMemberPages.MedicalStaffPanelPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div style="margin-top:15px;">
+    <div class="usr-mng-pg-div">
+        <asp:Button ID="Button1" CssClass="btn-usr-mngmt-pg" runat="server" Text="Logout" OnClick="BtnLogout_Click"/>
 
-        <asp:Button ID="BtnPatientList" runat="server" Text="List of patients" OnClick="BtnPatientList_Click" />
+        <asp:Button ID="BtnPatientList" CssClass="btn-usr-mngmt-pg" runat="server" Text="List of patients" OnClick="BtnPatientList_Click" />
         <br />
         <br />
-        <asp:Button ID="Btn_visits" runat="server" Text="Display appointments" OnClick="Btn_visits_Click" />
+        <asp:Button ID="Btn_visits" CssClass="btn-usr-mngmt-pg" runat="server" Text="Display appointments" OnClick="Btn_visits_Click" />
         <br />
         <br />
-        <asp:Calendar ID="Cal_appointments" runat="server" OnSelectionChanged="Cal_appointments_SelectionChanged"></asp:Calendar>
+        <asp:Calendar ID="Cal_appointments" CssClass="tb-user-detail" runat="server" OnSelectionChanged="Cal_appointments_SelectionChanged"></asp:Calendar>
         <br />
-        <asp:GridView ID="Gv_appointments" runat="server">
+        <asp:GridView ID="Gv_appointments" CssClass="tb-user-detail" runat="server">
 
         </asp:GridView>
         <br />
         <br />
-        <asp:Button ID="BtnLogout" runat="server" Text="Logout" OnClick="BtnLogout_Click" style="left: 773px; top: -322px" /><br />
-        <asp:Button ID="BtnBackToMenu" runat="server" Enabled="False" OnClick="BtnBackToMenu_Click" Text="Back to administrator menu" Visible="False" style="left: 773px; top: -322px"/>
+        <br />
+        <asp:Button ID="BtnBackToMenu" runat="server" Enabled="False" OnClick="BtnBackToMenu_Click" Text="Back to administrator menu" Visible="False"/>
         
     </div>
 

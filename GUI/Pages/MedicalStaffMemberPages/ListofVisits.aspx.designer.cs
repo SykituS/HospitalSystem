@@ -1,4 +1,4 @@
-﻿//------------------------------https://localhost:44356/Pages/MedicalStaffMemberPages/ListofVisits.aspx.designer.cs------------------------------------------------
+﻿//------------------------------------------------------------------------------
 // <generowany automatycznie>
 //     Ten kod został wygenerowany przez narzędzie.
 //

@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PatientEditPage.aspx.cs" Inherits="GUI.Pages.MedicalStaffMemberPages.WebForm2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    
+    <div class="user-add-page-div">
         <p>
             &nbsp;<asp:Label ID="Lbl_edited" runat="server" ForeColor="Lime"></asp:Label>
             <br />
@@ -44,9 +44,11 @@
             <asp:Label ID="Lbl_errorwarning" runat="server" ForeColor="Red"></asp:Label>
         </p>
         <p>
-            <asp:Button ID="Btn_Save" runat="server" Text="Save" OnClick="Btn_Save_Click" />
+            <asp:Button ID="Btn_Save" CssClass="btn-usr-mngmt-pg" runat="server" Text="Save" OnClick="Btn_Save_Click" />
         </p>
         <p>
-            <asp:Button ID="Btn_Cancel" runat="server" OnClick="Btn_Cancel_Click" Text="Cancel" />
+            <asp:Button ID="Btn_Cancel" CssClass="btn-usr-mngmt-pg" runat="server" OnClick="Btn_Cancel_Click" Text="Cancel" />
         </p>
+    </div>
 </asp:Content>
+

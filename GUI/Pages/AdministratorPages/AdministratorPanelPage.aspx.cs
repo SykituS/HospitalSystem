@@ -52,5 +52,10 @@ namespace GUI
         {
             Response.Redirect("SpecializationManagementPages/SpecializationManagementPage");
         }
+
+        protected void BtnCalendarPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Calendar/CalendarPage");
+        }
     }
 }

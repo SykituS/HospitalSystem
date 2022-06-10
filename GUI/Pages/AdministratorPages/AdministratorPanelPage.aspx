@@ -19,6 +19,9 @@
         <asp:Button ID="BtnOfficesManage"  CssClass="admin-panel-btn" runat="server" OnClick="BtnOfficesManage_Click" Text="Offices" />
         <br />
         <br />
+        <asp:Button ID="BtnCalendarPage"  CssClass="admin-panel-btn" runat="server" OnClick="BtnCalendarPage_Click" Text="Calendar" />
+        <br />
+        <br />
         <asp:Button ID="BtnLogout"  CssClass="admin-panel-btn" runat="server" Text="Logout" OnClick="BtnLogout_Click" />
 
         <asp:Button ID="BtnBackToMenu"  CssClass="admin-panel-btn" runat="server" Enabled="False" OnClick="BtnBackToMenu_Click" Text="Back to administrator menu" Visible="False" />

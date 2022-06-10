@@ -77,9 +77,7 @@ namespace Reception
                 {
                     string reactivativationPageStatus = "PatientReactivationPage.aspx?Id=" + row.Cells[0].Text;
                     Response.Redirect(reactivativationPageStatus);
-                    string deletePageId = "PatientDeletePage.aspx?Id=" + row.Cells[0].Text;
-
-                    Response.Redirect(deletePageId);
+                    
                 }
                 
             }
@@ -87,6 +85,8 @@ namespace Reception
             {
                 int index = Convert.ToInt32(e.CommandArgument);
                 GridViewRow row = Gv_patients.Rows[index];
+                string deletePageId = "PatientDeletePage.aspx?Id=" + row.Cells[0].Text;
+                Response.Redirect(deletePageId);
             }
         }
 

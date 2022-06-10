@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Web.UI.WebControls;
 using System.Text.RegularExpressions;
+using Administration;
 
 namespace Reception
 {
@@ -92,16 +93,17 @@ namespace Reception
 
         public static void DeletePatientFromDB(int patientId)
         {
-            string cmd = "";
+            // = PasswordHashing.hashPassword();
+            /*string cmd = "";
             SqlCommand query = new SqlCommand(cmd);
 
             query.Parameters.AddWithValue("Id", patientId);
             DBSystem.DBSystem.DeleteFromDB(query);
 
-            string cmd2 = "delete from patient";
+            string cmd2 = "";
             SqlCommand query2 = new SqlCommand(cmd2);
             query.Parameters.AddWithValue("Id", patientId);
-            DBSystem.DBSystem.DeleteFromDB(query2);
+            DBSystem.DBSystem.DeleteFromDB(query2);*/
         }
         
         public static bool ValidateName(string name)

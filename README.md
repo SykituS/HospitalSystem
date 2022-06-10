@@ -5,7 +5,7 @@ Medical clinic project
 System administrator module: https://dev.azure.com/UL0253554/Testowanie%20Oprogramowania
 Business administrator module: 
 Doctors module:
-Reception module: 
+Reception module: https://dev.azure.com/UL0253594/testowanie
 
 # Technology
 Version control system: Azure DevOps

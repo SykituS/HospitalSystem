@@ -105,10 +105,6 @@ namespace Reception
             return status;
         }
 
-        /*public static int GetPatientsId(int id)
-        {
-
-        }*/
         
         //Filtering data by name, surname and pesel
         public static DataView FilterDataView(string Tbx_name, string Tbx_surname, string Tbx_pesel, bool check)
