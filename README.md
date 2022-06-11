@@ -4,7 +4,7 @@ Medical clinic project
 # Links to azure branches for each module
 System administrator module: https://dev.azure.com/UL0253554/Testowanie%20Oprogramowania
 Business administrator module: 
-Doctors module:
+Doctors module: https://dev.azure.com/ModulLekarza/Modu%C5%82%20Lekarza
 Reception module: https://dev.azure.com/UL0253594/testowanie
 
 # Technology
