@@ -21,14 +21,13 @@
         </asp:DropDownList>
         <br />
         <br />
-        <asp:GridView ID="GridViewUsers" runat="server" AllowSorting="True" OnSorting="GridViewUsers_Sorting" AutoGenerateColumns="False" OnRowCommand="GridViewUsers_RowCommand" OnSelectedIndexChanged="GridViewUsers_SelectedIndexChanged" Width="799px">
+        <asp:GridView ID="GridViewUsers" runat="server" AllowSorting="True" OnSorting="GridViewUsers_Sorting" AutoGenerateColumns="False" OnRowCommand="GridViewUsers_RowCommand" OnSelectedIndexChanged="GridViewUsers_SelectedIndexChanged" Width="784px">
             <Columns>
                 <asp:BoundField HeaderText="User name" DataField="US_Login" SortExpression="US_Login"/>
                 <asp:BoundField HeaderText="First name" DataField="EM_Name" SortExpression="EM_Name" />
                 <asp:BoundField HeaderText="Second Name" DataField="EM_Sec_Name" SortExpression="EM_Sec_Name" NullDisplayText=" " />
                 <asp:BoundField HeaderText="Position" DataField="PO_Name" SortExpression="PO_Name" />
-
-                <asp:TemplateField HeaderText="Status" SortExpression="St_Status_Name">
+                <asp:TemplateField HeaderText="Change status" SortExpression="St_Status_Name">
                     <ItemTemplate>
                         <asp:Button ID="BtnChangeStatus" runat="server" Text='<%# Eval("St_Status_Name") %>' CommandName="ChangeStatus" CommandArgument="<%# Container.DataItemIndex %>" />
                     </ItemTemplate>

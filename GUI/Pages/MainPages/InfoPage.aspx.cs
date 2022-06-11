@@ -13,5 +13,11 @@ namespace GUI.Pages.MainPages
         {
 
         }
+
+        protected void BtnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Pages/MainPages/Default");
+
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="MedicalClinic - Information" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InfoPage.aspx.cs" Inherits="GUI.Pages.MainPages.InfoPage" %>
+﻿<%@ Page Title="MedicalClinic-Information" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InfoPage.aspx.cs" Inherits="GUI.Pages.MainPages.InfoPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div style="margin-top: 15px;">
@@ -22,7 +22,7 @@
         <br />
         <br />
         <br /><br />
-        <asp:Button ID="BtnBack" runat="server" Text="Back To Menu" />
+        <asp:Button ID="BtnBack" runat="server" Text="Back To Menu" OnClick="BtnBack_Click" />
 
 
     </div>

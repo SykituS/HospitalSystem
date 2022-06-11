@@ -441,7 +441,9 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>- Medical Clinic</p>
+                <p>&copy; <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>- Medical Clinic</p> 
+                <asp:Button ID="BtnInformation" runat="server" Text="Information Page" OnClick="BtnInformation_Click" />
+
             </footer>
         </div>
 
