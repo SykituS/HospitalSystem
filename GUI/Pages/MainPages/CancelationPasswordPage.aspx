@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Confirm cancelation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CancelationPasswordPage.aspx.cs" Inherits="GUI.Pages.MainPages.CancelationPasswordPage" %>
+﻿<%@ Page Title="MedicalClinic-Confirm cancelation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CancelationPasswordPage.aspx.cs" Inherits="GUI.Pages.MainPages.CancelationPasswordPage" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="form-to-reset-password">

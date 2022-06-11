@@ -82,3 +82,13 @@ C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\obj\Debug\BusinessAd
 C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
 C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\obj\Debug\BusinessAdministration.dll
 C:\Users\marys\OneDrive\Pulpit\testo\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\test\BusinessAdministration\bin\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\test\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\test\BusinessAdministration\bin\Debug\DBSystem.dll
+C:\Users\User\Desktop\test\BusinessAdministration\bin\Debug\FluentValidation.dll
+C:\Users\User\Desktop\test\BusinessAdministration\bin\Debug\FluentValidation.xml
+C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.csprojAssemblyReference.cache
+C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.pdb

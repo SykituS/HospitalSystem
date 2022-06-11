@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Confirm cancelation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DebbugPage.aspx.cs" Inherits="GUI.Pages.MainPages.DebbugPage" %>
+﻿<%@ Page Title="MedicalClinic-Confirm cancelation" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DebbugPage.aspx.cs" Inherits="GUI.Pages.MainPages.DebbugPage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     

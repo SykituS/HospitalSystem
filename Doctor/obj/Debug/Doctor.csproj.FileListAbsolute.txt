@@ -133,3 +133,17 @@ C:\Users\marys\OneDrive\Pulpit\testo\Doctor\obj\Debug\Doctor.csproj.CoreCompileI
 C:\Users\marys\OneDrive\Pulpit\testo\Doctor\obj\Debug\Doctor.csproj.CopyComplete
 C:\Users\marys\OneDrive\Pulpit\testo\Doctor\obj\Debug\Doctor.dll
 C:\Users\marys\OneDrive\Pulpit\testo\Doctor\obj\Debug\Doctor.pdb
+C:\Users\User\Desktop\test\Doctor\bin\Debug\Doctor.dll
+C:\Users\User\Desktop\test\Doctor\bin\Debug\Doctor.pdb
+C:\Users\User\Desktop\test\Doctor\bin\Debug\Administration.dll
+C:\Users\User\Desktop\test\Doctor\bin\Debug\BusinessAdministration.dll
+C:\Users\User\Desktop\test\Doctor\bin\Debug\DBSystem.dll
+C:\Users\User\Desktop\test\Doctor\bin\Debug\FluentValidation.dll
+C:\Users\User\Desktop\test\Doctor\bin\Debug\Administration.pdb
+C:\Users\User\Desktop\test\Doctor\bin\Debug\BusinessAdministration.pdb
+C:\Users\User\Desktop\test\Doctor\bin\Debug\FluentValidation.xml
+C:\Users\User\Desktop\test\Doctor\obj\Debug\Doctor.csprojAssemblyReference.cache
+C:\Users\User\Desktop\test\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\test\Doctor\obj\Debug\Doctor.csproj.CopyComplete
+C:\Users\User\Desktop\test\Doctor\obj\Debug\Doctor.dll
+C:\Users\User\Desktop\test\Doctor\obj\Debug\Doctor.pdb

@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserEditPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserEditPage"MasterPageFile="~/Site.Master"
-Title="UserEditPage" %>
+Title="MedicalClinic-User Edit" %>
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server"> 

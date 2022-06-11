@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Form" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"  CodeBehind="FormToResetPassPage.aspx.cs" Inherits="GUI.FormToResetPassPage" %>
+﻿<%@ Page Title="MedicalClinic-Reset Password" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"  CodeBehind="FormToResetPassPage.aspx.cs" Inherits="GUI.FormToResetPassPage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 

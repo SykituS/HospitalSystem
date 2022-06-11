@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Confirm" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="UserStatusUpdateConfirmPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserStatusUpdateConfirmPage" %>
+﻿<%@ Page Title="MedicalClinic-Confirm Status" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="UserStatusUpdateConfirmPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserStatusUpdateConfirmPage" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="user-add-page-div">
 
