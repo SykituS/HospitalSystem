@@ -34,3 +34,6 @@ F:\Projekty\TestowanieOprogramowania\UnitTestSystemAdministration\obj\Debug\Unit
 F:\Projekty\TestowanieOprogramowania\UnitTestSystemAdministration\obj\Debug\UnitTestSystemAdministration.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowania\UnitTestSystemAdministration\obj\Debug\UnitTestSystemAdministration.dll
 F:\Projekty\TestowanieOprogramowania\UnitTestSystemAdministration\obj\Debug\UnitTestSystemAdministration.pdb
+F:\Projekty\TestowanieOprogramowania\UnitTestSystemAdministration\bin\Debug\FluentValidation.dll
+F:\Projekty\TestowanieOprogramowania\UnitTestSystemAdministration\bin\Debug\FluentValidation.xml
+F:\Projekty\TestowanieOprogramowania\UnitTestSystemAdministration\bin\Debug\Reception.dll.config

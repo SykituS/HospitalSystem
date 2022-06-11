@@ -131,7 +131,6 @@ F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\System.Buffers.xml
 F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\System.Memory.xml
 F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\System.Numerics.Vectors.xml
 F:\Projekty\TestowanieOprogramowania\Reception\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csprojAssemblyReference.cache
 F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.CoreCompileInputs.cache
 F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.dll
@@ -263,3 +262,4 @@ C:\Users\User\Desktop\test\Reception\obj\Debug\Reception.csproj.CoreCompileInput
 C:\Users\User\Desktop\test\Reception\obj\Debug\Reception.csproj.CopyComplete
 C:\Users\User\Desktop\test\Reception\obj\Debug\Reception.dll
 C:\Users\User\Desktop\test\Reception\obj\Debug\Reception.pdb
+F:\Projekty\TestowanieOprogramowania\Reception\obj\Debug\Reception.csprojAssemblyReference.cache

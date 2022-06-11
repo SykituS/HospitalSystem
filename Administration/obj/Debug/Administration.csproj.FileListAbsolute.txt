@@ -34,7 +34,6 @@ F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlown
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Administration\obj\Debug\Administation.dll
 F:\Projekty\GIT Testowanie Oprogramowania Główny\TestowanieOprogramowaniaGlowny\Administration\obj\Debug\Administation.pdb
 F:\Projekty\TestowanieOprogramowania\Administration\bin\Debug\DBSystem.dll
-F:\Projekty\TestowanieOprogramowania\Administration\obj\Debug\Administration.csprojAssemblyReference.cache
 F:\Projekty\TestowanieOprogramowania\Administration\obj\Debug\Administration.csproj.CoreCompileInputs.cache
 F:\Projekty\TestowanieOprogramowania\Administration\obj\Debug\Administration.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowania\Administration\bin\Debug\Administration.dll

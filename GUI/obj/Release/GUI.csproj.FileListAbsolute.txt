@@ -77,3 +77,7 @@ F:\Projekty\Testowanie Oprogramowania\GUI\obj\Release\GUI.csproj.CoreCompileInpu
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Release\GUI.csproj.CopyComplete
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Release\GUI.dll
 F:\Projekty\Testowanie Oprogramowania\GUI\obj\Release\GUI.pdb
+F:\Projekty\TestowanieOprogramowania\GUI\obj\Release\GUI.csprojAssemblyReference.cache
+F:\Projekty\TestowanieOprogramowania\GUI\obj\Release\GUI.csproj.CoreCompileInputs.cache
+F:\Projekty\TestowanieOprogramowania\GUI\obj\Release\GUI.dll
+F:\Projekty\TestowanieOprogramowania\GUI\obj\Release\GUI.pdb
