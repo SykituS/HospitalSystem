@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserAddAcceptPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserAddAcceptPage" MasterPageFile="~/Site.Master"
-Title="User Add Accept"%>
+Title="MedicalClinic-User Adding Acceptation"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 

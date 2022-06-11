@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Settings Panel" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SettingPanelPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.SettingsPages.SettingPanelPage" %>
+﻿<%@ Page Title="MedicalClinic-Settings Panel" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SettingPanelPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.SettingsPages.SettingPanelPage" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 

@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditUserPass.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.EditUserPass"MasterPageFile="~/Site.Master"
-Title="Edit User Page" %>
+Title="MedicalClinic-Edit User Password" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 

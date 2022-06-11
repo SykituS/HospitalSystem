@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Main Panel" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdministratorMainPanel.aspx.cs" Inherits="GUI.Pages.AdministratorMainPanel" %>
+﻿<%@ Page Title="MedicalClinic-Main Panel" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdministratorMainPanel.aspx.cs" Inherits="GUI.Pages.AdministratorMainPanel" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="Head-admin-panel-page-div">

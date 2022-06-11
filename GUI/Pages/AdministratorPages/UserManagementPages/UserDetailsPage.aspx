@@ -1,6 +1,6 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserDetailsPage.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserDetailsPage" 
 MasterPageFile="~/Site.Master"
-Title="User Details"%>
+Title="MedicalClinic-User Details"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 

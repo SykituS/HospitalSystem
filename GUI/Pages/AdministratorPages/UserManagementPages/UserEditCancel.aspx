@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserEditCancel.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserEditSave" MasterPageFile="~/Site.Master"
-Title="User Edit Cancel"%>
+Title="MedicalClinic-User Edit Cancelation"%>
   
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server"> 

@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditUserStatus.aspx.cs" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.EditUserStatus"MasterPageFile="~/Site.Master"
-Title="EditUserStatus" %>
+Title="MedicalClinic-Edit User Status" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server"> 
     <div class="user-add-page-div">

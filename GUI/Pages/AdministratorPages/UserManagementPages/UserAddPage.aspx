@@ -1,4 +1,4 @@
-﻿<%@ Page Title="User add" Language="C#" AutoEventWireup="true" CodeBehind="UserAddPage.aspx.cs" MasterPageFile="~/Site.Master" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserAddPage" %>
+﻿<%@ Page Title="MedicalClinic -Adding User" Language="C#" AutoEventWireup="true" CodeBehind="UserAddPage.aspx.cs" MasterPageFile="~/Site.Master" Inherits="GUI.Pages.AdministratorPages.UserManagementPages.UserAddPage" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="user-add-page-div">

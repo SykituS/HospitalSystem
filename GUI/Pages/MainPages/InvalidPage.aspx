@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Invalid Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InvalidPage.aspx.cs" Inherits="GUI.Pages.MainPages.InvalidPage" %>
+﻿<%@ Page Title="MedicalClinic-Invalid Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InvalidPage.aspx.cs" Inherits="GUI.Pages.MainPages.InvalidPage" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="form-to-reset-password">

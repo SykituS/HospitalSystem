@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Forced password change" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="ForcedPasswordChangePage.aspx.cs" Inherits="GUI.Pages.MainPages.ForcedPasswordChangePage" %>
+﻿<%@ Page Title="MedicalClinic-Forced password change" Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="ForcedPasswordChangePage.aspx.cs" Inherits="GUI.Pages.MainPages.ForcedPasswordChangePage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="user-add-page-div">
