@@ -91,3 +91,13 @@ C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministrati
 C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
 C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.dll
 C:\Users\User\Desktop\test\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\BusinessAdministration\bin\Debug\BusinessAdministration.pdb
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\BusinessAdministration\bin\Debug\DBSystem.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\BusinessAdministration\bin\Debug\FluentValidation.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\BusinessAdministration\bin\Debug\FluentValidation.xml
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.csproj.CopyComplete
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\BusinessAdministration\obj\Debug\BusinessAdministration.pdb
