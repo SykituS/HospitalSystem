@@ -27,10 +27,5 @@ namespace GUI
                 Response.Redirect("~/Pages/MainPages/Default");
             }
         }
-
-        protected void BtnInformation_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Pages/MainPages/InfoPage");
-        }
     }
 }
