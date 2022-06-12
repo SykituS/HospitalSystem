@@ -7,7 +7,6 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Web.UI.WebControls;
 using System.Text.RegularExpressions;
-using Administration;
 
 namespace Reception
 {

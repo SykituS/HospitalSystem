@@ -1,0 +1,2 @@
+F:\Projekty\TestowanieOprogramowania\Reception.UnitTests\obj\Release\Reception.UnitTests.csprojAssemblyReference.cache
+F:\Projekty\TestowanieOprogramowania\Reception.UnitTests\obj\Release\Reception.UnitTests.csproj.CoreCompileInputs.cache

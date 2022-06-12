@@ -108,6 +108,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="index.aspx" />
     <Content Include="Pages\AdministratorPages\AdministratorPanelPage.aspx" />
     <Content Include="Pages\AdministratorPages\Calendar\CalendarPage.aspx" />
     <Content Include="Pages\AdministratorPages\EmployeeManagement\EmployeeDeactivationPage.aspx" />
@@ -161,6 +162,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Properties\PublishProfiles\MedicalEksoc - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Pages\MainPages\ResetPassPage.aspx" />
     <Content Include="Pages\MedicalStaffMemberPages\AddVisit.aspx" />
@@ -210,6 +214,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdministratorPages\AdministratorPanelPage.aspx.cs">
       <DependentUpon>AdministratorPanelPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

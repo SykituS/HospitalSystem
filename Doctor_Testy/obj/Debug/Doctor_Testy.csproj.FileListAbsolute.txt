@@ -46,3 +46,27 @@ C:\Users\milos\Source\Repos\Moduł Lekarza\Doctor_Testy\obj\Debug\Doctor_Testy.c
 C:\Users\milos\Source\Repos\Moduł Lekarza\Doctor_Testy\obj\Debug\Doctor_Testy.csproj.CopyComplete
 C:\Users\milos\Source\Repos\Moduł Lekarza\Doctor_Testy\obj\Debug\Doctor_Testy.dll
 C:\Users\milos\Source\Repos\Moduł Lekarza\Doctor_Testy\obj\Debug\Doctor_Testy.pdb
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Doctor_Testy.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Doctor_Testy.pdb
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Doctor.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\FluentValidation.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\DBSystem.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Administration.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Doctor.pdb
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\FluentValidation.xml
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\bin\Debug\Administration.pdb
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\obj\Debug\Doctor_Testy.csprojAssemblyReference.cache
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\obj\Debug\Doctor_Testy.csproj.CoreCompileInputs.cache
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\obj\Debug\Doctor_Testy.csproj.CopyComplete
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\obj\Debug\Doctor_Testy.dll
+F:\Projekty\TestowanieOprogramowania\Doctor_Testy\obj\Debug\Doctor_Testy.pdb

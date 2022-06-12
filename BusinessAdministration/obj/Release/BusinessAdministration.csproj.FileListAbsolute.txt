@@ -3,7 +3,6 @@ F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Release\Business
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Release\DBSystem.dll
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Release\FluentValidation.dll
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\bin\Release\FluentValidation.xml
-F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Release\BusinessAdministration.csprojAssemblyReference.cache
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Release\BusinessAdministration.csproj.CoreCompileInputs.cache
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Release\BusinessAdministration.csproj.CopyComplete
 F:\Projekty\TestowanieOprogramowania\BusinessAdministration\obj\Release\BusinessAdministration.dll
