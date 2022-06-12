@@ -147,3 +147,17 @@ C:\Users\User\Desktop\test\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cach
 C:\Users\User\Desktop\test\Doctor\obj\Debug\Doctor.csproj.CopyComplete
 C:\Users\User\Desktop\test\Doctor\obj\Debug\Doctor.dll
 C:\Users\User\Desktop\test\Doctor\obj\Debug\Doctor.pdb
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\bin\Debug\Doctor.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\bin\Debug\Doctor.pdb
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\bin\Debug\Administration.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\bin\Debug\BusinessAdministration.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\bin\Debug\DBSystem.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\bin\Debug\FluentValidation.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\bin\Debug\Administration.pdb
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\bin\Debug\BusinessAdministration.pdb
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\bin\Debug\FluentValidation.xml
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\obj\Debug\Doctor.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\obj\Debug\Doctor.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\obj\Debug\Doctor.csproj.CopyComplete
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\obj\Debug\Doctor.dll
+C:\Users\Admin\Desktop\Priv\Studia II rok\Testowanie oprogramowania\Doctor\obj\Debug\Doctor.pdb

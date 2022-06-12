@@ -3,8 +3,8 @@
     "",
     "\\GUI",
     "\\GUI\\Pages",
-    "\\GUI\\Pages\\MedicalStaffMemberPages"
+    "\\GUI\\Pages\\MainPages"
   ],
-  "SelectedNode": "\\GUI\\Pages\\MedicalStaffMemberPages\\MedicalStaffPanelPage.aspx.cs",
+  "SelectedNode": "\\GUI\\GUI.csproj",
   "PreviewInSolutionExplorer": false
 }

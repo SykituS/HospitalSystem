@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="MedicalClinic-Information" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InfoPage.aspx.cs" Inherits="GUI.Pages.MainPages.InfoPage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div style="margin-top: 15px;">
+    <div class="user-add-page-div">
 
-        <asp:Label ID="Label1" runat="server" Text="Information about program: "></asp:Label><br /><br />
+       <h3><asp:Label ID="Label1" runat="server" Text="Information about program: "></asp:Label><br /><br /></h3>
         
         Version control system: Azure DevOps <br />
         Technology on which the application was created: asp.net c# <br />
@@ -22,7 +22,7 @@
         <br />
         <br />
         <br /><br />
-        <asp:Button ID="BtnBack" runat="server" Text="Back To Menu" OnClick="BtnBack_Click" />
+        <asp:Button ID="BtnBack" CssClass="btn-logout-page" runat="server" Text="Back To Menu" OnClick="BtnBack_Click" />
 
 
     </div>
